@@ -1,4 +1,4 @@
-# Pet X Veterinary Website
+# Red Rock Veterinary Website
 
 A modern, responsive veterinary practice website built with Next.js 14, TypeScript, Tailwind CSS, and Sanity CMS. This project replicates the Pet X Webflow template design with enhanced functionality and a complete content management system.
 
@@ -25,8 +25,8 @@ A modern, responsive veterinary practice website built with Next.js 14, TypeScri
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd pet-x-veterinary-website
+   git clone https://github.com/nmang004/redrockvet.git
+   cd redrockvet
    ```
 
 2. **Install dependencies**
@@ -36,28 +36,22 @@ A modern, responsive veterinary practice website built with Next.js 14, TypeScri
 
 3. **Set up environment variables**
    ```bash
-   cp .env.local.example .env.local
+   cp .env.example .env.local
    ```
    
    Edit `.env.local` with your Sanity configuration:
    ```env
-   NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id
+   NEXT_PUBLIC_SANITY_PROJECT_ID=8tgbdisl
    NEXT_PUBLIC_SANITY_DATASET=production
    SANITY_API_TOKEN=your-api-token
    ```
 
-4. **Set up Sanity CMS**
-   - Create a new project at [sanity.io](https://www.sanity.io/)
-   - Copy your project ID and add it to `.env.local`
-   - Generate an API token with write permissions
-   - Run the development server to access the studio
-
-5. **Start the development server**
+4. **Start the development server**
    ```bash
    npm run dev
    ```
 
-6. **Access the website and CMS**
+5. **Access the website and CMS**
    - Website: [http://localhost:3000](http://localhost:3000)
    - Sanity Studio: [http://localhost:3000/studio](http://localhost:3000/studio)
 
