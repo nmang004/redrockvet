@@ -20,14 +20,14 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <header className="header-sticky safe-area-top bg-background/95 backdrop-blur-sm border-b border-border">
+      <nav className="mx-auto max-w-7xl container-mobile">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image 
-                src="/red-rock-logo.jpg" 
+                src="/red-rock-logo.png" 
                 alt="Red Rock Veterinary Health" 
                 width={200}
                 height={60}
@@ -51,11 +51,11 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="text-sm">
+            <Button variant="outline" size="sm" className="text-sm touch-target focus-mobile">
               <Phone className="w-4 h-4 mr-2" />
               (555) 123-4567
             </Button>
-            <Button size="sm" className="text-sm">
+            <Button size="sm" className="text-sm touch-target focus-mobile">
               <Calendar className="w-4 h-4 mr-2" />
               Book Appointment
             </Button>
@@ -67,6 +67,9 @@ export default function Header() {
               variant="ghost"
               size="sm"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="touch-target focus-mobile"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -92,18 +95,18 @@ export default function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+                    className="block px-3 py-3 text-base font-medium text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200 touch-target focus-mobile"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
                 ))}
                 <div className="px-3 py-2 space-y-2">
-                  <Button variant="outline" size="sm" className="w-full text-sm">
+                  <Button variant="outline" size="sm" className="w-full text-sm btn-touch">
                     <Phone className="w-4 h-4 mr-2" />
                     (555) 123-4567
                   </Button>
-                  <Button size="sm" className="w-full text-sm">
+                  <Button size="sm" className="w-full text-sm btn-touch">
                     <Calendar className="w-4 h-4 mr-2" />
                     Book Appointment
                   </Button>

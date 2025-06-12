@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center">
               <Image 
-                src="/red-rock-logo.jpg" 
+                src="/red-rock-logo.png" 
                 alt="Red Rock Veterinary Health" 
                 width={160}
                 height={48}
