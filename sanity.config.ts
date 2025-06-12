@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'red-rock-veterinary',
   title: 'Red Rock Veterinary Health CMS',
   
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '',
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  projectId: '8tgbdisl',
+  dataset: 'production',
   
   basePath: '/studio',
   

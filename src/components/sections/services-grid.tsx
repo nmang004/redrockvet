@@ -5,55 +5,83 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, Scissors, Stethoscope, Shield, Syringe, Camera } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
+import { useEffect, useState } from "react";
 
-const services = [
+const iconMap = {
+  stethoscope: Stethoscope,
+  scissors: Scissors,
+  heart: Heart,
+  shield: Shield,
+  syringe: Syringe,
+  camera: Camera,
+};
+
+interface Service {
+  _id: string;
+  title: string;
+  description: string;
+  features: string[];
+  price: string;
+  slug: { current: string };
+  icon?: keyof typeof iconMap;
+}
+
+// Fallback services data
+const fallbackServices = [
   {
-    icon: Stethoscope,
+    _id: "1",
+    icon: "stethoscope" as keyof typeof iconMap,
     title: "Wellness Exams",
     description: "Comprehensive health checkups to keep your pet in optimal condition with preventive care.",
     features: ["Annual checkups", "Vaccinations", "Health screening", "Nutritional counseling"],
     price: "From $89",
-    href: "/services/wellness"
+    slug: { current: "wellness" }
   },
   {
-    icon: Scissors,
+    _id: "2",
+    icon: "scissors" as keyof typeof iconMap,
     title: "Surgery",
     description: "Advanced surgical procedures performed by experienced veterinarians in our modern facility.",
     features: ["Spay/neuter", "Soft tissue surgery", "Orthopedic surgery", "Emergency surgery"],
     price: "From $299",
-    href: "/services/surgery"
+    slug: { current: "surgery" }
   },
   {
-    icon: Heart,
+    _id: "3",
+    icon: "heart" as keyof typeof iconMap,
     title: "Dental Care",
     description: "Complete dental services to maintain your pet's oral health and prevent dental disease.",
     features: ["Dental cleaning", "Tooth extraction", "Oral surgery", "Dental X-rays"],
     price: "From $149",
-    href: "/services/dental"
+    slug: { current: "dental" }
   },
   {
-    icon: Shield,
+    _id: "4",
+    icon: "shield" as keyof typeof iconMap,
     title: "Emergency Care",
     description: "24/7 emergency services for when your pet needs immediate medical attention.",
     features: ["24/7 availability", "Trauma care", "Critical care", "Emergency surgery"],
     price: "From $199",
-    href: "/services/emergency"
+    slug: { current: "emergency" }
   },
   {
-    icon: Syringe,
+    _id: "5",
+    icon: "syringe" as keyof typeof iconMap,
     title: "Vaccinations",
     description: "Essential vaccines to protect your pet from preventable diseases and maintain immunity.",
     features: ["Core vaccines", "Lifestyle vaccines", "Vaccine planning", "Titer testing"],
     price: "From $45",
-    href: "/services/vaccinations"
+    slug: { current: "vaccinations" }
   },
   {
-    icon: Camera,
+    _id: "6",
+    icon: "camera" as keyof typeof iconMap,
     title: "Diagnostics",
     description: "State-of-the-art diagnostic equipment for accurate diagnosis and treatment planning.",
     features: ["Digital X-rays", "Ultrasound", "Blood work", "Urinalysis"],
     price: "From $125",
-    href: "/services/diagnostics"
+    slug: { current: "diagnostics" }
   }
 ];
 
@@ -68,6 +96,38 @@ export default function ServicesGrid({
   title = "Our Services",
   subtitle = "Comprehensive veterinary care for your beloved pets"
 }: ServicesGridProps) {
+  const [services, setServices] = useState<Service[]>(fallbackServices);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        const query = `*[_type == "service"] | order(_createdAt asc) {
+          _id,
+          title,
+          description,
+          features,
+          price,
+          slug,
+          icon
+        }`;
+        
+        const data = await client.fetch(query);
+        
+        if (data && data.length > 0) {
+          setServices(data);
+        }
+      } catch (error) {
+        console.error('Error fetching services:', error);
+        // Keep fallback services if fetch fails
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []);
+
   const displayedServices = showAll ? services : services.slice(0, 3);
 
   return (
@@ -92,10 +152,10 @@ export default function ServicesGrid({
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {displayedServices.map((service, index) => {
-            const IconComponent = service.icon;
+            const IconComponent = service.icon ? iconMap[service.icon] : Stethoscope;
             return (
               <motion.div
-                key={service.title}
+                key={service._id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -129,7 +189,7 @@ export default function ServicesGrid({
                         {service.price}
                       </span>
                       <Button asChild variant="ghost" size="sm" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                        <Link href={service.href}>
+                        <Link href={`/services/${service.slug.current}`}>
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Link>
