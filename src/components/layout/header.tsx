@@ -25,18 +25,14 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center">
               <Image 
-                src="/red-rock-logo.svg" 
+                src="/red-rock-logo.jpg" 
                 alt="Red Rock Veterinary Health" 
-                width={50}
-                height={40}
-                className="h-10 w-auto"
+                width={200}
+                height={60}
+                className="h-12 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground leading-tight">Red Rock Vet</span>
-                <span className="text-xs text-muted-foreground leading-tight">Veterinary Health</span>
-              </div>
             </Link>
           </div>
 

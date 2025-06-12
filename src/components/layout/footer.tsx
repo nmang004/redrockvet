@@ -41,18 +41,14 @@ export default function Footer() {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Practice Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <Image 
-                src="/red-rock-logo.svg" 
+                src="/red-rock-logo.jpg" 
                 alt="Red Rock Veterinary Health" 
-                width={40}
-                height={32}
-                className="h-8 w-auto"
+                width={160}
+                height={48}
+                className="h-10 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="text-lg font-bold leading-tight">Red Rock Vet</span>
-                <span className="text-xs text-secondary-foreground/60 leading-tight">Veterinary Health</span>
-              </div>
             </div>
             <p className="text-sm text-secondary-foreground/80">
               Providing compassionate, comprehensive veterinary care for your beloved pets 
