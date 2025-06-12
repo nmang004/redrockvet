@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 const testimonials = [
   {
@@ -90,7 +89,7 @@ export default function TestimonialsCarousel() {
             What Our Clients Say
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what pet parents in our community 
+            Don&apos;t just take our word for it. Here&apos;s what pet parents in our community 
             have to say about their experience at Pet X Veterinary.
           </p>
         </motion.div>
@@ -114,7 +113,7 @@ export default function TestimonialsCarousel() {
                     <div className="flex-1">
                       <Quote className="w-8 h-8 text-primary mb-4" />
                       <blockquote className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                        "{currentTestimonial.review}"
+                        &ldquo;{currentTestimonial.review}&rdquo;
                       </blockquote>
                       
                       {/* Rating */}

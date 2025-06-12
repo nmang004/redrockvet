@@ -129,18 +129,18 @@
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, theme(colors.primary), theme(colors.secondary));
+    background: linear-gradient(135deg, oklch(0.68 0.18 35), oklch(0.15 0.02 280));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .shadow-glow {
-    box-shadow: 0 0 20px -5px theme(colors.primary / 30%);
+    box-shadow: 0 0 20px -5px oklch(0.68 0.18 35 / 30%);
   }
   
   .bg-hero-pattern {
-    background-image: radial-gradient(circle at 25% 25%, theme(colors.primary / 10%) 0%, transparent 50%),
-                      radial-gradient(circle at 75% 75%, theme(colors.secondary / 10%) 0%, transparent 50%);
+    background-image: radial-gradient(circle at 25% 25%, oklch(0.68 0.18 35 / 10%) 0%, transparent 50%),
+                      radial-gradient(circle at 75% 75%, oklch(0.15 0.02 280 / 10%) 0%, transparent 50%);
   }
 }

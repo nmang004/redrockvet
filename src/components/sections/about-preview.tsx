@@ -60,7 +60,7 @@ export default function AboutPreview() {
                 viewport={{ once: true }}
                 className="text-3xl md:text-4xl font-bold text-foreground"
               >
-                Dedicated to Your Pet's Health & Happiness
+                Dedicated to Your Pet&apos;s Health & Happiness
               </motion.h2>
               
               <motion.p
@@ -83,7 +83,7 @@ export default function AboutPreview() {
                 className="text-lg text-muted-foreground leading-relaxed"
               >
                 We believe that every pet deserves access to high-quality healthcare in a 
-                comfortable, stress-free environment. That's why we've built our practice 
+                comfortable, stress-free environment. That&apos;s why we&apos;ve built our practice 
                 around the principles of compassionate care, medical excellence, and client education.
               </motion.p>
             </div>
@@ -164,9 +164,9 @@ export default function AboutPreview() {
                   Our Mission
                 </h3>
                 <blockquote className="text-lg md:text-xl text-muted-foreground leading-relaxed italic">
-                  "To provide exceptional veterinary care that enhances the human-animal bond 
+                  &ldquo;To provide exceptional veterinary care that enhances the human-animal bond 
                   through compassionate service, advanced medicine, and client education, 
-                  ensuring every pet lives their healthiest, happiest life."
+                  ensuring every pet lives their healthiest, happiest life.&rdquo;
                 </blockquote>
                 <div className="mt-6 flex items-center justify-center">
                   <div className="w-16 h-0.5 bg-primary"></div>

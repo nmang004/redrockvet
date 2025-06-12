@@ -19,11 +19,5 @@ export default defineConfig({
   
   schema: {
     types: schemaTypes,
-  },
-  
-  theme: {
-    // Customize the studio theme to match Pet X branding
-    primaryColor: '#FF6B35', // Orange primary
-    secondaryColor: '#1A1A2E', // Navy secondary
   }
 })

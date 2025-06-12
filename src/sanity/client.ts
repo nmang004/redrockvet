@@ -11,6 +11,7 @@ export const client = createClient({
 
 const builder = imageUrlBuilder(client)
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const urlFor = (source: any) => builder.image(source)
 
 // Reusable GROQ queries
@@ -192,6 +193,7 @@ export const queries = {
 }
 
 // Helper functions for fetching data
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const sanityFetch = async (query: string, params: any = {}) => {
   return await client.fetch(query, params)
 }

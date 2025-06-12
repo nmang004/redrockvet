@@ -79,7 +79,7 @@ export default function StatsCounter() {
           </h2>
           <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto">
             Our commitment to excellence has earned us the trust of thousands of pet families 
-            throughout our community. Here's what we've achieved together.
+            throughout our community. Here&apos;s what we&apos;ve achieved together.
           </p>
         </motion.div>
 
@@ -148,7 +148,7 @@ export default function StatsCounter() {
               <div>
                 <h4 className="font-semibold mb-2">❤️ Compassionate Team</h4>
                 <p className="text-sm text-secondary-foreground/80">
-                  Experienced professionals who truly care about your pet's wellbeing.
+                  Experienced professionals who truly care about your pet&apos;s wellbeing.
                 </p>
               </div>
             </div>

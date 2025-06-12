@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Play, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 interface HeroProps {
   title: string;
@@ -17,7 +16,6 @@ interface HeroProps {
     text: string;
     href: string;
   };
-  backgroundImage?: string;
   videoURL?: string;
 }
 
@@ -27,7 +25,6 @@ export default function Hero({
   description,
   primaryCTA,
   secondaryCTA,
-  backgroundImage = "/hero-bg.jpg",
   videoURL
 }: HeroProps) {
   return (
