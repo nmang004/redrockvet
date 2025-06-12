@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
@@ -40,11 +41,18 @@ export default function Footer() {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Practice Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">P</span>
+            <div className="flex items-center space-x-3">
+              <Image 
+                src="/red-rock-logo.svg" 
+                alt="Red Rock Veterinary Health" 
+                width={40}
+                height={32}
+                className="h-8 w-auto"
+              />
+              <div className="flex flex-col">
+                <span className="text-lg font-bold leading-tight">Red Rock Vet</span>
+                <span className="text-xs text-secondary-foreground/60 leading-tight">Veterinary Health</span>
               </div>
-              <span className="text-xl font-bold">Pet X Veterinary</span>
             </div>
             <p className="text-sm text-secondary-foreground/80">
               Providing compassionate, comprehensive veterinary care for your beloved pets 
@@ -61,7 +69,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>info@petxvet.com</span>
+                <span>info@redrockvet.com</span>
               </div>
             </div>
           </div>
@@ -132,7 +140,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="py-6 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <div className="text-sm text-secondary-foreground/80">
-            © 2024 Pet X Veterinary. All rights reserved.
+            © 2024 Red Rock Veterinary Health. All rights reserved.
           </div>
           
           <div className="flex items-center space-x-4">

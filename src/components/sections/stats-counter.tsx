@@ -130,7 +130,7 @@ export default function StatsCounter() {
         >
           <div className="bg-secondary-foreground/10 rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
-              Why Pet Families Choose Pet X Veterinary
+              Why Pet Families Choose Red Rock Veterinary Health
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>

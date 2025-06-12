@@ -46,38 +46,38 @@
 
 :root {
   --radius: 0.625rem;
-  /* Pet X Color Scheme - Warm orange primary (#FF6B35), navy secondary (#1A1A2E), cream accent (#F7F5F3) */
-  --background: oklch(0.98 0.01 50); /* Cream background #F7F5F3 */
-  --foreground: oklch(0.15 0.02 280); /* Navy text #1A1A2E */
+  /* Red Rock Veterinary Color Scheme - Deep red primary (#B31B1B), dark gray secondary (#2C2C2C), light gray accent (#F5F5F5) */
+  --background: oklch(0.97 0.005 0); /* Light gray background #F5F5F5 */
+  --foreground: oklch(0.2 0.005 0); /* Dark gray text #2C2C2C */
   --card: oklch(1 0 0); /* White cards */
-  --card-foreground: oklch(0.15 0.02 280);
+  --card-foreground: oklch(0.2 0.005 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.02 280);
-  --primary: oklch(0.68 0.18 35); /* Orange primary #FF6B35 */
-  --primary-foreground: oklch(1 0 0); /* White text on orange */
-  --secondary: oklch(0.15 0.02 280); /* Navy secondary #1A1A2E */
-  --secondary-foreground: oklch(1 0 0); /* White text on navy */
-  --muted: oklch(0.95 0.005 50); /* Light cream */
-  --muted-foreground: oklch(0.45 0.01 280); /* Muted navy */
-  --accent: oklch(0.98 0.01 50); /* Cream accent */
-  --accent-foreground: oklch(0.15 0.02 280); /* Navy text on cream */
+  --popover-foreground: oklch(0.2 0.005 0);
+  --primary: oklch(0.45 0.15 15); /* Deep red primary #B31B1B */
+  --primary-foreground: oklch(1 0 0); /* White text on red */
+  --secondary: oklch(0.2 0.005 0); /* Dark gray secondary #2C2C2C */
+  --secondary-foreground: oklch(1 0 0); /* White text on dark gray */
+  --muted: oklch(0.94 0.005 0); /* Light gray */
+  --muted-foreground: oklch(0.5 0.005 0); /* Muted gray */
+  --accent: oklch(0.97 0.005 0); /* Light gray accent */
+  --accent-foreground: oklch(0.2 0.005 0); /* Dark gray text on light */
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.01 50); /* Light cream border */
-  --input: oklch(0.95 0.005 50); /* Light cream input */
-  --ring: oklch(0.68 0.18 35); /* Orange focus ring */
-  --chart-1: oklch(0.68 0.18 35); /* Orange */
-  --chart-2: oklch(0.15 0.02 280); /* Navy */
-  --chart-3: oklch(0.98 0.01 50); /* Cream */
-  --chart-4: oklch(0.60 0.15 60); /* Warm yellow */
-  --chart-5: oklch(0.40 0.10 200); /* Cool blue */
-  --sidebar: oklch(0.98 0.01 50);
-  --sidebar-foreground: oklch(0.15 0.02 280);
-  --sidebar-primary: oklch(0.68 0.18 35);
+  --border: oklch(0.88 0.005 0); /* Light gray border */
+  --input: oklch(0.94 0.005 0); /* Light gray input */
+  --ring: oklch(0.45 0.15 15); /* Red focus ring */
+  --chart-1: oklch(0.45 0.15 15); /* Red */
+  --chart-2: oklch(0.2 0.005 0); /* Dark gray */
+  --chart-3: oklch(0.97 0.005 0); /* Light gray */
+  --chart-4: oklch(0.55 0.12 30); /* Burgundy */
+  --chart-5: oklch(0.35 0.08 10); /* Dark red */
+  --sidebar: oklch(0.97 0.005 0);
+  --sidebar-foreground: oklch(0.2 0.005 0);
+  --sidebar-primary: oklch(0.45 0.15 15);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.95 0.005 50);
-  --sidebar-accent-foreground: oklch(0.15 0.02 280);
-  --sidebar-border: oklch(0.90 0.01 50);
-  --sidebar-ring: oklch(0.68 0.18 35);
+  --sidebar-accent: oklch(0.94 0.005 0);
+  --sidebar-accent-foreground: oklch(0.2 0.005 0);
+  --sidebar-border: oklch(0.88 0.005 0);
+  --sidebar-ring: oklch(0.45 0.15 15);
 }
 
 .dark {
@@ -129,18 +129,18 @@
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, oklch(0.68 0.18 35), oklch(0.15 0.02 280));
+    background: linear-gradient(135deg, oklch(0.45 0.15 15), oklch(0.2 0.005 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .shadow-glow {
-    box-shadow: 0 0 20px -5px oklch(0.68 0.18 35 / 30%);
+    box-shadow: 0 0 20px -5px oklch(0.45 0.15 15 / 30%);
   }
   
   .bg-hero-pattern {
-    background-image: radial-gradient(circle at 25% 25%, oklch(0.68 0.18 35 / 10%) 0%, transparent 50%),
-                      radial-gradient(circle at 75% 75%, oklch(0.15 0.02 280 / 10%) 0%, transparent 50%);
+    background-image: radial-gradient(circle at 25% 25%, oklch(0.45 0.15 15 / 10%) 0%, transparent 50%),
+                      radial-gradient(circle at 75% 75%, oklch(0.2 0.005 0 / 10%) 0%, transparent 50%);
   }
 }

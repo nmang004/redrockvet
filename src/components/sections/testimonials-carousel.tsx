@@ -12,7 +12,7 @@ const testimonials = [
     clientName: "Sarah Johnson",
     petName: "Max",
     petType: "Golden Retriever",
-    review: "Dr. Smith and the entire team at Pet X were incredible during Max's surgery. They kept us informed every step of the way and showed such genuine care for our family. Max is doing wonderfully now!",
+    review: "Dr. Smith and the entire team at Red Rock Vet were incredible during Max's surgery. They kept us informed every step of the way and showed such genuine care for our family. Max is doing wonderfully now!",
     rating: 5,
     service: "Surgery",
     photo: "/testimonials/client-1.jpg",
@@ -34,7 +34,7 @@ const testimonials = [
     clientName: "Emily Rodriguez",
     petName: "Buddy",
     petType: "Mixed Breed",
-    review: "We've been coming to Pet X for over 5 years, and they've always provided excellent care. The emergency service saved Buddy's life last year. We're so grateful for this amazing team!",
+    review: "We've been coming to Red Rock Vet for over 5 years, and they've always provided excellent care. The emergency service saved Buddy's life last year. We're so grateful for this amazing team!",
     rating: 5,
     service: "Emergency Care",
     photo: "/testimonials/client-3.jpg",
@@ -45,7 +45,7 @@ const testimonials = [
     clientName: "David Thompson",
     petName: "Whiskers",
     petType: "Tabby Cat",
-    review: "The wellness exam was thorough and the vet took time to answer all our questions. Whiskers was comfortable throughout the visit. Highly recommend Pet X!",
+    review: "The wellness exam was thorough and the vet took time to answer all our questions. Whiskers was comfortable throughout the visit. Highly recommend Red Rock Vet!",
     rating: 5,
     service: "Wellness Exam",
     photo: "/testimonials/client-4.jpg",
@@ -90,7 +90,7 @@ export default function TestimonialsCarousel() {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Don&apos;t just take our word for it. Here&apos;s what pet parents in our community 
-            have to say about their experience at Pet X Veterinary.
+            have to say about their experience at Red Rock Veterinary Health.
           </p>
         </motion.div>
 

@@ -70,7 +70,7 @@ export default function AboutPreview() {
                 viewport={{ once: true }}
                 className="text-lg text-muted-foreground leading-relaxed"
               >
-                For over 15 years, Pet X Veterinary has been the trusted choice for pet families 
+                For over 15 years, Red Rock Veterinary Health has been the trusted choice for pet families 
                 in our community. Our experienced team combines advanced medical expertise with 
                 genuine compassion to provide the best possible care for your beloved companions.
               </motion.p>

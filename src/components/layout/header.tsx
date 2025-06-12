@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Calendar } from "lucide-react";
@@ -24,11 +25,18 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">P</span>
+            <Link href="/" className="flex items-center space-x-3">
+              <Image 
+                src="/red-rock-logo.svg" 
+                alt="Red Rock Veterinary Health" 
+                width={50}
+                height={40}
+                className="h-10 w-auto"
+              />
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-foreground leading-tight">Red Rock Vet</span>
+                <span className="text-xs text-muted-foreground leading-tight">Veterinary Health</span>
               </div>
-              <span className="text-xl font-bold text-foreground">Pet X</span>
             </Link>
           </div>
 

@@ -10,14 +10,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pet X Veterinary - Compassionate Care for Your Beloved Pets",
+  title: "Red Rock Veterinary Health - Compassionate Care for Your Beloved Pets",
   description: "Professional veterinary services with state-of-the-art facilities. Wellness exams, surgery, dental care, and emergency services for dogs, cats, and exotic pets.",
-  keywords: "veterinary, pet care, animal hospital, dog, cat, surgery, wellness exam, emergency vet",
+  keywords: "veterinary, pet care, animal hospital, dog, cat, surgery, wellness exam, emergency vet, Red Rock",
   openGraph: {
-    title: "Pet X Veterinary - Compassionate Care for Your Beloved Pets",
+    title: "Red Rock Veterinary Health - Compassionate Care for Your Beloved Pets",
     description: "Professional veterinary services with state-of-the-art facilities.",
-    url: "https://petxvet.com",
-    siteName: "Pet X Veterinary",
+    url: "https://redrockvet.com",
+    siteName: "Red Rock Veterinary Health",
     locale: "en_US",
     type: "website",
   },
