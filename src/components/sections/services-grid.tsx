@@ -68,7 +68,7 @@ export default function ServicesGrid({
   title = "Our Services",
   subtitle = "Comprehensive veterinary care for your beloved pets"
 }: ServicesGridProps) {
-  const displayedServices = showAll ? services : services.slice(0, 4);
+  const displayedServices = showAll ? services : services.slice(0, 3);
 
   return (
     <section className="py-16 bg-background">
