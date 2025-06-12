@@ -64,7 +64,7 @@ function Counter({ value, suffix = "", prefix = "" }: { value: number; suffix?: 
 
 export default function StatsCounter() {
   return (
-    <section className="py-16 bg-secondary text-secondary-foreground">
+    <section className="py-16 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -74,10 +74,10 @@ export default function StatsCounter() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Trusted by Pet Families Everywhere
           </h2>
-          <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Our commitment to excellence has earned us the trust of thousands of pet families 
             throughout our community. Here&apos;s what we&apos;ve achieved together.
           </p>
@@ -112,7 +112,7 @@ export default function StatsCounter() {
                   />
                 </div>
                 
-                <p className="text-lg font-medium text-secondary-foreground">
+                <p className="text-lg font-medium text-foreground">
                   {stat.label}
                 </p>
               </motion.div>
@@ -128,26 +128,26 @@ export default function StatsCounter() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="bg-secondary-foreground/10 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="bg-accent rounded-2xl p-8 max-w-4xl mx-auto border border-border">
+            <h3 className="text-2xl font-bold mb-4 text-foreground">
               Why Pet Families Choose Red Rock Veterinary Health
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>
-                <h4 className="font-semibold mb-2">🏆 Award-Winning Care</h4>
-                <p className="text-sm text-secondary-foreground/80">
+                <h4 className="font-semibold mb-2 text-foreground">🏆 Award-Winning Care</h4>
+                <p className="text-sm text-muted-foreground">
                   Recognized for excellence in veterinary medicine and customer service.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">🔬 Advanced Technology</h4>
-                <p className="text-sm text-secondary-foreground/80">
+                <h4 className="font-semibold mb-2 text-foreground">🔬 Advanced Technology</h4>
+                <p className="text-sm text-muted-foreground">
                   State-of-the-art diagnostic equipment and treatment options.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">❤️ Compassionate Team</h4>
-                <p className="text-sm text-secondary-foreground/80">
+                <h4 className="font-semibold mb-2 text-foreground">❤️ Compassionate Team</h4>
+                <p className="text-sm text-muted-foreground">
                   Experienced professionals who truly care about your pet&apos;s wellbeing.
                 </p>
               </div>
