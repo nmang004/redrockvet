@@ -97,8 +97,12 @@ export default function ServicesGrid({
   subtitle = "Comprehensive veterinary care for your beloved pets"
 }: ServicesGridProps) {
   const [services, setServices] = useState<Service[]>(fallbackServices);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
+  // Temporarily disabled Sanity fetching to use fallback services
+  // This ensures the 6 service pages we created are always displayed
+  // TODO: Re-enable when ready to use CMS services
+  /*
   useEffect(() => {
     const fetchServices = async () => {
       try {
@@ -127,6 +131,7 @@ export default function ServicesGrid({
 
     fetchServices();
   }, []);
+  */
 
   const displayedServices = showAll ? services : services.slice(0, 3);
 
