@@ -12,15 +12,15 @@ interface TeamMember {
   name: string;
   title: string;
   credentials?: string;
-  bio?: string;
+  bio?: any;
   photo?: {
     url: string;
     alt?: string;
   };
   email?: string;
   phone?: string;
-  specializations?: string[];
-  yearsOfExperience?: number;
+  specialties?: string[];
+  experience?: number;
 }
 
 export default function TeamPage() {
@@ -40,10 +40,8 @@ export default function TeamPage() {
             "url": asset->url,
             "alt": asset->altText
           },
-          email,
-          phone,
-          specializations,
-          yearsOfExperience
+          specialties,
+          experience
         }`;
         
         const data = await client.fetch(query);
@@ -119,17 +117,26 @@ export default function TeamPage() {
                         <p className="text-sm text-muted-foreground mb-4">{member.credentials}</p>
                       )}
                       
-                      {member.bio && (
-                        <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                          {member.bio}
-                        </p>
+                      {member.bio && Array.isArray(member.bio) && member.bio.length > 0 && (
+                        <div className="text-muted-foreground text-sm leading-relaxed mb-4">
+                          {member.bio.map((block: any, idx: number) => {
+                            if (block._type === 'block' && block.children) {
+                              return (
+                                <p key={idx} className="mb-2">
+                                  {block.children.map((child: any, childIdx: number) => child.text).join('')}
+                                </p>
+                              );
+                            }
+                            return null;
+                          })}
+                        </div>
                       )}
                       
-                      {member.specializations && member.specializations.length > 0 && (
+                      {member.specialties && member.specialties.length > 0 && (
                         <div className="mb-4">
-                          <h4 className="font-medium text-sm mb-2">Specializations:</h4>
+                          <h4 className="font-medium text-sm mb-2">Specialties:</h4>
                           <div className="flex flex-wrap gap-2 justify-center">
-                            {member.specializations.map((spec, idx) => (
+                            {member.specialties.map((spec, idx) => (
                               <span
                                 key={idx}
                                 className="bg-primary/10 text-primary px-2 py-1 rounded-full text-xs"
@@ -141,9 +148,9 @@ export default function TeamPage() {
                         </div>
                       )}
                       
-                      {member.yearsOfExperience && (
+                      {member.experience && (
                         <p className="text-xs text-muted-foreground mb-4">
-                          {member.yearsOfExperience} years of experience
+                          {member.experience} years of experience
                         </p>
                       )}
                       
