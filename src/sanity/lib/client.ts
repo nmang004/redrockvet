@@ -6,5 +6,7 @@ export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true, // Set to false if statically generating pages, using ISR or tag-based revalidation
+  useCdn: false, // Set to false for real-time data and to avoid CORS issues
+  perspective: 'published', // Only fetch published documents
+  token: process.env.SANITY_API_TOKEN, // Read token from environment
 })
