@@ -148,10 +148,69 @@ export const blogPost = defineType({
       name: 'seo',
       title: 'SEO Settings',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
-        { name: 'metaTitle', title: 'Meta Title', type: 'string', validation: Rule => Rule.max(60) },
-        { name: 'metaDescription', title: 'Meta Description', type: 'text', validation: Rule => Rule.max(160) },
-        { name: 'keywords', title: 'Focus Keywords', type: 'array', of: [{ type: 'string' }] }
+        {
+          name: 'metaTitle',
+          title: 'Meta Title',
+          type: 'string',
+          description: 'Title that appears in search results (50-60 characters recommended)',
+          validation: Rule => Rule.max(60)
+        },
+        {
+          name: 'metaDescription',
+          title: 'Meta Description',
+          type: 'text',
+          description: 'Description that appears in search results (150-160 characters recommended)',
+          validation: Rule => Rule.max(160)
+        },
+        {
+          name: 'focusKeywords',
+          title: 'Focus Keywords',
+          type: 'array',
+          of: [{ type: 'string' }],
+          description: 'Primary keywords this post should rank for',
+          validation: Rule => Rule.max(5)
+        },
+        {
+          name: 'ogTitle',
+          title: 'Open Graph Title',
+          type: 'string',
+          description: 'Title for social media sharing (leave empty to use meta title)',
+          validation: Rule => Rule.max(60)
+        },
+        {
+          name: 'ogDescription',
+          title: 'Open Graph Description',
+          type: 'text',
+          description: 'Description for social media sharing (leave empty to use meta description)',
+          validation: Rule => Rule.max(160)
+        },
+        {
+          name: 'ogImage',
+          title: 'Open Graph Image',
+          type: 'image',
+          description: 'Image for social media sharing (leave empty to use featured image)',
+          options: {
+            hotspot: true,
+          }
+        },
+        {
+          name: 'noIndex',
+          title: 'No Index',
+          type: 'boolean',
+          description: 'Prevent search engines from indexing this post',
+          initialValue: false
+        },
+        {
+          name: 'canonicalUrl',
+          title: 'Canonical URL',
+          type: 'url',
+          description: 'Override the canonical URL if needed'
+        }
       ]
     }),
     defineField({

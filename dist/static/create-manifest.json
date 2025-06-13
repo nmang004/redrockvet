@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "createdAt": "2025-06-12T23:48:44.998Z",
+  "createdAt": "2025-06-13T00:06:55.891Z",
   "workspaces": [
     {
       "name": "red-rock-veterinary",
@@ -12,7 +12,7 @@
       "mediaLibrary": {
         "enabled": false
       },
-      "schema": "9cc39ddf.create-schema.json",
+      "schema": "fd058fb0.create-schema.json",
       "tools": "7cd9a0d5.create-tools.json"
     }
   ]

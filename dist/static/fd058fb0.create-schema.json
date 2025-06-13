@@ -1,0 +1,2931 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string",
+        "title": "Site Title"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 160
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "description",
+        "type": "text",
+        "title": "Site Description"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "logo",
+        "type": "image"
+      },
+      {
+        "fields": [
+          {
+            "name": "phone",
+            "type": "string",
+            "title": "Phone Number"
+          },
+          {
+            "name": "email",
+            "type": "string",
+            "title": "Email Address"
+          },
+          {
+            "name": "address",
+            "type": "text"
+          },
+          {
+            "name": "emergencyPhone",
+            "type": "string"
+          }
+        ],
+        "name": "contactInfo",
+        "type": "object",
+        "title": "Contact Information"
+      },
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "facebook",
+            "type": "url",
+            "title": "Facebook URL"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "instagram",
+            "type": "url",
+            "title": "Instagram URL"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "twitter",
+            "type": "url",
+            "title": "Twitter URL"
+          }
+        ],
+        "name": "socialMedia",
+        "type": "object",
+        "title": "Social Media Links"
+      },
+      {
+        "fields": [
+          {
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "keywords",
+            "type": "array",
+            "title": "Meta Keywords"
+          },
+          {
+            "name": "ogImage",
+            "type": "image",
+            "title": "Default OG Image"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO Settings"
+      }
+    ],
+    "name": "pageSettings",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Homepage",
+              "value": "homepage"
+            },
+            {
+              "title": "About Us",
+              "value": "about"
+            },
+            {
+              "title": "Services",
+              "value": "services"
+            },
+            {
+              "title": "Team",
+              "value": "team"
+            },
+            {
+              "title": "Blog",
+              "value": "blog"
+            },
+            {
+              "title": "Contact",
+              "value": "contact"
+            }
+          ]
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "homepage",
+                  "about",
+                  "services",
+                  "team",
+                  "blog",
+                  "contact"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "page",
+        "type": "string"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": false
+        },
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 60
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Title that appears in search results (50-60 characters recommended)",
+            "name": "metaTitle",
+            "type": "string"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 160
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Description that appears in search results (150-160 characters recommended)",
+            "name": "metaDescription",
+            "type": "text"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 5
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Primary keywords this page should rank for",
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "focusKeywords",
+            "type": "array"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 60
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Title for social media sharing (leave empty to use meta title)",
+            "name": "ogTitle",
+            "type": "string",
+            "title": "Open Graph Title"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 160
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Description for social media sharing (leave empty to use meta description)",
+            "name": "ogDescription",
+            "type": "text",
+            "title": "Open Graph Description"
+          },
+          {
+            "options": {
+              "hotspot": true
+            },
+            "description": "Image for social media sharing (1200x630px recommended)",
+            "name": "ogImage",
+            "type": "image",
+            "title": "Open Graph Image"
+          },
+          {
+            "initialValue": false,
+            "description": "Prevent search engines from indexing this page",
+            "name": "noIndex",
+            "type": "boolean"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Override the canonical URL if needed",
+            "name": "canonicalUrl",
+            "type": "url",
+            "title": "Canonical URL"
+          },
+          {
+            "of": [
+              {
+                "fields": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "title": "Tag Name"
+                  },
+                  {
+                    "name": "property",
+                    "type": "string"
+                  },
+                  {
+                    "name": "content",
+                    "type": "string"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "name": "additionalMetaTags",
+            "type": "array"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO Settings"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": true
+        },
+        "description": "Override default page content for better SEO",
+        "fields": [
+          {
+            "description": "Override the default hero title",
+            "name": "heroTitle",
+            "type": "string",
+            "title": "Hero Title Override"
+          },
+          {
+            "description": "Override the default hero subtitle",
+            "name": "heroSubtitle",
+            "type": "text",
+            "title": "Hero Subtitle Override"
+          },
+          {
+            "of": [
+              {
+                "marks": {
+                  "annotations": [
+                    {
+                      "fields": [
+                        {
+                          "validation": [
+                            {
+                              "rules": [
+                                {
+                                  "flag": "uri",
+                                  "constraint": {
+                                    "options": {
+                                      "scheme": [
+                                        "/^http$/",
+                                        "/^https$/"
+                                      ],
+                                      "allowRelative": false,
+                                      "relativeOnly": false,
+                                      "allowCredentials": false
+                                    }
+                                  }
+                                }
+                              ],
+                              "level": "error"
+                            }
+                          ],
+                          "name": "href",
+                          "type": "url",
+                          "title": "URL"
+                        }
+                      ],
+                      "name": "link",
+                      "type": "object",
+                      "title": "URL"
+                    }
+                  ],
+                  "decorators": [
+                    {
+                      "value": "strong",
+                      "title": "Strong"
+                    },
+                    {
+                      "value": "em",
+                      "title": "Emphasis"
+                    }
+                  ]
+                },
+                "lists": [
+                  {
+                    "value": "bullet",
+                    "title": "Bullet"
+                  },
+                  {
+                    "value": "number",
+                    "title": "Number"
+                  }
+                ],
+                "styles": [
+                  {
+                    "value": "normal",
+                    "title": "Normal"
+                  },
+                  {
+                    "value": "h2",
+                    "title": "H2"
+                  },
+                  {
+                    "value": "h3",
+                    "title": "H3"
+                  },
+                  {
+                    "value": "blockquote",
+                    "title": "Quote"
+                  }
+                ],
+                "of": [],
+                "type": "block"
+              }
+            ],
+            "name": "customContent",
+            "type": "array",
+            "title": "Additional Content"
+          }
+        ],
+        "name": "content",
+        "type": "object",
+        "title": "Page Content Overrides"
+      }
+    ],
+    "name": "pageSeo",
+    "type": "document",
+    "title": "Page SEO Settings"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "name",
+        "type": "string",
+        "title": "Service Name"
+      },
+      {
+        "options": {
+          "source": "name",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 200
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "description",
+        "type": "text",
+        "title": "Short Description"
+      },
+      {
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/"
+                                  ],
+                                  "allowRelative": false,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "name": "href",
+                      "type": "url",
+                      "title": "URL"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object",
+                  "title": "URL"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Emphasis"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bullet"
+              },
+              {
+                "value": "number",
+                "title": "Number"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h2",
+                "title": "H2"
+              },
+              {
+                "value": "h3",
+                "title": "H3"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "fullDescription",
+        "type": "array"
+      },
+      {
+        "description": "Lucide icon name (e.g., \"stethoscope\", \"heart\", \"scissors\")",
+        "name": "icon",
+        "type": "string",
+        "title": "Icon Name"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "image",
+        "type": "image",
+        "title": "Service Image"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 1
+              },
+              {
+                "flag": "max",
+                "constraint": 6
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "features",
+        "type": "array",
+        "title": "Service Features"
+      },
+      {
+        "fields": [
+          {
+            "name": "startingPrice",
+            "type": "number"
+          },
+          {
+            "name": "priceRange",
+            "type": "string",
+            "title": "Price Range Display"
+          },
+          {
+            "name": "notes",
+            "type": "text",
+            "title": "Pricing Notes"
+          }
+        ],
+        "name": "pricing",
+        "type": "object",
+        "title": "Pricing Information"
+      },
+      {
+        "description": "e.g., \"30-45 minutes\", \"1-2 hours\"",
+        "name": "duration",
+        "type": "string",
+        "title": "Typical Duration"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Preventive Care",
+              "value": "preventive"
+            },
+            {
+              "title": "Surgery",
+              "value": "surgery"
+            },
+            {
+              "title": "Emergency",
+              "value": "emergency"
+            },
+            {
+              "title": "Diagnostic",
+              "value": "diagnostic"
+            },
+            {
+              "title": "Specialty",
+              "value": "specialty"
+            }
+          ]
+        },
+        "name": "category",
+        "type": "string",
+        "title": "Service Category"
+      },
+      {
+        "description": "Show this service prominently on homepage",
+        "name": "featured",
+        "type": "boolean",
+        "title": "Featured Service"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "order",
+        "type": "number",
+        "title": "Display Order"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": false
+        },
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 60
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Title that appears in search results (50-60 characters recommended)",
+            "name": "metaTitle",
+            "type": "string"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 160
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Description that appears in search results (150-160 characters recommended)",
+            "name": "metaDescription",
+            "type": "text"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 5
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Primary keywords this page should rank for",
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "focusKeywords",
+            "type": "array"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 60
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Title for social media sharing (leave empty to use meta title)",
+            "name": "ogTitle",
+            "type": "string",
+            "title": "Open Graph Title"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 160
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Description for social media sharing (leave empty to use meta description)",
+            "name": "ogDescription",
+            "type": "text",
+            "title": "Open Graph Description"
+          },
+          {
+            "options": {
+              "hotspot": true
+            },
+            "description": "Image for social media sharing (1200x630px recommended)",
+            "name": "ogImage",
+            "type": "image",
+            "title": "Open Graph Image"
+          },
+          {
+            "initialValue": false,
+            "description": "Prevent search engines from indexing this page",
+            "name": "noIndex",
+            "type": "boolean"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Override the canonical URL if needed",
+            "name": "canonicalUrl",
+            "type": "url",
+            "title": "Canonical URL"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO Settings"
+      }
+    ],
+    "name": "service",
+    "type": "document",
+    "title": "Services"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "name",
+        "type": "string",
+        "title": "Full Name"
+      },
+      {
+        "options": {
+          "source": "name",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "e.g., \"Veterinarian\", \"Veterinary Technician\", \"Practice Manager\"",
+        "name": "title",
+        "type": "string",
+        "title": "Professional Title"
+      },
+      {
+        "description": "e.g., \"DVM\", \"CVT\", \"RVT\"",
+        "name": "credentials",
+        "type": "string"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "photo",
+        "type": "image",
+        "title": "Professional Photo"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Emphasis"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bullet"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h3",
+                "title": "H3"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "bio",
+        "type": "array",
+        "title": "Biography"
+      },
+      {
+        "description": "Areas of expertise or special interests",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "specialties",
+        "type": "array"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "degree",
+                "type": "string"
+              },
+              {
+                "name": "institution",
+                "type": "string"
+              },
+              {
+                "name": "year",
+                "type": "number"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "education",
+        "type": "array"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "experience",
+        "type": "number",
+        "title": "Years of Experience"
+      },
+      {
+        "description": "Hobbies, pets, or personal information to help clients connect",
+        "name": "personalInterests",
+        "type": "text"
+      },
+      {
+        "description": "A personal quote or philosophy about veterinary care",
+        "name": "quote",
+        "type": "text",
+        "title": "Personal Quote"
+      },
+      {
+        "description": "Show prominently on team page",
+        "name": "featured",
+        "type": "boolean",
+        "title": "Featured Team Member"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "order",
+        "type": "number",
+        "title": "Display Order"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Active",
+              "value": "active"
+            },
+            {
+              "title": "On Leave",
+              "value": "leave"
+            },
+            {
+              "title": "Former Employee",
+              "value": "former"
+            }
+          ]
+        },
+        "initialValue": "active",
+        "name": "status",
+        "type": "string",
+        "title": "Employment Status"
+      }
+    ],
+    "name": "teamMember",
+    "type": "document",
+    "title": "Team Members"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "title",
+          "maxLength": 96
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 300
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Brief summary for previews and SEO",
+        "name": "excerpt",
+        "type": "text"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "featuredImage",
+        "type": "image"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/"
+                                  ],
+                                  "allowRelative": false,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "name": "href",
+                      "type": "url",
+                      "title": "URL"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object",
+                  "title": "URL"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Emphasis"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bullet"
+              },
+              {
+                "value": "number",
+                "title": "Number"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h2",
+                "title": "H2"
+              },
+              {
+                "value": "h3",
+                "title": "H3"
+              },
+              {
+                "value": "h4",
+                "title": "H4"
+              },
+              {
+                "value": "blockquote",
+                "title": "Quote"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          },
+          {
+            "options": {
+              "hotspot": true
+            },
+            "type": "image"
+          }
+        ],
+        "name": "content",
+        "type": "array"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "to": [
+          {
+            "type": "teamMember"
+          }
+        ],
+        "name": "author",
+        "type": "reference"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 1
+              },
+              {
+                "flag": "max",
+                "constraint": 3
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "of": [
+          {
+            "options": {
+              "list": [
+                {
+                  "title": "Pet Care Tips",
+                  "value": "pet-care"
+                },
+                {
+                  "title": "Health & Wellness",
+                  "value": "health-wellness"
+                },
+                {
+                  "title": "Nutrition",
+                  "value": "nutrition"
+                },
+                {
+                  "title": "Behavior",
+                  "value": "behavior"
+                },
+                {
+                  "title": "Surgery & Recovery",
+                  "value": "surgery-recovery"
+                },
+                {
+                  "title": "Emergency Care",
+                  "value": "emergency"
+                },
+                {
+                  "title": "Preventive Care",
+                  "value": "preventive"
+                },
+                {
+                  "title": "Senior Pets",
+                  "value": "senior-pets"
+                },
+                {
+                  "title": "Puppies & Kittens",
+                  "value": "young-pets"
+                },
+                {
+                  "title": "Practice News",
+                  "value": "practice-news"
+                }
+              ]
+            },
+            "type": "string"
+          }
+        ],
+        "name": "categories",
+        "type": "array"
+      },
+      {
+        "description": "Keywords for better searchability",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "tags",
+        "type": "array"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "publishedAt",
+        "type": "datetime",
+        "title": "Published Date"
+      },
+      {
+        "description": "Show prominently on blog page and homepage",
+        "name": "featured",
+        "type": "boolean",
+        "title": "Featured Post"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "readingTime",
+        "type": "number",
+        "title": "Estimated Reading Time (minutes)"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": false
+        },
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 60
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Title that appears in search results (50-60 characters recommended)",
+            "name": "metaTitle",
+            "type": "string"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 160
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Description that appears in search results (150-160 characters recommended)",
+            "name": "metaDescription",
+            "type": "text"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 5
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Primary keywords this post should rank for",
+            "of": [
+              {
+                "type": "string"
+              }
+            ],
+            "name": "focusKeywords",
+            "type": "array"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 60
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Title for social media sharing (leave empty to use meta title)",
+            "name": "ogTitle",
+            "type": "string",
+            "title": "Open Graph Title"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "max",
+                    "constraint": 160
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Description for social media sharing (leave empty to use meta description)",
+            "name": "ogDescription",
+            "type": "text",
+            "title": "Open Graph Description"
+          },
+          {
+            "options": {
+              "hotspot": true
+            },
+            "description": "Image for social media sharing (leave empty to use featured image)",
+            "name": "ogImage",
+            "type": "image",
+            "title": "Open Graph Image"
+          },
+          {
+            "initialValue": false,
+            "description": "Prevent search engines from indexing this post",
+            "name": "noIndex",
+            "type": "boolean"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "uri",
+                    "constraint": {
+                      "options": {
+                        "scheme": [
+                          "/^http$/",
+                          "/^https$/"
+                        ],
+                        "allowRelative": false,
+                        "relativeOnly": false,
+                        "allowCredentials": false
+                      }
+                    }
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "description": "Override the canonical URL if needed",
+            "name": "canonicalUrl",
+            "type": "url",
+            "title": "Canonical URL"
+          }
+        ],
+        "name": "seo",
+        "type": "object",
+        "title": "SEO Settings"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Draft",
+              "value": "draft"
+            },
+            {
+              "title": "Published",
+              "value": "published"
+            },
+            {
+              "title": "Archived",
+              "value": "archived"
+            }
+          ]
+        },
+        "initialValue": "draft",
+        "name": "status",
+        "type": "string",
+        "title": "Publication Status"
+      }
+    ],
+    "name": "blogPost",
+    "type": "document",
+    "title": "Blog Posts"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "clientName",
+        "type": "string"
+      },
+      {
+        "description": "Optional: Name of the pet being treated",
+        "name": "petName",
+        "type": "string"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Dog",
+              "value": "dog"
+            },
+            {
+              "title": "Cat",
+              "value": "cat"
+            },
+            {
+              "title": "Bird",
+              "value": "bird"
+            },
+            {
+              "title": "Rabbit",
+              "value": "rabbit"
+            },
+            {
+              "title": "Reptile",
+              "value": "reptile"
+            },
+            {
+              "title": "Other",
+              "value": "other"
+            }
+          ]
+        },
+        "name": "petType",
+        "type": "string"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "description": "Photo of client with their pet (optional but recommended)",
+        "name": "clientPhoto",
+        "type": "image",
+        "title": "Client/Pet Photo"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 50
+              },
+              {
+                "flag": "max",
+                "constraint": 500
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "The testimonial content (50-500 characters)",
+        "name": "review",
+        "type": "text",
+        "title": "Review Text"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 1
+              },
+              {
+                "flag": "max",
+                "constraint": 5
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Star rating from 1-5",
+        "name": "rating",
+        "type": "number"
+      },
+      {
+        "description": "Which service was this testimonial about?",
+        "to": [
+          {
+            "type": "service"
+          }
+        ],
+        "name": "serviceReceived",
+        "type": "reference"
+      },
+      {
+        "description": "Which team member provided the service?",
+        "to": [
+          {
+            "type": "teamMember"
+          }
+        ],
+        "name": "veterinarian",
+        "type": "reference"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "dateReceived",
+        "type": "date"
+      },
+      {
+        "description": "Show prominently on homepage and testimonials page",
+        "name": "featured",
+        "type": "boolean",
+        "title": "Featured Testimonial"
+      },
+      {
+        "initialValue": false,
+        "description": "Only approved testimonials will be shown on the website",
+        "name": "approved",
+        "type": "boolean",
+        "title": "Approved for Display"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Google Reviews",
+              "value": "google"
+            },
+            {
+              "title": "Facebook",
+              "value": "facebook"
+            },
+            {
+              "title": "Yelp",
+              "value": "yelp"
+            },
+            {
+              "title": "Direct Feedback",
+              "value": "direct"
+            },
+            {
+              "title": "Email",
+              "value": "email"
+            },
+            {
+              "title": "Phone Survey",
+              "value": "phone"
+            }
+          ]
+        },
+        "description": "Where did this testimonial come from?",
+        "name": "source",
+        "type": "string"
+      },
+      {
+        "description": "City, State (optional for credibility)",
+        "name": "location",
+        "type": "string",
+        "title": "Client Location"
+      }
+    ],
+    "name": "testimonial",
+    "type": "document",
+    "title": "Testimonials"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "question",
+        "type": "string"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/"
+                                  ],
+                                  "allowRelative": false,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "name": "href",
+                      "type": "url",
+                      "title": "URL"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object",
+                  "title": "URL"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Emphasis"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bullet"
+              },
+              {
+                "value": "number",
+                "title": "Number"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h4",
+                "title": "H4"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "answer",
+        "type": "array"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "General",
+              "value": "general"
+            },
+            {
+              "title": "Appointments",
+              "value": "appointments"
+            },
+            {
+              "title": "Services",
+              "value": "services"
+            },
+            {
+              "title": "Pricing",
+              "value": "pricing"
+            },
+            {
+              "title": "Emergency Care",
+              "value": "emergency"
+            },
+            {
+              "title": "Pet Care",
+              "value": "pet-care"
+            },
+            {
+              "title": "Surgery",
+              "value": "surgery"
+            },
+            {
+              "title": "Medications",
+              "value": "medications"
+            },
+            {
+              "title": "Insurance",
+              "value": "insurance"
+            }
+          ]
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "general",
+                  "appointments",
+                  "services",
+                  "pricing",
+                  "emergency",
+                  "pet-care",
+                  "surgery",
+                  "medications",
+                  "insurance"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "description": "Show prominently on homepage or top of FAQ page",
+        "name": "featured",
+        "type": "boolean",
+        "title": "Featured FAQ"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Order within its category (lower numbers appear first)",
+        "name": "order",
+        "type": "number",
+        "title": "Display Order"
+      },
+      {
+        "description": "Services that relate to this FAQ",
+        "of": [
+          {
+            "to": [
+              {
+                "type": "service"
+              }
+            ],
+            "type": "reference",
+            "title": "Reference to services"
+          }
+        ],
+        "name": "relatedServices",
+        "type": "array"
+      },
+      {
+        "description": "Keywords for search functionality",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "tags",
+        "type": "array"
+      },
+      {
+        "description": "When was this FAQ last reviewed/updated?",
+        "name": "lastUpdated",
+        "type": "datetime"
+      }
+    ],
+    "name": "faq",
+    "type": "document",
+    "title": "Frequently Asked Questions"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "name",
+        "type": "string",
+        "title": "Practice Name"
+      },
+      {
+        "fields": [
+          {
+            "name": "monday",
+            "type": "string"
+          },
+          {
+            "name": "tuesday",
+            "type": "string"
+          },
+          {
+            "name": "wednesday",
+            "type": "string"
+          },
+          {
+            "name": "thursday",
+            "type": "string"
+          },
+          {
+            "name": "friday",
+            "type": "string"
+          },
+          {
+            "name": "saturday",
+            "type": "string"
+          },
+          {
+            "name": "sunday",
+            "type": "string"
+          },
+          {
+            "name": "emergency",
+            "type": "string",
+            "title": "Emergency Hours"
+          },
+          {
+            "name": "holidays",
+            "type": "text",
+            "title": "Holiday Hours"
+          }
+        ],
+        "name": "hours",
+        "type": "object",
+        "title": "Operating Hours"
+      },
+      {
+        "fields": [
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "address",
+            "type": "string",
+            "title": "Street Address"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "city",
+            "type": "string"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "state",
+            "type": "string"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "zipCode",
+            "type": "string",
+            "title": "ZIP Code"
+          },
+          {
+            "name": "coordinates",
+            "type": "geopoint",
+            "title": "GPS Coordinates"
+          },
+          {
+            "name": "parkingInfo",
+            "type": "text",
+            "title": "Parking Information"
+          },
+          {
+            "name": "accessibility",
+            "type": "text",
+            "title": "Accessibility Features"
+          }
+        ],
+        "name": "location",
+        "type": "object",
+        "title": "Location Details"
+      },
+      {
+        "fields": [
+          {
+            "name": "yearsInBusiness",
+            "type": "number",
+            "title": "Years in Business"
+          },
+          {
+            "name": "petsServed",
+            "type": "number",
+            "title": "Pets Served (total)"
+          },
+          {
+            "name": "surgicalProcedures",
+            "type": "number",
+            "title": "Surgical Procedures (annual)"
+          },
+          {
+            "name": "teamMembers",
+            "type": "number"
+          },
+          {
+            "name": "emergencyCases",
+            "type": "number",
+            "title": "Emergency Cases (annual)"
+          }
+        ],
+        "name": "statistics",
+        "type": "object",
+        "title": "Practice Statistics"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string",
+                "title": "Feature Name"
+              },
+              {
+                "name": "description",
+                "type": "text"
+              },
+              {
+                "options": {
+                  "hotspot": true
+                },
+                "name": "image",
+                "type": "image"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "facilities",
+        "type": "array",
+        "title": "Facility Features"
+      },
+      {
+        "description": "List of major medical equipment and technologies",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "equipment",
+        "type": "array",
+        "title": "Medical Equipment"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "name",
+                "type": "string",
+                "title": "Certification Name"
+              },
+              {
+                "name": "issuingOrganization",
+                "type": "string"
+              },
+              {
+                "name": "dateReceived",
+                "type": "date"
+              },
+              {
+                "name": "expirationDate",
+                "type": "date"
+              },
+              {
+                "name": "logo",
+                "type": "image",
+                "title": "Certification Logo"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "certifications",
+        "type": "array",
+        "title": "Certifications & Accreditations"
+      },
+      {
+        "description": "List of pet insurance companies accepted",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "insuranceAccepted",
+        "type": "array",
+        "title": "Insurance Plans Accepted"
+      },
+      {
+        "description": "Cash, Credit Cards, CareCredit, etc.",
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "paymentMethods",
+        "type": "array",
+        "title": "Payment Methods Accepted"
+      },
+      {
+        "of": [
+          {
+            "marks": {
+              "annotations": [
+                {
+                  "i18nTitleKey": "inputs.portable-text.annotation.link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "fields": [
+                    {
+                      "validation": [
+                        {
+                          "rules": [
+                            {
+                              "flag": "uri",
+                              "constraint": {
+                                "options": {
+                                  "scheme": [
+                                    "/^http$/",
+                                    "/^https$/",
+                                    "/^tel$/",
+                                    "/^mailto$/"
+                                  ],
+                                  "allowRelative": true,
+                                  "relativeOnly": false,
+                                  "allowCredentials": false
+                                }
+                              }
+                            }
+                          ],
+                          "level": "error"
+                        }
+                      ],
+                      "description": "A valid web, email, phone, or relative link.",
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link"
+                    }
+                  ],
+                  "name": "link",
+                  "type": "object"
+                }
+              ],
+              "decorators": [
+                {
+                  "value": "strong",
+                  "title": "Strong"
+                },
+                {
+                  "value": "em",
+                  "title": "Italic"
+                },
+                {
+                  "value": "code",
+                  "title": "Code"
+                },
+                {
+                  "value": "underline",
+                  "title": "Underline"
+                },
+                {
+                  "value": "strike-through",
+                  "title": "Strike"
+                }
+              ]
+            },
+            "lists": [
+              {
+                "value": "bullet",
+                "title": "Bullet"
+              },
+              {
+                "value": "number",
+                "title": "Number"
+              }
+            ],
+            "styles": [
+              {
+                "value": "normal",
+                "title": "Normal"
+              },
+              {
+                "value": "h3",
+                "title": "H3"
+              }
+            ],
+            "of": [],
+            "type": "block"
+          }
+        ],
+        "name": "emergencyProtocol",
+        "type": "array"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "missionStatement",
+        "type": "text"
+      },
+      {
+        "of": [
+          {
+            "fields": [
+              {
+                "name": "title",
+                "type": "string",
+                "title": "Value Title"
+              },
+              {
+                "name": "description",
+                "type": "text"
+              }
+            ],
+            "type": "object"
+          }
+        ],
+        "name": "values",
+        "type": "array",
+        "title": "Core Values"
+      }
+    ],
+    "name": "practiceInfo",
+    "type": "document",
+    "title": "Practice Information"
+  },
+  {
+    "fields": [
+      {
+        "initialValue": "Global SEO Settings",
+        "description": "Internal name for these settings",
+        "readOnly": true,
+        "name": "title",
+        "type": "string",
+        "title": "Settings Name"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 60
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Default title for the website",
+        "name": "siteTitle",
+        "type": "string"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "max",
+                "constraint": 160
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Default meta description for the website",
+        "name": "siteDescription",
+        "type": "text"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "uri",
+                "constraint": {
+                  "options": {
+                    "scheme": [
+                      "/^http$/",
+                      "/^https$/"
+                    ],
+                    "allowRelative": false,
+                    "relativeOnly": false,
+                    "allowCredentials": false
+                  }
+                }
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "description": "Primary domain URL (e.g., https://redrockvet.com)",
+        "name": "siteUrl",
+        "type": "url",
+        "title": "Site URL"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "description": "Default image for social media sharing (1200x630px)",
+        "name": "defaultOgImage",
+        "type": "image",
+        "title": "Default Open Graph Image"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": false
+        },
+        "fields": [
+          {
+            "description": "GA4 Measurement ID (e.g., G-XXXXXXXXXX)",
+            "name": "googleAnalyticsId",
+            "type": "string",
+            "title": "Google Analytics 4 ID"
+          },
+          {
+            "description": "GTM Container ID (e.g., GTM-XXXXXXX)",
+            "name": "gtmId",
+            "type": "string",
+            "title": "Google Tag Manager ID"
+          },
+          {
+            "description": "Facebook Pixel ID for tracking",
+            "name": "facebookPixelId",
+            "type": "string",
+            "title": "Facebook Pixel ID"
+          },
+          {
+            "of": [
+              {
+                "fields": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "title": "Script Name"
+                  },
+                  {
+                    "name": "script",
+                    "type": "text",
+                    "title": "Script Code"
+                  },
+                  {
+                    "options": {
+                      "list": [
+                        {
+                          "title": "Head",
+                          "value": "head"
+                        },
+                        {
+                          "title": "Body Start",
+                          "value": "bodyStart"
+                        },
+                        {
+                          "title": "Body End",
+                          "value": "bodyEnd"
+                        }
+                      ]
+                    },
+                    "name": "placement",
+                    "type": "string"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "name": "customTrackingScripts",
+            "type": "array"
+          }
+        ],
+        "name": "analytics",
+        "type": "object",
+        "title": "Analytics & Tracking"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": true
+        },
+        "fields": [
+          {
+            "options": {
+              "list": [
+                {
+                  "title": "Veterinary Care",
+                  "value": "VeterinaryCare"
+                },
+                {
+                  "title": "Animal Hospital",
+                  "value": "AnimalHospital"
+                },
+                {
+                  "title": "Local Business",
+                  "value": "LocalBusiness"
+                }
+              ]
+            },
+            "initialValue": "VeterinaryCare",
+            "name": "businessType",
+            "type": "string"
+          },
+          {
+            "validation": [
+              {
+                "rules": [
+                  {
+                    "flag": "presence",
+                    "constraint": "required"
+                  }
+                ],
+                "level": "error"
+              }
+            ],
+            "name": "businessName",
+            "type": "string"
+          },
+          {
+            "fields": [
+              {
+                "name": "streetAddress",
+                "type": "string"
+              },
+              {
+                "name": "city",
+                "type": "string"
+              },
+              {
+                "name": "state",
+                "type": "string"
+              },
+              {
+                "name": "postalCode",
+                "type": "string"
+              },
+              {
+                "initialValue": "US",
+                "name": "country",
+                "type": "string"
+              }
+            ],
+            "name": "businessAddress",
+            "type": "object"
+          },
+          {
+            "name": "businessPhone",
+            "type": "string"
+          },
+          {
+            "of": [
+              {
+                "fields": [
+                  {
+                    "options": {
+                      "list": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                      ]
+                    },
+                    "name": "day",
+                    "type": "string"
+                  },
+                  {
+                    "description": "e.g., 08:00",
+                    "name": "opens",
+                    "type": "string"
+                  },
+                  {
+                    "description": "e.g., 17:00",
+                    "name": "closes",
+                    "type": "string"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "name": "businessHours",
+            "type": "array"
+          },
+          {
+            "options": {
+              "list": [
+                {
+                  "title": "$",
+                  "value": "$"
+                },
+                {
+                  "title": "$$",
+                  "value": "$$"
+                },
+                {
+                  "title": "$$$",
+                  "value": "$$$"
+                },
+                {
+                  "title": "$$$$",
+                  "value": "$$$$"
+                }
+              ]
+            },
+            "description": "e.g., $$, $$$",
+            "name": "priceRange",
+            "type": "string"
+          }
+        ],
+        "name": "schemaMarkup",
+        "type": "object"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": true
+        },
+        "fields": [
+          {
+            "description": "Google Search Console verification code",
+            "name": "googleSiteVerification",
+            "type": "string"
+          },
+          {
+            "description": "Bing Webmaster Tools verification code",
+            "name": "bingSiteVerification",
+            "type": "string"
+          }
+        ],
+        "name": "verification",
+        "type": "object",
+        "title": "Search Engine Verification"
+      },
+      {
+        "options": {
+          "collapsible": true,
+          "collapsed": true
+        },
+        "fields": [
+          {
+            "description": "Additional rules to add to robots.txt",
+            "name": "robotsTxt",
+            "type": "text",
+            "title": "Robots.txt Additional Rules"
+          },
+          {
+            "of": [
+              {
+                "fields": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "title": "Tag Name"
+                  },
+                  {
+                    "name": "property",
+                    "type": "string"
+                  },
+                  {
+                    "name": "content",
+                    "type": "string"
+                  }
+                ],
+                "type": "object"
+              }
+            ],
+            "name": "customMetaTags",
+            "type": "array"
+          },
+          {
+            "description": "Custom scripts to inject in <head>",
+            "name": "headerScripts",
+            "type": "text",
+            "title": "Custom Header Scripts"
+          },
+          {
+            "description": "Custom scripts to inject before </body>",
+            "name": "footerScripts",
+            "type": "text",
+            "title": "Custom Footer Scripts"
+          }
+        ],
+        "name": "advanced",
+        "type": "object",
+        "title": "Advanced SEO Settings"
+      }
+    ],
+    "name": "globalSeo",
+    "type": "document",
+    "title": "Global SEO Settings"
+  }
+]
