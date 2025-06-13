@@ -9,12 +9,16 @@ export default defineConfig({
   
   projectId: '8tgbdisl',
   dataset: 'production',
+  apiVersion: '2024-05-04',
   
   basePath: '/studio',
   
   plugins: [
     structureTool(),
-    visionTool()
+    visionTool({
+      defaultApiVersion: '2024-05-04',
+      defaultDataset: 'production'
+    })
   ],
   
   schema: {
