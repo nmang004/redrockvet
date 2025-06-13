@@ -123,10 +123,10 @@ export default function TeamPage() {
                       {member.bio && Array.isArray(member.bio) && member.bio.length > 0 && (
                         <div className="text-muted-foreground text-sm leading-relaxed mb-4">
                           {member.bio.map((block: any, idx: number) => {
-                            if (block._type === 'block' && block.children) {
+                            if (block && block._type === 'block' && block.children && Array.isArray(block.children)) {
                               return (
                                 <p key={idx} className="mb-2">
-                                  {block.children.map((child: any, childIdx: number) => child.text).join('')}
+                                  {block.children.map((child: any, childIdx: number) => (child && child.text) || '').join('')}
                                 </p>
                               );
                             }
@@ -135,7 +135,7 @@ export default function TeamPage() {
                         </div>
                       )}
                       
-                      {member.specialties && member.specialties.length > 0 && (
+                      {member.specialties && Array.isArray(member.specialties) && member.specialties.length > 0 && (
                         <div className="mb-4">
                           <h4 className="font-medium text-sm mb-2">Specialties:</h4>
                           <div className="flex flex-wrap gap-2 justify-center">

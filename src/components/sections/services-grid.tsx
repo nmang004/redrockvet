@@ -151,7 +151,7 @@ export default function ServicesGrid({
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {displayedServices.map((service, index) => {
+          {displayedServices && displayedServices.map((service, index) => {
             const IconComponent = service.icon ? iconMap[service.icon] : Stethoscope;
             return (
               <motion.div
@@ -176,7 +176,7 @@ export default function ServicesGrid({
                   
                   <CardContent className="space-y-6">
                     <ul className="space-y-2">
-                      {service.features.map((feature, idx) => (
+                      {service.features && Array.isArray(service.features) && service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-sm text-muted-foreground">
                           <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0" />
                           {feature}
