@@ -24,7 +24,7 @@ interface TeamMember {
 }
 
 export default function TeamPage() {
-  const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
+  const [teamMembers, setTeamMembers] = useState<TeamMember[] | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -44,10 +44,13 @@ export default function TeamPage() {
           experience
         }`;
         
+        console.log('Fetching team members with query:', query);
         const data = await client.fetch(query);
-        setTeamMembers(data || []);
+        console.log('Team members data received:', data);
+        setTeamMembers(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error('Error fetching team members:', error);
+        setTeamMembers([]);
       } finally {
         setLoading(false);
       }
@@ -81,7 +84,7 @@ export default function TeamPage() {
           </p>
         </div>
         
-        {teamMembers.length === 0 ? (
+        {!teamMembers || teamMembers.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-muted-foreground">
               Team member profiles will be populated from Sanity CMS when content is added.
