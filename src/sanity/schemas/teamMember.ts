@@ -41,8 +41,7 @@ export const teamMember = defineType({
       type: 'image',
       options: {
         hotspot: true,
-      },
-      validation: Rule => Rule.required()
+      }
     }),
     defineField({
       name: 'bio',
@@ -66,8 +65,7 @@ export const teamMember = defineType({
             ]
           }
         }
-      ],
-      validation: Rule => Rule.required()
+      ]
     }),
     defineField({
       name: 'specialties',
