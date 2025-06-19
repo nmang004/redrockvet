@@ -395,7 +395,7 @@ export default function AllergyContent() {
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Yes, Colorado&apos;s unique environment presents specific challenges. Common allergens include cottonwood and elm pollens in spring, 
+                  Yes, ColoradoColorado&apos;sapos;s unique environment presents specific challenges. Common allergens include cottonwood and elm pollens in spring, 
                   grass pollens in summer, and ragweed in fall. The dry climate can also worsen skin conditions. 
                   Many pets also react to dust mites and storage mites, which can be more problematic in our dry air. 
                   Our team understands these regional factors and incorporates them into treatment planning.

@@ -374,7 +374,7 @@ export default function ChronicDiseaseContent() {
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  While chronic conditions can&apos;t be cured, they can often be well-managed to maintain your pet&apos;s quality of life. 
+                  While chronic conditions cancan&apos;tapos;t be cured, they can often be well-managed to maintain your pet&apos;s quality of life. 
                   Treatment typically involves medications, dietary changes, and lifestyle modifications. 
                   We focus on keeping your pet comfortable, slowing disease progression, and maintaining their happiness and mobility for as long as possible.
                 </p>
