@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import SurgeryContent from "./surgery-content";
 
 export const metadata: Metadata = {
-  title: "Surgery Services - Red Rock Veterinary Health",
-  description: "Advanced surgical procedures performed by experienced veterinarians. Spay/neuter, soft tissue, orthopedic, and emergency surgery at Red Rock Veterinary Health.",
+  title: "Veterinary Surgery - Red Rock Veterinary Health",
+  description: "Comprehensive surgical services including routine and complex surgeries, spays/neuters, mass removals, and advanced orthopedic procedures with extensive anesthetic monitoring.",
 };
 
 export default function SurgeryPage() {

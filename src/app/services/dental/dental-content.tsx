@@ -1,6 +1,6 @@
 "use client";
 
-import { Heart, Camera, Scissors, Shield, CheckCircle, Clock } from "lucide-react";
+import { Heart, Camera, Scissors, Shield, CheckCircle, Clock, Monitor, X } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -8,24 +8,24 @@ import Link from "next/link";
 
 const dentalServices = [
   {
+    icon: X,
+    title: "Full Mouth Radiographs",
+    description: "Complete X-ray imaging with every dental procedure to identify hidden problems under the gums including infected roots, bone loss, and root abscesses."
+  },
+  {
     icon: Heart,
-    title: "Dental Cleaning",
-    description: "Professional teeth cleaning under anesthesia to remove plaque, tartar, and bacteria for optimal oral health."
+    title: "Comprehensive Cleaning",
+    description: "Thorough dental cleaning under general anesthesia to ensure complete plaque and tartar removal."
   },
   {
     icon: Scissors,
-    title: "Tooth Extraction",
-    description: "Safe removal of damaged, infected, or problematic teeth to prevent pain and further complications."
+    title: "Advanced Oral Surgery",
+    description: "Difficult tooth extractions, oral mass removals, and oral trauma repair performed by experienced veterinarians."
   },
   {
-    icon: Shield,
-    title: "Oral Surgery",
-    description: "Advanced surgical procedures to treat complex dental and oral conditions with precision."
-  },
-  {
-    icon: Camera,
-    title: "Dental X-rays",
-    description: "Digital dental radiographs to assess tooth roots, jaw bone, and hidden dental problems."
+    icon: Monitor,
+    title: "Extensive Anesthetic Monitoring",
+    description: "Two dedicated credentialed technicians monitor ECG, blood pressure, pulse oximetry, capnography, and temperature during procedures."
   }
 ];
 
@@ -39,12 +39,12 @@ const signs = [
 ];
 
 const benefits = [
-  "Prevents painful dental disease",
-  "Improves overall health",
-  "Freshens breath naturally",
-  "Extends your pet's lifespan",
-  "Saves money on future treatments",
-  "Maintains quality of life"
+  "Full mouth radiographs identify hidden dental problems",
+  "Essential for overall pet well-being, not just fresh breath",
+  "Comprehensive anesthetic monitoring for safety",
+  "Advanced oral surgery capabilities",
+  "Prevents painful conditions from going undetected",
+  "Professional anesthesia ensures thorough and safe cleaning"
 ];
 
 const procedures = [
@@ -76,7 +76,7 @@ export default function DentalContent() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl md:text-6xl font-bold text-foreground mb-6"
             >
-              Dental Care
+              Veterinary Dental Care
             </motion.h1>
             
             <motion.p
@@ -85,7 +85,7 @@ export default function DentalContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              Complete dental services to maintain your pet's oral health and prevent dental disease. Professional cleanings, extractions, and advanced treatments.
+              Your pet&apos;s dental health is about more than fresh breath—it's essential to their overall well-being. We provide comprehensive dental care with full mouth radiographs and advanced anesthetic monitoring.
             </motion.p>
             
             <motion.div
@@ -119,7 +119,7 @@ export default function DentalContent() {
               Our Dental Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive dental care to keep your pet's mouth healthy and pain-free.
+              Comprehensive dental care to keep your pet&apos;s mouth healthy and pain-free.
             </p>
           </motion.div>
 

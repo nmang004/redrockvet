@@ -1,6 +1,6 @@
 "use client";
 
-import { Stethoscope, Heart, Shield, Calendar, Clock, CheckCircle } from "lucide-react";
+import { Stethoscope, Heart, Shield, Calendar, Clock, CheckCircle, Dog, Cat, Bug, Activity } from "lucide-react";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -8,34 +8,34 @@ import Link from "next/link";
 
 const services = [
   {
-    icon: Calendar,
-    title: "Annual Checkups",
-    description: "Comprehensive yearly examinations to assess your pet's overall health and catch any issues early."
+    icon: Dog,
+    title: "Dog Vaccinations",
+    description: "Protect against rabies, distemper, parvovirus with customized vaccination schedules and booster shots for ongoing immunity."
   },
   {
-    icon: Shield,
-    title: "Vaccinations",
-    description: "Core and lifestyle vaccines to protect your pet from preventable diseases."
+    icon: Cat,
+    title: "Cat Vaccinations",
+    description: "Defend against Feline Panleukopenia, upper respiratory viruses, and rabies. Tailored to indoor/outdoor status with Feline Leukemia vaccine recommendations."
   },
   {
-    icon: Stethoscope,
-    title: "Health Screening",
-    description: "Blood work, urinalysis, and other diagnostic tests to monitor your pet's health."
+    icon: Bug,
+    title: "Regional Health Protection",
+    description: "Protection against tick-borne diseases prevalent in Colorado and heartworm disease risk from mosquitoes."
   },
   {
-    icon: Heart,
-    title: "Nutritional Counseling",
-    description: "Expert guidance on diet and nutrition to keep your pet at optimal weight and health."
+    icon: Activity,
+    title: "Annual Lab Work",
+    description: "Comprehensive baseline health monitoring with annual laboratory work for early detection of potential health issues."
   }
 ];
 
 const benefits = [
-  "Early detection of health issues",
-  "Preventive care to avoid costly treatments",
-  "Personalized health recommendations",
-  "Peace of mind for pet parents",
-  "Longer, healthier life for your pet",
-  "Expert veterinary guidance"
+  "Regular wellness screenings for health maintenance",
+  "Early detection of potential health issues",
+  "Tailored vaccination and preventive care strategies",
+  "Protection against regional diseases in Colorado",
+  "Elanco half-volume vaccines available",
+  "Comprehensive preventive care approach"
 ];
 
 export default function WellnessContent() {
@@ -60,7 +60,7 @@ export default function WellnessContent() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl md:text-6xl font-bold text-foreground mb-6"
             >
-              Wellness Exams
+              Preventative Pet Care in Colorado Springs
             </motion.h1>
             
             <motion.p
@@ -69,7 +69,7 @@ export default function WellnessContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              Comprehensive health checkups to keep your pet in optimal condition with preventive care and early detection of health issues.
+              Pet wellness and vaccinations are vital for maintaining your pet&apos;s health. Our comprehensive preventive care approach includes early detection of potential health issues and tailored vaccination strategies.
             </motion.p>
             
             <motion.div
@@ -100,10 +100,10 @@ export default function WellnessContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What&apos;s Included in Our Wellness Exams
+              Comprehensive Vaccination & Wellness Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our comprehensive wellness exams are designed to maintain your pet&apos;s health and catch potential issues early.
+              Our preventive care services are designed to protect your pet against regional diseases and maintain optimal health throughout their life.
             </p>
           </motion.div>
 
