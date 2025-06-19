@@ -9,23 +9,23 @@ import Link from "next/link";
 const values = [
   {
     icon: Heart,
-    title: "Compassionate Care",
-    description: "Every pet is treated with love, respect, and the highest quality medical care."
+    title: "Fear Free® Approach",
+    description: "Colorado Springs' only veterinary hospital designed around Fear Free® principles to minimize stress and anxiety."
   },
   {
     icon: Shield,
-    title: "Safety First",
-    description: "We maintain the highest safety standards and use the latest medical protocols."
+    title: "Evidence-Based Medicine",
+    description: "Advanced medical expertise with regular consultation from board-certified specialists."
   },
   {
     icon: Award,
-    title: "Excellence",
-    description: "Our team is committed to continuous learning and exceptional service delivery."
+    title: "Locally Owned",
+    description: "Non-corporate, community-driven practice supporting local businesses and rescue organizations."
   },
   {
     icon: Users,
-    title: "Family-Focused",
-    description: "We understand pets are family members and treat them as our own."
+    title: "Personalized Care",
+    description: "One-on-one attention with personalized visit plans and dynamic emotional medical records."
   }
 ];
 
@@ -70,9 +70,9 @@ export default function AboutPreview() {
                 viewport={{ once: true }}
                 className="text-lg text-muted-foreground leading-relaxed"
               >
-                For over 15 years, Red Rock Veterinary Health has been the trusted choice for pet families 
-                in our community. Our experienced team combines advanced medical expertise with 
-                genuine compassion to provide the best possible care for your beloved companions.
+                Located at 3163 West Colorado Avenue, Red Rock Veterinary Health is founded by 
+                Dr. Robbie Unsell and Dr. Sharon Kuca. As a locally owned, non-corporate practice, 
+                we&apos;re committed to providing personal, high-quality care with a profound dedication to animal welfare.
               </motion.p>
               
               <motion.p
@@ -82,9 +82,9 @@ export default function AboutPreview() {
                 viewport={{ once: true }}
                 className="text-lg text-muted-foreground leading-relaxed"
               >
-                We believe that every pet deserves access to high-quality healthcare in a 
-                comfortable, stress-free environment. That&apos;s why we&apos;ve built our practice 
-                around the principles of compassionate care, medical excellence, and client education.
+                We implement Fear Free® veterinary principles with separate cat and dog hospital wings, 
+                personalized visit plans, and cooperative care techniques. Our approach ensures every 
+                pet receives compassionate, stress-free treatment in a comfortable environment.
               </motion.p>
             </div>
 
@@ -164,9 +164,9 @@ export default function AboutPreview() {
                   Our Mission
                 </h3>
                 <blockquote className="text-lg md:text-xl text-muted-foreground leading-relaxed italic">
-                  &ldquo;To provide exceptional veterinary care that enhances the human-animal bond 
-                  through compassionate service, advanced medicine, and client education, 
-                  ensuring every pet lives their healthiest, happiest life.&rdquo;
+                  &ldquo;At Red Rock Veterinary Health, we transcend being just a hospital; we are a 
+                  community-driven and mindful partner in your pet&apos;s health journey, committed to 
+                  animal welfare and providing personal, high-quality care.&rdquo;
                 </blockquote>
                 <div className="mt-6 flex items-center justify-center">
                   <div className="w-16 h-0.5 bg-primary"></div>
