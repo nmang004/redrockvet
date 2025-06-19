@@ -2,19 +2,20 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Scissors, Stethoscope, Shield, Syringe, Camera } from "lucide-react";
+import { ArrowRight, Heart, Scissors, Stethoscope, Shield, Zap, Activity, Microscope, Brain } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { client } from "@/sanity/lib/client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const iconMap = {
   stethoscope: Stethoscope,
   scissors: Scissors,
   heart: Heart,
   shield: Shield,
-  syringe: Syringe,
-  camera: Camera,
+  zap: Zap,
+  activity: Activity,
+  microscope: Microscope,
+  brain: Brain,
 };
 
 interface Service {
@@ -27,61 +28,97 @@ interface Service {
   icon?: keyof typeof iconMap;
 }
 
-// Fallback services data
+// Red Rock Veterinary Health services data
 const fallbackServices = [
   {
     _id: "1",
-    icon: "stethoscope" as keyof typeof iconMap,
-    title: "Wellness Exams",
-    description: "Comprehensive health checkups to keep your pet in optimal condition with preventive care.",
-    features: ["Annual checkups", "Vaccinations", "Health screening", "Nutritional counseling"],
+    icon: "heart" as keyof typeof iconMap,
+    title: "Fear Free® Veterinary Care",
+    description: "Minimizing stress during veterinary visits using science-based techniques to reduce fear, anxiety, and stress.",
+    features: ["Fear Free certified", "Low-stress handling", "Emotional well-being focus", "Comfortable environment"],
+    price: "Standard rates apply",
+    slug: { current: "fear-free" }
+  },
+  {
+    _id: "2",
+    icon: "shield" as keyof typeof iconMap,
+    title: "Pet Vaccinations and Wellness",
+    description: "Routine checkups and preventive care protecting against diseases like parvovirus and leptospirosis.",
+    features: ["Comprehensive exams", "Core vaccinations", "Parasite control", "Preventative labwork"],
     price: "From $89",
     slug: { current: "wellness" }
   },
   {
-    _id: "2",
-    icon: "scissors" as keyof typeof iconMap,
-    title: "Surgery",
-    description: "Advanced surgical procedures performed by experienced veterinarians in our modern facility.",
-    features: ["Spay/neuter", "Soft tissue surgery", "Orthopedic surgery", "Emergency surgery"],
-    price: "From $299",
-    slug: { current: "surgery" }
+    _id: "3",
+    icon: "zap" as keyof typeof iconMap,
+    title: "Emergency Veterinary Services",
+    description: "Same-day emergency appointments for urgent issues using our low-stress handling approach.",
+    features: ["Same-day appointments", "Urgent care", "Fear-free handling", "Emergency assessment"],
+    price: "From $199",
+    slug: { current: "urgent-emergency-care" }
   },
   {
-    _id: "3",
-    icon: "heart" as keyof typeof iconMap,
-    title: "Dental Care",
-    description: "Complete dental services to maintain your pet's oral health and prevent dental disease.",
-    features: ["Dental cleaning", "Tooth extraction", "Oral surgery", "Dental X-rays"],
+    _id: "4",
+    icon: "stethoscope" as keyof typeof iconMap,
+    title: "Veterinary Dental Care",
+    description: "Comprehensive dental services including X-rays, oral examinations, and extractions.",
+    features: ["Full mouth X-rays", "Dental cleaning", "Oral surgery", "Anesthetic monitoring"],
     price: "From $149",
     slug: { current: "dental" }
   },
   {
-    _id: "4",
-    icon: "shield" as keyof typeof iconMap,
-    title: "Emergency Care",
-    description: "24/7 emergency services for when your pet needs immediate medical attention.",
-    features: ["24/7 availability", "Trauma care", "Critical care", "Emergency surgery"],
-    price: "From $199",
-    slug: { current: "emergency" }
-  },
-  {
     _id: "5",
-    icon: "syringe" as keyof typeof iconMap,
-    title: "Vaccinations",
-    description: "Essential vaccines to protect your pet from preventable diseases and maintain immunity.",
-    features: ["Core vaccines", "Lifestyle vaccines", "Vaccine planning", "Titer testing"],
-    price: "From $45",
-    slug: { current: "vaccinations" }
+    icon: "scissors" as keyof typeof iconMap,
+    title: "Veterinary Surgery",
+    description: "Comprehensive surgical services with experience in complex procedures prioritizing comfort and safety.",
+    features: ["Spay/neuter surgery", "Soft tissue surgery", "Mass removals", "Advanced monitoring"],
+    price: "From $299",
+    slug: { current: "surgery" }
   },
   {
     _id: "6",
-    icon: "camera" as keyof typeof iconMap,
-    title: "Diagnostics",
-    description: "State-of-the-art diagnostic equipment for accurate diagnosis and treatment planning.",
-    features: ["Digital X-rays", "Ultrasound", "Blood work", "Urinalysis"],
+    icon: "activity" as keyof typeof iconMap,
+    title: "Pet Allergy Testing",
+    description: "Identifies environmental, food, and parasite triggers using blood tests with tailored treatment plans.",
+    features: ["Blood testing", "Elimination diets", "Custom immunotherapy", "Colorado allergens"],
+    price: "From $175",
+    slug: { current: "allergy-testing-treatment" }
+  },
+  {
+    _id: "7",
+    icon: "heart" as keyof typeof iconMap,
+    title: "Chronic Disease Management",
+    description: "Handles conditions like diabetes, kidney disease, and arthritis with personalized care approaches.",
+    features: ["Regular monitoring", "Medication management", "Quality of life focus", "Flexible scheduling"],
+    price: "Consultation required",
+    slug: { current: "chronic-disease-management" }
+  },
+  {
+    _id: "8",
+    icon: "microscope" as keyof typeof iconMap,
+    title: "Diagnostic Imaging",
+    description: "Digital radiography and ultrasound for precise diagnostics with minimal stress and specialist collaboration.",
+    features: ["Digital X-rays", "Ultrasound services", "Board-certified evaluation", "FAST scans"],
     price: "From $125",
-    slug: { current: "diagnostics" }
+    slug: { current: "radiography-ultrasound" }
+  },
+  {
+    _id: "9",
+    icon: "heart" as keyof typeof iconMap,
+    title: "Compassionate Euthanasia",
+    description: "Peaceful, respectful end-of-life services offering both in-clinic and referral options.",
+    features: ["Quality of life assessment", "In-clinic services", "In-home referrals", "Aftercare options"],
+    price: "Consultation required",
+    slug: { current: "compassionate-euthanasia" }
+  },
+  {
+    _id: "10",
+    icon: "brain" as keyof typeof iconMap,
+    title: "Pet Behavioral Services",
+    description: "Evaluates and treats behavioral issues including aggression, anxiety, and compulsive behaviors.",
+    features: ["Behavioral consultation", "Medical evaluation", "Treatment planning", "Specialist referrals"],
+    price: "From $150",
+    slug: { current: "behavioral-management" }
   }
 ];
 
@@ -96,8 +133,7 @@ export default function ServicesGrid({
   title = "Our Services",
   subtitle = "Comprehensive veterinary care for your beloved pets"
 }: ServicesGridProps) {
-  const [services, setServices] = useState<Service[]>(fallbackServices);
-  const [loading, setLoading] = useState(false);
+  const [services] = useState<Service[]>(fallbackServices);
 
   // Temporarily disabled Sanity fetching to use fallback services
   // This ensures the 6 service pages we created are always displayed
@@ -133,7 +169,7 @@ export default function ServicesGrid({
   }, []);
   */
 
-  const displayedServices = showAll ? services : services.slice(0, 3);
+  const displayedServices = showAll ? services : services.slice(0, 6);
 
   return (
     <section className="py-16 bg-background">

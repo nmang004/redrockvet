@@ -112,15 +112,15 @@ export default function Hero({
               className="flex items-center space-x-8 pt-4"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">15+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-2xl font-bold text-primary">Fear Free®</div>
+                <div className="text-sm text-muted-foreground">Certified Practice</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">5000+</div>
-                <div className="text-sm text-muted-foreground">Happy Pets</div>
+                <div className="text-2xl font-bold text-primary">10+</div>
+                <div className="text-sm text-muted-foreground">Specialized Services</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">24/7</div>
+                <div className="text-2xl font-bold text-primary">Same Day</div>
                 <div className="text-sm text-muted-foreground">Emergency Care</div>
               </div>
             </motion.div>

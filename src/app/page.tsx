@@ -8,22 +8,22 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="Compassionate Care for Your Beloved Pets"
-        subtitle="Trusted Veterinary Services"
-        description="At Red Rock Veterinary Health, we provide comprehensive, compassionate care for your furry family members. Our experienced team and state-of-the-art facilities ensure your pets receive the best possible treatment in a comfortable, caring environment."
+        title="Fear Free® Veterinary Care in Colorado Springs"
+        subtitle="Red Rock Veterinary Health"
+        description="Complete animal hospital providing comprehensive pet care from urgent care and vaccinations to specialized treatments and advanced medical procedures. We prioritize your pet's emotional well-being using science-based fear-free techniques."
         primaryCTA={{
-          text: "Book Appointment",
+          text: "Schedule Appointment",
           href: "/contact"
         }}
         secondaryCTA={{
-          text: "Watch Our Story",
-          href: "#video"
+          text: "Call (719) 204-3647",
+          href: "tel:719-204-3647"
         }}
       />
       
       <ServicesGrid 
-        title="Our Comprehensive Services"
-        subtitle="From routine checkups to emergency care, we're here for every stage of your pet's life"
+        title="Comprehensive Veterinary Services"
+        subtitle="From Fear Free® wellness exams to specialized treatments, we provide complete care for your pet's health and happiness"
       />
       
       <AboutPreview />
