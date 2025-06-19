@@ -325,6 +325,98 @@ export default function BehavioralContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-accent">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about pet behavioral services at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                When should I seek help for my pet&apos;s behavioral issues?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Seek help early when you notice behaviors that concern you or interfere with your pet&apos;s quality of life. 
+                  Whether it&apos;s aggression, excessive fear, compulsive behaviors, or inappropriate elimination, 
+                  early intervention often leads to better outcomes. Don&apos;t wait until behaviors become severe or dangerous.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                How do you determine if a behavioral issue has a medical cause?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We start with a comprehensive physical examination and detailed behavioral history. 
+                  Many behavioral changes have underlying medical causes, so we may recommend laboratory work, imaging studies, 
+                  or other diagnostics to rule out pain, illness, or neurological conditions before developing a behavioral treatment plan.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                What does a behavioral consultation involve?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Our behavioral consultation includes a thorough medical examination, detailed discussion of the problem behaviors, 
+                  environmental assessment, and review of your pet&apos;s routine and triggers. 
+                  We then develop an individualized treatment plan that may include behavior modification, environmental changes, and sometimes medication.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                Do you prescribe behavioral medications for pets?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, when appropriate, we can prescribe behavioral medications as part of a comprehensive treatment plan. 
+                  Medications are typically used alongside behavior modification techniques, not as a standalone solution. 
+                  We carefully monitor pets on behavioral medications and adjust treatment plans based on their response and progress.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                When do you refer to veterinary behaviorists or specialists?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We refer to veterinary behaviorists for complex cases, severe aggression, or when initial treatment approaches aren&apos;t successful. 
+                  Board-certified veterinary behaviorists have specialized training in complex behavioral disorders. 
+                  We maintain relationships with qualified specialists and will coordinate referrals when specialized expertise is needed for your pet&apos;s safety and success.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

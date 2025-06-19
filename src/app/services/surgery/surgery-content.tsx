@@ -216,6 +216,100 @@ export default function SurgeryContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about surgical procedures at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How do I prepare my pet for surgery?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Fast your pet for 12 hours before surgery (no food after midnight), but water is usually okay until morning. 
+                  Follow any specific pre-surgical instructions we provide. Make sure your pet is up to date on vaccines 
+                  and let us know about any medications they&apos;re taking. We&apos;ll provide detailed pre-surgical instructions during your consultation.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What safety measures do you use during surgery?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We use advanced anesthesia monitoring including ECG, blood pressure, pulse oximetry, and capnography. 
+                  Our state-of-the-art surgical suite is equipped with modern instruments and technology. 
+                  A dedicated veterinary technician monitors your pet throughout the entire procedure, 
+                  and we perform pre-surgical blood work to ensure your pet can safely undergo anesthesia.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How long is the recovery time after surgery?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Recovery time varies depending on the procedure. Routine surgeries like spay/neuter typically require 10-14 days of restricted activity. 
+                  More complex procedures may need longer recovery periods. We provide detailed post-operative instructions, 
+                  pain medications as needed, and schedule follow-up appointments to monitor healing. Most pets can go home the same day.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                Do you provide pain management after surgery?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, we prioritize pain management as an essential part of surgical care. We use multi-modal pain management techniques 
+                  including pre-emptive pain medication, local anesthetics when appropriate, and post-operative pain medications. 
+                  We&apos;ll send you home with pain medication and clear instructions on how to keep your pet comfortable during recovery.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                When should I schedule a surgical consultation?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Schedule a consultation as soon as you know your pet needs surgery or if your regular veterinarian has recommended a procedure. 
+                  For routine surgeries like spay/neuter, booking 2-3 weeks in advance is ideal. 
+                  For urgent surgical needs, we can often accommodate same-day or next-day consultations. 
+                  During the consultation, we&apos;ll discuss the procedure, answer questions, and create a surgical plan.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

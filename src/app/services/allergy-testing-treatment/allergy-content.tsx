@@ -312,6 +312,99 @@ export default function AllergyContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about pet allergy testing and treatment at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How do I know if my pet has allergies?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Common signs include excessive scratching, licking, red inflamed skin, chronic ear infections, 
+                  hair loss, and hot spots. In cats, you may see over-grooming, miliary dermatitis, or asthma-like symptoms. 
+                  If you notice persistent itching or skin issues, it&apos;s worth having your pet evaluated for allergies.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What&apos;s the difference between food allergies and environmental allergies?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Food allergies typically cause year-round symptoms and may include digestive issues along with skin problems. 
+                  Environmental allergies often follow seasonal patterns and are triggered by pollens, dust mites, or molds. 
+                  We use different testing methods for each type - elimination diets for food allergies and blood or intradermal testing for environmental allergens.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How long does allergy testing take?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Blood testing for environmental allergies can be completed during a single visit, with results typically available within 1-2 weeks. 
+                  Food allergy testing through elimination diets takes longer - usually 8-12 weeks to properly identify trigger ingredients. 
+                  Our team will guide you through the process and timeline based on your pet&apos;s specific needs.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                Is immunotherapy (allergy shots) effective for pets?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, allergen-specific immunotherapy (ASIT) is highly effective for many pets with environmental allergies. 
+                  About 60-70% of pets show significant improvement with this treatment. It works by gradually desensitizing your pet&apos;s immune system to specific allergens. 
+                  While it takes time to see full benefits (usually 6-12 months), it can provide long-term relief and reduce the need for other medications.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                Are there specific allergens common to Colorado pets?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, Colorado&apos;s unique environment presents specific challenges. Common allergens include cottonwood and elm pollens in spring, 
+                  grass pollens in summer, and ragweed in fall. The dry climate can also worsen skin conditions. 
+                  Many pets also react to dust mites and storage mites, which can be more problematic in our dry air. 
+                  Our team understands these regional factors and incorporates them into treatment planning.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

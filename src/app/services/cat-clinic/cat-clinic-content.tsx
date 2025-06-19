@@ -329,6 +329,99 @@ export default function CatClinicContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about our feline-focused services at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What makes your cat clinic different from regular veterinary care?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Our cat clinic features a separate wing dedicated exclusively to feline patients, with feline-only exam rooms, surgical suite, and boarding facilities. 
+                  This minimizes stress by eliminating contact with dogs and creating a calming environment designed specifically for cats with 
+                  appropriate pheromones, colors, and sounds that cats find comforting.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                Are your staff trained specifically in feline medicine?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, our professionals are Fear Free certified and trained in low-stress handling techniques specifically for cats. 
+                  We implement current evidence-based feline medicine practices and understand the unique needs of cats. 
+                  We&apos;re also pursuing Cat Friendly Practice certification to ensure we meet the highest standards of feline care.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                Do you offer boarding services specifically for cats?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, we have specialized feline boarding facilities that are completely separate from dog areas. 
+                  Our cat boarding spaces are designed with feline comfort in mind, featuring soft surfaces, appropriate lighting, 
+                  and a quiet environment. Cats are housed away from the sounds and smells of dogs, reducing stress during their stay.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How do you handle anxious or fearful cats?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We use Fear Free techniques including calming pheromones, gentle handling methods, and allowing cats time to acclimate to the environment. 
+                  Our exam rooms feature soft surfaces and ambient sounds that help cats feel secure. 
+                  We can also discuss pre-visit anxiety medications for particularly nervous cats to ensure the most comfortable experience possible.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What should I bring for my cat&apos;s visit?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Bring your cat in a secure carrier with familiar bedding or clothing that smells like home. 
+                  A list of current medications, feeding schedule, and any behavioral concerns is helpful. 
+                  For anxious cats, covering the carrier with a towel during transport can help them feel more secure. 
+                  We recommend using carriers that open from the top for easier, less stressful removal.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

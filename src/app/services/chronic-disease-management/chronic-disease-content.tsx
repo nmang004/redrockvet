@@ -319,6 +319,98 @@ export default function ChronicDiseaseContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-accent">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about chronic disease management at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                How do you determine if my pet has a chronic condition?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We use comprehensive diagnostic testing including blood work, urinalysis, imaging, and physical examinations to identify chronic conditions. 
+                  Many chronic diseases develop gradually, so we rely on laboratory work and diagnostic imaging to detect early changes 
+                  before symptoms become obvious. Regular wellness exams help us catch these conditions early when they&apos;re most manageable.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                How often will my pet need check-ups for chronic disease management?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Check-up frequency depends on your pet&apos;s specific condition and how well it&apos;s controlled. 
+                  Initially, we may need to see your pet every 2-4 weeks to establish the right treatment plan. 
+                  Once stabilized, visits might be every 3-6 months. We customize the schedule based on your pet&apos;s needs and response to treatment.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                What can I expect from managing my pet&apos;s chronic condition?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  While chronic conditions can&apos;t be cured, they can often be well-managed to maintain your pet&apos;s quality of life. 
+                  Treatment typically involves medications, dietary changes, and lifestyle modifications. 
+                  We focus on keeping your pet comfortable, slowing disease progression, and maintaining their happiness and mobility for as long as possible.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                How do you help me manage the costs of chronic care?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We believe in transparent communication about treatment costs and work with you to create realistic management plans. 
+                  We prioritize the most essential treatments and can often adjust medication schedules or find cost-effective alternatives. 
+                  We&apos;ll always discuss financial considerations as part of developing your pet&apos;s treatment plan.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                When should I consider quality of life assessments?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Quality of life assessments are an ongoing part of chronic disease management, not just end-of-life considerations. 
+                  We regularly evaluate your pet&apos;s comfort, mobility, appetite, and engagement with family activities. 
+                  These assessments help us adjust treatment plans to maximize your pet&apos;s comfort and happiness throughout their journey with chronic disease.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

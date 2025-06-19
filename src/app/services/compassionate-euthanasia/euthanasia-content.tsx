@@ -291,6 +291,98 @@ export default function EuthanasiaContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about compassionate end-of-life care at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How do I know when it&apos;s time for euthanasia?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  This is one of the most difficult decisions pet owners face. We use quality of life assessments that consider pain levels, 
+                  appetite, mobility, and your pet&apos;s interest in surroundings and family interactions. 
+                  We&apos;ll work with you to honestly evaluate your pet&apos;s condition and help you make this compassionate decision when the time comes.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What happens during the euthanasia procedure?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  The procedure is gentle and peaceful. We use a sedative first to help your pet relax, followed by an injection that allows them to pass away peacefully in your arms. 
+                  You can stay with your pet throughout the entire process. We take as much time as you need for final goodbyes 
+                  and ensure the experience is as peaceful as possible for both you and your pet.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                Can I arrange for in-home euthanasia?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  While we provide in-clinic euthanasia services, we understand many families prefer the comfort of their own home. 
+                  We can refer you to trusted professionals who specialize in compassionate in-home euthanasia services. 
+                  This allows your pet to be in familiar surroundings with all family members present.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What aftercare options are available?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We offer both private and communal cremation options through our trusted partners. 
+                  Private cremation returns your pet&apos;s ashes to you, while communal cremation provides a peaceful resting place with other beloved pets. 
+                  We can also help arrange memorial keepsakes like paw prints and provide grief support resources.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How can you help me through the grief process?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Grief is a natural part of losing a beloved companion. We provide emotional support throughout the process and can connect you with grief counseling resources. 
+                  We also offer memorial keepsakes and can help you create meaningful ways to remember your pet. 
+                  Our team is always available to talk and provide support during this difficult time.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

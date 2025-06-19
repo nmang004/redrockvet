@@ -270,6 +270,100 @@ export default function DentalContent() {
           </motion.div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-accent">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about veterinary dental care at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                Why does my pet need anesthesia for dental cleaning?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Professional dental cleaning requires anesthesia to ensure your pet&apos;s safety and allow for thorough cleaning. 
+                  Anesthesia prevents stress and fear, allows us to clean below the gum line where most dental disease occurs, 
+                  and enables us to take full mouth radiographs to identify hidden problems. 
+                  We use extensive monitoring with two dedicated technicians during every procedure.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                How often should my pet have dental cleanings?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Most pets benefit from professional dental cleaning every 1-3 years, depending on their age, breed, and oral health. 
+                  Smaller dogs and certain breeds may need more frequent cleanings due to genetic predisposition to dental disease. 
+                  We&apos;ll assess your pet&apos;s individual needs during their wellness exam and recommend an appropriate schedule.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                What are dental radiographs and why are they necessary?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Dental radiographs (X-rays) allow us to see what&apos;s happening below the gum line, where most dental disease occurs. 
+                  They help identify infected tooth roots, bone loss, root abscesses, and other problems not visible during visual examination. 
+                  We perform full mouth radiographs with every dental procedure to ensure we don&apos;t miss any hidden issues that could cause pain.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                Can I brush my pet&apos;s teeth at home?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, daily tooth brushing is the gold standard for at-home dental care. Use pet-specific toothpaste (never human toothpaste) 
+                  and start slowly to get your pet comfortable with the process. However, home care alone cannot replace professional cleanings, 
+                  as only anesthetic dental procedures can clean below the gum line and address existing dental disease.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                What should I expect after my pet&apos;s dental procedure?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Most pets recover quickly from dental procedures and can go home the same day. 
+                  You may see some mild drowsiness from anesthesia and possibly some minor gum bleeding. 
+                  We&apos;ll provide specific post-operative instructions, including any needed pain medication and dietary recommendations. 
+                  If extractions were performed, soft food may be recommended for a few days while the gums heal.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

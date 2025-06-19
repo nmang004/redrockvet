@@ -205,6 +205,98 @@ export default function WellnessContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about preventative care and wellness exams at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How often should my pet have a wellness exam?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We recommend annual wellness exams for healthy adult pets, and twice yearly for senior pets (over 7 years for dogs, over 9 years for cats). 
+                  Puppies and kittens need more frequent visits for vaccinations and monitoring during their first year. 
+                  Regular check-ups help us detect health issues early when they&apos;re most treatable.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What vaccinations does my pet need in Colorado?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Core vaccines for dogs include rabies, distemper, and parvovirus. In Colorado, we also recommend Lyme disease and leptospirosis vaccines 
+                  due to regional risks. For cats, core vaccines include rabies and FVRCP (distemper complex). 
+                  We may recommend additional vaccines like Feline Leukemia based on your pet&apos;s lifestyle and risk factors.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What&apos;s included in a wellness exam?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  A comprehensive wellness exam includes a thorough physical examination, weight and body condition assessment, 
+                  discussion of nutrition and behavior, parasite screening, and vaccination updates as needed. 
+                  We also recommend annual lab work for baseline health monitoring and early detection of potential issues.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                Do you offer titer testing instead of automatic vaccinations?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, we offer titer testing to measure your pet&apos;s immunity levels for certain diseases. 
+                  This can help determine if vaccination boosters are necessary. However, some vaccines like rabies are required by law regardless of titer results. 
+                  We&apos;ll discuss the best vaccination schedule for your individual pet based on their health, lifestyle, and risk factors.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What regional health concerns should Colorado pet owners know about?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Colorado pets face unique risks including tick-borne diseases like Rocky Mountain Spotted Fever and Colorado Tick Fever, 
+                  rattlesnake encounters in certain areas, and altitude-related concerns for pets moving from lower elevations. 
+                  Year-round flea and tick prevention is essential, and we may recommend specific vaccines or preventatives based on your location and activities.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

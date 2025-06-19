@@ -290,6 +290,98 @@ export default function SpayNeuterContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about spay and neuter services at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                When is the best time to spay or neuter my pet?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We don&apos;t follow a one-size-fits-all approach. The optimal timing depends on your pet&apos;s breed, size, growth pattern, health history, and individual circumstances. 
+                  For small dogs, we often recommend 6-9 months, while larger breeds may benefit from waiting until 12-18 months. 
+                  We&apos;ll work with you to determine the best timeline for your specific pet.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What are the main benefits of spaying and neutering?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Spaying and neutering prevent unwanted litters and significantly reduce the risk of reproductive cancers. 
+                  They also help decrease problematic behaviors like territorial marking, roaming, and aggression. 
+                  Additionally, these procedures can improve your pet&apos;s overall health and longevity by eliminating the risk of certain reproductive diseases.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How do you ensure safety during the procedure?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  We use our state-of-the-art surgical suite with brand-new instruments and advanced monitoring equipment. 
+                  Two dedicated veterinary technicians monitor your pet throughout the procedure using comprehensive anesthetic protocols. 
+                  We also perform pre-surgical blood work and maintain strict sterile techniques to ensure the safest possible outcome.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                What is included in your post-operative care?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Our comprehensive post-operative care includes thorough discharge instructions, a 24-hour follow-up call to check on your pet, 
+                  and complimentary recheck exams. We provide detailed guidelines for activity restriction, wound care, and medication administration. 
+                  Our team is always available to answer questions during the recovery period.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-accent rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                How long is the recovery period?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Most pets require 10-14 days of restricted activity after spay/neuter surgery. During this time, limit running, jumping, and rough play. 
+                  Female pets (spay) typically need slightly longer recovery due to the more invasive procedure. 
+                  We&apos;ll provide specific activity guidelines and monitor healing progress during follow-up visits.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

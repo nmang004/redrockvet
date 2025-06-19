@@ -255,6 +255,98 @@ export default function EmergencyContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-accent">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about urgent emergency care at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                What qualifies as a veterinary emergency?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Common emergencies include sudden limping, persistent vomiting or diarrhea, difficulty breathing, 
+                  wounds or cuts, sudden lethargy, eye injuries, allergic reactions, or any behavior that seems abnormal for your pet. 
+                  When in doubt, it&apos;s always better to call and discuss your concerns with our team.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                Do I need an appointment for emergency care?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, we recommend calling ahead for same-day emergency appointments as urgent care slots fill up quickly. 
+                  Calling early in the day gives you the best chance of securing an appointment. Our team can also provide guidance 
+                  over the phone to help determine the urgency of your pet&apos;s condition.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                What should I do while waiting for emergency care?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Keep your pet calm and comfortable. For wounds, apply gentle pressure with a clean cloth to control bleeding. 
+                  Don&apos;t give food or water unless instructed. If your pet is vomiting, remove food and water bowls. 
+                  Transport your pet safely in a carrier or have someone help you. Our team will provide specific instructions when you call.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                How does your fear-free approach work during emergencies?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Even during urgent situations, we prioritize your pet&apos;s emotional well-being. We use low-stress handling techniques, 
+                  pheromone therapy, and gentle restraint methods. Our team is trained to recognize signs of fear and anxiety 
+                  and will adjust our approach accordingly while still providing necessary emergency care.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                When should I go to an emergency hospital instead?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  For severe emergencies outside our business hours, life-threatening situations like severe trauma, poisoning, 
+                  difficulty breathing, or seizures, you should go directly to a 24-hour emergency hospital. 
+                  We&apos;ll always be honest about what we can handle and will refer you to emergency specialists when needed for your pet&apos;s safety.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

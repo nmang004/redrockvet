@@ -314,6 +314,98 @@ export default function DiagnosticImagingContent() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-accent">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about diagnostic imaging services at Red Rock Veterinary Health.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                Is diagnostic imaging safe for my pet?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, our digital imaging technology uses minimal radiation exposure, significantly less than older film-based systems. 
+                  Ultrasound is completely non-invasive and uses no radiation at all. We only recommend imaging when the diagnostic benefits 
+                  outweigh any minimal risks, and we use protective measures to ensure your pet&apos;s safety during all procedures.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                Will my pet need sedation for imaging?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Many imaging procedures can be performed without sedation, especially routine X-rays and basic ultrasounds. 
+                  However, for anxious pets or complex studies requiring precise positioning, mild sedation may be recommended for their comfort and safety. 
+                  We always discuss sedation options and tailor our approach to your individual pet&apos;s needs and temperament.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                How long does it take to get imaging results?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Basic X-ray results are often available immediately for urgent cases. For routine imaging, we typically provide preliminary results 
+                  the same day or next business day. Studies that require board-certified radiologist evaluation may take 24-48 hours for final reports. 
+                  We&apos;ll always communicate the expected timeline and contact you as soon as results are available.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                What&apos;s the difference between X-rays and ultrasound?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  X-rays are excellent for viewing bones, detecting foreign objects, and seeing air-filled organs like lungs. 
+                  Ultrasound provides detailed images of soft tissues, organs, and blood flow without radiation. 
+                  We often use these imaging methods together to get a complete picture of your pet&apos;s condition and make the most accurate diagnosis.
+                </p>
+              </div>
+            </details>
+
+            <details className="group bg-background rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                Do you work with specialists for complex cases?
+                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6">
+                <p className="text-muted-foreground">
+                  Yes, we maintain strong relationships with board-certified radiologists and mobile internal medicine specialists. 
+                  For complex cases requiring specialized expertise or advanced imaging not available in-house, 
+                  we coordinate with our specialist network to ensure your pet receives the most comprehensive diagnostic care possible.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
