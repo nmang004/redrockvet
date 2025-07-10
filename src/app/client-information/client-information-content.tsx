@@ -420,9 +420,9 @@ export default function ClientInformationContent() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className={`flex items-center mb-12 flex-col md:${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+                className={`flex items-center mb-12 flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
               >
-                <div className={`flex-1 text-center md:${index % 2 === 0 ? 'text-right md:pr-8' : 'text-left md:pl-8'} mb-6 md:mb-0`}>
+                <div className={`flex-1 text-center mb-6 md:mb-0 ${index % 2 === 0 ? 'md:text-right md:pr-8' : 'md:text-left md:pl-8'}`}>
                   <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardHeader>
                       <div className="md:hidden mb-4 flex justify-center">
@@ -430,13 +430,22 @@ export default function ClientInformationContent() {
                           {step.step}
                         </div>
                       </div>
-                      <CardTitle className="text-xl font-bold flex items-center gap-3 justify-center md:justify-start">
-                        <div className={`p-2 rounded-lg ${step.color} text-white order-1 md:${index % 2 === 0 ? 'order-2' : 'order-1'}`}>
-                          {step.icon}
-                        </div>
-                        <span className={`order-2 md:${index % 2 === 0 ? 'order-1' : 'order-2'}`}>
-                          {step.title}
-                        </span>
+                      <CardTitle className={`text-xl font-bold flex items-center gap-3 justify-center ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-start'}`}>
+                        {index % 2 === 0 ? (
+                          <>
+                            <span className="order-1 md:order-1">{step.title}</span>
+                            <div className={`p-2 rounded-lg ${step.color} text-white order-2 md:order-2`}>
+                              {step.icon}
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div className={`p-2 rounded-lg ${step.color} text-white order-1 md:order-1`}>
+                              {step.icon}
+                            </div>
+                            <span className="order-2 md:order-2">{step.title}</span>
+                          </>
+                        )}
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -445,13 +454,13 @@ export default function ClientInformationContent() {
                   </Card>
                 </div>
                 
-                <div className="flex-shrink-0 md:block hidden">
+                <div className="flex-shrink-0 hidden md:block">
                   <div className={`w-16 h-16 rounded-full ${step.color} text-white flex items-center justify-center text-2xl font-bold shadow-lg`}>
                     {step.step}
                   </div>
                 </div>
                 
-                <div className="flex-1 md:block hidden" />
+                <div className="flex-1 hidden md:block" />
               </motion.div>
             ))}
           </div>
