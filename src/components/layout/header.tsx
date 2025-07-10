@@ -182,7 +182,7 @@ export default function Header() {
             <Button
               variant="ghost"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="w-12 h-12 p-0 hover:bg-accent/50 rounded-lg transition-colors bg-red-500/20"
+              className="w-12 h-12 p-0 hover:bg-accent/50 rounded-lg transition-colors"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
             >
