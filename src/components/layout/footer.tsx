@@ -33,9 +33,9 @@ const aboutLinks = [
 ];
 
 const hours = [
-  { day: "Mon - Fri", time: "8:00 AM - 6:00 PM" },
-  { day: "Saturday", time: "8:00 AM - 4:00 PM" },
-  { day: "Sunday", time: "10:00 AM - 2:00 PM" },
+  { day: "Mon - Fri", time: "8:00 AM - 5:00 PM" },
+  { day: "Saturday", time: "Closed" },
+  { day: "Sunday", time: "Closed" },
 ];
 
 export default function Footer() {

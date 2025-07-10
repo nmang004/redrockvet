@@ -3,7 +3,7 @@ import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
   title: "Contact & Appointments - Red Rock Veterinary Health",
-  description: "Schedule an appointment at Red Rock Veterinary Health in Colorado Springs. Contact us at (719) 204-3647 or visit us at 3163 W. Colorado Ave. Open 7 days a week with emergency care available 24/7.",
+  description: "Schedule an appointment at Red Rock Veterinary Health in Colorado Springs. Contact us at (719) 204-3647 or visit us at 3163 W. Colorado Ave. Open Monday-Friday 8:00 AM - 5:00 PM with emergency care available 24/7.",
   keywords: "veterinary appointments Colorado Springs, contact Red Rock Veterinary Health, schedule pet appointment, Colorado Springs animal hospital, veterinary clinic contact",
   openGraph: {
     title: "Contact & Appointments - Red Rock Veterinary Health",
