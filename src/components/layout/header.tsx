@@ -87,10 +87,8 @@ export default function Header() {
               <NavigationMenuList className="z-[100]">
                 {/* Vet Services Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200" asChild>
-                    <Link href="/services">
-                      Vet Services
-                    </Link>
+                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
+                    Vet Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="z-[100]">
                     <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
@@ -110,10 +108,8 @@ export default function Header() {
 
                 {/* About Dropdown */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200" asChild>
-                    <Link href="/about">
-                      About
-                    </Link>
+                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
+                    About
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="z-[100]">
                     <div className="grid gap-3 p-4 md:w-[200px]">
@@ -134,7 +130,9 @@ export default function Header() {
                 {/* Patient Portal Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
-                    Patient Portal
+                    <Link href="/medical-record-portal">
+                      Patient Portal
+                    </Link>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="z-[100]">
                     <div className="grid gap-3 p-4 md:w-[250px]">
