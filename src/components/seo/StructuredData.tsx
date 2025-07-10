@@ -7,7 +7,6 @@ interface BusinessStructuredDataProps {
   serviceData?: {
     name: string
     description: string
-    price?: string
   }
   blogData?: {
     title: string
@@ -34,7 +33,6 @@ interface GlobalSchemaData {
     opens: string
     closes: string
   }>
-  priceRange?: string
   siteUrl: string
 }
 
@@ -56,7 +54,6 @@ export default function StructuredData({
             businessAddress,
             businessPhone,
             businessHours,
-            priceRange
           }
         }`
         
@@ -103,9 +100,6 @@ export default function StructuredData({
       (baseSchema as any).telephone = globalSchema.businessPhone
     }
 
-    if (globalSchema.priceRange) {
-      (baseSchema as any).priceRange = globalSchema.priceRange
-    }
 
     if (globalSchema.businessHours && globalSchema.businessHours.length > 0) {
       (baseSchema as any).openingHoursSpecification = globalSchema.businessHours.map(hours => ({
@@ -131,13 +125,6 @@ export default function StructuredData({
         "@type": globalSchema.businessType || "VeterinaryCare",
         "name": globalSchema.businessName
       },
-      ...(serviceData.price && {
-        "offers": {
-          "@type": "Offer",
-          "price": serviceData.price,
-          "priceCurrency": "USD"
-        }
-      })
     }
   }
 

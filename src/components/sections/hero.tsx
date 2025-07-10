@@ -29,7 +29,7 @@ export default function Hero({
   videoURL
 }: HeroProps) {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-hero-pattern">
+    <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-hero-pattern">
       {/* Background Image/Video */}
       <div className="absolute inset-0 z-0">
         {videoURL ? (
@@ -47,7 +47,7 @@ export default function Hero({
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/90" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <motion.div

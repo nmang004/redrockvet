@@ -51,24 +51,24 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="header-sticky safe-area-top bg-background/95 backdrop-blur-sm border-b border-border z-50">
-      <nav className="mx-auto max-w-7xl container-mobile">
-        <div className="flex h-16 items-center justify-between">
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-[100]">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image 
                 src="/red-rock-logo.png" 
                 alt="Red Rock Veterinary Health" 
-                width={200}
-                height={60}
-                className="h-12 w-auto"
+                width={140}
+                height={45}
+                className="h-6 w-auto md:h-12"
               />
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex flex-1 justify-center">
             <NavigationMenu viewport={false}>
               <NavigationMenuList className="z-[100]">
                 {/* Vet Services Dropdown */}
@@ -165,11 +165,11 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="text-sm touch-target focus-mobile">
+            <Button variant="outline" size="sm" className="text-sm">
               <Phone className="w-4 h-4 mr-2" />
               (555) 123-4567
             </Button>
-            <Button size="sm" className="text-sm touch-target focus-mobile" asChild>
+            <Button size="sm" className="text-sm" asChild>
               <Link href="/client-information">
                 <Calendar className="w-4 h-4 mr-2" />
                 Book Appointment
@@ -177,20 +177,19 @@ export default function Header() {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* MOBILE HAMBURGER BUTTON - ABSOLUTE POSITIONED */}
+          <div className="absolute right-4 md:hidden">
             <Button
               variant="ghost"
-              size="sm"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="touch-target focus-mobile"
+              className="w-12 h-12 p-0 hover:bg-accent/50 rounded-lg transition-colors bg-red-500/20"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-8 w-8 text-foreground" strokeWidth={2} />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-8 w-8 text-foreground" strokeWidth={2} />
               )}
             </Button>
           </div>
@@ -206,17 +205,17 @@ export default function Header() {
               transition={{ duration: 0.3 }}
               className="md:hidden border-t border-border"
             >
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-background">
+              <div className="px-4 pt-4 pb-6 space-y-4 bg-background">
                 {/* Mobile Vet Services */}
-                <div className="space-y-1">
-                  <div className="px-3 py-2 text-base font-medium text-foreground">
+                <div className="space-y-2">
+                  <div className="px-4 py-3 text-base font-semibold text-foreground">
                     Vet Services
                   </div>
                   {services.map((service) => (
                     <Link
                       key={service.name}
                       href={service.href}
-                      className="block px-6 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+                      className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {service.name}
@@ -225,15 +224,15 @@ export default function Header() {
                 </div>
 
                 {/* Mobile About */}
-                <div className="space-y-1">
-                  <div className="px-3 py-2 text-base font-medium text-foreground">
+                <div className="space-y-2">
+                  <div className="px-4 py-3 text-base font-semibold text-foreground">
                     About
                   </div>
                   {aboutItems.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="block px-6 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+                      className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
@@ -242,8 +241,8 @@ export default function Header() {
                 </div>
 
                 {/* Mobile Patient Portal */}
-                <div className="space-y-1">
-                  <div className="px-3 py-2 text-base font-medium text-foreground">
+                <div className="space-y-2">
+                  <div className="px-4 py-3 text-base font-semibold text-foreground">
                     Patient Portal
                   </div>
                   {patientPortalItems.map((item) => (
@@ -253,7 +252,7 @@ export default function Header() {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-6 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+                        className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.name}
@@ -262,7 +261,7 @@ export default function Header() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="block px-6 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+                        className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.name}
@@ -276,7 +275,7 @@ export default function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="block px-3 py-3 text-base font-medium text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200 touch-target focus-mobile"
+                    className="block px-4 py-3 text-base font-medium text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -284,14 +283,14 @@ export default function Header() {
                 ))}
 
                 {/* Mobile CTA Buttons */}
-                <div className="px-3 py-2 space-y-2">
-                  <Button variant="outline" size="sm" className="w-full text-sm btn-touch">
-                    <Phone className="w-4 h-4 mr-2" />
+                <div className="px-4 pt-4 space-y-3">
+                  <Button variant="outline" size="lg" className="w-full text-base h-12">
+                    <Phone className="w-5 h-5 mr-2" />
                     (555) 123-4567
                   </Button>
-                  <Button size="sm" className="w-full text-sm btn-touch" asChild>
+                  <Button size="lg" className="w-full text-base h-12" asChild>
                     <Link href="/client-information">
-                      <Calendar className="w-4 h-4 mr-2" />
+                      <Calendar className="w-5 h-5 mr-2" />
                       Book Appointment
                     </Link>
                   </Button>
@@ -300,7 +299,7 @@ export default function Header() {
             </motion.div>
           )}
         </AnimatePresence>
-      </nav>
+      </div>
     </header>
   );
 }

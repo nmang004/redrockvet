@@ -91,16 +91,6 @@ export const service = defineType({
       validation: Rule => Rule.min(1).max(6)
     }),
     defineField({
-      name: 'pricing',
-      title: 'Pricing Information',
-      type: 'object',
-      fields: [
-        { name: 'startingPrice', title: 'Starting Price', type: 'number' },
-        { name: 'priceRange', title: 'Price Range Display', type: 'string' },
-        { name: 'notes', title: 'Pricing Notes', type: 'text' }
-      ]
-    }),
-    defineField({
       name: 'duration',
       title: 'Typical Duration',
       type: 'string',
