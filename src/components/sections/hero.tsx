@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Play, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface HeroProps {
   title: string;
@@ -91,16 +92,20 @@ export default function Hero({
               transition={{ duration: 0.6, delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button size="lg" className="text-base px-8 py-3 shadow-glow">
-                <Calendar className="w-5 h-5 mr-2" />
-                {primaryCTA.text}
-                <ArrowRight className="w-4 h-4 ml-2" />
+              <Button size="lg" className="text-base px-8 py-3 shadow-glow" asChild>
+                <Link href={primaryCTA.href}>
+                  <Calendar className="w-5 h-5 mr-2" />
+                  {primaryCTA.text}
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
               </Button>
               
               {secondaryCTA && (
-                <Button variant="outline" size="lg" className="text-base px-8 py-3">
-                  <Play className="w-5 h-5 mr-2" />
-                  {secondaryCTA.text}
+                <Button variant="outline" size="lg" className="text-base px-8 py-3" asChild>
+                  <a href={secondaryCTA.href}>
+                    <Play className="w-5 h-5 mr-2" />
+                    {secondaryCTA.text}
+                  </a>
                 </Button>
               )}
             </motion.div>

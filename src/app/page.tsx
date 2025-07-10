@@ -13,7 +13,7 @@ export default function Home() {
         description="Complete animal hospital providing comprehensive pet care from urgent care and vaccinations to specialized treatments and advanced medical procedures. We prioritize your pet's emotional well-being using science-based fear-free techniques."
         primaryCTA={{
           text: "Schedule Appointment",
-          href: "/contact"
+          href: "/client-information"
         }}
         secondaryCTA={{
           text: "Call (719) 204-3647",

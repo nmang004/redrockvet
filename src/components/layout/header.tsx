@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Calendar, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -49,6 +49,20 @@ const simpleNavigation = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Prevent background scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-[100]">
@@ -165,9 +179,11 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="text-sm">
-              <Phone className="w-4 h-4 mr-2" />
-              (555) 123-4567
+            <Button variant="outline" size="sm" className="text-sm" asChild>
+              <a href="tel:719-204-3647">
+                <Phone className="w-4 h-4 mr-2" />
+                (719) 204-3647
+              </a>
             </Button>
             <Button size="sm" className="text-sm" asChild>
               <Link href="/client-information">
@@ -203,7 +219,7 @@ export default function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden border-t border-border"
+              className="md:hidden border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto"
             >
               <div className="px-4 pt-4 pb-6 space-y-4 bg-background">
                 {/* Mobile Vet Services */}
@@ -284,9 +300,11 @@ export default function Header() {
 
                 {/* Mobile CTA Buttons */}
                 <div className="px-4 pt-4 space-y-3">
-                  <Button variant="outline" size="lg" className="w-full text-base h-12">
-                    <Phone className="w-5 h-5 mr-2" />
-                    (555) 123-4567
+                  <Button variant="outline" size="lg" className="w-full text-base h-12" asChild>
+                    <a href="tel:719-204-3647">
+                      <Phone className="w-5 h-5 mr-2" />
+                      (719) 204-3647
+                    </a>
                   </Button>
                   <Button size="lg" className="w-full text-base h-12" asChild>
                     <Link href="/client-information">
