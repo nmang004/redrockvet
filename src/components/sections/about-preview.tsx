@@ -103,8 +103,8 @@ export default function AboutPreview() {
               </Button>
               
               <Button asChild variant="outline" size="lg">
-                <Link href="/team">
-                  Meet Our Team
+                <Link href="/staff">
+                  Meet Our Staff
                 </Link>
               </Button>
             </motion.div>
