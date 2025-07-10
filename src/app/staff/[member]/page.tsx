@@ -241,7 +241,7 @@ export default function StaffMemberPage({
               <Card className="bg-primary text-primary-foreground border-0">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4">
-                    Ready to meet {member.name.split(' ')[0]}?
+                    Ready to meet {member.name.startsWith('Dr.') ? member.name.split(' ')[0] + ' ' + member.name.split(' ')[1] : member.name.split(' ')[0]}?
                   </h3>
                   <p className="mb-6 text-primary-foreground/90">
                     Schedule an appointment today and experience the exceptional care 

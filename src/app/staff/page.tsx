@@ -122,7 +122,7 @@ export default function StaffPage() {
 
                       <div className="text-center">
                         <div className="w-full bg-primary/10 text-primary border border-primary/20 rounded-md px-3 py-2 text-xs font-medium group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200 flex items-center justify-center">
-                          Learn More About {member.name.split(' ')[0]}
+                          Learn More About {member.name.startsWith('Dr.') ? member.name.split(' ')[0] + ' ' + member.name.split(' ')[1] : member.name.split(' ')[0]}
                           <ArrowRight className="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>

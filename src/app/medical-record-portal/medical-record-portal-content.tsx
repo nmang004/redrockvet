@@ -170,8 +170,8 @@ export default function MedicalRecordPortalContent() {
                     <CardDescription className="text-base">{portal.description}</CardDescription>
                   </CardHeader>
                   
-                  <CardContent className="flex-1 flex flex-col">
-                    <div className="space-y-3 flex-1">
+                  <CardContent className="flex-1 flex flex-col p-6">
+                    <div className="space-y-4 flex-1 mb-6">
                       {portal.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-3">
                           <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
