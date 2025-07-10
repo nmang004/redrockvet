@@ -169,9 +169,11 @@ export default function Header() {
               <Phone className="w-4 h-4 mr-2" />
               (555) 123-4567
             </Button>
-            <Button size="sm" className="text-sm touch-target focus-mobile">
-              <Calendar className="w-4 h-4 mr-2" />
-              Book Appointment
+            <Button size="sm" className="text-sm touch-target focus-mobile" asChild>
+              <Link href="/client-information">
+                <Calendar className="w-4 h-4 mr-2" />
+                Book Appointment
+              </Link>
             </Button>
           </div>
 
@@ -287,9 +289,11 @@ export default function Header() {
                     <Phone className="w-4 h-4 mr-2" />
                     (555) 123-4567
                   </Button>
-                  <Button size="sm" className="w-full text-sm btn-touch">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    Book Appointment
+                  <Button size="sm" className="w-full text-sm btn-touch" asChild>
+                    <Link href="/client-information">
+                      <Calendar className="w-4 h-4 mr-2" />
+                      Book Appointment
+                    </Link>
                   </Button>
                 </div>
               </div>
