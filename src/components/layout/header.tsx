@@ -76,13 +76,13 @@ export default function Header() {
                 alt="Red Rock Veterinary Health" 
                 width={140}
                 height={45}
-                className="h-6 w-auto md:h-12"
+                className="h-8 w-auto md:h-12"
               />
             </Link>
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex flex-1 justify-center">
+          <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
             <NavigationMenu viewport={false}>
               <NavigationMenuList className="z-[100]">
                 {/* Vet Services Dropdown */}
@@ -176,7 +176,7 @@ export default function Header() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4 ml-auto">
             <Button variant="outline" size="sm" className="text-sm" asChild>
               <a href="tel:719-204-3647">
                 <Phone className="w-4 h-4 mr-2" />
@@ -192,7 +192,7 @@ export default function Header() {
           </div>
 
           {/* MOBILE HAMBURGER BUTTON - ABSOLUTE POSITIONED */}
-          <div className="absolute right-4 md:hidden">
+          <div className="absolute right-2 md:hidden">
             <Button
               variant="ghost"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -217,9 +217,9 @@ export default function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto"
+              className="md:hidden border-t border-border max-h-[calc(100vh-5rem)] overflow-y-auto"
             >
-              <div className="px-4 pt-4 pb-8 space-y-4 bg-background">
+              <div className="px-4 pt-4 pb-12 space-y-4 bg-background">
                 {/* Mobile Vet Services */}
                 <div className="space-y-2">
                   <div className="px-4 py-3 text-base font-semibold text-foreground">
@@ -297,7 +297,7 @@ export default function Header() {
                 ))}
 
                 {/* Mobile CTA Buttons */}
-                <div className="px-4 pt-6 pb-4 space-y-3 border-t border-border/50 mt-4">
+                <div className="px-4 pt-6 pb-8 space-y-3 border-t border-border/50 mt-4">
                   <Button variant="outline" size="lg" className="w-full text-base h-12" asChild>
                     <a href="tel:719-204-3647">
                       <Phone className="w-5 h-5 mr-2" />
