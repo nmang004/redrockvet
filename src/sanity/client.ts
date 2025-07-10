@@ -35,7 +35,6 @@ export const queries = {
     icon,
     image,
     features,
-    pricing,
     category,
     featured
   }`,
@@ -47,8 +46,7 @@ export const queries = {
     description,
     icon,
     image,
-    features,
-    pricing
+    features
   }`,
 
   serviceBySlug: `*[_type == "service" && slug.current == $slug][0]{
@@ -60,7 +58,6 @@ export const queries = {
     icon,
     image,
     features,
-    pricing,
     duration,
     category
   }`,

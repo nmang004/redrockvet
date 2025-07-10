@@ -23,7 +23,6 @@ interface Service {
   title: string;
   description: string;
   features: string[];
-  price: string;
   slug: { current: string };
   icon?: keyof typeof iconMap;
 }
@@ -36,7 +35,6 @@ const fallbackServices = [
     title: "Fear Free® Veterinary Care",
     description: "Minimizing stress during veterinary visits using science-based techniques to reduce fear, anxiety, and stress.",
     features: ["Fear Free certified", "Low-stress handling", "Emotional well-being focus", "Comfortable environment"],
-    price: "Standard rates apply",
     slug: { current: "fear-free" }
   },
   {
@@ -45,7 +43,6 @@ const fallbackServices = [
     title: "Pet Vaccinations and Wellness",
     description: "Routine checkups and preventive care protecting against diseases like parvovirus and leptospirosis.",
     features: ["Comprehensive exams", "Core vaccinations", "Parasite control", "Preventative labwork"],
-    price: "From $89",
     slug: { current: "wellness" }
   },
   {
@@ -54,7 +51,6 @@ const fallbackServices = [
     title: "Emergency Veterinary Services",
     description: "Same-day emergency appointments for urgent issues using our low-stress handling approach.",
     features: ["Same-day appointments", "Urgent care", "Fear-free handling", "Emergency assessment"],
-    price: "From $199",
     slug: { current: "urgent-emergency-care" }
   },
   {
@@ -63,7 +59,6 @@ const fallbackServices = [
     title: "Veterinary Dental Care",
     description: "Comprehensive dental services including X-rays, oral examinations, and extractions.",
     features: ["Full mouth X-rays", "Dental cleaning", "Oral surgery", "Anesthetic monitoring"],
-    price: "From $149",
     slug: { current: "dental" }
   },
   {
@@ -72,7 +67,6 @@ const fallbackServices = [
     title: "Veterinary Surgery",
     description: "Comprehensive surgical services with experience in complex procedures prioritizing comfort and safety.",
     features: ["Spay/neuter surgery", "Soft tissue surgery", "Mass removals", "Advanced monitoring"],
-    price: "From $299",
     slug: { current: "surgery" }
   },
   {
@@ -81,7 +75,6 @@ const fallbackServices = [
     title: "Pet Allergy Testing",
     description: "Identifies environmental, food, and parasite triggers using blood tests with tailored treatment plans.",
     features: ["Blood testing", "Elimination diets", "Custom immunotherapy", "Colorado allergens"],
-    price: "From $175",
     slug: { current: "allergy-testing-treatment" }
   },
   {
@@ -90,7 +83,6 @@ const fallbackServices = [
     title: "Chronic Disease Management",
     description: "Handles conditions like diabetes, kidney disease, and arthritis with personalized care approaches.",
     features: ["Regular monitoring", "Medication management", "Quality of life focus", "Flexible scheduling"],
-    price: "Consultation required",
     slug: { current: "chronic-disease-management" }
   },
   {
@@ -99,7 +91,6 @@ const fallbackServices = [
     title: "Diagnostic Imaging",
     description: "Digital radiography and ultrasound for precise diagnostics with minimal stress and specialist collaboration.",
     features: ["Digital X-rays", "Ultrasound services", "Board-certified evaluation", "FAST scans"],
-    price: "From $125",
     slug: { current: "radiography-ultrasound" }
   },
   {
@@ -108,7 +99,6 @@ const fallbackServices = [
     title: "Compassionate Euthanasia",
     description: "Peaceful, respectful end-of-life services offering both in-clinic and referral options.",
     features: ["Quality of life assessment", "In-clinic services", "In-home referrals", "Aftercare options"],
-    price: "Consultation required",
     slug: { current: "compassionate-euthanasia" }
   },
   {
@@ -117,7 +107,6 @@ const fallbackServices = [
     title: "Pet Behavioral Services",
     description: "Evaluates and treats behavioral issues including aggression, anxiety, and compulsive behaviors.",
     features: ["Behavioral consultation", "Medical evaluation", "Treatment planning", "Specialist referrals"],
-    price: "From $150",
     slug: { current: "behavioral-management" }
   }
 ];
@@ -147,7 +136,6 @@ export default function ServicesGrid({
           title,
           description,
           features,
-          price,
           slug,
           icon
         }`;
@@ -225,11 +213,8 @@ export default function ServicesGrid({
                       ))}
                     </ul>
                     
-                    <div className="flex items-center justify-between pt-4 border-t border-border">
-                      <span className="text-lg font-semibold text-primary">
-                        {service.price}
-                      </span>
-                      <Button asChild variant="ghost" size="sm" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                    <div className="pt-4 border-t border-border">
+                      <Button asChild variant="ghost" size="sm" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300 w-full justify-center">
                         <Link href={`/services/${service.slug.current}`}>
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />

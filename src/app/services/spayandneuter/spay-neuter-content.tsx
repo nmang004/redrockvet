@@ -33,7 +33,7 @@ const surgicalFeatures = [
   {
     icon: Calendar,
     title: "Comprehensive Care",
-    description: "Thorough discharge instructions, 24-hour follow-up calls, and complimentary recheck exams."
+    description: "Thorough discharge instructions and 24-hour follow-up calls."
   }
 ];
 
@@ -241,7 +241,7 @@ export default function SpayNeuterContent() {
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Complimentary recheck exams</span>
+                    <span className="text-foreground">Follow-up care coordination</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -360,7 +360,7 @@ export default function SpayNeuterContent() {
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
                   Our comprehensive post-operative care includes thorough discharge instructions, a 24-hour follow-up call to check on your pet, 
-                  and complimentary recheck exams. We provide detailed guidelines for activity restriction, wound care, and medication administration. 
+                  and follow-up care coordination. We provide detailed guidelines for activity restriction, wound care, and medication administration. 
                   Our team is always available to answer questions during the recovery period.
                 </p>
               </div>

@@ -60,7 +60,6 @@ export const faq = defineType({
           { title: 'General', value: 'general' },
           { title: 'Appointments', value: 'appointments' },
           { title: 'Services', value: 'services' },
-          { title: 'Pricing', value: 'pricing' },
           { title: 'Emergency Care', value: 'emergency' },
           { title: 'Pet Care', value: 'pet-care' },
           { title: 'Surgery', value: 'surgery' },
