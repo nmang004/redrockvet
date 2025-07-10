@@ -97,7 +97,7 @@ export default function ContactPage() {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(555) 123-4567"
+                      placeholder="(719) 204-3647"
                     />
                   </div>
                   <div>
@@ -128,12 +128,18 @@ export default function ContactPage() {
                     className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground"
                   >
                     <option value="">Select a service</option>
-                    <option value="wellness">Wellness Exam</option>
-                    <option value="surgery">Surgery</option>
-                    <option value="dental">Dental Care</option>
-                    <option value="emergency">Emergency Care</option>
-                    <option value="vaccination">Vaccination</option>
-                    <option value="diagnostic">Diagnostic</option>
+                    <option value="fear-free">Fear-Free® Veterinary Care</option>
+                    <option value="wellness">Pet Vaccinations and Wellness</option>
+                    <option value="emergency">Emergency Veterinary Services</option>
+                    <option value="dental">Veterinary Dental Care</option>
+                    <option value="surgery">Veterinary Surgery</option>
+                    <option value="allergy">Pet Allergy Testing and Treatment</option>
+                    <option value="chronic-disease">Chronic Disease Management</option>
+                    <option value="diagnostic">Veterinary Diagnostic Imaging</option>
+                    <option value="euthanasia">Compassionate Pet Euthanasia</option>
+                    <option value="behavioral">Pet Behavioral Services</option>
+                    <option value="spay-neuter">Spay & Neuter Services</option>
+                    <option value="cat-clinic">Cat Clinic</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -175,8 +181,8 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium">Address</p>
                       <p className="text-muted-foreground">
-                        123 Pet Care Lane<br />
-                        Animal City, AC 12345
+                        3163 W. Colorado Ave<br />
+                        Colorado Springs, CO 80904
                       </p>
                     </div>
                   </div>
@@ -185,7 +191,7 @@ export default function ContactPage() {
                     <Phone className="w-5 h-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">Phone</p>
-                      <p className="text-muted-foreground">(555) 123-4567</p>
+                      <p className="text-muted-foreground">(719) 204-3647</p>
                     </div>
                   </div>
                   
@@ -193,7 +199,7 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">info@petxvet.com</p>
+                      <p className="text-muted-foreground">Reception@RedRockVet.com</p>
                     </div>
                   </div>
                 </div>

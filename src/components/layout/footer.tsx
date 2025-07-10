@@ -89,7 +89,7 @@ export default function Footer() {
 
             <div className="flex items-center space-x-3 text-sm text-secondary-foreground/80">
               <MapPin className="w-4 h-4 text-primary" />
-              <span>Colorado Springs, CO</span>
+              <span>3163 W. Colorado Ave, Colorado Springs, CO 80904</span>
             </div>
           </div>
 
