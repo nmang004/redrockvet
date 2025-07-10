@@ -17,6 +17,7 @@ import {
 
 // Services navigation data
 const services = [
+  { name: "Fear-Free® Care", href: "/services/fear-free" },
   { name: "Wellness Care", href: "/services/wellness" },
   { name: "Surgery", href: "/services/surgery" },
   { name: "Dental Care", href: "/services/dental" },
