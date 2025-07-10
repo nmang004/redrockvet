@@ -176,7 +176,7 @@ export default function Footer() {
                   placeholder="Enter your email"
                   className="bg-background border-secondary-foreground/20 focus:border-primary"
                 />
-                <Button variant="outline" className="w-full">
+                <Button className="w-full">
                   Subscribe to Newsletter
                 </Button>
               </div>

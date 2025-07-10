@@ -87,11 +87,11 @@ export default function Header() {
               <NavigationMenuList className="z-[100]">
                 {/* Vet Services Dropdown */}
                 <NavigationMenuItem>
-                  <Link href="/services" legacyBehavior passHref>
-                    <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
+                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200" asChild>
+                    <Link href="/services">
                       Vet Services
-                    </NavigationMenuTrigger>
-                  </Link>
+                    </Link>
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent className="z-[100]">
                     <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
                       {services.map((service) => (
@@ -110,11 +110,11 @@ export default function Header() {
 
                 {/* About Dropdown */}
                 <NavigationMenuItem>
-                  <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
+                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200" asChild>
+                    <Link href="/about">
                       About
-                    </NavigationMenuTrigger>
-                  </Link>
+                    </Link>
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent className="z-[100]">
                     <div className="grid gap-3 p-4 md:w-[200px]">
                       {aboutItems.map((item) => (
@@ -166,11 +166,11 @@ export default function Header() {
                 {/* Simple Navigation Items */}
                 {simpleNavigation.map((item) => (
                   <NavigationMenuItem key={item.name}>
-                    <Link href={item.href} legacyBehavior passHref>
-                      <NavigationMenuLink className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 px-4 py-2">
+                    <NavigationMenuLink className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200 px-4 py-2" asChild>
+                      <Link href={item.href}>
                         {item.name}
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
@@ -221,7 +221,7 @@ export default function Header() {
               transition={{ duration: 0.3 }}
               className="md:hidden border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto"
             >
-              <div className="px-4 pt-4 pb-6 space-y-4 bg-background">
+              <div className="px-4 pt-4 pb-8 space-y-4 bg-background">
                 {/* Mobile Vet Services */}
                 <div className="space-y-2">
                   <div className="px-4 py-3 text-base font-semibold text-foreground">
@@ -299,7 +299,7 @@ export default function Header() {
                 ))}
 
                 {/* Mobile CTA Buttons */}
-                <div className="px-4 pt-4 space-y-3">
+                <div className="px-4 pt-6 pb-4 space-y-3 border-t border-border/50 mt-4">
                   <Button variant="outline" size="lg" className="w-full text-base h-12" asChild>
                     <a href="tel:719-204-3647">
                       <Phone className="w-5 h-5 mr-2" />
