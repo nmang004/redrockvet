@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Play, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface HeroProps {
   title: string;
@@ -133,14 +134,19 @@ export default function Hero({
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                <div className="text-center text-muted-foreground">
-                  <div className="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-3xl">🐕</span>
-                  </div>
-                  <p className="text-lg">Happy, healthy pets</p>
-                </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.25)] dark:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)]">
+              <div className="aspect-[4/3] relative">
+                <Image
+                  src="/redrockvet.webp"
+                  alt="Red Rock Veterinary Health - Fear Free Veterinary Care"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  onError={(e) => {
+                    console.error('Image failed to load:', e);
+                  }}
+                />
               </div>
               
               {/* Floating Elements */}
