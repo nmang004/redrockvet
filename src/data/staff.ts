@@ -12,6 +12,7 @@ export interface StaffMember {
   specialties: string[];
   professionalMemberships?: string[];
   personalInterests?: string;
+  certifications?: string[];
 }
 
 export const staffMembers: StaffMember[] = [
@@ -38,7 +39,8 @@ export const staffMembers: StaffMember[] = [
       "Independent Veterinary Practitioners Association",
       "American Association of Feline Practitioners"
     ],
-    personalInterests: "When not caring for his four-legged patients, Dr. Unsell enjoys exploring the beautiful Colorado outdoors, spending time with his own pets, and continuing his education to stay current with the latest advances in veterinary medicine."
+    personalInterests: "When not caring for his four-legged patients, Dr. Unsell enjoys exploring the beautiful Colorado outdoors, spending time with his own pets, and continuing his education to stay current with the latest advances in veterinary medicine.",
+    certifications: ["fearfreeelite", "ivpa", "rcvs", "catfriendly"]
   },
   {
     id: "lauren-anderson",
@@ -58,7 +60,8 @@ export const staffMembers: StaffMember[] = [
       "Fear Free Techniques",
       "Practice Management"
     ],
-    personalInterests: "Outside of work, Lauren enjoys spending time with her own pets and exploring the natural beauty of Colorado Springs. Her passion for animal welfare extends beyond the clinic, and she's actively involved in local animal rescue efforts."
+    personalInterests: "Outside of work, Lauren enjoys spending time with her own pets and exploring the natural beauty of Colorado Springs. Her passion for animal welfare extends beyond the clinic, and she's actively involved in local animal rescue efforts.",
+    certifications: ["fearfreeelite"]
   },
   {
     id: "angela-payne-lebron",
@@ -77,7 +80,8 @@ export const staffMembers: StaffMember[] = [
       "Administrative Operations",
       "Fear Free Professional Certification"
     ],
-    personalInterests: "Angela is passionate about animal welfare and enjoys volunteering with local animal organizations. When she's not at the clinic, she loves spending time with her family and exploring the many outdoor activities that Colorado Springs has to offer."
+    personalInterests: "Angela is passionate about animal welfare and enjoys volunteering with local animal organizations. When she's not at the clinic, she loves spending time with her family and exploring the many outdoor activities that Colorado Springs has to offer.",
+    certifications: ["fearfree"]
   },
   {
     id: "maggie-kohn",
@@ -97,7 +101,8 @@ export const staffMembers: StaffMember[] = [
       "Technician Training",
       "Patient Monitoring"
     ],
-    personalInterests: "When she's not in the surgical suite, Maggie enjoys continuing her education in veterinary technology and spending time with her own pets. Her commitment to professional development ensures she stays current with the latest advances in veterinary surgical techniques."
+    personalInterests: "When she's not in the surgical suite, Maggie enjoys continuing her education in veterinary technology and spending time with her own pets. Her commitment to professional development ensures she stays current with the latest advances in veterinary surgical techniques.",
+    certifications: ["fearfree"]
   },
   {
     id: "courtney-slice",
@@ -117,7 +122,8 @@ export const staffMembers: StaffMember[] = [
       "Patient Care",
       "Client Education"
     ],
-    personalInterests: "Outside of work, Courtney is an avid animal lover who enjoys hiking with her dogs and volunteering at local animal shelters. Her commitment to animal welfare and genuine care for pets and their families makes her a valued team member."
+    personalInterests: "Outside of work, Courtney is an avid animal lover who enjoys hiking with her dogs and volunteering at local animal shelters. Her commitment to animal welfare and genuine care for pets and their families makes her a valued team member.",
+    certifications: ["fvma", "catfriendly", "fearfree"]
   },
   {
     id: "liz-fisher",
@@ -137,13 +143,62 @@ export const staffMembers: StaffMember[] = [
       "Patient Assessment",
       "Positive Reinforcement Training"
     ],
-    personalInterests: "When she's not working with patients, Liz enjoys continuing her education in veterinary behavior and training techniques. She's passionate about the human-animal bond and believes that addressing behavioral issues is as important as treating medical conditions."
+    personalInterests: "When she's not working with patients, Liz enjoys continuing her education in veterinary behavior and training techniques. She's passionate about the human-animal bond and believes that addressing behavioral issues is as important as treating medical conditions.",
+    certifications: ["fearfreeelite", "karen", "hart", "lsh"]
   }
 ];
 
 export function getStaffMemberBySlug(slug: string): StaffMember | undefined {
   return staffMembers.find(member => member.slug === slug);
 }
+
+export const certificationMetadata = {
+  fearfree: {
+    name: "Fear Free Certified Professional",
+    image: "/staff/certs/fearfree.png",
+    alt: "Fear Free Certified Professional"
+  },
+  fearfreeelite: {
+    name: "Fear Free Elite Certified Professional",
+    image: "/staff/certs/fearfreeelite.png",
+    alt: "Fear Free Elite Certified Professional"
+  },
+  ivpa: {
+    name: "Independent Veterinary Practitioners Association",
+    image: "/staff/certs/ivpa.png",
+    alt: "Independent Veterinary Practitioners Association"
+  },
+  rcvs: {
+    name: "Royal College of Veterinary Surgeons",
+    image: "/staff/certs/rcvs.png",
+    alt: "Royal College of Veterinary Surgeons"
+  },
+  catfriendly: {
+    name: "Cat Friendly Veterinarian",
+    image: "/staff/certs/catfriendly.png",
+    alt: "Cat Friendly Veterinarian - American Association of Feline Practitioners"
+  },
+  fvma: {
+    name: "Florida Veterinary Medical Association",
+    image: "/staff/certs/fvma.png",
+    alt: "Florida Veterinary Medical Association"
+  },
+  karen: {
+    name: "Karen Pryor Academy",
+    image: "/staff/certs/karen.png",
+    alt: "Karen Pryor Academy Certified Training Partner"
+  },
+  hart: {
+    name: "HART Certification",
+    image: "/staff/certs/hart.png",
+    alt: "HART Certification"
+  },
+  lsh: {
+    name: "LSH Certification",
+    image: "/staff/certs/lsh.jpg",
+    alt: "LSH Certification"
+  }
+};
 
 export function getAllStaffSlugs(): string[] {
   return staffMembers.map(member => member.slug);

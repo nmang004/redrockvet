@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { staffMembers, getStaffMemberBySlug, getAllStaffSlugs } from "@/data/staff";
+import { staffMembers, getStaffMemberBySlug, getAllStaffSlugs, certificationMetadata } from "@/data/staff";
 import { ArrowLeft, Award, GraduationCap, Heart, Users, Phone, Calendar } from "lucide-react";
 import StaffStructuredData from "@/components/seo/StaffStructuredData";
 
@@ -168,6 +168,44 @@ export default function StaffMemberPage({
                   ))}
                 </div>
               </div>
+
+              {/* Certifications */}
+              {member.certifications && member.certifications.length > 0 && (
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                    <Award className="w-5 h-5 text-primary" />
+                    Certifications
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    {member.certifications.map((cert) => {
+                      const certData = certificationMetadata[cert as keyof typeof certificationMetadata];
+                      if (!certData) return null;
+                      
+                      return (
+                        <div
+                          key={cert}
+                          className="group relative bg-background border border-border rounded-lg p-3 hover:shadow-md transition-shadow"
+                          title={certData.name}
+                        >
+                          <div className="aspect-square relative">
+                            <Image
+                              src={certData.image}
+                              alt={certData.alt}
+                              fill
+                              className="object-contain"
+                            />
+                          </div>
+                          <div className="mt-2 text-center">
+                            <p className="text-xs text-muted-foreground font-medium truncate">
+                              {certData.name}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
 
               {/* Professional Memberships */}
               {member.professionalMemberships && member.professionalMemberships.length > 0 && (
