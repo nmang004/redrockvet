@@ -1,8 +1,27 @@
+import { Metadata } from "next";
 import Hero from "@/components/sections/hero";
 import ServicesGrid from "@/components/sections/services-grid";
 import AboutPreview from "@/components/sections/about-preview";
 import TestimonialsCarousel from "@/components/sections/testimonials-carousel";
 import StatsCounter from "@/components/sections/stats-counter";
+
+export const metadata: Metadata = {
+  title: "Red Rock Veterinary Health - Fear Free® Veterinary Care in Colorado Springs",
+  description: "Complete animal hospital providing comprehensive pet care in Colorado Springs. Fear Free® certified practice offering urgent care, vaccinations, surgery, and specialized treatments for dogs and cats.",
+  keywords: "veterinary care Colorado Springs, Fear Free certified, animal hospital, pet care, dog veterinarian, cat veterinarian, emergency vet, pet surgery, vaccinations",
+  openGraph: {
+    title: "Red Rock Veterinary Health - Fear Free® Veterinary Care in Colorado Springs",
+    description: "Complete animal hospital providing comprehensive pet care in Colorado Springs. Fear Free® certified practice offering urgent care, vaccinations, surgery, and specialized treatments.",
+    images: [
+      {
+        url: "/hero-bg.webp",
+        width: 1200,
+        height: 630,
+        alt: "Red Rock Veterinary Health - Modern veterinary facility in Colorado Springs",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
