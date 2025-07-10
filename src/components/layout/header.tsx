@@ -89,7 +89,9 @@ export default function Header() {
                 {/* Vet Services Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
-                    Vet Services
+                    <Link href="/services">
+                      Vet Services
+                    </Link>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="z-[100]">
                     <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
@@ -110,7 +112,9 @@ export default function Header() {
                 {/* About Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
-                    About
+                    <Link href="/about">
+                      About
+                    </Link>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="z-[100]">
                     <div className="grid gap-3 p-4 md:w-[200px]">

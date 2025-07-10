@@ -153,7 +153,7 @@ export default function MedicalRecordPortalContent() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="relative"
               >
-                <Card className={`h-full relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 ${portal.recommended ? 'ring-2 ring-primary shadow-glow' : ''}`}>
+                <Card className={`h-full relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 flex flex-col ${portal.recommended ? 'ring-2 ring-primary shadow-glow' : ''}`}>
                   {portal.recommended && (
                     <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
                       Recommended
@@ -170,8 +170,8 @@ export default function MedicalRecordPortalContent() {
                     <CardDescription className="text-base">{portal.description}</CardDescription>
                   </CardHeader>
                   
-                  <CardContent className="space-y-6">
-                    <div className="space-y-3">
+                  <CardContent className="flex-1 flex flex-col">
+                    <div className="space-y-3 flex-1">
                       {portal.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-3">
                           <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />

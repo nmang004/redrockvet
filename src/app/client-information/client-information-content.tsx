@@ -247,12 +247,12 @@ export default function ClientInformationContent() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="relative"
               >
-                <Card className="h-full relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/30 hover:scale-105 border-2 border-primary/20 shadow-glow">
-                  <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-2 text-sm font-bold rounded-bl-lg">
+                <Card className="h-full relative overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/30 hover:scale-105 border-2 border-primary/20 shadow-glow flex flex-col">
+                  <div className="absolute top-0 right-0 bg-red-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg z-10">
                     {form.priority}
                   </div>
                   
-                  <CardHeader className="pb-6">
+                  <CardHeader className="pb-6 pt-8">
                     <div className="flex items-center justify-between mb-4">
                       <div className={`p-4 rounded-xl ${form.color} text-white shadow-lg`}>
                         {form.icon}
@@ -268,7 +268,7 @@ export default function ClientInformationContent() {
                     </CardDescription>
                   </CardHeader>
                   
-                  <CardContent className="pt-0">
+                  <CardContent className="pt-0 flex-1 flex flex-col justify-end">
                     <Button 
                       asChild 
                       className="w-full text-lg py-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
@@ -320,7 +320,7 @@ export default function ClientInformationContent() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <Card className="h-full transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:scale-105">
+                <Card className="h-full transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:scale-105 flex flex-col">
                   <CardHeader className="pb-4">
                     <div className={`p-4 rounded-xl ${resource.color} text-white w-fit mx-auto mb-4`}>
                       {resource.icon}
@@ -331,7 +331,7 @@ export default function ClientInformationContent() {
                     </CardDescription>
                   </CardHeader>
                   
-                  <CardContent className="pt-0">
+                  <CardContent className="pt-0 flex-1 flex flex-col justify-end">
                     <Button 
                       asChild 
                       className="w-full py-6 shadow-lg hover:shadow-xl transition-all duration-300"
@@ -420,27 +420,23 @@ export default function ClientInformationContent() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className={`flex items-center mb-12 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+                className={`flex items-center mb-12 flex-col md:${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
               >
-                <div className={`flex-1 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+                <div className={`flex-1 text-center md:${index % 2 === 0 ? 'text-right md:pr-8' : 'text-left md:pl-8'} mb-6 md:mb-0`}>
                   <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardHeader>
-                      <CardTitle className="text-xl font-bold flex items-center gap-3">
-                        {index % 2 === 0 ? (
-                          <>
-                            {step.title}
-                            <div className={`p-2 rounded-lg ${step.color} text-white`}>
-                              {step.icon}
-                            </div>
-                          </>
-                        ) : (
-                          <>
-                            <div className={`p-2 rounded-lg ${step.color} text-white`}>
-                              {step.icon}
-                            </div>
-                            {step.title}
-                          </>
-                        )}
+                      <div className="md:hidden mb-4 flex justify-center">
+                        <div className={`w-12 h-12 rounded-full ${step.color} text-white flex items-center justify-center text-lg font-bold shadow-lg`}>
+                          {step.step}
+                        </div>
+                      </div>
+                      <CardTitle className="text-xl font-bold flex items-center gap-3 justify-center md:justify-start">
+                        <div className={`p-2 rounded-lg ${step.color} text-white order-1 md:${index % 2 === 0 ? 'order-2' : 'order-1'}`}>
+                          {step.icon}
+                        </div>
+                        <span className={`order-2 md:${index % 2 === 0 ? 'order-1' : 'order-2'}`}>
+                          {step.title}
+                        </span>
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -449,13 +445,13 @@ export default function ClientInformationContent() {
                   </Card>
                 </div>
                 
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 md:block hidden">
                   <div className={`w-16 h-16 rounded-full ${step.color} text-white flex items-center justify-center text-2xl font-bold shadow-lg`}>
                     {step.step}
                   </div>
                 </div>
                 
-                <div className="flex-1" />
+                <div className="flex-1 md:block hidden" />
               </motion.div>
             ))}
           </div>

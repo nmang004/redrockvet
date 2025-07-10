@@ -56,12 +56,12 @@ export default function StaffPage() {
       </section>
 
       {/* Team Grid */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {staffMembers.map((member) => (
               <Link key={member.id} href={`/staff/${member.slug}`} className="group">
-                <Card className="group-hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 bg-card border-0 shadow-lg cursor-pointer">
+                <Card className="group-hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1 bg-card border-0 shadow-lg cursor-pointer !py-0">
                   <CardContent className="p-0">
                     <div className="relative overflow-hidden">
                       <div className="aspect-[3/4] relative">
@@ -75,8 +75,8 @@ export default function StaffPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     
-                    <div className="p-4">
-                      <div className="text-center mb-3">
+                    <div className="p-3">
+                      <div className="text-center mb-2">
                         <h3 className="text-lg font-bold text-foreground mb-1">
                           {member.name}
                         </h3>
@@ -92,13 +92,13 @@ export default function StaffPage() {
                         </p>
                       </div>
 
-                      <div className="mb-3">
+                      <div className="mb-2">
                         <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
                           {member.bio}
                         </p>
                       </div>
 
-                      <div className="mb-3">
+                      <div className="mb-2">
                         <div className="flex items-center gap-1 mb-1">
                           <GraduationCap className="w-3 h-3 text-primary" />
                           <span className="text-xs font-medium text-foreground">Specialties:</span>

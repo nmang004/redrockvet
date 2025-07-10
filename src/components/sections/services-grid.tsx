@@ -190,7 +190,7 @@ export default function ServicesGrid({
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <Card className="h-full group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col">
                   <CardHeader className="space-y-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                       <IconComponent className="w-6 h-6 text-primary" />
@@ -203,8 +203,8 @@ export default function ServicesGrid({
                     </div>
                   </CardHeader>
                   
-                  <CardContent className="space-y-6">
-                    <ul className="space-y-2">
+                  <CardContent className="flex-1 flex flex-col">
+                    <ul className="space-y-2 flex-1">
                       {service.features && Array.isArray(service.features) && service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-sm text-muted-foreground">
                           <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0" />
@@ -213,7 +213,7 @@ export default function ServicesGrid({
                       ))}
                     </ul>
                     
-                    <div className="pt-4 border-t border-border">
+                    <div className="pt-4 mt-6 border-t border-border">
                       <Button asChild variant="ghost" size="sm" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300 w-full justify-center">
                         <Link href={`/services/${service.slug.current}`}>
                           Learn More

@@ -100,18 +100,20 @@ export default function ServicesPage() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={service.slug} className="h-full hover:shadow-lg transition-all duration-300">
-                <CardHeader>
+              <Card key={service.slug} className="h-full hover:shadow-lg transition-all duration-300 flex flex-col">
+                <CardHeader className="flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <IconComponent className="w-6 h-6 text-primary" />
                   </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
-                  <CardDescription className="text-base mb-4">
+                  <CardTitle className="text-xl mb-3">{service.title}</CardTitle>
+                  <CardDescription className="text-base flex-1">
                     {service.description}
                   </CardDescription>
-                  <Button variant="outline" size="sm" asChild>
-                    <Link href={`/services/${service.slug}`}>Learn More</Link>
-                  </Button>
+                  <div className="mt-4">
+                    <Button variant="outline" size="sm" asChild className="w-full">
+                      <Link href={`/services/${service.slug}`}>Learn More</Link>
+                    </Button>
+                  </div>
                 </CardHeader>
               </Card>
             );

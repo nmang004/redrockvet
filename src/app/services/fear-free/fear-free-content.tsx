@@ -535,7 +535,7 @@ export default function FearFreeContent() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full hover:shadow-lg transition-all duration-300 group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 group flex flex-col">
                     <CardHeader className="text-center">
                       <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                         <IconComponent className="w-8 h-8 text-primary" />
@@ -545,7 +545,7 @@ export default function FearFreeContent() {
                         {resource.description}
                       </CardDescription>
                     </CardHeader>
-                    <CardContent className="pt-0">
+                    <CardContent className="pt-0 flex-1 flex flex-col justify-end">
                       {resource.comingSoon ? (
                         <Button variant="outline" size="sm" className="w-full" disabled>
                           <Clock className="w-4 h-4 mr-2" />
