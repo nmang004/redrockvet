@@ -7,10 +7,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const emergencySigns = [
-  "Sudden limping",
+  "Limping",
   "Minor wounds",
-  "Vomiting or diarrhea",
-  "Sudden lethargy",
+  "Vomiting",
+  "Diarrhea",
+  "Lethargy",
   "Eye issues",
   "Allergic reactions",
   "Behavioral changes"
@@ -19,23 +20,23 @@ const emergencySigns = [
 const services = [
   {
     icon: Zap,
-    title: "Same-Day Appointments",
-    description: "Quick assessment and stabilization during business hours for urgent pet health concerns."
+    title: "Same-Day Urgent Care",
+    description: "We set aside space for same-day appointments when your pet is sick or injured."
   },
   {
     icon: Heart,
-    title: "Fear-Free Handling",
-    description: "Low-stress handling techniques that prioritize your pet&apos;s comfort during emergency situations."
+    title: "Low-Stress, Fear-Free Handling",
+    description: "We use low-stress, fear-free handling techniques to ensure your pet&apos;s comfort during urgent care."
   },
   {
     icon: Stethoscope,
-    title: "Rapid Assessment",
-    description: "Fast, thorough evaluation to quickly identify and address your pet&apos;s urgent health needs."
+    title: "Quick Assessment & Stabilization",
+    description: "Fast assessment and stabilization of pet injuries during our business hours."
   },
   {
     icon: Phone,
-    title: "Emergency Consultation",
-    description: "Professional guidance to determine if your pet needs immediate care or can wait for regular hours."
+    title: "Professional Consultation",
+    description: "Call us to assess your pet&apos;s urgent care needs and schedule an appointment."
   }
 ];
 
@@ -68,7 +69,7 @@ export default function EmergencyContent() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl md:text-6xl font-bold text-foreground mb-6"
             >
-              Urgent Emergency Care
+              Emergency Vet in Colorado Springs
             </motion.h1>
             
             <motion.p
@@ -77,8 +78,8 @@ export default function EmergencyContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              Same-day veterinary appointments for urgent pet health concerns in the Pikes Peak region. 
-              When your pet needs immediate care, we're here to help with fear-free, professional treatment.
+              We offer emergency and urgent care services for pets in the Pikes Peak region. 
+              During normal business hours, we provide same-day appointments and quick assessment for your pet&apos;s urgent needs.
             </motion.p>
             
             <motion.div
@@ -112,10 +113,10 @@ export default function EmergencyContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Common Urgent Care Situations
+              What Situations Are Appropriate for Urgent Care?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              These are some of the common situations that require same-day veterinary attention.
+              These situations are appropriate for urgent care and often require same-day veterinary attention.
             </p>
           </motion.div>
 
@@ -233,7 +234,7 @@ export default function EmergencyContent() {
                   Call Early for Same-Day Care
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Urgent care slots fill up quickly. Call early in the day to secure a same-day appointment for your pet.
+                  We set aside space for same-day appointments. Call us to assess your pet&apos;s urgent care needs.
                 </p>
                 
                 <div className="space-y-4 mb-6">
@@ -270,49 +271,43 @@ export default function EmergencyContent() {
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-muted-foreground">
-              Common questions about urgent emergency care at Red Rock Veterinary Health.
+              Common questions about emergency and urgent care services at Red Rock Veterinary Health.
             </p>
           </motion.div>
 
           <div className="space-y-4">
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                What qualifies as a veterinary emergency?
+                Do you offer emergency and urgent care services?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Common emergencies include sudden limping, persistent vomiting or diarrhea, difficulty breathing, 
-                  wounds or cuts, sudden lethargy, eye injuries, allergic reactions, or any behavior that seems abnormal for your pet. 
-                  When in doubt, it&apos;s always better to call and discuss your concerns with our team.
+                  Yes, during normal business hours and depending on staff availability, we offer emergency and urgent care services.
                 </p>
               </div>
             </details>
 
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                Do I need an appointment for emergency care?
+                Can I get a same-day appointment if my pet is sick or injured?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Yes, we recommend calling ahead for same-day emergency appointments as urgent care slots fill up quickly. 
-                  Calling early in the day gives you the best chance of securing an appointment. Our team can also provide guidance 
-                  over the phone to help determine the urgency of your pet&apos;s condition.
+                  Yes, we set aside space for same-day appointments when your pet needs urgent care.
                 </p>
               </div>
             </details>
 
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                What should I do while waiting for emergency care?
+                What situations are appropriate for urgent care?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Keep your pet calm and comfortable. For wounds, apply gentle pressure with a clean cloth to control bleeding. 
-                  Don&apos;t give food or water unless instructed. If your pet is vomiting, remove food and water bowls. 
-                  Transport your pet safely in a carrier or have someone help you. Our team will provide specific instructions when you call.
+                  Situations appropriate for urgent care include limping, minor wounds, vomiting, diarrhea, lethargy, eye issues, allergic reactions, and behavioral changes.
                 </p>
               </div>
             </details>
@@ -345,6 +340,73 @@ export default function EmergencyContent() {
               </div>
             </details>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Information Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center"
+          >
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              Contact Us for Urgent Care
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Call us to assess your pet&apos;s urgent care needs and schedule an appointment.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Phone</h3>
+                  <a href="tel:719-204-3647" className="text-primary hover:underline text-lg">
+                    (719) 204-3647
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Text</h3>
+                  <a href="sms:719-355-8343" className="text-primary hover:underline text-lg">
+                    (719) 355-8343
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Email</h3>
+                  <a href="mailto:Reception@RedRockVet.com" className="text-primary hover:underline">
+                    Reception@RedRockVet.com
+                  </a>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Address</h3>
+                  <p className="text-muted-foreground">
+                    3163 W. Colorado Ave<br />
+                    Colorado Springs, CO 80904
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Hours</h3>
+                  <p className="text-muted-foreground">
+                    Monday-Friday: 8am-5pm<br />
+                    Closed Saturday & Sunday
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <Link href="tel:719-204-3647">
+                <Phone className="w-4 h-4 mr-2" />
+                Call Now for Urgent Care
+              </Link>
+            </Button>
+          </motion.div>
         </div>
       </section>
     </div>

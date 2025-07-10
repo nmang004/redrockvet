@@ -38,12 +38,6 @@ const features = [
   "Detailed aftercare instructions"
 ];
 
-const procedures = [
-  { name: "Spay/Neuter", description: "Routine reproductive surgery", price: "From $299" },
-  { name: "Tumor Removal", description: "Soft tissue mass removal", price: "From $450" },
-  { name: "Orthopedic Surgery", description: "Bone and joint procedures", price: "From $800" },
-  { name: "Emergency Surgery", description: "Life-saving procedures", price: "Consultation required" }
-];
 
 export default function SurgeryContent() {
   return (
@@ -143,7 +137,7 @@ export default function SurgeryContent() {
         </div>
       </section>
 
-      {/* Features & Pricing Section */}
+      {/* Features Section */}
       <section className="py-16 bg-accent">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -178,29 +172,21 @@ export default function SurgeryContent() {
               </div>
             </motion.div>
 
-            {/* Pricing */}
+            {/* Call to Action */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              className="flex items-center"
             >
-              <div className="bg-background rounded-2xl p-8 border border-border">
+              <div className="bg-background rounded-2xl p-8 border border-border w-full">
                 <h3 className="text-2xl font-bold text-foreground mb-6">
-                  Surgery Pricing
+                  Schedule Your Surgery Consultation
                 </h3>
-                
-                <div className="space-y-4 mb-8">
-                  {procedures.map((procedure, index) => (
-                    <div key={procedure.name} className="flex justify-between items-center py-3 border-b border-border last:border-b-0">
-                      <div>
-                        <h4 className="font-semibold text-foreground">{procedure.name}</h4>
-                        <p className="text-sm text-muted-foreground">{procedure.description}</p>
-                      </div>
-                      <span className="font-bold text-primary">{procedure.price}</span>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-lg text-muted-foreground mb-8">
+                  Our surgical team will provide a comprehensive evaluation and personalized treatment plan for your pet.
+                </p>
                 
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-2 mb-4">

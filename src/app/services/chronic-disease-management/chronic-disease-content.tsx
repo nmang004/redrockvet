@@ -381,19 +381,6 @@ export default function ChronicDiseaseContent() {
               </div>
             </details>
 
-            <details className="group bg-background rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                How do you help me manage the costs of chronic care?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  We believe in transparent communication about treatment costs and work with you to create realistic management plans. 
-                  We prioritize the most essential treatments and can often adjust medication schedules or find cost-effective alternatives. 
-                  We&apos;ll always discuss financial considerations as part of developing your pet&apos;s treatment plan.
-                </p>
-              </div>
-            </details>
 
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">

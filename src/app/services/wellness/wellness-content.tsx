@@ -1,6 +1,6 @@
 "use client";
 
-import { Stethoscope, Heart, Shield, Calendar, Clock, CheckCircle, Dog, Cat, Bug, Activity } from "lucide-react";
+import { Stethoscope, Heart, Shield, Calendar, Clock, CheckCircle, Dog, Cat, Bug, Activity, Phone } from "lucide-react";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -10,17 +10,17 @@ const services = [
   {
     icon: Dog,
     title: "Dog Vaccinations",
-    description: "Protect against rabies, distemper, parvovirus with customized vaccination schedules and booster shots for ongoing immunity."
+    description: "Tailored vaccination schedules to protect against rabies, distemper, and parvovirus. We offer booster shots and ongoing immunization."
   },
   {
     icon: Cat,
     title: "Cat Vaccinations",
-    description: "Defend against Feline Panleukopenia, upper respiratory viruses, and rabies. Tailored to indoor/outdoor status with Feline Leukemia vaccine recommendations."
+    description: "Protects against Feline Panleukopenia, upper respiratory viruses, rabies, and Feline Leukemia for outdoor cats."
   },
   {
     icon: Bug,
-    title: "Regional Health Protection",
-    description: "Protection against tick-borne diseases prevalent in Colorado and heartworm disease risk from mosquitoes."
+    title: "Colorado-Specific Protection",
+    description: "Protection against tick-borne diseases like ehrlichiosis, anaplasmosis, Rocky Mountain spotted fever, and mosquito-borne illnesses."
   },
   {
     icon: Activity,
@@ -32,10 +32,10 @@ const services = [
 const benefits = [
   "Regular wellness screenings for health maintenance",
   "Early detection of potential health issues",
-  "Tailored vaccination and preventive care strategies",
-  "Protection against regional diseases in Colorado",
+  "Protection against diseases like parvovirus, distemper, panleukopenia, and leptospirosis",
+  "Colorado-specific disease prevention strategies",
   "Elanco half-volume vaccines available",
-  "Comprehensive preventive care approach"
+  "Protection at dog parks from disease transmission"
 ];
 
 export default function WellnessContent() {
@@ -69,7 +69,7 @@ export default function WellnessContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              Pet wellness and vaccinations are vital for maintaining your pet&apos;s health. Our comprehensive preventive care approach includes early detection of potential health issues and tailored vaccination strategies.
+              Regular pet wellness screenings are vital for maintaining pet health. Early detection of potential health issues is crucial. We focus on Colorado Springs & Manitou Springs environmental risks.
             </motion.p>
             
             <motion.div
@@ -100,10 +100,10 @@ export default function WellnessContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Comprehensive Vaccination & Wellness Services
+              Pet Wellness and Pet Vaccinations
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our preventive care services are designed to protect your pet against regional diseases and maintain optimal health throughout their life.
+              Our vaccination services protect your pets against common diseases while addressing unique Colorado environmental risks.
             </p>
           </motion.div>
 
@@ -196,7 +196,6 @@ export default function WellnessContent() {
               </div>
               
               <div className="text-center">
-                <p className="text-2xl font-bold text-primary mb-4">Starting from $89</p>
                 <Button size="lg" className="w-full" asChild>
                   <Link href="/contact">Book Your Appointment</Link>
                 </Button>
@@ -227,74 +226,125 @@ export default function WellnessContent() {
           <div className="space-y-4">
             <details className="group bg-accent rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                How often should my pet have a wellness exam?
+                What tick-borne diseases should I be concerned about in Colorado?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  We recommend annual wellness exams for healthy adult pets, and twice yearly for senior pets (over 7 years for dogs, over 9 years for cats). 
-                  Puppies and kittens need more frequent visits for vaccinations and monitoring during their first year. 
-                  Regular check-ups help us detect health issues early when they&apos;re most treatable.
+                  In Colorado, pets are at risk for tick-borne diseases including ehrlichiosis, anaplasmosis, and Rocky Mountain spotted fever. Regular preventive care and tick prevention are essential.
                 </p>
               </div>
             </details>
 
             <details className="group bg-accent rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                What vaccinations does my pet need in Colorado?
+                How does heartworm prevention work?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Core vaccines for dogs include rabies, distemper, and parvovirus. In Colorado, we also recommend Lyme disease and leptospirosis vaccines 
-                  due to regional risks. For cats, core vaccines include rabies and FVRCP (distemper complex). 
-                  We may recommend additional vaccines like Feline Leukemia based on your pet&apos;s lifestyle and risk factors.
+                  Heartworm prevention is crucial as mosquitoes can transmit this potentially fatal disease. We offer various preventive options to protect your pet year-round.
                 </p>
               </div>
             </details>
 
             <details className="group bg-accent rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                What&apos;s included in a wellness exam?
+                Can pets transmit diseases to humans?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  A comprehensive wellness exam includes a thorough physical examination, weight and body condition assessment, 
-                  discussion of nutrition and behavior, parasite screening, and vaccination updates as needed. 
-                  We also recommend annual lab work for baseline health monitoring and early detection of potential issues.
+                  Yes, some diseases (zoonotic diseases) can be transmitted from pets to humans. Regular veterinary care, vaccinations, and parasite prevention help protect both your pet and your family.
                 </p>
               </div>
             </details>
 
             <details className="group bg-accent rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                Do you offer titer testing instead of automatic vaccinations?
+                What are Elanco half-volume vaccines?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Yes, we offer titer testing to measure your pet&apos;s immunity levels for certain diseases. 
-                  This can help determine if vaccination boosters are necessary. However, some vaccines like rabies are required by law regardless of titer results. 
-                  We&apos;ll discuss the best vaccination schedule for your individual pet based on their health, lifestyle, and risk factors.
+                  Elanco half-volume vaccines provide the same protection as traditional vaccines but in a smaller volume, making them more comfortable for your pet, especially smaller breeds.
                 </p>
               </div>
             </details>
 
             <details className="group bg-accent rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                What regional health concerns should Colorado pet owners know about?
+                Why is annual lab work important?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Colorado pets face unique risks including tick-borne diseases like Rocky Mountain Spotted Fever and Colorado Tick Fever, 
-                  rattlesnake encounters in certain areas, and altitude-related concerns for pets moving from lower elevations. 
-                  Year-round flea and tick prevention is essential, and we may recommend specific vaccines or preventatives based on your location and activities.
+                  Annual lab work provides baseline health monitoring and allows for early detection of potential health issues before symptoms appear, leading to better treatment outcomes.
                 </p>
               </div>
             </details>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Information Section */}
+      <section className="py-16 bg-accent">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center"
+          >
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              Schedule Your Pet&apos;s Wellness Visit
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Contact us today to schedule your pet&apos;s comprehensive wellness exam and vaccinations.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Phone</h3>
+                  <a href="tel:719-204-3647" className="text-primary hover:underline text-lg">
+                    (719) 204-3647
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Address</h3>
+                  <p className="text-muted-foreground">
+                    3163 W. Colorado Ave<br />
+                    Colorado Springs, CO 80904
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Hours</h3>
+                  <p className="text-muted-foreground">
+                    Monday-Friday: 8am-5pm<br />
+                    Closed Saturday & Sunday
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Service Area</h3>
+                  <p className="text-muted-foreground">
+                    Colorado Springs & Manitou Springs
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <Link href="tel:719-204-3647">
+                <Phone className="w-4 h-4 mr-2" />
+                Call to Schedule Wellness Visit
+              </Link>
+            </Button>
+          </motion.div>
         </div>
       </section>
     </div>

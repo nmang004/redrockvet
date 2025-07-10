@@ -1,6 +1,6 @@
 "use client";
 
-import { Heart, Camera, Scissors, Shield, CheckCircle, Clock, Monitor, X } from "lucide-react";
+import { Heart, Camera, Scissors, Shield, CheckCircle, Clock, Monitor, X, Phone, Stethoscope } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -8,9 +8,9 @@ import Link from "next/link";
 
 const dentalServices = [
   {
-    icon: X,
+    icon: Camera,
     title: "Full Mouth Radiographs",
-    description: "Complete X-ray imaging with every dental procedure to identify hidden problems under the gums including infected roots, bone loss, and root abscesses."
+    description: "Full mouth radiographs with every dental procedure to detect hidden dental problems below the gumline including infected roots, bone loss, and conditions not visible during basic oral exam."
   },
   {
     icon: Heart,
@@ -19,13 +19,13 @@ const dentalServices = [
   },
   {
     icon: Scissors,
-    title: "Advanced Oral Surgery",
-    description: "Difficult tooth extractions, oral mass removals, and oral trauma repair performed by experienced veterinarians."
+    title: "Oral Surgery",
+    description: "Advanced oral procedures including difficult tooth extractions, oral mass removals, and oral trauma repair performed by Dr. Unsell."
   },
   {
     icon: Monitor,
     title: "Extensive Anesthetic Monitoring",
-    description: "Two dedicated credentialed technicians monitor ECG, blood pressure, pulse oximetry, capnography, and temperature during procedures."
+    description: "Extensive anesthetic monitoring including ECG, blood pressure, pulse oximetry, capnography, and temperature monitoring for safety."
   }
 ];
 
@@ -47,12 +47,6 @@ const benefits = [
   "Professional anesthesia ensures thorough and safe cleaning"
 ];
 
-const procedures = [
-  { name: "Basic Dental Cleaning", description: "Complete cleaning and polishing", price: "From $149" },
-  { name: "Dental Cleaning + Extractions", description: "Cleaning with tooth removal", price: "From $299" },
-  { name: "Oral Surgery", description: "Advanced surgical procedures", price: "From $450" },
-  { name: "Dental X-rays", description: "Digital dental radiographs", price: "From $89" }
-];
 
 export default function DentalContent() {
   return (
@@ -76,7 +70,7 @@ export default function DentalContent() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl md:text-6xl font-bold text-foreground mb-6"
             >
-              Veterinary Dental Care
+              Veterinary Dental Care & Oral Surgery
             </motion.h1>
             
             <motion.p
@@ -85,7 +79,7 @@ export default function DentalContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              Your pet&apos;s dental health is about more than fresh breath—it's essential to their overall well-being. We provide comprehensive dental care with full mouth radiographs and advanced anesthetic monitoring.
+              We provide comprehensive dental care with full mouth radiographs for every dental procedure, oral surgery, and extensive anesthetic monitoring performed by Dr. Robbie Unsell with advanced training.
             </motion.p>
             
             <motion.div
@@ -221,53 +215,60 @@ export default function DentalContent() {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Dr. Unsell Expertise Section */}
       <section className="py-16 bg-background">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Dental Care Pricing
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Transparent pricing for all our dental services. Contact us for a personalized treatment plan.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-accent rounded-2xl p-8 border border-border"
-          >
-            <div className="space-y-6">
-              {procedures.map((procedure, index) => (
-                <div key={procedure.name} className="flex justify-between items-center py-4 border-b border-border last:border-b-0">
-                  <div>
-                    <h4 className="font-semibold text-foreground text-lg">{procedure.name}</h4>
-                    <p className="text-muted-foreground">{procedure.description}</p>
-                  </div>
-                  <span className="font-bold text-primary text-lg">{procedure.price}</span>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-8 text-center">
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <Clock className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">Free dental exam with any cleaning</span>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="bg-primary/5 border border-primary/20 rounded-2xl p-8"
+            >
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-6">
+                <Stethoscope className="w-8 h-8 text-primary" />
               </div>
-              <Button size="lg" className="w-full md:w-auto" asChild>
-                <Link href="/contact">Schedule Your Pet's Dental Care</Link>
+              <h2 className="text-3xl font-bold text-foreground mb-4">
+                Expert Dental Care by Dr. Robbie Unsell
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+                Dr. Robbie Unsell has advanced training in veterinary dental care and oral surgery. 
+                For procedures that are too complex, we collaborate with local veterinary dental specialists in Colorado Springs 
+                to ensure your pet receives the best possible care.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <Camera className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Full Mouth Radiographs</h3>
+                  <p className="text-sm text-muted-foreground">Every dental procedure includes complete X-ray imaging</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <Scissors className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Advanced Oral Surgery</h3>
+                  <p className="text-sm text-muted-foreground">Difficult extractions and oral trauma repair</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <Monitor className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Extensive Monitoring</h3>
+                  <p className="text-sm text-muted-foreground">Complete anesthetic monitoring for safety</p>
+                </div>
+              </div>
+              
+              <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+                <Link href="/contact">
+                  Schedule Dental Consultation
+                </Link>
               </Button>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -292,43 +293,36 @@ export default function DentalContent() {
           <div className="space-y-4">
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                Why does my pet need anesthesia for dental cleaning?
+                Why are full mouth radiographs important?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Professional dental cleaning requires anesthesia to ensure your pet&apos;s safety and allow for thorough cleaning. 
-                  Anesthesia prevents stress and fear, allows us to clean below the gum line where most dental disease occurs, 
-                  and enables us to take full mouth radiographs to identify hidden problems. 
-                  We use extensive monitoring with two dedicated technicians during every procedure.
+                  They help identify hidden problems under the gums like infected roots, bone loss, conditions not visible during basic oral exam, and potential jaw bone integrity issues for small dogs and cats.
                 </p>
               </div>
             </details>
 
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                How often should my pet have dental cleanings?
+                Does my pet need anesthesia for dental cleaning?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Most pets benefit from professional dental cleaning every 1-3 years, depending on their age, breed, and oral health. 
-                  Smaller dogs and certain breeds may need more frequent cleanings due to genetic predisposition to dental disease. 
-                  We&apos;ll assess your pet&apos;s individual needs during their wellness exam and recommend an appropriate schedule.
+                  Yes, because anesthesia is essential for thorough and safe cleaning, taking radiographs, cleaning below gumline, and performing extractions.
                 </p>
               </div>
             </details>
 
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                What are dental radiographs and why are they necessary?
+                What dental surgeries does Dr. Unsell perform?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Dental radiographs (X-rays) allow us to see what&apos;s happening below the gum line, where most dental disease occurs. 
-                  They help identify infected tooth roots, bone loss, root abscesses, and other problems not visible during visual examination. 
-                  We perform full mouth radiographs with every dental procedure to ensure we don&apos;t miss any hidden issues that could cause pain.
+                  Advanced oral procedures including difficult tooth extractions, oral mass removals, and oral trauma repair. If a procedure is too complex, we will refer to a local veterinary dental specialist in Colorado Springs.
                 </p>
               </div>
             </details>
@@ -362,6 +356,67 @@ export default function DentalContent() {
               </div>
             </details>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Information Section */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center"
+          >
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              Schedule Your Pet&apos;s Dental Care
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Contact us today to schedule your pet&apos;s comprehensive dental examination and treatment with Dr. Unsell.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Phone</h3>
+                  <a href="tel:719-204-3647" className="text-primary hover:underline text-lg">
+                    (719) 204-3647
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Address</h3>
+                  <p className="text-muted-foreground">
+                    3163 W. Colorado Ave<br />
+                    Colorado Springs, CO 80904
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Hours</h3>
+                  <p className="text-muted-foreground">
+                    Monday-Friday: 8am-5pm<br />
+                    Closed Saturday & Sunday
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Specialist Network</h3>
+                  <p className="text-muted-foreground">
+                    Colorado Springs dental specialists available
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <Link href="tel:719-204-3647">
+                <Phone className="w-4 h-4 mr-2" />
+                Call for Dental Appointment
+              </Link>
+            </Button>
+          </motion.div>
         </div>
       </section>
     </div>

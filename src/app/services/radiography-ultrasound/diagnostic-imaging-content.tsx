@@ -10,12 +10,12 @@ const imagingServices = [
   {
     icon: Camera,
     title: "Digital Radiography",
-    description: "High-quality digital X-ray imaging with board-certified radiologist evaluation for accurate diagnoses."
+    description: "Digital radiography images typically evaluated by board-certified radiologists for accurate diagnoses."
   },
   {
     icon: Monitor,
     title: "Ultrasound Services",
-    description: "In-house ultrasound examinations and collaboration with mobile internal medicine specialists for comprehensive imaging."
+    description: "In-house ultrasound probe and brief ultrasounds, with collaboration with mobile internal medicine specialists."
   },
   {
     icon: Activity,
@@ -25,17 +25,17 @@ const imagingServices = [
   {
     icon: Stethoscope,
     title: "Specialist Partnerships",
-    description: "Collaboration with local specialist hospitals for urgent ultrasound needs and advanced imaging."
+    description: "Partnerships with local specialist hospitals in Colorado Springs and Castle Rock for advanced imaging."
   }
 ];
 
 const benefits = [
   "Safe, non-invasive diagnostic procedures",
-  "Minimal radiation exposure with digital technology",
-  "Specialized care performed in familiar environment",
-  "Timely and accurate diagnoses",
+  "Minimal radiation or sound waves used",
+  "Advanced diagnostic procedures within the hospital",
+  "Reduces pet stress and ensures continuity of care",
   "Board-certified radiologist evaluations",
-  "Reduced stress for pets during procedures"
+  "Professionals ensure pet comfort and safety"
 ];
 
 const applications = [
@@ -83,7 +83,7 @@ export default function DiagnosticImagingContent() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl md:text-6xl font-bold text-foreground mb-6"
             >
-              Diagnostic Imaging Services
+              Veterinary Diagnostic Imaging in Colorado Springs: Digital Radiography & Ultrasound
             </motion.h1>
             
             <motion.p
@@ -92,7 +92,7 @@ export default function DiagnosticImagingContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              Advanced diagnostic imaging services are essential tools for diagnosing various conditions, monitoring ongoing health issues, and guiding treatment plans with minimal stress to your pet.
+              We offer digital radiography and ultrasound services with board-certified radiologist evaluation. Our diagnostic imaging helps visualize internal structures, diagnose conditions, and guide treatment plans.
             </motion.p>
             
             <motion.div
@@ -129,7 +129,7 @@ export default function DiagnosticImagingContent() {
               Our Imaging Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              State-of-the-art diagnostic imaging technology to visualize internal structures and provide accurate diagnoses.
+              Non-invasive imaging techniques that help visualize internal structures, diagnose conditions, monitor health issues, and guide treatment plans.
             </p>
           </motion.div>
 
@@ -296,7 +296,7 @@ export default function DiagnosticImagingContent() {
                 Advanced Imaging Network
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                We collaborate with mobile internal medicine specialists and local specialist hospitals to provide comprehensive imaging services, ensuring your pet receives the most advanced diagnostic care available.
+                Collaboration with mobile specialists offers advanced diagnostic procedures within the hospital, reducing pet stress and ensuring continuity of care.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -336,42 +336,36 @@ export default function DiagnosticImagingContent() {
           <div className="space-y-4">
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                Is diagnostic imaging safe for my pet?
+                Why are radiography and ultrasound important for my pet's health?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Yes, our digital imaging technology uses minimal radiation exposure, significantly less than older film-based systems. 
-                  Ultrasound is completely non-invasive and uses no radiation at all. We only recommend imaging when the diagnostic benefits 
-                  outweigh any minimal risks, and we use protective measures to ensure your pet&apos;s safety during all procedures.
+                  Non-invasive imaging techniques that help visualize internal structures, diagnose conditions, monitor health issues, and guide treatment plans.
                 </p>
               </div>
             </details>
 
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                Will my pet need sedation for imaging?
+                How does collaboration with mobile specialists benefit my pet?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Many imaging procedures can be performed without sedation, especially routine X-rays and basic ultrasounds. 
-                  However, for anxious pets or complex studies requiring precise positioning, mild sedation may be recommended for their comfort and safety. 
-                  We always discuss sedation options and tailor our approach to your individual pet&apos;s needs and temperament.
+                  Offers advanced diagnostic procedures within the hospital, reducing pet stress and ensuring continuity of care.
                 </p>
               </div>
             </details>
 
             <details className="group bg-background rounded-lg">
               <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                How long does it take to get imaging results?
+                Are these imaging procedures safe for my pet?
                 <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Basic X-ray results are often available immediately for urgent cases. For routine imaging, we typically provide preliminary results 
-                  the same day or next business day. Studies that require board-certified radiologist evaluation may take 24-48 hours for final reports. 
-                  We&apos;ll always communicate the expected timeline and contact you as soon as results are available.
+                  Yes, both are safe and non-invasive, using minimal radiation or sound waves, with professionals ensuring pet comfort and safety.
                 </p>
               </div>
             </details>
@@ -404,6 +398,67 @@ export default function DiagnosticImagingContent() {
               </div>
             </details>
           </div>
+        </div>
+      </section>
+
+      {/* Commitment Statement & Contact */}
+      <section className="py-16 bg-background">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center"
+          >
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              Our Commitment to Comprehensive Care
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              At Red Rock Veterinary Health, we are committed to providing comprehensive diagnostic services to maintain and improve your pet&apos;s health.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Phone</h3>
+                  <a href="tel:719-204-3647" className="text-primary hover:underline text-lg">
+                    (719) 204-3647
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Address</h3>
+                  <p className="text-muted-foreground">
+                    3163 W. Colorado Ave<br />
+                    Colorado Springs, CO 80904
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Hours</h3>
+                  <p className="text-muted-foreground">
+                    Monday-Friday: 8am-5pm<br />
+                    Closed Saturday & Sunday
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Specialist Network</h3>
+                  <p className="text-muted-foreground">
+                    Colorado Springs & Castle Rock
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <Link href="tel:719-204-3647">
+                <Phone className="w-4 h-4 mr-2" />
+                Schedule Imaging Services
+              </Link>
+            </Button>
+          </motion.div>
         </div>
       </section>
     </div>
