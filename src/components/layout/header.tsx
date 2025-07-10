@@ -36,6 +36,12 @@ const aboutItems = [
   { name: "Blog", href: "/blog" },
 ];
 
+// Patient Portal navigation data
+const patientPortalItems = [
+  { name: "Online Pharmacy", href: "https://redrockvethealth.securevetsource.com/site/view/HomeDelivery.pml", external: true },
+  { name: "Medical Records Portal", href: "/medical-record-portal", external: false },
+];
+
 // Simple navigation items (no dropdown)
 const simpleNavigation = [
   { name: "Contact", href: "/contact" },
@@ -63,7 +69,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex">
-            <NavigationMenu>
+            <NavigationMenu viewport={false}>
               <NavigationMenuList className="z-[100]">
                 {/* Vet Services Dropdown */}
                 <NavigationMenuItem>
@@ -105,6 +111,38 @@ export default function Header() {
                           >
                             <div className="text-sm font-medium leading-none">{item.name}</div>
                           </Link>
+                        </NavigationMenuLink>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                {/* Patient Portal Dropdown */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200">
+                    Patient Portal
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="z-[100]">
+                    <div className="grid gap-3 p-4 md:w-[250px]">
+                      {patientPortalItems.map((item) => (
+                        <NavigationMenuLink key={item.name} asChild>
+                          {item.external ? (
+                            <a
+                              href={item.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{item.name}</div>
+                            </a>
+                          ) : (
+                            <Link
+                              href={item.href}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{item.name}</div>
+                            </Link>
+                          )}
                         </NavigationMenuLink>
                       ))}
                     </div>
@@ -198,6 +236,36 @@ export default function Header() {
                     >
                       {item.name}
                     </Link>
+                  ))}
+                </div>
+
+                {/* Mobile Patient Portal */}
+                <div className="space-y-1">
+                  <div className="px-3 py-2 text-base font-medium text-foreground">
+                    Patient Portal
+                  </div>
+                  {patientPortalItems.map((item) => (
+                    item.external ? (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-6 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="block px-6 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    )
                   ))}
                 </div>
 
