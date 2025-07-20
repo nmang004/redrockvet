@@ -220,7 +220,7 @@ export const certificationMetadata = {
   },
   recover: {
     name: "RECOVER Rescuer Animal CPR",
-    image: "/staff/certs/recover.png",
+    image: "/staff/certs/recover.jpg",
     alt: "RECOVER Rescuer Animal CPR Certification"
   }
 };
