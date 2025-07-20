@@ -145,6 +145,26 @@ export const staffMembers: StaffMember[] = [
     ],
     personalInterests: "When she's not working with patients, Liz enjoys continuing her education in veterinary behavior and training techniques. She's passionate about the human-animal bond and believes that addressing behavioral issues is as important as treating medical conditions.",
     certifications: ["fearfreeelite", "karen", "hart", "lsh"]
+  },
+  {
+    id: "kim-weigelt",
+    name: "Kim Weigelt",
+    title: "Registered Veterinary Technician",
+    credentials: "RVT FFCP-VT",
+    pronouns: "She/Her",
+    image: "/staff/kim.jpg",
+    imageAlt: "Kim Weigelt, Registered Veterinary Technician",
+    slug: "kim-weigelt",
+    bio: "Kim Weigelt is a Registered Veterinary Technician with over 10 years of experience in emergency and general practice. Certified as a Fear Free and Cat Friendly professional, as well as a RECOVER Rescuer in animal CPR, Kim's passion lies in anesthesia and emergency/intensive care. Originally from the Chicago suburbs, Kim found her home in Colorado in 2016, rejoining familiar faces from Bear Creek Vet to help create a calm, compassionate environment at Red Rock Veterinary Health.",
+    specialties: [
+      "Anesthesia",
+      "Emergency Care",
+      "Intensive Care",
+      "Animal CPR",
+      "Fear Free Techniques"
+    ],
+    personalInterests: "Whether she's rescuing animals from California wildfires, studying to further her veterinary knowledge, or raising butterflies at home, Kim brings heart and dedication to everything she does—always putting your pet's comfort and care first. Fun fact: She shares her adventures with Leon, her lovable 3-legged pup!",
+    certifications: ["fearfree", "catfriendly", "recover"]
   }
 ];
 
@@ -197,6 +217,11 @@ export const certificationMetadata = {
     name: "LSH Certification",
     image: "/staff/certs/lsh.jpg",
     alt: "LSH Certification"
+  },
+  recover: {
+    name: "RECOVER Rescuer Animal CPR",
+    image: "/staff/certs/recover.png",
+    alt: "RECOVER Rescuer Animal CPR Certification"
   }
 };
 
