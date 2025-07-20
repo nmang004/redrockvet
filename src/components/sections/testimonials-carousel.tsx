@@ -9,47 +9,47 @@ import { useState, useEffect } from "react";
 const testimonials = [
   {
     id: 1,
-    clientName: "Sarah Johnson",
-    petName: "Max",
-    petType: "Golden Retriever",
-    review: "Dr. Smith and the entire team at Red Rock Vet were incredible during Max's surgery. They kept us informed every step of the way and showed such genuine care for our family. Max is doing wonderfully now!",
+    clientName: "Liz Wagoner",
+    petName: "Rueben & Money",
+    petType: "Hunting Dog & Pit Bull",
+    review: "Dr. Unsell has been my vet for the last five years. He is absolutely amazing and truly cares! I wouldn't trust my two boys with anyone else! Dr. Unsell helped us understand Rueben's behavior and was never afraid of Money because of his breed.",
     rating: 5,
-    service: "Surgery",
+    service: "Fear Free Care",
     photo: "/testimonials/client-1.jpg",
-    location: "Animal City, AC"
+    location: "Colorado Springs, CO"
   },
   {
     id: 2,
-    clientName: "Michael Chen",
-    petName: "Luna",
-    petType: "Persian Cat",
-    review: "The dental care Luna received was exceptional. The staff was so gentle with her, and they explained everything clearly. You can tell they truly love animals here.",
+    clientName: "Matthew Keefe",
+    petName: "Jax",
+    petType: "Dog with Allergies",
+    review: "I can't say enough good things about Dr. Unsell and Red Rock Veterinary Health! Dr. Unsell was very knowledgeable about allergies and the entire dental process went extremely smooth. The facility is clean, modern, and well-equipped.",
     rating: 5,
-    service: "Dental Care",
+    service: "Allergy Treatment & Dental",
     photo: "/testimonials/client-2.jpg",
-    location: "Pet Valley, AC"
+    location: "Colorado Springs, CO"
   },
   {
     id: 3,
-    clientName: "Emily Rodriguez",
-    petName: "Buddy",
-    petType: "Mixed Breed",
-    review: "We've been coming to Red Rock Vet for over 5 years, and they've always provided excellent care. The emergency service saved Buddy's life last year. We're so grateful for this amazing team!",
+    clientName: "Ashley Craig",
+    petName: "Cat",
+    petType: "Feline Patient",
+    review: "Dr. Unsell and the team at Red Rock Veterinary Health are absolutely amazing. Dr. Unsell took the time to thoroughly examine my cat, explain everything in detail, and answer all of my questions with patience and kindness. His expertise and gentle approach made all the difference.",
     rating: 5,
-    service: "Emergency Care",
+    service: "Cat Care",
     photo: "/testimonials/client-3.jpg",
-    location: "Animal City, AC"
+    location: "Colorado Springs, CO"
   },
   {
     id: 4,
-    clientName: "David Thompson",
-    petName: "Whiskers",
-    petType: "Tabby Cat",
-    review: "The wellness exam was thorough and the vet took time to answer all our questions. Whiskers was comfortable throughout the visit. Highly recommend Red Rock Vet!",
+    clientName: "Stephen S",
+    petName: "Black Labrador Retriever",
+    petType: "Active 7-year-old Lab",
+    review: "Dr. Unsell is the best and most reliable veterinarian we've met. Our dog really likes Dr. Unsell and stays relaxed during examination. We love how they focus on fear free practices, and the clinic prices are not as expensive as previous clinics.",
     rating: 5,
-    service: "Wellness Exam",
+    service: "Fear Free Veterinary Care",
     photo: "/testimonials/client-4.jpg",
-    location: "Care Town, AC"
+    location: "Colorado Springs, CO"
   }
 ];
 

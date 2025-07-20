@@ -1,6 +1,6 @@
 "use client";
 
-import { Zap, Phone, Clock, AlertTriangle, Heart, Stethoscope, CheckCircle, Calendar } from "lucide-react";
+import { Zap, Phone, Clock, AlertTriangle, Heart, Stethoscope, CheckCircle, MapPin } from "lucide-react";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -340,6 +340,100 @@ export default function EmergencyContent() {
               </div>
             </details>
           </div>
+        </div>
+      </section>
+
+      {/* After-Hours Emergency Referrals */}
+      <section className="py-16 bg-red-500/5">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              After-Hours Emergency Care
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              For all after-hours and weekend emergencies, we do not have an on-call line. 
+              Please contact one of these trusted 24/7 emergency facilities:
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-background rounded-2xl p-8 border border-red-500/20 shadow-lg"
+            >
+              <h3 className="text-2xl font-bold text-foreground mb-4">Uintah Pet Emergency</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-red-500" />
+                  <a href="tel:XXX-XXX-XXXX" className="text-primary hover:underline">
+                    (Contact for phone number)
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-red-500 mt-1" />
+                  <div className="text-muted-foreground">
+                    (Contact for address details)
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-red-500" />
+                  <span className="text-muted-foreground">24/7 Emergency Care</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-background rounded-2xl p-8 border border-red-500/20 shadow-lg"
+            >
+              <h3 className="text-2xl font-bold text-foreground mb-4">Animal ER Care</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-red-500" />
+                  <a href="tel:XXX-XXX-XXXX" className="text-primary hover:underline">
+                    (Contact for phone number)
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-red-500 mt-1" />
+                  <div className="text-muted-foreground">
+                    (Contact for address details)
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-red-500" />
+                  <span className="text-muted-foreground">24/7 Emergency Care</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="mt-8 p-6 bg-red-500/10 border border-red-500/20 rounded-xl text-center"
+          >
+            <p className="text-foreground font-medium mb-2">Important Notice</p>
+            <p className="text-muted-foreground">
+              Red Rock Veterinary Health does not have an on-call emergency line for after-hours care. 
+              For urgent situations outside our business hours (Monday-Friday, 8am-5pm), 
+              please go directly to one of these 24/7 emergency facilities.
+            </p>
+          </motion.div>
         </div>
       </section>
 

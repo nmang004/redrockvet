@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="font-semibold text-lg">Emergency: 24/7</span>
+                <span className="font-semibold text-lg">Urgent Care During Business Hours</span>
               </div>
               <Button size="lg" className="w-full" asChild>
                 <a href="tel:719-204-3647">
@@ -72,6 +72,11 @@ export default function Footer() {
                   Call (719) 204-3647
                 </a>
               </Button>
+              <div className="text-xs text-secondary-foreground/70 space-y-1">
+                <div>After-hours & weekend emergencies:</div>
+                <div>• Uintah Pet Emergency</div>
+                <div>• Animal ER Care</div>
+              </div>
             </div>
 
             {/* Practice Hours */}

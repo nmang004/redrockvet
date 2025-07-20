@@ -230,8 +230,8 @@ export default function ContactForm() {
                   </div>
                   <hr className="border-border" />
                   <div className="flex justify-between">
-                    <span className="text-primary font-medium">Emergency Care</span>
-                    <span className="font-medium">24/7</span>
+                    <span className="text-primary font-medium">Urgent Care</span>
+                    <span className="font-medium">During Business Hours</span>
                   </div>
                 </div>
               </CardContent>
@@ -240,19 +240,28 @@ export default function ContactForm() {
             {/* Emergency Contact */}
             <Card className="border-primary/20 bg-primary/5">
               <CardHeader>
-                <CardTitle className="text-primary">Emergency Care</CardTitle>
+                <CardTitle className="text-primary">Emergency & Urgent Care</CardTitle>
                 <CardDescription>
-                  For after-hours emergencies, call our emergency line
+                  For emergencies during business hours, call us immediately
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full" size="lg">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Emergency Line
+                <Button className="w-full" size="lg" asChild>
+                  <a href="tel:719-204-3647">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call (719) 204-3647
+                  </a>
                 </Button>
-                <p className="text-sm text-muted-foreground mt-3 text-center">
-                  Available 24/7 for urgent pet care needs
-                </p>
+                <div className="mt-4 p-3 bg-background rounded-lg border">
+                  <p className="text-sm font-medium text-foreground mb-2">
+                    For after-hours & weekend emergencies:
+                  </p>
+                  <div className="text-sm text-muted-foreground space-y-1">
+                    <div>• Uintah Pet Emergency</div>
+                    <div>• Animal ER Care</div>
+                    <div className="text-xs pt-1 italic">We do not have an on-call line</div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>

@@ -46,8 +46,8 @@ const careCommitments = [
   },
   {
     icon: Star,
-    title: "Cat Friendly Practice",
-    description: "We are pursuing Cat Friendly Practice certification to ensure the highest standards of feline care."
+    title: "Feline Friendly Certified Staff",
+    description: "Multiple team members have achieved individual Feline Friendly certification, demonstrating our commitment to feline care."
   },
   {
     icon: Shield,
@@ -206,16 +206,16 @@ export default function CatClinicContent() {
               <div className="text-center">
                 <Cat className="w-16 h-16 text-purple-500 mx-auto mb-6" />
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Cat Friendly Practice Certification
+                  Feline Friendly Certified Professionals
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  We are actively pursuing Cat Friendly Practice certification, demonstrating our commitment to providing the highest standards of feline veterinary care.
+                  We have 3-4 staff members who are individually certified in Feline Friendly care, demonstrating our deep commitment to providing specialized, compassionate care for our feline patients.
                 </p>
                 
                 <div className="space-y-3 mb-6 text-left">
                   <div className="flex items-center gap-3">
                     <Star className="w-5 h-5 text-purple-500 flex-shrink-0" />
-                    <span className="text-foreground">Gold standard feline care protocols</span>
+                    <span className="text-foreground">Multiple Feline Friendly certified professionals</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Heart className="w-5 h-5 text-purple-500 flex-shrink-0" />

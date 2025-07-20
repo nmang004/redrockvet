@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { 
   Heart, 
   Shield, 
@@ -9,7 +10,6 @@ import {
   CheckCircle, 
   Star, 
   Quote,
-  Stethoscope,
   Dog,
   Cat,
   Brain,
@@ -19,10 +19,7 @@ import {
   Calendar,
   Users,
   TrendingUp,
-  Zap,
-  BookOpen,
   Play,
-  FileText,
   Globe,
   Target,
   Smile
@@ -206,7 +203,7 @@ export default function FearFreeContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="inline-flex items-center justify-center bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6"
             >
-              <span className="text-sm font-medium text-primary">Fear Free® Certified Practice</span>
+              <span className="text-sm font-medium text-primary">The Only Hospital in Colorado Springs Designed with Fear Free® Principles</span>
             </motion.div>
             
             <motion.h1
@@ -233,9 +230,10 @@ export default function FearFreeContent() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-10 leading-relaxed"
             >
-              Experience the gold standard in stress-free veterinary care. Our Fear-Free® certified team uses 
-              science-based techniques to reduce fear, anxiety, and stress, creating a calming environment 
-              where your pet can receive the best possible care without the trauma.
+              Experience the gold standard in stress-free veterinary care. As a brand-new facility opened just 4 months ago, 
+              Red Rock Veterinary Health was built from the ground up with Fear Free® principles in mind. While our hospital 
+              certification is in process, every single member of our team has achieved individual Fear Free® certification, 
+              ensuring your pet receives compassionate, science-based care that reduces fear, anxiety, and stress.
             </motion.p>
             
             <motion.div
@@ -293,12 +291,38 @@ export default function FearFreeContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Certified Excellence in Fear-Free Care
+              100% Staff Certified in Fear-Free Care
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Our entire team is professionally trained and certified in the latest fear-free techniques, 
-              ensuring every pet receives the highest standard of compassionate care.
+              While our hospital certification is underway as a new facility, we're proud that every single team member 
+              has achieved individual Fear Free® certification. This means your pet will always be handled by certified 
+              professionals trained in the latest fear-free techniques.
             </p>
+          </motion.div>
+
+          {/* Fear Free Elite Logo Display */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="flex justify-center mb-12"
+          >
+            <div className="bg-background rounded-2xl p-6 border border-primary/20 shadow-lg">
+              <div className="flex items-center justify-center gap-4">
+                <Image 
+                  src="/staff/certs/fearfreeelite.png" 
+                  alt="Fear Free Elite Certified Professional" 
+                  width={64}
+                  height={64}
+                  className="h-16 w-auto"
+                />
+                <div className="text-center">
+                  <div className="font-semibold text-foreground text-lg">Fear Free Elite Certified</div>
+                  <div className="text-muted-foreground text-sm">All Staff Members Certified</div>
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
