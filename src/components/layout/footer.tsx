@@ -57,7 +57,7 @@ export default function Footer() {
             </div>
             
             <p className="text-secondary-foreground/80 leading-relaxed">
-              Fear Free® certified veterinary practice providing compassionate care for your beloved pets.
+              One of the highest-rated, locally owned veterinary hospitals with all staff Fear Free® certified, providing compassionate care for your beloved pets.
             </p>
 
             {/* Emergency Contact - Prominent */}
@@ -190,7 +190,7 @@ export default function Footer() {
             {/* Legal & Credentials */}
             <div className="space-y-4">
               <div className="text-center py-4 bg-secondary-foreground/5 rounded-lg">
-                <span className="text-sm font-medium text-primary">🏆 Fear Free® Certified Practice</span>
+                <span className="text-sm font-medium text-primary">🏆 Highest-Rated | Fear Free® Designed | Locally Owned</span>
               </div>
               
               <div className="space-y-2 text-xs text-secondary-foreground/60">

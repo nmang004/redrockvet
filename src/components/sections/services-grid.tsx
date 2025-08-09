@@ -34,7 +34,7 @@ const fallbackServices = [
     icon: "heart" as keyof typeof iconMap,
     title: "Fear Free® Veterinary Care",
     description: "Minimizing stress during veterinary visits using science-based techniques to reduce fear, anxiety, and stress.",
-    features: ["Fear Free certified", "Low-stress handling", "Emotional well-being focus", "Comfortable environment"],
+    features: ["Fear Free certified staff", "Low-stress handling", "Emotional well-being focus", "Comfortable environment"],
     slug: { current: "fear-free" }
   },
   {

@@ -19,8 +19,8 @@ const felineFeatures = [
   },
   {
     icon: Shield,
-    title: "Fear Free Certified",
-    description: "Our professionals are certified in Fear Free techniques and use low-stress handling methods."
+    title: "Fear Free Certified Staff",
+    description: "All our professionals are Fear Free certified and use low-stress handling methods designed for cats."
   },
   {
     icon: Stethoscope,
@@ -92,7 +92,7 @@ export default function CatClinicContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              Our specialized cat clinic features a separate feline wing designed specifically for cat comfort, with Fear Free certified professionals providing evidence-based feline medicine in a stress-free environment.
+              Our specialized cat clinic features a separate feline wing designed specifically for cat comfort, with all staff Fear Free certified providing evidence-based feline medicine in a stress-free environment.
             </motion.p>
             
             <motion.div

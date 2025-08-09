@@ -6,12 +6,12 @@ import TestimonialsCarousel from "@/components/sections/testimonials-carousel";
 import StatsCounter from "@/components/sections/stats-counter";
 
 export const metadata: Metadata = {
-  title: "Red Rock Veterinary Health - Fear Free® Veterinary Care in Colorado Springs",
-  description: "Complete animal hospital providing comprehensive pet care in Colorado Springs. Fear Free® certified practice offering urgent care, vaccinations, surgery, and specialized treatments for dogs and cats.",
-  keywords: "veterinary care Colorado Springs, Fear Free certified, animal hospital, pet care, dog veterinarian, cat veterinarian, emergency vet, pet surgery, vaccinations",
+  title: "Red Rock Veterinary Health - Locally Owned Fear Free® Veterinary Care in Colorado Springs",
+  description: "Locally owned, complete animal hospital providing comprehensive pet care in Colorado Springs. All staff are Fear Free® certified, hospital specifically designed for Fear Free care - the only one in Colorado Springs.",
+  keywords: "locally owned veterinary Colorado Springs, Fear Free certified staff, animal hospital, pet care, dog veterinarian, cat veterinarian, emergency vet, pet surgery, vaccinations, highest rated vet",
   openGraph: {
-    title: "Red Rock Veterinary Health - Fear Free® Veterinary Care in Colorado Springs",
-    description: "Complete animal hospital providing comprehensive pet care in Colorado Springs. Fear Free® certified practice offering urgent care, vaccinations, surgery, and specialized treatments.",
+    title: "Red Rock Veterinary Health - Locally Owned Fear Free® Veterinary Care in Colorado Springs",
+    description: "Locally owned, complete animal hospital providing comprehensive pet care in Colorado Springs. All staff Fear Free® certified with hospital designed specifically for Fear Free care.",
     images: [
       {
         url: "/hero-bg.webp",
@@ -29,7 +29,7 @@ export default function Home() {
       <Hero
         title="Fear Free® Veterinary Care in Colorado Springs"
         subtitle="Red Rock Veterinary Health"
-        description="Complete animal hospital providing comprehensive pet care from urgent care and vaccinations to specialized treatments and advanced medical procedures. We prioritize your pet's emotional well-being using science-based fear-free techniques."
+        description="Red Rock Veterinary Health is proud to be one of the last locally owned veterinary hospitals in Colorado Springs—and the last one on the Westside. We're not just any animal hospital—we're a full-service, Fear Free–designed facility built entirely around your pet's physical and emotional well-being. From routine vaccinations and urgent care to advanced diagnostics, dentistry, and complex medical treatments, we offer a wide spectrum of veterinary care under one roof. Moreover, we strive to minimize staff turnover and prioritize staff happiness and retention, which means you and your pet can see the same veterinarian for the best continuity of care. At Red Rock, your pet's comfort and quality of life are at the heart of everything we do. We are more than just a hospital, we are a mindful partner on your pet's health journey."
         primaryCTA={{
           text: "Schedule Appointment",
           href: "/client-information"

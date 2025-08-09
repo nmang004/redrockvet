@@ -115,15 +115,19 @@ export default function Hero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="flex items-center space-x-8 pt-4"
+              className="flex items-center space-x-6 pt-4"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">Fear Free®</div>
-                <div className="text-sm text-muted-foreground">Certified Practice</div>
+                <div className="text-2xl font-bold text-primary">4.9★</div>
+                <div className="text-sm text-muted-foreground">Highest Rated</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">10+</div>
-                <div className="text-sm text-muted-foreground">Specialized Services</div>
+                <div className="text-2xl font-bold text-primary">Fear Free®</div>
+                <div className="text-sm text-muted-foreground">Designed Hospital</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">Locally</div>
+                <div className="text-sm text-muted-foreground">Owned</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">Same Day</div>

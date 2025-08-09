@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 const features = [
   {
     icon: Heart,
-    title: "Fear Free® Certified",
-    description: "Colorado Springs' only veterinary hospital designed around Fear Free® principles to minimize stress and anxiety for your pets."
+    title: "Fear Free® Designed",
+    description: "Colorado Springs' only veterinary hospital designed around Fear Free® principles with all staff certified to minimize stress and anxiety for your pets."
   },
   {
     icon: Shield,
@@ -20,8 +20,8 @@ const features = [
   },
   {
     icon: Users,
-    title: "Community Focused",
-    description: "Locally owned and non-corporate, supporting local businesses and collaborating with area rescues and humane societies."
+    title: "Locally Owned",
+    description: "The last locally owned veterinary hospital on the Westside, supporting local businesses and collaborating with area rescues and humane societies."
   },
   {
     icon: Award,
@@ -40,8 +40,8 @@ export default function AboutPage() {
             About Red Rock Veterinary Health
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Colorado Springs' premier Fear Free® veterinary hospital, providing compassionate, 
-            high-quality care in a stress-free environment designed for your pet's comfort.
+            Colorado Springs' premier locally owned Fear Free® designed veterinary hospital, 
+            one of the highest-rated practices providing compassionate, high-quality care in a stress-free environment.
           </p>
         </div>
 
@@ -197,9 +197,9 @@ export default function AboutPage() {
               </h2>
               <div className="max-w-4xl mx-auto">
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  As a locally owned and non-corporate animal hospital, we're deeply committed to 
-                  our Colorado Springs community. We actively support local businesses, collaborate 
-                  with the local humane society, and assist independent rescues.
+                  As one of the last locally owned veterinary hospitals in Colorado Springs—and the last one on 
+                  the Westside—we're deeply committed to our community. We actively support local businesses, 
+                  collaborate with the local humane society, and assist independent rescues.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   We believe in empowering our employees and engaging with local pet service providers 

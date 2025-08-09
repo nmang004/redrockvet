@@ -16,7 +16,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Veterinary Services - Red Rock Veterinary Health",
-  description: "Comprehensive veterinary services in Colorado Springs including Fear Free care, wellness exams, emergency services, dental care, surgery, allergy testing, and chronic disease management.",
+  description: "Comprehensive veterinary services from one of the highest-rated, locally owned practices in Colorado Springs including Fear Free care, wellness exams, emergency services, dental care, surgery, allergy testing, and chronic disease management.",
 };
 
 const services = [
