@@ -70,7 +70,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image 
                 src="/red-rock-logo.png" 
@@ -80,9 +80,6 @@ export default function Header() {
                 className="h-8 w-auto md:h-12"
               />
             </Link>
-            <div className="hidden sm:flex items-center px-2 py-1 bg-primary/10 rounded-full">
-              <span className="text-xs font-semibold text-primary">Locally Owned</span>
-            </div>
           </div>
 
           {/* Desktop Navigation - Centered */}
