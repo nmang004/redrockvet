@@ -70,9 +70,11 @@ export default function AboutPreview() {
                 viewport={{ once: true }}
                 className="text-lg text-muted-foreground leading-relaxed"
               >
-                Located at 3163 West Colorado Avenue, Red Rock Veterinary Health is founded by 
-                Dr. Robbie Unsell and Dr. Sharon Kuca. As a locally owned, non-corporate practice, 
-                we&apos;re committed to providing personal, high-quality care with a profound dedication to animal welfare.
+                Red Rock Veterinary Health is proud to be one of the last locally owned veterinary hospitals in Colorado Springs—and 
+                the last one on the Westside. We're not just any animal hospital—we're a full-service, Fear Free–designed facility 
+                built entirely around your pet's physical and emotional well-being. From routine vaccinations and urgent care to 
+                advanced diagnostics, dentistry, and complex medical treatments, we offer a wide spectrum of veterinary care 
+                under one roof.
               </motion.p>
               
               <motion.p
@@ -82,9 +84,10 @@ export default function AboutPreview() {
                 viewport={{ once: true }}
                 className="text-lg text-muted-foreground leading-relaxed"
               >
-                We implement Fear Free® veterinary principles with separate cat and dog hospital wings, 
-                personalized visit plans, and cooperative care techniques. Our approach ensures every 
-                pet receives compassionate, stress-free treatment in a comfortable environment.
+                Moreover, we strive to minimize staff turnover and prioritize staff happiness and retention, which means you 
+                and your pet can see the same veterinarian for the best continuity of care. At Red Rock, your pet's comfort and 
+                quality of life are at the heart of everything we do. We are more than just a hospital, we are a mindful partner on your 
+                pet's health journey.
               </motion.p>
             </div>
 
