@@ -25,7 +25,7 @@ export const staffMembers: StaffMember[] = [
     image: "/staff/rob.jpg",
     imageAlt: "Dr. Robbie Unsell, Owner & Founder of Red Rock Veterinary Health",
     slug: "dr-robbie-unsell",
-    bio: "Dr. Robbie Unsell is the passionate owner and founder of Red Rock Veterinary Health, bringing exceptional veterinary expertise and compassionate care to Colorado Springs. After graduating from the prestigious Royal Veterinary College in London in 2013, Dr. Unsell has dedicated his career to advancing veterinary medicine and building strong relationships with pet families.",
+    bio: "Dr. Robbie Unsell is the passionate owner and founder of Red Rock Veterinary Health, bringing exceptional veterinary expertise and compassionate care to Colorado Springs. After graduating from the prestigious Royal Veterinary College in London in 2013, Dr. Unsell spent several rewarding years at Bear Creek Veterinary Clinic before founding Red Rock Veterinary Health to continue providing personalized, Fear Free care to his loyal clients and their beloved pets. He has dedicated his career to advancing veterinary medicine and building strong, lasting relationships with pet families.",
     education: "Royal Veterinary College, London (2013)",
     specialties: [
       "Internal Medicine",

@@ -192,7 +192,7 @@ export default function ClientInformationContent() {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-light">
-                Welcome to Red Rock Veterinary Health. Follow our simple step-by-step process to book your first appointment and access all the resources you need for your pet's care.
+                Welcome to Red Rock Veterinary Health. If you have an urgent need, please don't hesitate to call us at 719-204-3647 and leave a message with Angela who will personally ensure you receive the care you need. Otherwise, follow our simple step-by-step process below to book your first appointment and access all the resources you need for your pet's care.
               </p>
             </motion.div>
 
