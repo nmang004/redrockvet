@@ -6,11 +6,11 @@ import TestimonialsCarousel from "@/components/sections/testimonials-carousel";
 import StatsCounter from "@/components/sections/stats-counter";
 
 export const metadata: Metadata = {
-  title: "Red Rock Veterinary Health - Locally Owned Fear Free® Veterinary Care in Colorado Springs",
+  title: "Fear Free Veterinarian in Colorado Springs | Red Rock Veterinary Health",
   description: "Locally owned, complete animal hospital providing comprehensive pet care in Colorado Springs. All staff are Fear Free® certified, hospital specifically designed for Fear Free care - the only one in Colorado Springs.",
   keywords: "locally owned veterinary Colorado Springs, Fear Free certified staff, animal hospital, pet care, dog veterinarian, cat veterinarian, emergency vet, pet surgery, vaccinations, highest rated vet",
   openGraph: {
-    title: "Red Rock Veterinary Health - Locally Owned Fear Free® Veterinary Care in Colorado Springs",
+    title: "Fear Free Veterinarian in Colorado Springs | Red Rock Veterinary Health",
     description: "Locally owned, complete animal hospital providing comprehensive pet care in Colorado Springs. All staff Fear Free® certified with hospital designed specifically for Fear Free care.",
     images: [
       {
