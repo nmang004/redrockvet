@@ -56,6 +56,17 @@ export default function Header() {
     patientPortal: true
   });
 
+  // Reset dropdowns to expanded when mobile menu opens
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      setMobileDropdowns({
+        services: true,
+        about: true,
+        patientPortal: true
+      });
+    }
+  }, [mobileMenuOpen]);
+
   // Prevent background scrolling when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
