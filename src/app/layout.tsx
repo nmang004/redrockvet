@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   title: "Red Rock Veterinary Health - Compassionate Care for Your Beloved Pets",
   description: "Professional veterinary services with state-of-the-art facilities. Wellness exams, surgery, dental care, and emergency services for dogs, cats, and exotic pets.",
   keywords: "veterinary, pet care, animal hospital, dog, cat, surgery, wellness exam, emergency vet, Red Rock",
+  icons: {
+    icon: [
+      { url: '/RRHVLogo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/RRHVLogo.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: '/RRHVLogo.png',
+    shortcut: '/RRHVLogo.png',
+  },
   openGraph: {
     title: "Red Rock Veterinary Health - Compassionate Care for Your Beloved Pets",
     description: "Professional veterinary services with state-of-the-art facilities.",
