@@ -129,7 +129,7 @@ export default function Hero({
                 <div className="text-2xl font-bold text-primary">Locally</div>
                 <div className="text-sm text-muted-foreground">Owned</div>
               </div>
-              <div className="text-center">
+              <div className="text-center hidden sm:block">
                 <div className="text-2xl font-bold text-primary">Same Day</div>
                 <div className="text-sm text-muted-foreground">Emergency Care</div>
               </div>
