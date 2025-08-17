@@ -50,6 +50,11 @@ const simpleNavigation = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileDropdowns, setMobileDropdowns] = useState({
+    services: true,
+    about: true,
+    patientPortal: true
+  });
 
   // Prevent background scrolling when mobile menu is open
   useEffect(() => {
@@ -64,6 +69,13 @@ export default function Header() {
       document.body.style.overflow = 'unset';
     };
   }, [mobileMenuOpen]);
+
+  const toggleMobileDropdown = (section: 'services' | 'about' | 'patientPortal') => {
+    setMobileDropdowns(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
 
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-[100]">
@@ -227,66 +239,114 @@ export default function Header() {
               <div className="px-4 pt-4 pb-12 space-y-4 bg-background">
                 {/* Mobile Vet Services */}
                 <div className="space-y-2">
-                  <div className="px-4 py-3 text-base font-semibold text-foreground">
+                  <button
+                    onClick={() => toggleMobileDropdown('services')}
+                    className="w-full px-4 py-3 text-base font-semibold text-foreground flex items-center justify-between hover:bg-accent rounded-lg transition-colors duration-200"
+                  >
                     Vet Services
-                  </div>
-                  {services.map((service) => (
-                    <Link
-                      key={service.name}
-                      href={service.href}
-                      className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {service.name}
-                    </Link>
-                  ))}
+                    <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${mobileDropdowns.services ? 'rotate-180' : ''}`} />
+                  </button>
+                  <AnimatePresence>
+                    {mobileDropdowns.services && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="overflow-hidden"
+                      >
+                        {services.map((service) => (
+                          <Link
+                            key={service.name}
+                            href={service.href}
+                            className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {service.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
                 {/* Mobile About */}
                 <div className="space-y-2">
-                  <div className="px-4 py-3 text-base font-semibold text-foreground">
+                  <button
+                    onClick={() => toggleMobileDropdown('about')}
+                    className="w-full px-4 py-3 text-base font-semibold text-foreground flex items-center justify-between hover:bg-accent rounded-lg transition-colors duration-200"
+                  >
                     About
-                  </div>
-                  {aboutItems.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
+                    <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${mobileDropdowns.about ? 'rotate-180' : ''}`} />
+                  </button>
+                  <AnimatePresence>
+                    {mobileDropdowns.about && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="overflow-hidden"
+                      >
+                        {aboutItems.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
                 {/* Mobile Patient Portal */}
                 <div className="space-y-2">
-                  <div className="px-4 py-3 text-base font-semibold text-foreground">
+                  <button
+                    onClick={() => toggleMobileDropdown('patientPortal')}
+                    className="w-full px-4 py-3 text-base font-semibold text-foreground flex items-center justify-between hover:bg-accent rounded-lg transition-colors duration-200"
+                  >
                     Patient Portal
-                  </div>
-                  {patientPortalItems.map((item) => (
-                    item.external ? (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
-                        onClick={() => setMobileMenuOpen(false)}
+                    <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${mobileDropdowns.patientPortal ? 'rotate-180' : ''}`} />
+                  </button>
+                  <AnimatePresence>
+                    {mobileDropdowns.patientPortal && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="overflow-hidden"
                       >
-                        {item.name}
-                      </a>
-                    ) : (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    )
-                  ))}
+                        {patientPortalItems.map((item) => (
+                          item.external ? (
+                            <a
+                              key={item.name}
+                              href={item.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              {item.name}
+                            </a>
+                          ) : (
+                            <Link
+                              key={item.name}
+                              href={item.href}
+                              className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              {item.name}
+                            </Link>
+                          )
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
                 {/* Mobile Simple Navigation */}
