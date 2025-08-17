@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get current date/time for timestamp
+    // Get current date/time for timestamp in Mountain Time (Colorado Springs)
     const now = new Date();
     const timestamp = now.toLocaleString('en-US', {
       weekday: 'long',
@@ -25,6 +25,7 @@ export async function POST(request: NextRequest) {
       day: 'numeric',
       hour: '2-digit',
       minute: '2-digit',
+      timeZone: 'America/Denver',
       timeZoneName: 'short'
     });
 
