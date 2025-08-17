@@ -16,6 +16,25 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Map service values to full descriptive names for email
+    const serviceNames: Record<string, string> = {
+      'fear-free': 'Fear-Free® Veterinary Care',
+      'wellness': 'Pet Vaccinations and Wellness Care',
+      'emergency': 'Emergency Veterinary Services',
+      'dental': 'Veterinary Dental Care',
+      'surgery': 'Veterinary Surgery Services',
+      'allergy': 'Pet Allergy Testing and Treatment',
+      'chronic-disease': 'Chronic Disease Management',
+      'diagnostic': 'Veterinary Diagnostic Imaging',
+      'euthanasia': 'Compassionate Pet Euthanasia',
+      'behavioral': 'Pet Behavioral Services',
+      'spay-neuter': 'Spay & Neuter Services',
+      'cat-clinic': 'Specialized Cat Clinic Services',
+      'other': 'Other Veterinary Services'
+    };
+
+    const fullServiceName = service ? serviceNames[service] || service : '';
+
     // Get current date/time for timestamp in Mountain Time (Colorado Springs)
     const now = new Date();
     const timestamp = now.toLocaleString('en-US', {
@@ -135,10 +154,10 @@ export async function POST(request: NextRequest) {
                   <div style="margin-bottom: 12px;">
                     <span style="font-weight: 600; color: #2C2C2C; font-size: 18px;">${petName}</span>
                   </div>
-                  ${service ? `
+                  ${fullServiceName ? `
                   <div>
                     <span style="background: #B31B1B; color: white; padding: 5px 12px; border-radius: 6px; font-size: 12px; font-weight: 500;">
-                      ${service}
+                      ${fullServiceName}
                     </span>
                   </div>
                   ` : ''}
