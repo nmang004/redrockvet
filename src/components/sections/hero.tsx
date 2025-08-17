@@ -115,7 +115,7 @@ export default function Hero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="flex items-center space-x-6 pt-4"
+              className="flex items-center justify-center sm:justify-start space-x-6 pt-4"
             >
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">5.0★</div>
