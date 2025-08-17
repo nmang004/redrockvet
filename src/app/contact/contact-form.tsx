@@ -16,11 +16,45 @@ export default function ContactForm() {
     service: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send message');
+      }
+
+      setSubmitStatus('success');
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        petName: "",
+        service: "",
+        message: ""
+      });
+    } catch (error) {
+      setSubmitStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'An error occurred');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -158,9 +192,32 @@ export default function ContactForm() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full" size="lg">
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Schedule Appointment
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-50 border border-green-200 rounded-md mb-4">
+                    <p className="text-green-800 font-medium">✓ Appointment request sent successfully!</p>
+                    <p className="text-green-700 text-sm mt-1">We'll get back to you within 24 hours to confirm your appointment.</p>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-md mb-4">
+                    <p className="text-red-800 font-medium">✗ Error sending request</p>
+                    <p className="text-red-700 text-sm mt-1">{errorMessage}</p>
+                  </div>
+                )}
+
+                <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-5 h-5 mr-2 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Calendar className="w-5 h-5 mr-2" />
+                      Schedule Appointment
+                    </>
+                  )}
                 </Button>
               </form>
             </CardContent>
