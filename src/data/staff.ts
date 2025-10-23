@@ -43,6 +43,26 @@ export const staffMembers: StaffMember[] = [
     certifications: ["fearfreeelite", "ivpa", "rcvs", "catfriendly"]
   },
   {
+    id: "dr-dan-muelhaupt",
+    name: "Dr. Dan Muelhaupt",
+    title: "Veterinarian",
+    credentials: "DVM, MPH",
+    pronouns: "He/Him",
+    image: "/staff/drdan.jpg",
+    imageAlt: "Dr. Dan Muelhaupt, Veterinarian at Red Rock Veterinary Health",
+    slug: "dr-dan-muelhaupt",
+    bio: "We are excited to welcome Dr. Dan Muelhaupt to Red Rock Veterinary Health beginning October 22, 2025! Dr. Dan joins us from the Animal Hospital of Colorado Springs where he has served as the Medical Director and as an Associate Veterinarian since 2016. Dr. Dan and Dr. Robbie met during the R&D phase of Red Rock Vet and became fast friends.",
+    education: "Doctor of Veterinary Medicine, Virginia-Maryland College of Veterinary Medicine; Master of Public Health (Infectious Disease) candidacy, Virginia Tech; Bachelor of Science in Zoology, North Carolina State University",
+    specialties: [
+      "Soft Tissue Surgery",
+      "Internal Medicine",
+      "Dentistry",
+      "Preventive Medicine",
+      "Chronic Condition Management"
+    ],
+    personalInterests: "At home, Dr. Dan and his wife, Kat, share life with a lively crew of dogs, cats, fish, & chickens. When he's not at the hospital, you'll likely find him snowboarding, hiking, kayaking, or working on projects in his woodshop. He loves staying active outdoors and is thrilled to now be caring for pets and families here on the Westside."
+  },
+  {
     id: "lauren-anderson",
     name: "Lauren Anderson",
     title: "Hospital Manager & Fear Free Director",
@@ -69,7 +89,7 @@ export const staffMembers: StaffMember[] = [
     title: "Hospital Administrative Director",
     credentials: "FFCP",
     pronouns: "She/Her",
-    image: "/red-rock-logo.png",
+    image: "/staff/angela.jpg",
     imageAlt: "Angela Payne Lebron, Hospital Administrative Director",
     slug: "angela-payne-lebron",
     bio: "Angela Payne Lebron serves as our Hospital Administrative Director, bringing years of experience in healthcare administration and client relations to Red Rock Veterinary Health. With studies in both business and English, Angela ensures seamless administrative operations and exceptional client experiences.",
@@ -82,6 +102,24 @@ export const staffMembers: StaffMember[] = [
     ],
     personalInterests: "Angela is passionate about animal welfare and enjoys volunteering with local animal organizations. When she's not at the clinic, she loves spending time with her family and exploring the many outdoor activities that Colorado Springs has to offer.",
     certifications: ["fearfree"]
+  },
+  {
+    id: "nicole-payne",
+    name: "Nicole Payne",
+    title: "Client Care Coordinator",
+    credentials: "",
+    pronouns: "She/Her",
+    image: "/staff/nicole.jpg",
+    imageAlt: "Nicole Payne, Client Care Coordinator at Red Rock Veterinary Health",
+    slug: "nicole-payne",
+    bio: "Nicole is currently studying English and joined Red Rock Veterinary Health for her very first job in the veterinary field. She's excited to learn all she can about veterinary medicine, client care, and Fear Free handling, and loves being part of a team that's so dedicated to the well-being of both pets and people.",
+    education: "Currently studying English",
+    specialties: [
+      "Client Care",
+      "Fear Free Handling",
+      "Veterinary Medicine Support"
+    ],
+    personalInterests: "Outside of work, Nicole enjoys exercising and building her strength, writing her own novels, and spending time with her cat Hoshi—the center of her world (and a very sassy kitty!)."
   },
   {
     id: "maggie-kohn",
