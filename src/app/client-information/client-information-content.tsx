@@ -55,17 +55,17 @@ export default function ClientInformationContent() {
     },
     {
       step: 2,
+      title: "Wait for Confirmation",
+      description: "Allow 24-72 hours for our team to process your forms",
+      icon: <Timer className="w-6 h-6" />,
+      color: "bg-orange-500"
+    },
+    {
+      step: 3,
       title: "Request Appointment",
       description: "Use our online portal to submit your appointment request",
       icon: <Calendar className="w-6 h-6" />,
       color: "bg-green-500"
-    },
-    {
-      step: 3,
-      title: "Wait for Confirmation",
-      description: "Allow 24-72 hours for our team to process your request",
-      icon: <Timer className="w-6 h-6" />,
-      color: "bg-orange-500"
     },
     {
       step: 4,
