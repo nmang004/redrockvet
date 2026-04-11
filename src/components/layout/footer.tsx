@@ -123,9 +123,69 @@ export default function Footer() {
 
       {/* Main Footer */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-          {/* Brand & Contact */}
-          <div className="sm:col-span-2 lg:col-span-2 space-y-6">
+        {/* Brand & Contact — always full width on top on mobile */}
+        <div className="mb-10 lg:hidden space-y-5">
+          <Image
+            src="/red-rock-logo.png"
+            alt="Red Rock Veterinary Health"
+            width={160}
+            height={48}
+            className="h-10 w-auto"
+          />
+          <p className="text-sm text-secondary-foreground/70 leading-relaxed">
+            One of the highest-rated, locally owned veterinary hospitals in
+            Colorado Springs. All staff Fear Free® certified, providing
+            compassionate care for your beloved pets.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+            <a
+              href="tel:719-204-3647"
+              className="flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors"
+            >
+              <Phone className="w-4 h-4 text-primary" />
+              (719) 204-3647
+            </a>
+            <a
+              href="mailto:Reception@RedRockVet.com"
+              className="flex items-center gap-2 text-secondary-foreground/80 hover:text-primary transition-colors"
+            >
+              <Mail className="w-4 h-4 text-primary" />
+              Reception@RedRockVet.com
+            </a>
+            <a
+              href="https://maps.google.com/?q=3163+W+Colorado+Ave+Colorado+Springs+CO+80904"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-2 text-secondary-foreground/80 hover:text-primary transition-colors"
+            >
+              <MapPin className="w-4 h-4 text-primary mt-0.5" />
+              3163 W. Colorado Ave, Colorado Springs, CO 80904
+            </a>
+            <div className="flex items-center gap-2 text-secondary-foreground/80">
+              <Clock className="w-4 h-4 text-primary" />
+              Mon–Fri: 8:00 AM – 5:00 PM
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            {socials.map((social) => (
+              <a
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className="w-9 h-9 rounded-full bg-secondary-foreground/10 flex items-center justify-center text-secondary-foreground/60 hover:bg-primary hover:text-white transition-all duration-200"
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Nav columns — 2x2 grid on mobile, 5 cols on desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
+          {/* Brand & Contact — desktop only (hidden on mobile, shown above) */}
+          <div className="hidden lg:block lg:col-span-2 space-y-6">
             <Image
               src="/red-rock-logo.png"
               alt="Red Rock Veterinary Health"
@@ -138,8 +198,6 @@ export default function Footer() {
               Colorado Springs. All staff Fear Free® certified, providing
               compassionate care for your beloved pets.
             </p>
-
-            {/* Contact Info */}
             <div className="space-y-3 text-sm">
               <a
                 href="tel:719-204-3647"
@@ -169,8 +227,6 @@ export default function Footer() {
                 Mon–Fri: 8:00 AM – 5:00 PM
               </div>
             </div>
-
-            {/* Social Links */}
             <div className="flex items-center gap-3">
               {socials.map((social) => (
                 <a
@@ -254,17 +310,17 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
 
-            {/* After Hours */}
-            <div className="mt-6 pt-4 border-t border-secondary-foreground/10">
-              <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-3">
-                After-Hours Emergency
-              </h4>
-              <ul className="space-y-1.5 text-sm text-secondary-foreground/70">
-                <li>Uintah Pet Emergency</li>
-                <li>Animal ER Care</li>
-              </ul>
-            </div>
+          {/* After Hours — sits in 4th spot on mobile grid */}
+          <div>
+            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
+              After-Hours Emergency
+            </h4>
+            <ul className="space-y-2.5 text-sm text-secondary-foreground/70">
+              <li>Uintah Pet Emergency</li>
+              <li>Animal ER Care</li>
+            </ul>
           </div>
         </div>
       </div>
