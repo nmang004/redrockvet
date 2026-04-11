@@ -21,7 +21,7 @@ const services = [
   {
     icon: Zap,
     title: "Same-Day Urgent Care",
-    description: "We set aside space for same-day appointments when your pet is sick or injured."
+    description: "We set aside space for same-day appointments when your pet is sick or injured. Same-day availability is dependent on scheduling and staffing availability."
   },
   {
     icon: Heart,
@@ -78,8 +78,8 @@ export default function EmergencyContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8"
             >
-              We offer emergency and urgent care services for pets in the Pikes Peak region. 
-              During normal business hours, we provide same-day appointments and quick assessment for your pet&apos;s urgent needs.
+              We offer emergency and urgent care services for pets in the Pikes Peak region.
+              During normal business hours, we provide same-day appointments and quick assessment for your pet&apos;s urgent needs. Same-day appointments are dependent on availability.
             </motion.p>
             
             <motion.div
@@ -234,7 +234,7 @@ export default function EmergencyContent() {
                   Call Early for Same-Day Care
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  We set aside space for same-day appointments. Call us to assess your pet&apos;s urgent care needs.
+                  We set aside space for same-day appointments, dependent on availability. Call us to assess your pet&apos;s urgent care needs.
                 </p>
                 
                 <div className="space-y-4 mb-6">
@@ -295,7 +295,7 @@ export default function EmergencyContent() {
               </summary>
               <div className="px-6 pb-6">
                 <p className="text-muted-foreground">
-                  Yes, we set aside space for same-day appointments when your pet needs urgent care.
+                  Yes, we set aside space for same-day appointments when your pet needs urgent care. Same-day appointments are dependent on availability.
                 </p>
               </div>
             </details>

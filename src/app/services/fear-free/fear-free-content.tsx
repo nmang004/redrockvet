@@ -203,7 +203,7 @@ export default function FearFreeContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="inline-flex items-center justify-center bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6"
             >
-              <span className="text-sm font-medium text-primary">The Only Hospital in Colorado Springs Designed with Fear Free® Principles</span>
+              <span className="text-sm font-medium text-primary">Fear Free® Certified Practice</span>
             </motion.div>
             
             <motion.h1
@@ -230,10 +230,10 @@ export default function FearFreeContent() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-10 leading-relaxed"
             >
-              Experience the gold standard in stress-free veterinary care. As a brand-new facility opened just 4 months ago, 
-              Red Rock Veterinary Health was built from the ground up with Fear Free® principles in mind. While our hospital 
-              certification is in process, every single member of our team has achieved individual Fear Free® certification, 
-              ensuring your pet receives compassionate, science-based care that reduces fear, anxiety, and stress.
+              Experience the gold standard in stress-free veterinary care. Red Rock Veterinary Health is a Fear Free® Certified
+              Practice and the only hospital in Colorado specifically designed for Fear Free care from the ground up. Every
+              single member of our team has achieved individual Fear Free® certification, ensuring your pet receives
+              compassionate, science-based care that reduces fear, anxiety, and stress.
             </motion.p>
             
             <motion.div
@@ -291,12 +291,13 @@ export default function FearFreeContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              100% Staff Certified in Fear-Free Care
+              Fear Free® Certified Practice
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              While our hospital certification is underway as a new facility, we're proud that every single team member 
-              has achieved individual Fear Free® certification. This means your pet will always be handled by certified 
-              professionals trained in the latest fear-free techniques.
+              Red Rock Veterinary Health is officially a Fear Free® Certified Practice — the only hospital in Colorado
+              specifically designed for Fear Free care from the ground up. Every single team member has also achieved
+              individual Fear Free® certification, ensuring your pet will always be handled by certified professionals
+              trained in the latest fear-free techniques.
             </p>
           </motion.div>
 
@@ -318,8 +319,8 @@ export default function FearFreeContent() {
                   className="h-16 w-auto"
                 />
                 <div className="text-center">
-                  <div className="font-semibold text-foreground text-lg">Fear Free Elite Certified</div>
-                  <div className="text-muted-foreground text-sm">All Staff Members Certified</div>
+                  <div className="font-semibold text-foreground text-lg">Fear Free® Certified Practice</div>
+                  <div className="text-muted-foreground text-sm">The Only Hospital in Colorado Designed for Fear Free® Care</div>
                 </div>
               </div>
             </div>

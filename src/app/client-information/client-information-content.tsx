@@ -3,13 +3,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { 
-  FileText, 
-  ClipboardList, 
-  Clock, 
-  Users, 
-  Phone, 
-  Mail, 
+import {
+  FileText,
+  ClipboardList,
+  Clock,
+  Users,
+  Phone,
+  Mail,
   MapPin,
   Calendar,
   Heart,
@@ -22,8 +22,11 @@ import {
   Stethoscope,
   AlertTriangle,
   DollarSign,
-  Download
+  Download,
+  CreditCard,
+  Banknote
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ClientInformationContent() {
   const requiredForms = [
@@ -543,8 +546,119 @@ export default function ClientInformationContent() {
         </div>
       </section>
 
-      {/* Contact Information */}
+      {/* Payment Options */}
       <section className="py-24 bg-background">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Payment Options
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              We offer a variety of payment options to make veterinary care accessible for every family.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 text-center">
+                <CardHeader className="pb-4">
+                  <div className="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Banknote className="w-6 h-6 text-pink-600" />
+                  </div>
+                  <CardTitle className="text-lg font-semibold">Cherry</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    No-interest, short-term payment plans for pet care expenses.
+                  </p>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/payment-plans">
+                      Learn More
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 text-center">
+                <CardHeader className="pb-4">
+                  <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CreditCard className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <CardTitle className="text-lg font-semibold">CareCredit</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Flexible financing for veterinary care with promotional financing options.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 text-center">
+                <CardHeader className="pb-4">
+                  <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CreditCard className="w-6 h-6 text-green-600" />
+                  </div>
+                  <CardTitle className="text-lg font-semibold">ScratchPay</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Simple and affordable payment plans for your pet&apos;s health needs.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 text-center">
+                <CardHeader className="pb-4">
+                  <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CreditCard className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <CardTitle className="text-lg font-semibold">Credit & Debit Cards</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    We accept all major credit cards, debit cards, and other standard forms of payment.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="py-24 bg-muted/20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -41,6 +41,7 @@ const aboutItems = [
 const patientPortalItems = [
   { name: "Online Pharmacy", href: "https://redrockvethealth.securevetsource.com/site/view/HomeDelivery.pml", external: true },
   { name: "Medical Records Portal", href: "/medical-record-portal", external: false },
+  { name: "Payment Plans", href: "/payment-plans", external: false },
 ];
 
 // Simple navigation items (no dropdown)

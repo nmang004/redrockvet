@@ -63,6 +63,25 @@ export const staffMembers: StaffMember[] = [
     personalInterests: "At home, Dr. Dan and his wife, Kat, share life with a lively crew of dogs, cats, fish, & chickens. When he's not at the hospital, you'll likely find him snowboarding, hiking, kayaking, or working on projects in his woodshop. He loves staying active outdoors and is thrilled to now be caring for pets and families here on the Westside."
   },
   {
+    id: "dr-jaime-clevenger",
+    name: "Dr. Jaime Clevenger",
+    title: "Veterinarian",
+    credentials: "DVM MPH FFCP-V",
+    pronouns: "She/Her",
+    image: "/staff/dr-jaime-clevenger.webp",
+    imageAlt: "Dr. Jaime Clevenger, Veterinarian at Red Rock Veterinary Health",
+    slug: "dr-jaime-clevenger",
+    bio: "Dr. Jaime Clevenger completed her undergraduate studies in Molecular and Cell Biology at the University of California, Berkeley, before earning her Doctor of Veterinary Medicine from the University of California, Davis School of Veterinary Medicine. She further expanded her expertise by completing a Master of Public Health at the UC Davis School of Medicine, with a focus on zoonotic infectious diseases. She has been practicing veterinary medicine in general and emergency practice for over 20 years.\n\nOriginally from California, Dr. Clevenger has called Manitou & Colorado Springs home for the past fourteen years. She has developed a deep connection to the community and enjoys all that Colorado has to offer—especially time spent in the mountains and outdoors.\n\nDr. Clevenger shares her home with her partner, their two children, three mischievous cats, and two sometimes well-behaved (but always adorable) dogs.",
+    education: "Doctor of Veterinary Medicine, University of California, Davis; Master of Public Health (Zoonotic Infectious Diseases), UC Davis School of Medicine; B.S. Molecular and Cell Biology, University of California, Berkeley",
+    specialties: [
+      "General Practice",
+      "Emergency Medicine",
+      "Zoonotic Infectious Diseases",
+      "Fear Free Techniques"
+    ],
+    certifications: ["fearfree"]
+  },
+  {
     id: "lauren-anderson",
     name: "Lauren Anderson",
     title: "Hospital Manager & Fear Free Director",
@@ -185,24 +204,64 @@ export const staffMembers: StaffMember[] = [
     certifications: ["fearfreeelite", "karen", "hart", "lsh"]
   },
   {
-    id: "kim-weigelt",
-    name: "Kim Weigelt",
+    id: "emma-osborne",
+    name: "Emma Osborne",
     title: "Registered Veterinary Technician",
-    credentials: "RVT FFCP-VT",
+    credentials: "RVT",
     pronouns: "She/Her",
-    image: "/staff/kim.jpg",
-    imageAlt: "Kim Weigelt, Registered Veterinary Technician",
-    slug: "kim-weigelt",
-    bio: "Kim Weigelt is a Registered Veterinary Technician with over 10 years of experience in emergency and general practice. Certified as a Fear Free and Cat Friendly professional, as well as a RECOVER Rescuer in animal CPR, Kim's passion lies in anesthesia and emergency/intensive care. Originally from the Chicago suburbs, Kim found her home in Colorado in 2016, rejoining familiar faces from Bear Creek Vet to help create a calm, compassionate environment at Red Rock Veterinary Health.",
-    specialties: [
-      "Anesthesia",
-      "Emergency Care",
-      "Intensive Care",
-      "Animal CPR",
-      "Fear Free Techniques"
-    ],
-    personalInterests: "Whether she's rescuing animals from California wildfires, studying to further her veterinary knowledge, or raising butterflies at home, Kim brings heart and dedication to everything she does—always putting your pet's comfort and care first. Fun fact: She shares her adventures with Leon, her lovable 3-legged pup!",
-    certifications: ["fearfree", "catfriendly", "recover"]
+    image: "/staff/emma-osborne.webp",
+    imageAlt: "Emma Osborne, Registered Veterinary Technician at Red Rock Veterinary Health",
+    slug: "emma-osborne",
+    bio: "",
+    specialties: []
+  },
+  {
+    id: "michael-hronsky",
+    name: "Michael Hronsky",
+    title: "Veterinary Technician",
+    credentials: "",
+    pronouns: "He/Him",
+    image: "/staff/michael-hronsky.webp",
+    imageAlt: "Michael Hronsky, Veterinary Technician at Red Rock Veterinary Health",
+    slug: "michael-hronsky",
+    bio: "",
+    specialties: []
+  },
+  {
+    id: "emma-reab",
+    name: "Emma Reab",
+    title: "Hospital Assistant",
+    credentials: "",
+    pronouns: "She/Her",
+    image: "/staff/emma-reab.webp",
+    imageAlt: "Emma Reab, Hospital Assistant at Red Rock Veterinary Health",
+    slug: "emma-reab",
+    bio: "",
+    specialties: []
+  },
+  {
+    id: "leyla-gulati",
+    name: "Leyla Gulati",
+    title: "Hospital Assistant",
+    credentials: "",
+    pronouns: "She/Her",
+    image: "/staff/leyla-gulati.webp",
+    imageAlt: "Leyla Gulati, Hospital Assistant at Red Rock Veterinary Health",
+    slug: "leyla-gulati",
+    bio: "",
+    specialties: []
+  },
+  {
+    id: "samantha-marlow",
+    name: "Samantha Marlow",
+    title: "Receptionist",
+    credentials: "",
+    pronouns: "She/Her",
+    image: "/staff/samantha-marlow.webp",
+    imageAlt: "Samantha Marlow, Receptionist at Red Rock Veterinary Health",
+    slug: "samantha-marlow",
+    bio: "",
+    specialties: []
   }
 ];
 
