@@ -109,12 +109,13 @@ export default function Footer() {
                   Book Appointment
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-secondary-foreground/40 text-secondary-foreground hover:bg-secondary-foreground/10" asChild>
-                <a href="tel:719-204-3647">
-                  <Phone className="w-4 h-4 mr-2" />
-                  (719) 204-3647
-                </a>
-              </Button>
+              <a
+                href="tel:719-204-3647"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-secondary-foreground/40 bg-transparent px-6 py-2.5 text-sm font-medium text-secondary-foreground hover:bg-secondary-foreground/10 transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                (719) 204-3647
+              </a>
             </div>
           </div>
         </div>
