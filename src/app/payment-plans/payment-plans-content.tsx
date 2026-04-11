@@ -37,10 +37,6 @@ export default function PaymentPlansContent() {
     script.src = "https://files.withcherry.com/widgets/widget.js";
     script.async = true;
     document.body.appendChild(script);
-
-    return () => {
-      script.remove();
-    };
   }, []);
 
   return (
