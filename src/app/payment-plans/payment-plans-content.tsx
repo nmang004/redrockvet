@@ -1,42 +1,50 @@
 "use client";
 
-import Script from "next/script";
+import { useEffect } from "react";
 
 export default function PaymentPlansContent() {
-  return (
-    <div className="min-h-screen bg-background">
-      {/* Cherry Widget - queue stub must be created before script loads */}
-      <Script id="cherry-page-init" strategy="beforeInteractive">
-        {`
-          window._hw = window._hw || function() {
-            (window._hw.q = window._hw.q || []).push(arguments);
-          };
-          _hw("init", {
-            debug: false,
-            variables: {
-              slug: "red-rock-veterinary-health",
-              name: "Red Rock Veterinary Health",
-              images: [70],
-              customLogo: "",
-              defaultPurchaseAmount: 750,
-              customImage: "",
-              imageCategory: "veterinary",
-              language: "en"
-            },
-            styles: {
-              primaryColor: "#9e1d39",
-              secondaryColor: "#9e1d3910",
-              fontFamily: "Montserrat",
-              headerFontFamily: "Montserrat"
-            }
-          }, ["hero", "calculator", "howitworks", "faq"]);
-        `}
-      </Script>
-      <Script
-        src="https://files.withcherry.com/widgets/widget.js"
-        strategy="afterInteractive"
-      />
+  useEffect(() => {
+    const w = window as any;
 
+    // Set up _hw queue stub
+    w._hw = w._hw || function () {
+      (w._hw.q = w._hw.q || []).push(arguments);
+    };
+
+    // Queue the init call
+    w._hw("init", {
+      debug: false,
+      variables: {
+        slug: "red-rock-veterinary-health",
+        name: "Red Rock Veterinary Health",
+        images: [70],
+        customLogo: "",
+        defaultPurchaseAmount: 750,
+        customImage: "",
+        imageCategory: "veterinary",
+        language: "en",
+      },
+      styles: {
+        primaryColor: "#9e1d39",
+        secondaryColor: "#9e1d3910",
+        fontFamily: "Montserrat",
+        headerFontFamily: "Montserrat",
+      },
+    }, ["hero", "calculator", "howitworks", "faq"]);
+
+    // Load Cherry widget script
+    const script = document.createElement("script");
+    script.src = "https://files.withcherry.com/widgets/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
+  return (
+    <div className="min-h-screen">
       <div id="all"></div>
       <div id="hero"></div>
       <div id="calculator"></div>
