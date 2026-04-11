@@ -91,7 +91,7 @@ export default function Footer() {
     <footer className="bg-secondary text-secondary-foreground">
       {/* Top CTA Bar */}
       <div className="border-b border-secondary-foreground/10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-bold text-foreground">
@@ -109,7 +109,7 @@ export default function Footer() {
                   Book Appointment
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" variant="outline" className="border-secondary-foreground/40 text-secondary-foreground hover:bg-secondary-foreground/10" asChild>
                 <a href="tel:719-204-3647">
                   <Phone className="w-4 h-4 mr-2" />
                   (719) 204-3647
