@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const features = [
   {
     icon: Heart,
-    title: "Fear Free® Designed",
+    title: "Fear Free® Certified",
     description: "Colorado Springs' only veterinary hospital designed around Fear Free® principles with all staff certified to minimize stress and anxiety for your pets."
   },
   {
@@ -40,7 +40,7 @@ export default function AboutPage() {
             About Red Rock Veterinary Health
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Colorado Springs' premier locally owned Fear Free® designed veterinary hospital, 
+            Colorado Springs' premier locally owned Fear Free® certified veterinary hospital, 
             one of the highest-rated practices providing compassionate, high-quality care in a stress-free environment.
           </p>
         </div>

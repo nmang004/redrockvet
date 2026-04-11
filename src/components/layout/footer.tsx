@@ -190,7 +190,7 @@ export default function Footer() {
             {/* Legal & Credentials */}
             <div className="space-y-4">
               <div className="text-center py-4 bg-secondary-foreground/5 rounded-lg">
-                <span className="text-sm font-medium text-primary">🏆 Highest-Rated | Fear Free® Designed | Locally Owned</span>
+                <span className="text-sm font-medium text-primary">🏆 Highest-Rated | Fear Free® Certified | Locally Owned</span>
               </div>
               
               <div className="space-y-2 text-xs text-secondary-foreground/60">

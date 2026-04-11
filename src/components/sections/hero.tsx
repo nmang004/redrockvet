@@ -123,7 +123,7 @@ export default function Hero({
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">Fear Free®</div>
-                <div className="text-sm text-muted-foreground">Designed Hospital</div>
+                <div className="text-sm text-muted-foreground">Certified Practice</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">Locally</div>

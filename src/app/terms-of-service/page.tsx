@@ -17,7 +17,7 @@ const serviceTerms = [
     content: [
       "All medical decisions are made by licensed veterinarians using professional judgment",
       "Treatment recommendations based on current veterinary medical standards",
-      "Fear Free® designed approach with certified staff to minimize stress and anxiety",
+      "Fear Free® certified approach with certified staff to minimize stress and anxiety",
       "Collaborative care involving pet owners in decision-making process",
       "Right to seek second opinions or referrals to specialists when appropriate"
     ]

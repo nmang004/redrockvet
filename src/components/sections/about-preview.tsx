@@ -71,7 +71,7 @@ export default function AboutPreview() {
                 className="text-lg text-muted-foreground leading-relaxed"
               >
                 Red Rock Veterinary Health is proud to be one of the last locally owned veterinary hospitals in Colorado Springs—and 
-                the last one on the Westside. We're not just any animal hospital—we're a full-service, Fear Free–designed facility 
+                the last one on the Westside. We're not just any animal hospital—we're a full-service, Fear Free® certified facility 
                 built entirely around your pet's physical and emotional well-being. From routine vaccinations and urgent care to 
                 advanced diagnostics, dentistry, and complex medical treatments, we offer a wide spectrum of veterinary care 
                 under one roof.
