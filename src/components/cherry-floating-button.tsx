@@ -5,24 +5,15 @@ import Script from "next/script";
 
 export default function CherryFloatingButton() {
   const pathname = usePathname();
-
-  // Don't render on the payment plans page — it has its own Cherry widget
-  if (pathname === "/payment-plans") return null;
+  const isPaymentPage = pathname === "/payment-plans";
 
   return (
-    <>
-      <Script id="cherry-float-init" strategy="afterInteractive">
+    <div style={isPaymentPage ? { display: "none" } : undefined}>
+      <Script id="cherry-float-init" strategy="beforeInteractive">
         {`
-          (function (w, d, s, o, f, js, fjs) {
-            w[o] = w[o] || function () {
-              (w[o].q = w[o].q || []).push(arguments);
-            };
-            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-            js.id = o;
-            js.src = f;
-            js.async = 1;
-            fjs.parentNode.insertBefore(js, fjs);
-          })(window, document, "script", "_hw", "https://files.withcherry.com/widgets/widget.js");
+          window._hw = window._hw || function() {
+            (window._hw.q = window._hw.q || []).push(arguments);
+          };
           _hw("init", {
             debug: false,
             variables: {
@@ -53,7 +44,11 @@ export default function CherryFloatingButton() {
           }, ["floatingEstimator"]);
         `}
       </Script>
+      <Script
+        src="https://files.withcherry.com/widgets/widget.js"
+        strategy="afterInteractive"
+      />
       <div id="floatingEstimator"></div>
-    </>
+    </div>
   );
 }
