@@ -4,12 +4,13 @@ import Script from "next/script";
 
 export default function CherryFloatingButton() {
   return (
-    <Script
-      src="https://files.withcherry.com/widgets/widget.js"
-      strategy="afterInteractive"
-      onLoad={() => {
-        if (typeof window !== "undefined" && (window as any)._hw) {
-          (window as any)._hw("init", {
+    <>
+      <Script id="cherry-float-init" strategy="beforeInteractive">
+        {`
+          window._hw = window._hw || function() {
+            (window._hw.q = window._hw.q || []).push(arguments);
+          };
+          _hw("init", {
             debug: false,
             variables: {
               slug: "red-rock-veterinary-health",
@@ -19,7 +20,7 @@ export default function CherryFloatingButton() {
               defaultPurchaseAmount: 750,
               customImage: "",
               imageCategory: "veterinary",
-              language: "en",
+              language: "en"
             },
             styles: {
               primaryColor: "#9e1d39",
@@ -28,20 +29,22 @@ export default function CherryFloatingButton() {
               headerFontFamily: "Montserrat",
               floatingEstimator: {
                 position: "bottom-right",
-                offset: {
-                  x: "0px",
-                  y: "0px",
-                },
+                offset: { x: "0px", y: "0px" },
                 zIndex: 9999,
                 ctaFontFamily: "Montserrat",
                 bodyFontFamily: "Montserrat",
                 ctaColor: "#9e1d39",
-                ctaTextColor: "#FFFFFF",
-              },
-            },
+                ctaTextColor: "#FFFFFF"
+              }
+            }
           }, ["floatingEstimator"]);
-        }
-      }}
-    />
+        `}
+      </Script>
+      <Script
+        src="https://files.withcherry.com/widgets/widget.js"
+        strategy="afterInteractive"
+      />
+      <div id="floatingEstimator"></div>
+    </>
   );
 }
