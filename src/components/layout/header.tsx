@@ -52,18 +52,18 @@ const simpleNavigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdowns, setMobileDropdowns] = useState({
-    services: true,
-    about: true,
-    patientPortal: true
+    services: false,
+    about: false,
+    patientPortal: false
   });
 
-  // Reset dropdowns to expanded when mobile menu opens
+  // Reset dropdowns to collapsed when mobile menu opens
   useEffect(() => {
     if (mobileMenuOpen) {
       setMobileDropdowns({
-        services: true,
-        about: true,
-        patientPortal: true
+        services: false,
+        about: false,
+        patientPortal: false
       });
     }
   }, [mobileMenuOpen]);
