@@ -41,7 +41,7 @@ const aboutItems = [
 const patientPortalItems = [
   { name: "Online Pharmacy", href: "https://redrockvethealth.securevetsource.com/site/view/HomeDelivery.pml", external: true },
   { name: "Medical Records Portal", href: "/medical-record-portal", external: false },
-  { name: "Payment Plans", href: "/payment-plans", external: false },
+  { name: "Payment Plans", href: "/payment-plans", external: false, forceReload: true },
 ];
 
 // Simple navigation items (no dropdown)
@@ -172,6 +172,13 @@ export default function Header() {
                               href={item.href}
                               target="_blank"
                               rel="noopener noreferrer"
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{item.name}</div>
+                            </a>
+                          ) : item.forceReload ? (
+                            <a
+                              href={item.href}
                               className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             >
                               <div className="text-sm font-medium leading-none">{item.name}</div>
@@ -340,6 +347,15 @@ export default function Header() {
                               href={item.href}
                               target="_blank"
                               rel="noopener noreferrer"
+                              className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              {item.name}
+                            </a>
+                          ) : item.forceReload ? (
+                            <a
+                              key={item.name}
+                              href={item.href}
                               className="block px-4 py-3 text-base text-muted-foreground hover:text-primary hover:bg-accent rounded-lg transition-colors duration-200 min-h-[44px] flex items-center"
                               onClick={() => setMobileMenuOpen(false)}
                             >

@@ -1,46 +1,44 @@
 "use client";
 
-import { useEffect } from "react";
+import Script from "next/script";
 
 export default function PaymentPlansContent() {
-  useEffect(() => {
-    const w = window as any;
-
-    // Set up _hw queue stub
-    w._hw = w._hw || function () {
-      (w._hw.q = w._hw.q || []).push(arguments);
-    };
-
-    // Queue the init call
-    w._hw("init", {
-      debug: false,
-      variables: {
-        slug: "red-rock-veterinary-health",
-        name: "Red Rock Veterinary Health",
-        images: [70],
-        customLogo: "",
-        defaultPurchaseAmount: 750,
-        customImage: "",
-        imageCategory: "veterinary",
-        language: "en",
-      },
-      styles: {
-        primaryColor: "#9e1d39",
-        secondaryColor: "#9e1d3910",
-        fontFamily: "Montserrat",
-        headerFontFamily: "Montserrat",
-      },
-    }, ["hero", "calculator", "howitworks", "faq"]);
-
-    // Load Cherry widget script
-    const script = document.createElement("script");
-    script.src = "https://files.withcherry.com/widgets/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <div className="min-h-screen">
+      <Script id="cherry-page-init" strategy="afterInteractive">
+        {`
+          (function (w, d, s, o, f, js, fjs) {
+            w[o] = w[o] || function () {
+              (w[o].q = w[o].q || []).push(arguments);
+            };
+            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+            js.id = o;
+            js.src = f;
+            js.async = 1;
+            fjs.parentNode.insertBefore(js, fjs);
+          })(window, document, "script", "_hw", "https://files.withcherry.com/widgets/widget.js");
+          _hw("init", {
+            debug: false,
+            variables: {
+              slug: "red-rock-veterinary-health",
+              name: "Red Rock Veterinary Health",
+              images: [70],
+              customLogo: "",
+              defaultPurchaseAmount: 750,
+              customImage: "",
+              imageCategory: "veterinary",
+              language: "en"
+            },
+            styles: {
+              primaryColor: "#9e1d39",
+              secondaryColor: "#9e1d3910",
+              fontFamily: "Montserrat",
+              headerFontFamily: "Montserrat"
+            }
+          }, ["hero", "calculator", "howitworks", "faq"]);
+        `}
+      </Script>
+
       <div id="all"></div>
       <div id="hero"></div>
       <div id="calculator"></div>
