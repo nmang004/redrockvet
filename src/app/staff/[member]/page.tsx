@@ -18,9 +18,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { member: string };
+  params: Promise<{ member: string }>;
 }): Promise<Metadata> {
-  const member = getStaffMemberBySlug(params.member);
+  const { member: slug } = await params;
+  const member = getStaffMemberBySlug(slug);
   
   if (!member) {
     return {
@@ -47,12 +48,13 @@ export async function generateMetadata({
   };
 }
 
-export default function StaffMemberPage({
+export default async function StaffMemberPage({
   params,
 }: {
-  params: { member: string };
+  params: Promise<{ member: string }>;
 }) {
-  const member = getStaffMemberBySlug(params.member);
+  const { member: slug } = await params;
+  const member = getStaffMemberBySlug(slug);
   
   if (!member) {
     notFound();
