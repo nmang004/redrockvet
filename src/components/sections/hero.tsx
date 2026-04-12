@@ -122,8 +122,13 @@ export default function Hero({
                 <div className="text-sm text-muted-foreground">Google Rating</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">Fear Free®</div>
-                <div className="text-sm text-muted-foreground">Certified Practice</div>
+                <Image
+                  src="/staff/certs/fearfree-certified-practice.png"
+                  alt="Fear Free Certified Veterinary Practice"
+                  width={120}
+                  height={90}
+                  className="h-14 w-auto mx-auto"
+                />
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">Locally</div>

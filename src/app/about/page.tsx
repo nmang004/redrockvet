@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Shield, Users, Award, MapPin, Stethoscope } from "lucide-react";
 
@@ -133,9 +134,18 @@ export default function AboutPage() {
         <div className="mb-16">
           <Card>
             <CardContent className="p-8 md:p-12">
-              <h2 className="text-3xl font-bold text-foreground mb-6 text-center">
-                Our Fear Free® Approach
-              </h2>
+              <div className="flex flex-col items-center mb-8">
+                <Image
+                  src="/staff/certs/fearfree-certified-practice.png"
+                  alt="Fear Free Certified Veterinary Practice"
+                  width={180}
+                  height={135}
+                  className="h-24 w-auto mb-4"
+                />
+                <h2 className="text-3xl font-bold text-foreground text-center">
+                  Our Fear Free® Approach
+                </h2>
+              </div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-4">
