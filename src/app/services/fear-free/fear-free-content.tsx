@@ -310,13 +310,13 @@ export default function FearFreeContent() {
             className="flex justify-center mb-12"
           >
             <div className="bg-background rounded-2xl p-6 border border-primary/20 shadow-lg">
-              <div className="flex items-center justify-center gap-4">
-                <Image 
-                  src="/staff/certs/fearfreeelite.png" 
-                  alt="Fear Free Elite Certified Professional" 
-                  width={64}
-                  height={64}
-                  className="h-16 w-auto"
+              <div className="flex flex-col items-center justify-center gap-4">
+                <Image
+                  src="/staff/certs/fearfree-certified-practice.png"
+                  alt="Fear Free Certified Veterinary Practice - General Practice"
+                  width={240}
+                  height={180}
+                  className="h-32 w-auto"
                 />
                 <div className="text-center">
                   <div className="font-semibold text-foreground text-lg">Fear Free® Certified Practice</div>
