@@ -20,23 +20,8 @@ import {
 export default function MedicalRecordPortalContent() {
   const portalCards = [
     {
-      title: "Vello Portal (POE)",
-      description: "Our primary portal for accessing medical records and requesting appointments",
-      features: [
-        "View complete medical records",
-        "Access vaccination history",
-        "Request appointments online",
-        "Download medical documents",
-        "Update personal information"
-      ],
-      link: "https://mobile.poe.idexx.com/login",
-      recommended: true,
-      icon: <Smartphone className="w-8 h-8" />,
-      color: "bg-primary"
-    },
-    {
       title: "Neo Portal",
-      description: "Alternative portal for consolidated pet record access",
+      description: "Portal for consolidated pet record access",
       features: [
         "Consolidated pet records",
         "Medical history review",
@@ -45,9 +30,9 @@ export default function MedicalRecordPortalContent() {
         "Secure data viewing"
       ],
       link: "https://us.idexxneo.com/clientportal/9587/1/login",
-      recommended: false,
+      recommended: true,
       icon: <FileText className="w-8 h-8" />,
-      color: "bg-secondary"
+      color: "bg-primary"
     }
   ];
 
@@ -137,14 +122,14 @@ export default function MedicalRecordPortalContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Choose Your Portal
+              Access Your Portal
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Select the portal that best fits your needs. Both provide secure access to your pet's medical information.
+              Secure access to your pet's medical information, anytime.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid gap-8 max-w-md mx-auto">
             {portalCards.map((portal, index) => (
               <motion.div
                 key={portal.title}
