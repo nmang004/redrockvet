@@ -134,7 +134,7 @@ export default function TermsOfServicePage() {
                 <p className="text-lg leading-relaxed mb-6">
                   We are a full-service veterinary hospital located at 3163 West Colorado Avenue, Colorado Springs, 
                   Colorado, providing comprehensive medical care, surgery, dentistry, and emergency services for 
-                  dogs, cats, and select exotic pets.
+                  dogs and cats.
                 </p>
                 <div className="bg-accent border-l-4 border-primary p-6 rounded-r-lg">
                   <p className="font-semibold text-foreground mb-2">Our Commitment</p>
