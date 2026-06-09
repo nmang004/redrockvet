@@ -374,8 +374,8 @@ export default function EmergencyContent() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-red-500" />
-                  <a href="tel:XXX-XXX-XXXX" className="text-primary hover:underline">
-                    (Contact for phone number)
+                  <a href="tel:719-633-3214" className="text-primary hover:underline">
+                    (719) 633-3214
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
@@ -402,8 +402,8 @@ export default function EmergencyContent() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-red-500" />
-                  <a href="tel:XXX-XXX-XXXX" className="text-primary hover:underline">
-                    (Contact for phone number)
+                  <a href="tel:719-260-7141" className="text-primary hover:underline">
+                    (719) 260-7141
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
