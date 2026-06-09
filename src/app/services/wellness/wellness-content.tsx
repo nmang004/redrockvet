@@ -5,6 +5,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { wellnessFaqs } from "./faq";
 
 const services = [
   {
@@ -224,65 +225,19 @@ export default function WellnessContent() {
           </motion.div>
 
           <div className="space-y-4">
-            <details className="group bg-accent rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                What tick-borne diseases should I be concerned about in Colorado?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  In Colorado, pets are at risk for tick-borne diseases including ehrlichiosis, anaplasmosis, and Rocky Mountain spotted fever. Regular preventive care and tick prevention are essential.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-accent rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                How does heartworm prevention work?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Heartworm prevention is crucial as mosquitoes can transmit this potentially fatal disease. We offer various preventive options to protect your pet year-round.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-accent rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                Can pets transmit diseases to humans?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Yes, some diseases (zoonotic diseases) can be transmitted from pets to humans. Regular veterinary care, vaccinations, and parasite prevention help protect both your pet and your family.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-accent rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                What are Elanco half-volume vaccines?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Elanco half-volume vaccines provide the same protection as traditional vaccines but in a smaller volume, making them more comfortable for your pet, especially smaller breeds.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-accent rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
-                Why is annual lab work important?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Annual lab work provides baseline health monitoring and allows for early detection of potential health issues before symptoms appear, leading to better treatment outcomes.
-                </p>
-              </div>
-            </details>
+            {wellnessFaqs.map((faq) => (
+              <details key={faq.question} className="group bg-accent rounded-lg">
+                <summary className="flex justify-between items-center gap-4 cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/80 rounded-lg">
+                  {faq.question}
+                  <span className="text-2xl group-open:rotate-45 transition-transform shrink-0">+</span>
+                </summary>
+                <div className="px-6 pb-6">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

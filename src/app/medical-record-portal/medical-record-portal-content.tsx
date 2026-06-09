@@ -253,7 +253,7 @@ export default function MedicalRecordPortalContent() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="outline" size="lg" asChild>
-                    <a href="tel:+1234567890" className="flex items-center">
+                    <a href="tel:719-204-3647" className="flex items-center">
                       <span className="mr-2">📞</span>
                       Call Us
                     </a>
