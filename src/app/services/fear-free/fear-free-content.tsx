@@ -29,6 +29,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { fearFreeFaqs } from "./faq";
 
 const fearFreePillars = [
   {
@@ -231,7 +232,7 @@ export default function FearFreeContent() {
               className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-10 leading-relaxed"
             >
               Experience the gold standard in stress-free veterinary care. Red Rock Veterinary Health is a Fear Free® Certified
-              Practice and the only hospital in Colorado specifically designed for Fear Free care from the ground up. Every
+              Practice and the only hospital in Colorado Springs specifically designed for Fear Free care from the ground up. Every
               single member of our team has achieved individual Fear Free® certification, ensuring your pet receives
               compassionate, science-based care that reduces fear, anxiety, and stress.
             </motion.p>
@@ -294,7 +295,7 @@ export default function FearFreeContent() {
               Fear Free® Certified Practice
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Red Rock Veterinary Health is officially a Fear Free® Certified Practice — the only hospital in Colorado
+              Red Rock Veterinary Health is officially a Fear Free® Certified Practice — the only hospital in Colorado Springs
               specifically designed for Fear Free care from the ground up. Every single team member has also achieved
               individual Fear Free® certification, ensuring your pet will always be handled by certified professionals
               trained in the latest fear-free techniques.
@@ -320,7 +321,7 @@ export default function FearFreeContent() {
                 />
                 <div className="text-center">
                   <div className="font-semibold text-foreground text-lg">Fear Free® Certified Practice</div>
-                  <div className="text-muted-foreground text-sm">The Only Hospital in Colorado Designed for Fear Free® Care</div>
+                  <div className="text-muted-foreground text-sm">The Only Hospital in Colorado Springs Designed for Fear Free® Care</div>
                 </div>
               </div>
             </div>
@@ -439,7 +440,7 @@ export default function FearFreeContent() {
                   "In just one visit, pets often show remarkable improvement in their comfort level. 
                   Many clients tell us their pets now approach our clinic eagerly rather than with fear."
                 </div>
-                <div className="text-sm text-primary mt-2 font-medium">- Dr. Rob Strasser, DVM</div>
+                <div className="text-sm text-primary mt-2 font-medium">- The Red Rock Veterinary Health Team</div>
               </div>
             </motion.div>
           </div>
@@ -728,89 +729,19 @@ export default function FearFreeContent() {
           </motion.div>
 
           <div className="space-y-4">
-            <details className="group bg-background rounded-lg border border-border">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
-                What makes Fear-Free® different from traditional veterinary care?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  Fear-Free® veterinary care fundamentally changes the approach to pet healthcare by prioritizing emotional well-being alongside physical health. Instead of using force or restraint, we read your pet's body language, use gentle handling techniques, and create a calming environment. We never push pets past their comfort level and take breaks when needed. This results in more cooperative pets, more accurate examinations, and better long-term relationships with veterinary care.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg border border-border">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
-                How do I prepare my anxious pet for a Fear-Free visit?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  Start preparation several days before the visit. Download our preparation guides for specific tips for cats and dogs. For anxious pets, we may recommend anti-anxiety medications given 1-2 hours before the appointment. Bring your pet's favorite treats, blanket, or toy. Arrive 10-15 minutes early to allow acclimation time. Most importantly, stay calm yourself - pets pick up on your energy. We also offer "happy visits" where pets can come in just to get treats and positive experiences without any procedures.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg border border-border">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
-                Do Fear-Free techniques work for all pets, including very aggressive ones?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  Fear-Free techniques are especially beneficial for fearful and aggressive pets, as aggression often stems from fear and anxiety. We start with the least stressful approach and have protocols for pets with varying levels of anxiety. For extremely fearful or aggressive pets, we may recommend sedation or anxiety medications before the visit. Some pets may need multiple "happy visits" to build trust. In severe cases, we work with veterinary behaviorists to develop specialized plans. The goal is always to help pets overcome their fear rather than just manage it.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg border border-border">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
-                Will Fear-Free appointments take longer than traditional ones?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  Initially, Fear-Free appointments may take slightly longer as we allow pets to acclimate and use patient-paced approaches. However, as pets become more comfortable with our techniques, appointments often become more efficient because pets are more cooperative. We build in adequate time for each appointment so you never feel rushed. The slight additional time investment pays off significantly in terms of pet comfort, examination accuracy, and long-term relationship building with veterinary care.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg border border-border">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
-                Is there an additional cost for Fear-Free services?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  Fear-Free techniques are integrated into all our standard services at no additional cost - it's simply how we practice veterinary medicine. If your pet needs anti-anxiety medications before a visit, there may be a small additional charge for the medication, but the Fear-Free handling techniques themselves are included in your appointment fee. We believe every pet deserves compassionate, low-stress care as a standard of practice, not as an expensive add-on.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg border border-border">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
-                How do you handle emergency situations with Fear-Free techniques?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  Even in emergency situations, we adapt Fear-Free principles whenever possible. While life-saving care takes priority, we still use gentle handling techniques, speak calmly to pets, and provide comfort during stressful procedures. For urgent but non-life-threatening situations, we may use quick-acting anxiety medications to help pets cope with necessary treatments. Our goal is to balance medical necessity with emotional well-being, ensuring pets receive the care they need while minimizing additional trauma.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg border border-border">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
-                Can I stay with my pet during the examination?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  Absolutely! We encourage owners to stay with their pets during examinations when it helps the pet feel more comfortable. For some pets, owner presence is calming, while others may be more focused on their owner than the examination. We'll assess what works best for your individual pet. If your presence seems to increase your pet's anxiety, we may suggest stepping back briefly, but you're always welcome to return. Our goal is to create the most comfortable environment possible for each unique pet-owner pair.
-                </p>
-              </div>
-            </details>
+            {fearFreeFaqs.map((faq) => (
+              <details key={faq.question} className="group bg-background rounded-lg border border-border">
+                <summary className="flex justify-between items-center gap-4 cursor-pointer p-6 font-semibold text-foreground hover:bg-accent/50 rounded-lg">
+                  {faq.question}
+                  <span className="text-2xl group-open:rotate-45 transition-transform shrink-0">+</span>
+                </summary>
+                <div className="px-6 pb-6">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

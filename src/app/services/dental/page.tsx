@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import DentalContent from "./dental-content";
+import JsonLd from "@/components/seo/JsonLd";
+import { dentalFaqSchema } from "./faq";
 
 export const metadata: Metadata = {
   title: "Veterinary Dental Care - Red Rock Veterinary Health",
@@ -7,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function DentalPage() {
-  return <DentalContent />;
+  return (
+    <>
+      <JsonLd raw={dentalFaqSchema} />
+      <DentalContent />
+    </>
+  );
 }

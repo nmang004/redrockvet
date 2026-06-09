@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { dentalFaqs } from "./faq";
 
 const dentalServices = [
   {
@@ -291,70 +292,19 @@ export default function DentalContent() {
           </motion.div>
 
           <div className="space-y-4">
-            <details className="group bg-background rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                Why are full mouth radiographs important?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  They help identify hidden problems under the gums like infected roots, bone loss, conditions not visible during basic oral exam, and potential jaw bone integrity issues for small dogs and cats.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                Does my pet need anesthesia for dental cleaning?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Yes, because anesthesia is essential for thorough and safe cleaning, taking radiographs, cleaning below gumline, and performing extractions.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                What dental surgeries does Dr. Unsell perform?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Advanced oral procedures including difficult tooth extractions, oral mass removals, and oral trauma repair. If a procedure is too complex, we will refer to a local veterinary dental specialist in Colorado Springs.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                Can I brush my pet&apos;s teeth at home?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Yes, daily tooth brushing is the gold standard for at-home dental care. Use pet-specific toothpaste (never human toothpaste) 
-                  and start slowly to get your pet comfortable with the process. However, home care alone cannot replace professional cleanings, 
-                  as only anesthetic dental procedures can clean below the gum line and address existing dental disease.
-                </p>
-              </div>
-            </details>
-
-            <details className="group bg-background rounded-lg">
-              <summary className="flex justify-between items-center cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
-                What should I expect after my pet&apos;s dental procedure?
-                <span className="text-2xl group-open:rotate-45 transition-transform">+</span>
-              </summary>
-              <div className="px-6 pb-6">
-                <p className="text-muted-foreground">
-                  Most pets recover quickly from dental procedures and can go home the same day. 
-                  You may see some mild drowsiness from anesthesia and possibly some minor gum bleeding. 
-                  We&apos;ll provide specific post-operative instructions, including any needed pain medication and dietary recommendations. 
-                  If extractions were performed, soft food may be recommended for a few days while the gums heal.
-                </p>
-              </div>
-            </details>
+            {dentalFaqs.map((faq) => (
+              <details key={faq.question} className="group bg-background rounded-lg">
+                <summary className="flex justify-between items-center gap-4 cursor-pointer p-6 font-semibold text-foreground hover:bg-background/80 rounded-lg">
+                  {faq.question}
+                  <span className="text-2xl group-open:rotate-45 transition-transform shrink-0">+</span>
+                </summary>
+                <div className="px-6 pb-6">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import WellnessContent from "./wellness-content";
+import JsonLd from "@/components/seo/JsonLd";
+import { wellnessFaqSchema } from "./faq";
 
 export const metadata: Metadata = {
   title: "Preventative Pet Care - Red Rock Veterinary Health",
@@ -7,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function WellnessPage() {
-  return <WellnessContent />;
+  return (
+    <>
+      <JsonLd raw={wellnessFaqSchema} />
+      <WellnessContent />
+    </>
+  );
 }

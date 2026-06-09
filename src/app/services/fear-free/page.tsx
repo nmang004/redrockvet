@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import FearFreeContent from "./fear-free-content";
+import JsonLd from "@/components/seo/JsonLd";
+import { fearFreeFaqSchema } from "./faq";
 
 export const metadata: Metadata = {
   title: "Fear-Free® Veterinary Care - Red Rock Veterinary Health",
@@ -8,5 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function FearFreePage() {
-  return <FearFreeContent />;
+  return (
+    <>
+      <JsonLd raw={fearFreeFaqSchema} />
+      <FearFreeContent />
+    </>
+  );
 }
