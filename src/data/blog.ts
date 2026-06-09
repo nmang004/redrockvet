@@ -196,7 +196,7 @@ Theobromine has a long elimination half-life in dogs, roughly 17 hours, which is
 
 [[KEYTAKEAWAY]] If your dog ate chocolate, the right time to call is now, not in four hours when you have decided whether it 'looks bad.' We can triage over the phone in a few minutes.
 
-The Pet Poison Helpline maintains a free chocolate toxicity calculator at [petpoisonhelpline.com](https://www.petpoisonhelpline.com) that lets you plug in your dog's weight, the type of chocolate, and the amount eaten to get an instant risk readout. Bookmark it on your phone now.
+PetMD maintains a free [chocolate toxicity tool](https://www.petmd.com/dog/chocolate-toxicity) that lets you plug in your dog's weight, the type of chocolate, and the amount eaten to get an instant risk readout. Bookmark it on your phone now.
 
 ## What to do in the first 30 minutes
 
@@ -249,8 +249,8 @@ Most uncomplicated chocolate cases go home the same day. Severe cases (seizures,
     featuredImage: "/blogs/layingpup.jpeg",
     imageAlt: "A relaxed dog resting at home in Colorado Springs",
     author: "Dr. Sharon Kuca",
-    publishedAt: "2026-06-09",
-    readingTime: 7,
+    publishedAt: "2026-05-20",
+    readingTime: 5,
     categories: ["Emergency & Urgent Care", "Pet Safety"],
     tags: ["what to do if your dog ate chocolate", "dog ate chocolate Colorado Springs", "chocolate toxicity calculator dogs", "is chocolate toxic to dogs", "emergency vet Colorado Springs", "same-day vet Colorado Springs"],
     seo: {
@@ -261,7 +261,7 @@ Most uncomplicated chocolate cases go home the same day. Severe cases (seizures,
     faqs: [
       {
         question: "How much chocolate is toxic to a dog?",
-        answer: "It depends on the type of chocolate, the amount, and your dog's weight. A useful rule of thumb: about 20 mg of theobromine per kg of body weight causes mild symptoms, 40 mg/kg causes moderate cardiac signs, and 60 mg/kg or higher can be life-threatening. Baking chocolate has roughly 10 times more theobromine per ounce than milk chocolate, so even a small amount of baking chocolate can be dangerous for a small dog. Use the Pet Poison Helpline chocolate calculator for a fast estimate."
+        answer: "It depends on the type of chocolate, the amount, and your dog's weight. A useful rule of thumb: about 20 mg of theobromine per kg of body weight causes mild symptoms, 40 mg/kg causes moderate cardiac signs, and 60 mg/kg or higher can be life-threatening. Baking chocolate has roughly 10 times more theobromine per ounce than milk chocolate, so even a small amount of baking chocolate can be dangerous for a small dog. Use the PetMD chocolate toxicity tool for a fast estimate."
       },
       {
         question: "My dog ate chocolate but seems fine. Should I still call a vet?",
@@ -296,7 +296,7 @@ Most uncomplicated chocolate cases go home the same day. Severe cases (seizures,
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"How much chocolate is toxic to a dog?","acceptedAnswer":{"@type":"Answer","text":"It depends on the type of chocolate, the amount, and your dog's weight. About 20 mg of theobromine per kg of body weight causes mild symptoms, 40 mg/kg causes moderate cardiac signs, and 60 mg/kg or higher can be life-threatening. Baking chocolate has roughly 10 times more theobromine per ounce than milk chocolate. Use the Pet Poison Helpline chocolate calculator for a fast estimate."}},
+    {"@type":"Question","name":"How much chocolate is toxic to a dog?","acceptedAnswer":{"@type":"Answer","text":"It depends on the type of chocolate, the amount, and your dog's weight. About 20 mg of theobromine per kg of body weight causes mild symptoms, 40 mg/kg causes moderate cardiac signs, and 60 mg/kg or higher can be life-threatening. Baking chocolate has roughly 10 times more theobromine per ounce than milk chocolate. Use the PetMD chocolate toxicity tool for a fast estimate."}},
     {"@type":"Question","name":"My dog ate chocolate but seems fine. Should I still call a vet?","acceptedAnswer":{"@type":"Answer","text":"Yes. Theobromine has a long half-life in dogs (roughly 17 hours), so symptoms often do not appear for 2 to 12 hours and can build over a full day. A dog that seems fine right after ingestion can develop tremors or arrhythmias later that evening. Call a veterinarian and share the dose and your dog's weight."}},
     {"@type":"Question","name":"How long after eating chocolate will my dog get sick?","acceptedAnswer":{"@type":"Answer","text":"Mild symptoms like vomiting and restlessness usually appear within 2 to 6 hours. Moderate symptoms like ataxia, rapid heart rate, and tremors peak between 6 and 12 hours. Severe signs like seizures or cardiac arrhythmias can develop up to 24 hours after ingestion."}},
     {"@type":"Question","name":"Should I make my dog throw up at home?","acceptedAnswer":{"@type":"Answer","text":"Only if a veterinarian tells you to. Hydrogen peroxide is the classic home emetic but the wrong dose can cause severe stomach ulceration. Do not use it in brachycephalic dogs, in dogs showing neurological signs, in dogs already vomiting or unconscious, when the substance is caustic or sharp, or more than 2 hours after ingestion. Call your vet first."}},
