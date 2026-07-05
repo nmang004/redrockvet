@@ -357,8 +357,8 @@ export default function EmergencyContent() {
               After-Hours Emergency Care
             </h2>
             <p className="text-lg text-muted-foreground">
-              For all after-hours and weekend emergencies, we do not have an on-call line. 
-              Please contact one of these trusted 24/7 emergency facilities:
+              For all after-hours and weekend emergencies, we do not have an on-call line.
+              Please contact one of these trusted after-hours emergency facilities:
             </p>
           </motion.div>
 
@@ -367,34 +367,6 @@ export default function EmergencyContent() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-background rounded-2xl p-8 border border-red-500/20 shadow-lg"
-            >
-              <h3 className="text-2xl font-bold text-foreground mb-4">Uintah Pet Emergency</h3>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-red-500" />
-                  <a href="tel:719-633-3214" className="text-primary hover:underline">
-                    (719) 633-3214
-                  </a>
-                </div>
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-red-500 mt-1" />
-                  <div className="text-muted-foreground">
-                    (Contact for address details)
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Clock className="w-5 h-5 text-red-500" />
-                  <span className="text-muted-foreground">24/7 Emergency Care</span>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
               className="bg-background rounded-2xl p-8 border border-red-500/20 shadow-lg"
             >
@@ -409,12 +381,42 @@ export default function EmergencyContent() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-red-500 mt-1" />
                   <div className="text-muted-foreground">
-                    (Contact for address details)
+                    5520 N. Nevada Ave, Ste 150<br />
+                    Colorado Springs, CO 80918
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-red-500" />
-                  <span className="text-muted-foreground">24/7 Emergency Care</span>
+                  <span className="text-muted-foreground">Open 24/7</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-background rounded-2xl p-8 border border-red-500/20 shadow-lg"
+            >
+              <h3 className="text-2xl font-bold text-foreground mb-4">Uintah Pet Emergency</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-red-500" />
+                  <a href="tel:719-633-3214" className="text-primary hover:underline">
+                    (719) 633-3214
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-red-500 mt-1" />
+                  <div className="text-muted-foreground">
+                    1635 W. Uintah St, Ste E<br />
+                    Colorado Springs, CO 80904
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-red-500" />
+                  <span className="text-muted-foreground">Open daily, noon to midnight (not overnight)</span>
                 </div>
               </div>
             </motion.div>
@@ -429,9 +431,10 @@ export default function EmergencyContent() {
           >
             <p className="text-foreground font-medium mb-2">Important Notice</p>
             <p className="text-muted-foreground">
-              Red Rock Veterinary Health does not have an on-call emergency line for after-hours care. 
-              For urgent situations outside our business hours (Monday-Friday, 8am-5pm), 
-              please go directly to one of these 24/7 emergency facilities.
+              Red Rock Veterinary Health does not have an on-call emergency line for after-hours care.
+              For urgent situations outside our business hours (Monday-Friday, 8am-5pm),
+              please go directly to one of these emergency facilities. For overnight
+              emergencies after midnight, Animal ER Care is open 24/7.
             </p>
           </motion.div>
         </div>

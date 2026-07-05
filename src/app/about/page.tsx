@@ -42,7 +42,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Colorado Springs' premier locally owned Fear Free® certified veterinary hospital, 
-            one of the highest-rated practices providing compassionate, high-quality care in a stress-free environment.
+            a highly-rated practice providing compassionate, high-quality care in a stress-free environment.
           </p>
         </div>
 

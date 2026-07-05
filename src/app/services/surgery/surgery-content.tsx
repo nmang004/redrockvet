@@ -25,7 +25,7 @@ const surgeryTypes = [
   {
     icon: Clock,
     title: "Emergency Surgery",
-    description: "Life-saving surgical procedures available 24/7 for critical situations."
+    description: "Life-saving surgical procedures during business hours, with stabilization and ER transfer coordination when overnight care is needed."
   }
 ];
 

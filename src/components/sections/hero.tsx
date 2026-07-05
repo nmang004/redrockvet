@@ -118,7 +118,7 @@ export default function Hero({
               className="flex items-center justify-center sm:justify-start space-x-6 pt-4"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">5.0★</div>
+                <div className="text-2xl font-bold text-primary">4.9★</div>
                 <div className="text-sm text-muted-foreground">Google Rating</div>
               </div>
               <div className="text-center">

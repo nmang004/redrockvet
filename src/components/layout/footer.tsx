@@ -133,7 +133,7 @@ export default function Footer() {
             className="h-10 w-auto"
           />
           <p className="text-sm text-secondary-foreground/70 leading-relaxed">
-            One of the highest-rated, locally owned veterinary hospitals in
+            A highly-rated, locally owned veterinary hospital in
             Colorado Springs. All staff Fear Free® certified, providing
             compassionate care for your beloved pets.
           </p>
@@ -194,7 +194,7 @@ export default function Footer() {
               className="h-10 w-auto"
             />
             <p className="text-sm text-secondary-foreground/70 leading-relaxed max-w-sm">
-              One of the highest-rated, locally owned veterinary hospitals in
+              A highly-rated, locally owned veterinary hospital in
               Colorado Springs. All staff Fear Free® certified, providing
               compassionate care for your beloved pets.
             </p>

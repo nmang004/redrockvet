@@ -8,7 +8,7 @@ import StatsCounter from "@/components/sections/stats-counter";
 export const metadata: Metadata = {
   title: "Fear Free Veterinarian in Colorado Springs | Red Rock Veterinary Health",
   description: "Locally owned, complete animal hospital providing comprehensive pet care in Colorado Springs. Fear Free® Certified Practice - the only hospital in Colorado Springs specifically designed for Fear Free care from the ground up.",
-  keywords: "locally owned veterinary Colorado Springs, Fear Free certified staff, animal hospital, pet care, dog veterinarian, cat veterinarian, emergency vet, pet surgery, vaccinations, highest rated vet",
+  keywords: "locally owned veterinary Colorado Springs, Fear Free certified staff, animal hospital, pet care, dog veterinarian, cat veterinarian, emergency vet, pet surgery, vaccinations, highly rated vet",
   openGraph: {
     title: "Fear Free Veterinarian in Colorado Springs | Red Rock Veterinary Health",
     description: "Locally owned, complete animal hospital providing comprehensive pet care in Colorado Springs. Fear Free® Certified Practice - the only hospital in Colorado Springs designed for Fear Free care from the ground up.",
