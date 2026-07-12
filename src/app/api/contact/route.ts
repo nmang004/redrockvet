@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -195,6 +193,20 @@ export async function POST(request: NextRequest) {
       </body>
       </html>
     `;
+
+    // Instantiate the email client lazily. Constructing it at module load makes
+    // `next build` crash while collecting page data whenever RESEND_API_KEY is
+    // absent (e.g. a preview environment without the secret). Doing it here keeps
+    // the build resilient and turns a missing key into a clear runtime response.
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      console.error('RESEND_API_KEY is not configured');
+      return NextResponse.json(
+        { error: 'Email service is not configured' },
+        { status: 503 }
+      );
+    }
+    const resend = new Resend(apiKey);
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
