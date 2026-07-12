@@ -1,10 +1,11 @@
 "use client";
 
-import { Scissors, Heart, Shield, Clock, CheckCircle, Award } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Scissors, Heart, Shield, Clock, CheckCircle, Award, Stethoscope, ArrowRight } from "lucide-react";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const surgeryTypes = [
   {
@@ -200,6 +201,57 @@ export default function SurgeryContent() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Specialist Partner Section */}
+      <section className="py-16 bg-primary/5">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-background rounded-2xl p-8 md:p-10 border border-primary/20 shadow-lg"
+          >
+            <div className="grid md:grid-cols-[220px_1fr] gap-8 items-center">
+              <div className="mx-auto w-40 md:w-full">
+                <div className="aspect-square relative overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/staff/dr-jennifer-swiderski.jpg"
+                    alt="Dr. Jennifer Swiderski, board-certified veterinary surgeon and visiting specialist partner"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                  <Stethoscope className="w-4 h-4" />
+                  Visiting Specialist Partner
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  Advanced Orthopedic &amp; Soft Tissue Surgery with Dr. Jennifer Swiderski
+                </h2>
+                <p className="text-lg text-muted-foreground mb-4">
+                  Through our partnership with MOVES &ndash; Front Range Mobile Veterinary Specialists,
+                  board-certified surgeon Dr. Jennifer Swiderski (DACVS) performs advanced orthopedic and soft
+                  tissue procedures right here in our hospital &mdash; so your pet can have complex surgery in the
+                  calm, familiar environment they already know. Red Rock Veterinary Health is the only Fear Free
+                  Certified practice in Colorado Springs able to offer surgery of this level on-site.
+                </p>
+                <p className="text-sm text-muted-foreground/90 italic mb-6">
+                  Dr. Swiderski is an independent specialist partner and is not employed by Red Rock Veterinary Health.
+                </p>
+                <Button asChild>
+                  <Link href="/staff/dr-jennifer-swiderski">
+                    Meet Dr. Swiderski
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

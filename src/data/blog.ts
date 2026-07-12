@@ -24,6 +24,260 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "pet-emergency-after-hours-colorado-springs",
+    title: "What to Do If Your Pet Has an Emergency After Our Hours: A Colorado Springs Guide",
+    slug: "pet-emergency-after-hours-colorado-springs",
+    excerpt: "Dr. Unsell's guide to after-hours pet emergencies in Colorado Springs: who to call, where to go tonight, and what can safely wait until 8 a.m.",
+    content: `[[QUICKTAKE]] Quick take
+- Save two numbers in your phone right now: Animal ER Care [(719) 260-7141](tel:719-260-7141) (open 24/7) and Uintah Pet Emergency [(719) 633-3214](tel:719-633-3214) (open daily until midnight).
+- Breathing trouble, collapse, seizures, bloat, a blocked cat, or major trauma: go now. Do not wait for morning.
+- Unsure? Call the emergency hospital and describe what you see. Triage calls are free, and they will tell you honestly.
+- Whatever happens overnight, call us at [(719) 204-3647](tel:719-204-3647) when we open at 8. We take the handoff from there.
+
+Red Rock is open Monday through Friday, 8 a.m. to 5 p.m. We do not have an overnight staff or an after-hours on-call line, and unlike a lot of veterinary websites, we are not going to bury that fact. Pets do not read the clock, and some of the scariest moments of pet ownership happen at 10 p.m. on a Saturday. So this is the guide I want every one of our clients — and honestly, every pet owner in Colorado Springs — to have saved before they need it.
+
+I am Dr. Robbie Unsell, the owner of Red Rock Veterinary Health on the Westside. Here is exactly what to do when something goes wrong outside our hours: how to tell a go-right-now emergency from something that can safely wait until morning, where to go tonight, and what we do for you the next day.
+
+## Step 1: Check for the go-right-now signs
+
+If your pet has any of the following, do not wait, do not search forums, do not watch and see. Go to an emergency hospital now:
+
+- **Difficulty breathing:** heaving sides, a stretched-out neck, blue or gray gums, or open-mouth breathing in a cat
+- **Collapse,** inability to stand, or sudden extreme weakness
+- **Seizures:** a first-ever seizure, more than one in a night, or any seizure lasting more than two minutes
+- **Unproductive retching with a swollen, tight belly,** especially in large or deep-chested dogs. This can be bloat (GDV), and it is fatal within hours without surgery
+- **A male cat straining in the litter box and producing nothing.** A blocked cat is a true emergency; the bladder can rupture and the potassium shift can stop the heart
+- **Major trauma:** hit by a car, a fall, a crushing injury, or a dog fight with puncture wounds
+- **Bleeding that does not stop** with five minutes of firm pressure, or gums that look white or pale pink
+- **Rattlesnake bite:** a real risk on our Westside trails from spring through fall
+- **Suspected heatstroke:** collapse or disorientation after exertion in our sun and altitude
+- **Straining in labor** for more than 30 minutes with no puppy or kitten produced
+- **Known or suspected poisoning:** antifreeze, rodenticide, xylitol gum, human medications, or a large amount of chocolate
+
+[[SAFETY]] If it is on this list, call the emergency hospital while someone else drives, or call from the road. Do not wait until 8 a.m., and do not wait for us to confirm. Minutes matter for every condition above.
+
+## Step 2: Know where you're going tonight
+
+These are the after-hours emergency hospitals we refer our own patients to and coordinate with. Save both numbers now — the middle of the emergency is the worst time to be searching:
+
+- **Animal ER Care** — [(719) 260-7141](tel:719-260-7141) — 5520 N. Nevada Ave, Ste 150. Open 24/7, every day of the year. If it is the middle of the night, this is your door.
+- **Uintah Pet Emergency** — [(719) 633-3214](tel:719-633-3214) — 1635 W. Uintah St, Ste E, five minutes from us here on the Westside. Open daily, noon to midnight, including weekends and holidays.
+
+Note the difference: Uintah covers evenings and weekends close to home, but it is not an overnight hospital. After midnight, go to Animal ER Care. Call while you are on the way if you can — telling them "three-year-old male cat, straining, no urine, twenty minutes out" means the team is ready when you walk in. Bring any medications your pet takes, the packaging of anything they ate, and your regular vet's name so records can follow.
+
+### If it might be poisoning, add one more call
+
+For anything your pet ate or licked — chocolate, gum, medications, plants, cleaning products — the two national poison-control lines have veterinary toxicologists on call around the clock: ASPCA Animal Poison Control at [(888) 426-4435](tel:888-426-4435) and Pet Poison Helpline at [(855) 764-7661](tel:855-764-7661). A consultation fee applies, and it is worth every penny: they calculate the actual toxic dose for your pet's weight and give the ER a case number and treatment plan, which often saves you time and money once you arrive. For chocolate specifically, our [chocolate emergency guide](/blog/dog-ate-chocolate-what-to-do-colorado-springs) walks through doses and symptoms.
+
+## Step 3: The "can this wait until morning?" list
+
+Plenty of scary-at-midnight problems are safe to see us for at 8 a.m. — and morning care with your regular vet is calmer, cheaper, and better informed by your pet's history. These can usually wait, provided your pet is otherwise alert, breathing normally, and able to rest:
+
+- A single episode of vomiting or diarrhea in an adult pet who is otherwise behaving normally
+- Limping, if your pet can still bear some weight and is not in severe pain
+- A torn nail with bleeding that has stopped
+- Mild ear scratching, head shaking, or a hot spot
+- Itching, mild hives that are fading, or a rash without facial swelling
+- Not finishing dinner once, in an adult pet who is otherwise bright
+- A small cut that has stopped bleeding and does not gape open
+
+Two honest caveats. First, puppies, kittens, seniors, and pets with chronic conditions have less reserve — the same symptom is more urgent in a twelve-week-old puppy or a fourteen-year-old cat, so call the ER and ask. Second, "wait until morning" means morning: call us at [(719) 204-3647](tel:719-204-3647) right at 8 a.m. and say what happened overnight. We hold same-day urgent slots for exactly this, at $109 for the [urgent exam](/services/urgent-emergency-care).
+
+### While you wait for morning
+
+Let your pet rest somewhere quiet, and check on them every couple of hours. You are watching for change: worsening effort to breathe, new vomiting, gums going pale, or your pet becoming unresponsive to your voice.
+
+- If there has been vomiting, withhold food for the rest of the night but keep fresh water available.
+- Do not give human medications. Ibuprofen, acetaminophen, and naproxen are toxic to dogs and cats — "a little Advil for the limp" creates a second, worse emergency.
+- Write down times: when symptoms started, how many episodes, and what your pet ate and when. That timeline is genuinely useful to us at 8 a.m.
+- If anything moves onto the go-now list overnight, go. The plan can change; the thresholds don't.
+
+### What happens at 8 a.m.
+
+This is the part of the system most people don't see. Red Rock is built to be the daytime anchor in a network that covers your pet around the clock: we handle [same-day urgent medicine](/services/urgent-emergency-care) Monday through Friday, and the emergency hospitals cover the nights and weekends. When your pet is seen overnight, call us the next morning. We request the ER's records, reconcile any new medications with what your pet already takes, and get the recheck scheduled — usually within one to three days. The ER saves your pet's night; we manage your pet's life. How that handoff works is its own post: [what happens after an ER visit](/blog/after-er-visit-follow-up-care-colorado-springs).
+
+[[KEYTAKEAWAY]] The plan fits on a sticky note: go-now signs mean go now. Unsure means call the ER and ask — triage calls are free. Everything else keeps until 8 a.m., when we take it from there: [(719) 204-3647](tel:719-204-3647).`,
+    featuredImage: "/blogs/drunsellenjoyingpuppytime.jpg",
+    imageAlt: "Dr. Robbie Unsell with a puppy at Red Rock Veterinary Health in Colorado Springs",
+    author: "Dr. Robbie Unsell",
+    publishedAt: "2026-07-11",
+    readingTime: 6,
+    categories: ["Emergency Care"],
+    tags: ["after hours vet", "emergency vet Colorado Springs", "24 hour vet", "pet emergency", "Colorado Springs"],
+    seo: {
+      metaTitle: "What to Do If Your Pet Has an Emergency After Our Hours: A Colorado Springs Guide",
+      metaDescription: "Red Rock closes at 5 — emergencies don't. A Colorado Springs vet's guide to after-hours pet emergencies: who to call, where to go, and what can wait.",
+      focusKeywords: ["after hours emergency vet Colorado Springs", "24 hour vet Colorado Springs", "animal ER Colorado Springs", "my vet is closed", "pet emergency at night", "weekend vet Colorado Springs"]
+    },
+    faqs: [
+      {
+        question: "Who do I call if my vet is closed and my pet is sick in Colorado Springs?",
+        answer: "Call one of the city's after-hours emergency hospitals: Animal ER Care at (719) 260-7141 (open 24/7) or Uintah Pet Emergency at (719) 633-3214 (open daily until midnight). Describe what you are seeing and they will tell you whether to come in. For suspected poisoning, also call ASPCA Animal Poison Control at (888) 426-4435 or Pet Poison Helpline at (855) 764-7661."
+      },
+      {
+        question: "Does Red Rock Veterinary Health have after-hours emergency care?",
+        answer: "No. We are open Monday through Friday, 8 a.m. to 5 p.m., with no overnight staff or on-call line, and we believe in saying that plainly. For after-hours emergencies we refer to Uintah Pet Emergency and Animal ER Care, and we coordinate follow-up care the next business day: records, medication reconciliation, and the recheck."
+      },
+      {
+        question: "What counts as a true pet emergency that cannot wait until morning?",
+        answer: "Difficulty breathing, collapse, seizures, unproductive retching with a swollen belly, a male cat who cannot urinate, major trauma, bleeding that will not stop, pale or white gums, rattlesnake bite, suspected heatstroke, stalled labor, and known or suspected poisoning. Any of these means go to an emergency hospital now."
+      },
+      {
+        question: "How do I know if it can wait until morning?",
+        answer: "If your pet is alert, breathing normally, and able to rest, then a single vomit, a partial-weight limp, a stopped-bleeding torn nail, mild ear or skin irritation, or one skipped meal can usually wait for a morning urgent appointment. Puppies, kittens, seniors, and chronically ill pets have less reserve — when in doubt, call the emergency hospital and ask; triage calls are free."
+      },
+      {
+        question: "My dog ate something toxic at night. What do I do?",
+        answer: "Call a poison control line immediately — ASPCA Animal Poison Control (888) 426-4435 or Pet Poison Helpline (855) 764-7661 — with your dog's weight and the packaging in hand. They will calculate whether the dose is dangerous and coordinate a treatment plan with the emergency hospital. Do not induce vomiting unless a veterinary professional tells you to."
+      },
+      {
+        question: "Will the emergency vet cost more than a regular visit?",
+        answer: "Generally yes — emergency hospitals staff doctors, technicians, and equipment around the clock, and their exam fees and treatment costs reflect that. That is exactly why it helps to know which problems genuinely need the ER tonight and which can wait for a $109 same-day urgent exam with us in the morning."
+      },
+      {
+        question: "Should I call Red Rock after an ER visit?",
+        answer: "Yes — call us at (719) 204-3647 the next morning. We request the records from the emergency hospital, reconcile any new medications with your pet's regular ones, and schedule the recheck, typically within 24 to 72 hours of discharge. That handoff is a standard part of how we practice."
+      },
+      {
+        question: "Why doesn't Red Rock offer 24/7 emergency care?",
+        answer: "Because doing overnight medicine well requires a dedicated overnight hospital, and pretending otherwise would be worse for pets. We chose to be the daytime anchor: same-day urgent care Monday through Friday at general-practice pricing, tight relationships with the city's dedicated emergency hospitals, and coordinated follow-up when your pet comes home. Every pet gets the right door at the right hour."
+      }
+    ],
+    faqJsonLd: `{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Who do I call if my vet is closed and my pet is sick in Colorado Springs?","acceptedAnswer":{"@type":"Answer","text":"Call one of Colorado Springs' after-hours emergency hospitals: Animal ER Care at (719) 260-7141, open 24/7, or Uintah Pet Emergency at (719) 633-3214, open daily until midnight. For suspected poisoning, also call ASPCA Animal Poison Control at (888) 426-4435 or Pet Poison Helpline at (855) 764-7661."}},
+    {"@type":"Question","name":"Does Red Rock Veterinary Health have after-hours emergency care?","acceptedAnswer":{"@type":"Answer","text":"No. Red Rock Veterinary Health is open Monday through Friday, 8 a.m. to 5 p.m., with no overnight staff or on-call line. For after-hours emergencies Red Rock refers to Uintah Pet Emergency and Animal ER Care, then coordinates follow-up care the next business day: records, medication reconciliation, and the recheck."}},
+    {"@type":"Question","name":"What counts as a true pet emergency that cannot wait until morning?","acceptedAnswer":{"@type":"Answer","text":"Difficulty breathing, collapse, seizures, unproductive retching with a swollen belly, a male cat who cannot urinate, major trauma, bleeding that will not stop, pale or white gums, rattlesnake bite, suspected heatstroke, stalled labor, and known or suspected poisoning. Any of these means go to an emergency hospital immediately."}},
+    {"@type":"Question","name":"How do I know if a pet problem can wait until morning?","acceptedAnswer":{"@type":"Answer","text":"If the pet is alert, breathing normally, and able to rest, a single vomit, a partial-weight limp, a torn nail that has stopped bleeding, mild ear or skin irritation, or one skipped meal can usually wait for a morning urgent appointment. Puppies, kittens, seniors, and chronically ill pets have less reserve; when in doubt, call the emergency hospital and ask."}},
+    {"@type":"Question","name":"My dog ate something toxic at night. What do I do?","acceptedAnswer":{"@type":"Answer","text":"Call a veterinary poison control line immediately with the dog's weight and the packaging in hand: ASPCA Animal Poison Control (888) 426-4435 or Pet Poison Helpline (855) 764-7661. Do not induce vomiting unless a veterinary professional says to."}},
+    {"@type":"Question","name":"Should I call my regular vet after an emergency room visit?","acceptedAnswer":{"@type":"Answer","text":"Yes. Call the next morning. Red Rock Veterinary Health requests records from the emergency hospital, reconciles new medications with the pet's regular ones, and schedules a recheck, typically within 24 to 72 hours of discharge: (719) 204-3647."}},
+    {"@type":"Question","name":"Why doesn't Red Rock Veterinary Health offer 24/7 emergency care?","acceptedAnswer":{"@type":"Answer","text":"Overnight medicine done well requires a dedicated overnight hospital. Red Rock is the daytime anchor: same-day urgent care Monday through Friday at general-practice pricing, referral relationships with Colorado Springs' dedicated emergency hospitals, and coordinated follow-up when the pet comes home."}}
+  ]
+}`
+  },
+  {
+    id: "after-er-visit-follow-up-care-colorado-springs",
+    title: "After the Animal ER: How We Coordinate Your Pet's Follow-Up Care in Colorado Springs",
+    slug: "after-er-visit-follow-up-care-colorado-springs",
+    excerpt: "Home from the animal ER? Dr. Muelhaupt explains discharge papers, the recheck window, medication reconciliation, and how Red Rock takes the handoff.",
+    content: `[[QUICKTAKE]] Quick take
+- Call us at [(719) 204-3647](tel:719-204-3647) the morning after any ER visit — even if your pet seems fine. We request the records; you don't have to carry paper.
+- Most ER discharges need a recheck with the regular vet within 24 to 72 hours. Your discharge papers say which; we help you read them.
+- Bring every new medication to the recheck. Reconciling ER meds with your pet's regular ones is where problems get caught.
+- Some symptoms mean going back to the ER, not waiting for us — the red-flag list is below.
+
+The emergency hospital did its job: your pet made it through the night. Now you are home with discharge papers you read at 3 a.m., a pet who smells like a hospital, and a plastic bag of new medications. This post is about what happens next — because the days after an ER visit are when good outcomes are protected or quietly lost, and because "follow up with your regular veterinarian" is the single most common line on a discharge sheet and the least explained.
+
+At Red Rock, taking the handoff from Colorado Springs' emergency hospitals is a routine part of our week. Here is how it works, step by step, and how to be good at your part of it.
+
+## The first morning: one phone call starts everything
+
+Call us at [(719) 204-3647](tel:719-204-3647) the morning after the visit — even if your pet seems back to normal. Tell us three things: where your pet was seen, what the ER said was wrong, and what the discharge papers say about follow-up. From there, the machinery is ours to run: we contact Uintah Pet Emergency or Animal ER Care directly, request the full visit record — doctor's notes, lab results, imaging, medications given — and have it in your pet's chart before the recheck. You do not need to hand-carry paperwork or forward PDFs. The two hospitals send records routinely; this is a practiced handoff, not a favor.
+
+## Reading the discharge papers (the honest version)
+
+ER discharge instructions compress a lot into a page. Four lines deserve your attention:
+
+- **The diagnosis line** — sometimes definitive ("gastric foreign body, removed"), often provisional ("vomiting, suspect dietary indiscretion"). Provisional means the recheck matters more, not less: we are watching to see if the story holds.
+- **The medication list** — what was given at the hospital versus what you give at home. The distinction matters for timing tonight's doses.
+- **The recheck window** — "recheck in 24-48 hours" or "suture removal in 10-14 days." This is written for your regular vet to execute; it is the line we schedule against.
+- **The "return if" list** — the ER's own red flags for your specific case. Tape it to the fridge for the first week.
+
+## The recheck: what we actually do
+
+Most post-ER rechecks happen with us within one to three days of discharge, and they are calmer than you might expect: a full exam with the ER's findings in hand, a look at incisions, bandages, or e-collars, a conversation about how eating, drinking, and energy have looked at home, and a plan for what happens over the next two weeks. Two things we deliberately do not do: we do not re-run diagnostics the ER already ran — we review their results and repeat a test only when the point is to see change, like rechecking kidney values after fluids — and we do not second-guess the ER's overnight decisions to your face. They practice good medicine at 3 a.m.; our job is the follow-through, not the critique.
+
+The recheck also happens at general-practice pricing — a standard exam with us is $79 — and in the same Fear Free rooms your pet already knows. After the adrenaline and expense of an emergency night, both of those matter.
+
+## Medication reconciliation: the unglamorous step that catches problems
+
+Bring every medication to the recheck — the new ER prescriptions and everything your pet was already taking, supplements included. We check the new list against the old one: duplicated drug classes, interactions, doses that assume a weight your pet no longer is, and pain medications that should taper rather than stop. If your pet takes a daily medication for a chronic condition, we confirm whether the ER paused it and when it restarts. This ten-minute review is the single most preventable source of post-ER complications we see.
+
+## When to go back to the ER instead of waiting for us
+
+Follow-up care means knowing which door to use. Go back to the emergency hospital — tonight, not tomorrow — if you see:
+
+- The original symptoms returning with force: repeated vomiting, collapse, or new seizures
+- Labored breathing, or gums going pale, gray, or blue
+- An incision that opens, bleeds through a bandage, or shows spreading redness and swelling
+- A pet who was improving and abruptly is not: refusing water, unresponsive, hiding and unreachable
+- Straining to urinate with nothing produced, especially in male cats
+
+Everything milder than that — appetite slow to return, a pet still subdued from medications, questions about doses — is a phone call to us during the day: [(719) 204-3647](tel:719-204-3647), or text [(719) 355-8343](sms:719-355-8343).
+
+## When the ER visit changes your pet's life
+
+Some emergency visits end with more than a recovered pet: they end with a diagnosis. Diabetes discovered because of a crisis. A heart condition found on the X-ray taken for something else. Kidney disease that announced itself all at once. The ER stabilizes the crisis; the long-term management — insulin adjustment, recheck labs, diet changes, the slow tuning of medications over months — is general-practice medicine, and it is where having one team that knows your pet pays off for years. That is exactly what our [chronic disease management](/services/chronic-disease-management) service exists for, and the post-ER recheck is where that longer plan starts.
+
+## The system, plainly stated
+
+Colorado Springs pet owners are well served by a division of labor: dedicated emergency hospitals for nights, weekends, and the truly critical, and daytime practices like ours for everything that benefits from history, continuity, and calm. We are open about being the second kind — and about being built for this handoff: same-day urgent slots Monday through Friday, records requested before you ask, medications reconciled, rechecks at general-practice prices. If the after-hours night ever comes, our [guide to after-hours emergencies](/blog/pet-emergency-after-hours-colorado-springs) tells you exactly what to do. This post is the other half: what we do for you the morning after.
+
+[[KEYTAKEAWAY]] One call the next morning — [(719) 204-3647](tel:719-204-3647) — and the handoff runs itself: records requested, medications reconciled, recheck scheduled within 24 to 72 hours. The ER saves the night; we manage the life.`,
+    featuredImage: "/blogs/expertcare.jpg",
+    imageAlt: "A Red Rock Veterinary Health team member providing calm follow-up care after an ER visit",
+    author: "Dr. Dan Muelhaupt",
+    publishedAt: "2026-07-11",
+    readingTime: 6,
+    categories: ["Emergency Care"],
+    tags: ["ER follow-up", "veterinary recheck", "continuity of care", "Colorado Springs"],
+    seo: {
+      metaTitle: "After the Animal ER: How We Coordinate Your Pet's Follow-Up Care in Colorado Springs",
+      metaDescription: "Home from the animal ER — now what? A Colorado Springs vet on discharge papers, rechecks, medication reconciliation, and how the handoff works.",
+      focusKeywords: ["vet follow up after emergency visit", "after ER vet visit what next", "pet discharge instructions", "veterinary recheck Colorado Springs", "ER records transfer vet"]
+    },
+    faqs: [
+      {
+        question: "What should I do first after my pet's emergency room visit?",
+        answer: "Call your regular veterinarian the next morning — at Red Rock that is (719) 204-3647 — even if your pet seems fine. Tell them where your pet was seen and what the discharge papers say. We request the full ER record directly from the hospital and schedule the recheck the discharge instructions call for, typically within 24 to 72 hours."
+      },
+      {
+        question: "How do you get my pet's records from the emergency hospital?",
+        answer: "We request them directly from Uintah Pet Emergency or Animal ER Care — doctor's notes, lab results, imaging, and the medication list — and they arrive before your recheck. You do not need to hand-carry paperwork. This transfer is a routine, practiced part of how the Colorado Springs emergency network works."
+      },
+      {
+        question: "How soon after an ER visit should the recheck happen?",
+        answer: "Follow your discharge papers: most say 24 to 72 hours, with suture or bandage checks on their own schedule. If the papers are unclear, call us and read us the line — we will translate it into an actual appointment. Sooner is better than later when the ER diagnosis was provisional."
+      },
+      {
+        question: "Do I have to repeat the tests the ER already ran?",
+        answer: "No. We review the ER's results rather than re-running them, and we repeat a test only when the medical point is to see change over time — for example, rechecking kidney values after fluid therapy. Bringing costs down after an expensive emergency night is part of the job."
+      },
+      {
+        question: "The ER prescribed new medications. What if they conflict with my pet's regular ones?",
+        answer: "Bring everything — new prescriptions, regular medications, and supplements — to the recheck. We reconcile the lists: interactions, duplicated drug classes, taper schedules, and whether a paused chronic medication should restart. This review is the most preventable source of post-ER complications."
+      },
+      {
+        question: "When should I go back to the ER instead of waiting for my regular vet?",
+        answer: "Go back immediately for returning or worsening symptoms: repeated vomiting, collapse, seizures, labored breathing, pale or blue gums, an incision that opens or bleeds through, a pet who becomes unresponsive, or straining to urinate with nothing produced. Milder concerns — slow appetite, medication questions — are a daytime call to us."
+      },
+      {
+        question: "Will the follow-up visit cost as much as the ER visit?",
+        answer: "No. Rechecks happen at general-practice pricing — our standard exam is $79 — and any further diagnostics or treatment are discussed and priced with you before we do them. The emergency hospital's fees reflect 24/7 staffing; follow-up care does not need to."
+      },
+      {
+        question: "My pet was diagnosed with a chronic condition at the ER. Can you manage it long-term?",
+        answer: "Yes — that transition is exactly what a daytime practice is for. Diabetes, heart disease, kidney disease, and seizure disorders discovered during a crisis all need months of adjustment, recheck labs, and tuning. We take the ER's baseline, build the long-term plan, and manage it with one team that knows your pet."
+      }
+    ],
+    faqJsonLd: `{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What should I do first after my pet's emergency room visit?","acceptedAnswer":{"@type":"Answer","text":"Call your regular veterinarian the next morning even if the pet seems fine. Red Rock Veterinary Health, (719) 204-3647, requests the full ER record directly from the emergency hospital and schedules the recheck the discharge instructions call for, typically within 24 to 72 hours."}},
+    {"@type":"Question","name":"How does my regular vet get records from the emergency hospital?","acceptedAnswer":{"@type":"Answer","text":"Red Rock requests records directly from Uintah Pet Emergency or Animal ER Care, including doctor's notes, lab results, imaging, and medications, and has them before the recheck. Owners do not need to hand-carry paperwork; the transfer is a routine part of the Colorado Springs emergency network."}},
+    {"@type":"Question","name":"How soon after an ER visit should a pet have a recheck?","acceptedAnswer":{"@type":"Answer","text":"Most ER discharge instructions call for a recheck with the regular veterinarian within 24 to 72 hours, with suture or bandage checks on their own schedule. When the ER diagnosis is provisional, the recheck matters more, not less."}},
+    {"@type":"Question","name":"Do the emergency hospital's tests have to be repeated at the follow-up visit?","acceptedAnswer":{"@type":"Answer","text":"No. The regular veterinarian reviews the ER's results rather than re-running them, repeating a test only when the point is to measure change over time, such as rechecking kidney values after fluid therapy."}},
+    {"@type":"Question","name":"What if the ER's new medications conflict with a pet's regular medications?","acceptedAnswer":{"@type":"Answer","text":"Bring all medications and supplements to the recheck for reconciliation: interactions, duplicated drug classes, taper schedules, and whether paused chronic medications should restart. This review is the most preventable source of post-ER complications."}},
+    {"@type":"Question","name":"When should a pet go back to the ER instead of waiting for the regular vet?","acceptedAnswer":{"@type":"Answer","text":"Immediately, for returning or worsening symptoms: repeated vomiting, collapse, seizures, labored breathing, pale or blue gums, an incision that opens or bleeds through, unresponsiveness, or straining to urinate with nothing produced."}},
+    {"@type":"Question","name":"Does the follow-up visit cost as much as the emergency visit?","acceptedAnswer":{"@type":"Answer","text":"No. Post-ER rechecks at Red Rock Veterinary Health happen at general-practice pricing, with a standard exam at $79, and further diagnostics or treatment are priced and discussed before they are performed."}},
+    {"@type":"Question","name":"Can a chronic condition diagnosed at the ER be managed by a regular vet long-term?","acceptedAnswer":{"@type":"Answer","text":"Yes. Conditions like diabetes, heart disease, kidney disease, and seizure disorders discovered during an emergency need months of adjustment and recheck labs. Red Rock takes the ER's baseline and manages the long-term plan through its chronic disease management service."}}
+  ]
+}`
+  },
+  {
     id: "fear-free-veterinary-care-colorado-springs",
     title: "Fear Free Veterinary Care in Colorado Springs: What It Actually Means, and Why It Matters for Every Pet",
     slug: "fear-free-veterinary-care-colorado-springs",
@@ -328,7 +582,9 @@ Being an established patient also gives your pet the benefit of familiarity—a 
 
 Veterinary emergencies often begin with subtle signs: labored breathing, sudden lethargy, disorientation, or unexplained swelling. These symptoms can be easy to overlook, but early diagnosis and treatment drastically improve outcomes especially in the case of eating something they shouldn't have.
 
-Our experienced veterinary team is trained to identify and respond to critical conditions quickly. With in-house diagnostics, fluid therapy, oxygen therapy, and skilled monitoring, our animal hospital is equipped to stabilize and treat emergencies promptly, often eliminating the need for referral to 24/7 hour veterinary hospitals. We offer emergency surgery when we have the availability with our brand-new state of the art surgical suite and monitoring equipment. Every surgery patient has 2 dedicated credentialed and experienced veterinary technicians to ensure their safety.
+Our experienced veterinary team is trained to identify and respond to critical conditions quickly. During our business hours, with in-house diagnostics, fluid therapy, oxygen therapy, and skilled monitoring, our animal hospital is equipped to stabilize and treat many urgent problems the same day. When a case needs overnight monitoring or a specialist, we stabilize first and refer to a 24-hour emergency hospital, sending records along so nothing is lost in the handoff. Urgent surgery happens on-site when our schedule allows, in our brand-new state-of-the-art surgical suite; every surgery patient has 2 dedicated credentialed and experienced veterinary technicians to ensure their safety.
+
+Red Rock is open Monday through Friday, 8 a.m. to 5 p.m., and we do not have an after-hours on-call line. If your pet has an emergency outside our hours, read our guide on [what to do if your pet has an emergency after our hours](/blog/pet-emergency-after-hours-colorado-springs) for who to call and where to go.
 
 ![IMAGE](/blogs/expertcare.jpg|Expert Care, Delivered with Heart)
 

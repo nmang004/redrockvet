@@ -5,6 +5,18 @@ interface StaffStructuredDataProps {
 }
 
 export default function StaffStructuredData({ staffMember }: StaffStructuredDataProps) {
+  const redRock = {
+    "@type": "VeterinaryClinic",
+    name: "Red Rock Veterinary Health",
+    url: "https://redrockvet.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Colorado Springs",
+      addressRegion: "CO",
+      addressCountry: "US"
+    }
+  };
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -13,19 +25,23 @@ export default function StaffStructuredData({ staffMember }: StaffStructuredData
     image: `https://redrockvet.com${staffMember.image}`,
     description: staffMember.bio,
     knowsAbout: staffMember.specialties,
-    worksFor: {
-      "@type": "VeterinaryClinic",
-      name: "Red Rock Veterinary Health",
-      url: "https://redrockvet.com",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Colorado Springs",
-        addressRegion: "CO",
-        addressCountry: "US"
-      }
-    },
+    // Employed team members work for Red Rock; visiting specialist partners are
+    // independent — they work for their own organization and are only affiliated
+    // with Red Rock, where they provide care on-site.
+    ...(staffMember.isPartner
+      ? {
+          ...(staffMember.partnerOrg && {
+            worksFor: {
+              "@type": "Organization",
+              name: staffMember.partnerOrg,
+              ...(staffMember.partnerOrgUrl && { url: staffMember.partnerOrgUrl })
+            }
+          }),
+          affiliation: redRock
+        }
+      : { worksFor: redRock }),
     url: `https://redrockvet.com/staff/${staffMember.slug}`,
-    sameAs: [],
+    sameAs: staffMember.partnerOrgUrl ? [staffMember.partnerOrgUrl] : [],
     ...(staffMember.education && {
       alumniOf: {
         "@type": "EducationalOrganization",

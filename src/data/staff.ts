@@ -13,6 +13,12 @@ export interface StaffMember {
   professionalMemberships?: string[];
   personalInterests?: string;
   certifications?: string[];
+  // Visiting specialist partners are independent, board-certified specialists who
+  // provide advanced care on-site through a partnership. They are NOT employed by
+  // Red Rock Veterinary Health, and every surface that shows them must say so.
+  isPartner?: boolean;
+  partnerOrg?: string;
+  partnerOrgUrl?: string;
 }
 
 export const staffMembers: StaffMember[] = [
@@ -274,6 +280,69 @@ export const staffMembers: StaffMember[] = [
     slug: "samantha-marlow",
     bio: "",
     specialties: []
+  },
+  {
+    id: "dr-jennifer-swiderski",
+    name: "Dr. Jennifer Swiderski",
+    title: "Board-Certified Veterinary Surgeon · Visiting Specialist Partner",
+    credentials: "DVM, MS, DACVS-SA",
+    pronouns: "She/Her",
+    image: "/staff/dr-jennifer-swiderski.jpg",
+    imageAlt: "Dr. Jennifer Swiderski, board-certified veterinary surgeon and visiting specialist partner at Red Rock Veterinary Health",
+    slug: "dr-jennifer-swiderski",
+    bio: "Dr. Jennifer Swiderski is a board-certified veterinary surgeon (Diplomate, American College of Veterinary Surgeons – Small Animal) who partners with Red Rock Veterinary Health to perform advanced orthopedic and soft tissue surgeries on-site. Through our partnership with MOVES – Front Range Mobile Veterinary Specialists, Dr. Swiderski brings specialist-level surgical care directly into our Colorado Springs hospital, so your pet can have complex procedures performed in the calm, familiar, Fear Free Certified environment they already know — rather than being referred across town.\n\nDr. Swiderski earned her DVM from Colorado State University in 2002, completed a small animal medicine and surgery internship at VCA West Los Angeles, and returned to CSU for a combined master's degree and three-year surgical residency, achieving board certification through the ACVS in 2008. She has served the Colorado Springs metro area and I-25 corridor with MOVES since 2019, and her clinical interests include oncologic and minimally invasive surgery.\n\nRed Rock Veterinary Health is the only Fear Free Certified practice in Colorado Springs able to offer advanced orthopedic and soft tissue surgery of this level on-site.",
+    education: "Doctor of Veterinary Medicine, Colorado State University (2002); Master of Science & Surgical Residency, Colorado State University; Internship, VCA West Los Angeles; B.S. Biology & Chemistry, California State University–Stanislaus",
+    specialties: [
+      "Orthopedic Surgery",
+      "Soft Tissue Surgery",
+      "Minimally Invasive Surgery",
+      "Surgical Oncology"
+    ],
+    isPartner: true,
+    partnerOrg: "MOVES – Front Range Mobile Veterinary Specialists",
+    partnerOrgUrl: "https://www.vetmoves.com/front-range/swiderski/"
+  },
+  {
+    id: "dr-erin-arnold",
+    name: "Dr. Erin Arnold",
+    title: "Board-Certified Veterinary Oncologist · Visiting Specialist Partner",
+    credentials: "DVM, MS, DACVIM (Oncology)",
+    pronouns: "She/Her",
+    image: "/staff/dr-erin-arnold.jpg",
+    imageAlt: "Dr. Erin Arnold, board-certified veterinary medical oncologist and visiting specialist partner at Red Rock Veterinary Health",
+    slug: "dr-erin-arnold",
+    bio: "Dr. Erin Arnold is a board-certified veterinary medical oncologist (Diplomate, American College of Veterinary Internal Medicine – Oncology) who visits Red Rock Veterinary Health every Wednesday to provide advanced cancer care on-site. Through our partnership with MOVES – Front Range Mobile Veterinary Specialists, Dr. Arnold offers chemotherapy, electrochemotherapy, ultrasound, and advanced oncology diagnostics right here in our Colorado Springs hospital — so pets facing a cancer diagnosis can be treated in a calm, Fear Free Certified environment close to home.\n\nDr. Arnold earned her DVM from North Carolina State University, completed her oncology residency at Purdue University, and achieved board certification in medical oncology in 2011. She has cared for patients across the Denver and Colorado Springs area for more than a decade. Her approach is multi-modal — combining chemotherapy, molecular targeted therapies, immunotherapy, electrochemotherapy, and supportive care — with a special interest in electrochemotherapy for facial and oral tumors, lymphoma, histiocytic sarcoma, and bladder cancer, always paired with compassionate support for families.\n\nRed Rock Veterinary Health is the only Fear Free Certified practice in Colorado Springs to offer this level of on-site specialty oncology care.",
+    education: "Doctor of Veterinary Medicine, North Carolina State University (2007); Oncology Residency & Master of Science in Applied Statistics, Purdue University; B.S. Microbiology, Colorado State University",
+    specialties: [
+      "Medical Oncology",
+      "Chemotherapy",
+      "Electrochemotherapy",
+      "Advanced Oncology Diagnostics"
+    ],
+    isPartner: true,
+    partnerOrg: "MOVES – Front Range Mobile Veterinary Specialists",
+    partnerOrgUrl: "https://www.vetmoves.com/front-range/arnold/"
+  },
+  {
+    id: "dr-brad-hines",
+    name: "Dr. Brad Hines",
+    title: "Board-Certified Internal Medicine Specialist · Visiting Specialist Partner",
+    credentials: "DVM, DACVIM",
+    pronouns: "He/Him",
+    image: "/staff/dr-brad-hines.jpg",
+    imageAlt: "Dr. Brad Hines, board-certified veterinary internal medicine specialist and visiting specialist partner at Red Rock Veterinary Health",
+    slug: "dr-brad-hines",
+    bio: "Dr. Brad Hines is a board-certified veterinary internal medicine specialist (Diplomate, American College of Veterinary Internal Medicine) who partners with Red Rock Veterinary Health to perform advanced ultrasound and internal medicine procedures on-site. Through our partnership with Mobile Veterinary Imaging of Colorado — the practice Dr. Hines owns — he brings abdominal and cardiac ultrasound, echocardiograms, and ultrasound-guided procedures directly into our Colorado Springs hospital.\n\nDr. Hines has three decades of experience as a small animal internal medicine specialist, including advanced ultrasound training in abdominal and cardiac imaging as well as ultrasound-guided procedures. He attended veterinary school at Oklahoma State University, followed by a rotating internship at Auburn University and an internal medicine residency at Purdue University. After board certification he practiced at a Dallas specialty center for 13 years before moving to Colorado, where he was affiliated with Southern Colorado Veterinary Internal Medicine for 17 years.\n\nRed Rock Veterinary Health is the only Fear Free Certified practice in Colorado Springs to offer an on-site board-certified internist who welcomes owners to stay present during their pet's ultrasound.",
+    education: "Veterinary School, Oklahoma State University; Rotating Internship, Auburn University; Internal Medicine Residency, Purdue University",
+    specialties: [
+      "Internal Medicine",
+      "Abdominal & Cardiac Ultrasound",
+      "Echocardiography",
+      "Ultrasound-Guided Procedures"
+    ],
+    isPartner: true,
+    partnerOrg: "Mobile Veterinary Imaging of Colorado",
+    partnerOrgUrl: "https://www.mobileveterinaryimagingcolorado.com/about/"
   }
 ];
 

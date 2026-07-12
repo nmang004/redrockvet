@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { staffMembers, getStaffMemberBySlug, getAllStaffSlugs, certificationMetadata } from "@/data/staff";
-import { ArrowLeft, Award, GraduationCap, Heart, Users, Phone, Calendar } from "lucide-react";
+import { ArrowLeft, Award, GraduationCap, Heart, Users, Phone, Calendar, Stethoscope, ExternalLink } from "lucide-react";
 import StaffStructuredData from "@/components/seo/StaffStructuredData";
 
 export async function generateStaticParams() {
@@ -61,8 +61,12 @@ export default async function StaffMemberPage({
   }
 
   const otherMembers = staffMembers
-    .filter((m) => m.id !== member.id)
+    .filter((m) => m.id !== member.id && !m.isPartner)
     .slice(0, 3);
+
+  const firstName = member.name.startsWith("Dr.")
+    ? `${member.name.split(" ")[0]} ${member.name.split(" ")[1]}`
+    : member.name.split(" ")[0];
 
   return (
     <>
@@ -123,6 +127,12 @@ export default async function StaffMemberPage({
                           <span className="text-foreground text-sm">{member.education}</span>
                         </div>
                       )}
+                      {member.isPartner && member.partnerOrg && (
+                        <div className="flex items-center justify-center gap-2">
+                          <Stethoscope className="w-5 h-5 text-primary" />
+                          <span className="text-foreground text-sm">Specialist Partner · {member.partnerOrg}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
@@ -145,11 +155,47 @@ export default async function StaffMemberPage({
                 <p className="text-2xl text-primary font-semibold mb-6">
                   {member.title}
                 </p>
-                
+
+                {member.isPartner && (
+                  <div className="mb-6 rounded-xl border border-primary/20 bg-primary/5 p-5">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Stethoscope className="w-5 h-5 text-primary" />
+                      <span className="font-semibold text-foreground">Independent Specialist Partner</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {firstName} is an independent, board-certified specialist who partners with Red Rock
+                      Veterinary Health to provide advanced care on-site, and is{" "}
+                      <span className="font-semibold text-foreground">not employed by</span> Red Rock Veterinary
+                      Health.
+                      {member.partnerOrg && (
+                        <>
+                          {" "}They practice with{" "}
+                          {member.partnerOrgUrl ? (
+                            <a
+                              href={member.partnerOrgUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary font-medium hover:underline inline-flex items-center gap-1"
+                            >
+                              {member.partnerOrg}
+                              <ExternalLink className="w-3.5 h-3.5" />
+                            </a>
+                          ) : (
+                            <span className="font-medium text-foreground">{member.partnerOrg}</span>
+                          )}
+                          .
+                        </>
+                      )}
+                    </p>
+                  </div>
+                )}
+
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                    {member.bio}
-                  </p>
+                  {member.bio.split("\n\n").map((paragraph, index) => (
+                    <p key={index} className="text-muted-foreground text-lg leading-relaxed mb-6">
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </div>
 
@@ -243,11 +289,12 @@ export default async function StaffMemberPage({
               <Card className="bg-primary text-primary-foreground border-0">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4">
-                    Ready to meet {member.name.startsWith('Dr.') ? member.name.split(' ')[0] + ' ' + member.name.split(' ')[1] : member.name.split(' ')[0]}?
+                    {member.isPartner ? `Ask about care with ${firstName}` : `Ready to meet ${firstName}?`}
                   </h3>
                   <p className="mb-6 text-primary-foreground/90">
-                    Schedule an appointment today and experience the exceptional care 
-                    that our dedicated team provides.
+                    {member.isPartner
+                      ? `Specialty visits with ${firstName} are arranged on-site through Red Rock Veterinary Health. Call or book online and our team will help coordinate your pet's specialist care.`
+                      : "Schedule an appointment today and experience the exceptional care that our dedicated team provides."}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button variant="secondary" size="lg" className="flex-1">

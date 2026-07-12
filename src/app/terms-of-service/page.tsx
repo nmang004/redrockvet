@@ -66,7 +66,7 @@ const emergencyTerms = [
   {
     icon: Phone,
     title: "After-Hours Emergencies",
-    content: "For critical emergencies outside business hours, call (719) 204-3647. If unable to reach us, seek immediate care at the nearest 24-hour emergency veterinary facility. We'll coordinate follow-up care when we reopen."
+    content: "For critical emergencies outside business hours, go directly to a 24-hour emergency facility such as Animal ER Care, (719) 260-7141 (open 24/7), or Uintah Pet Emergency, (719) 633-3214 (open daily until midnight). Call us at (719) 204-3647 when we reopen and we will coordinate follow-up care."
   },
   {
     icon: CheckCircle,
