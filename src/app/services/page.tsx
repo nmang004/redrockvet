@@ -1,17 +1,20 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  Stethoscope, 
-  Heart, 
-  Shield, 
-  Scissors, 
-  Activity, 
-  Zap, 
+import { staffMembers } from "@/data/staff";
+import {
+  Stethoscope,
+  Heart,
+  Shield,
+  Scissors,
+  Activity,
+  Zap,
   Microscope,
   Brain,
-  Phone
+  Phone,
+  ArrowRight
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -83,6 +86,8 @@ const services = [
 ];
 
 export default function ServicesPage() {
+  const specialistPartners = staffMembers.filter((member) => member.isPartner);
+
   return (
     <div className="py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -97,7 +102,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const IconComponent = service.icon;
             return (
               <Card key={service.slug} className="h-full hover:shadow-lg transition-all duration-300 flex flex-col">
@@ -119,6 +124,63 @@ export default function ServicesPage() {
             );
           })}
         </div>
+
+        {specialistPartners.length > 0 && (
+          <div className="mb-16">
+            <div className="text-center mb-10 max-w-3xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                <Stethoscope className="w-4 h-4" />
+                Specialty Care, On-Site
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Board-Certified Specialists at Red Rock
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Beyond our own veterinarians, Red Rock partners with independent, board-certified specialists in
+                surgery, oncology, and internal medicine who bring advanced care directly into our Fear Free Certified
+                hospital &mdash; so your pet can receive specialist-level treatment without a referral across town.
+              </p>
+              <p className="text-sm text-muted-foreground/90 italic mt-4">
+                These specialists provide care on-site through a partnership and are not employed by Red Rock
+                Veterinary Health.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {specialistPartners.map((partner) => (
+                <Link key={partner.id} href={`/staff/${partner.slug}`} className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 overflow-hidden !pt-0">
+                    <div className="aspect-[4/3] relative overflow-hidden">
+                      <Image
+                        src={partner.image}
+                        alt={partner.imageAlt}
+                        fill
+                        className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-primary shadow-sm backdrop-blur-sm">
+                        <Stethoscope className="w-3.5 h-3.5" />
+                        Specialist Partner
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-lg">{partner.name}</CardTitle>
+                      <CardDescription className="text-primary font-medium">
+                        {partner.credentials}
+                      </CardDescription>
+                      <CardDescription className="text-base mt-2">
+                        {partner.specialties.slice(0, 3).join(" · ")}
+                      </CardDescription>
+                      <div className="mt-4 inline-flex items-center text-sm font-medium text-primary">
+                        View profile
+                        <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </CardHeader>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="text-center bg-accent rounded-2xl p-8">
           <h2 className="text-2xl font-bold text-foreground mb-4">

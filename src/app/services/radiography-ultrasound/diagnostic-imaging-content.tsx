@@ -1,10 +1,11 @@
 "use client";
 
-import { Camera, Monitor, Activity, Shield, Clock, CheckCircle, Phone, Stethoscope } from "lucide-react";
+import { Camera, Monitor, Activity, Shield, Clock, CheckCircle, Phone, Stethoscope, ArrowRight } from "lucide-react";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const imagingServices = [
   {
@@ -282,9 +283,55 @@ export default function DiagnosticImagingContent() {
         </div>
       </section>
 
-      {/* Specialist Network Section */}
+      {/* Specialist Partner Section */}
       <section className="py-16 bg-primary/5">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-background rounded-2xl p-8 md:p-10 border border-primary/20 shadow-lg mb-10"
+          >
+            <div className="grid md:grid-cols-[220px_1fr] gap-8 items-center">
+              <div className="mx-auto w-40 md:w-full">
+                <div className="aspect-square relative overflow-hidden rounded-2xl shadow-md">
+                  <Image
+                    src="/staff/dr-brad-hines.jpg"
+                    alt="Dr. Brad Hines, board-certified veterinary internal medicine specialist and visiting specialist partner"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                  <Stethoscope className="w-4 h-4" />
+                  Visiting Specialist Partner
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  On-Site Ultrasound &amp; Echocardiography with Dr. Brad Hines
+                </h2>
+                <p className="text-lg text-muted-foreground mb-4">
+                  Through our partnership with Mobile Veterinary Imaging of Colorado, board-certified internal
+                  medicine specialist Dr. Brad Hines (DACVIM) performs abdominal and cardiac ultrasound,
+                  echocardiograms, and ultrasound-guided procedures right here in our hospital. Red Rock Veterinary
+                  Health is the only Fear Free Certified practice in Colorado Springs to offer an on-site
+                  board-certified internist who welcomes owners to stay present during their pet&apos;s ultrasound.
+                </p>
+                <p className="text-sm text-muted-foreground/90 italic mb-6">
+                  Dr. Hines is an independent specialist partner and is not employed by Red Rock Veterinary Health.
+                </p>
+                <Button asChild>
+                  <Link href="/staff/dr-brad-hines">
+                    Meet Dr. Hines
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+
           <div className="text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -296,9 +343,9 @@ export default function DiagnosticImagingContent() {
                 Advanced Imaging Network
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Collaboration with mobile specialists offers advanced diagnostic procedures within the hospital, reducing pet stress and ensuring continuity of care.
+                Collaboration with visiting specialists offers advanced diagnostic procedures within the hospital, reducing pet stress and ensuring continuity of care.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
                   <Link href="/contact">Request Imaging Consultation</Link>
