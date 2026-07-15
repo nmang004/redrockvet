@@ -218,7 +218,7 @@ Colorado Springs pet owners are well served by a division of labor: dedicated em
 [[KEYTAKEAWAY]] One call the next morning — [(719) 204-3647](tel:719-204-3647) — and the handoff runs itself: records requested, medications reconciled, recheck scheduled within 24 to 72 hours. The ER saves the night; we manage the life.`,
     featuredImage: "/blogs/expertcare.jpg",
     imageAlt: "A Red Rock Veterinary Health team member providing calm follow-up care after an ER visit",
-    author: "Dr. Dan Muelhaupt",
+    author: "Dr. Robbie Unsell",
     publishedAt: "2026-07-11",
     readingTime: 6,
     categories: ["Emergency Care"],
