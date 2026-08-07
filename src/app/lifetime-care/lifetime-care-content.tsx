@@ -44,7 +44,7 @@ const doorways = [
   {
     icon: HeartPulse,
     title: "You are near the end",
-    body: "Quality-of-life assessment done honestly, palliative care and hospice, and how to think about timing.",
+    body: "Quality-of-life assessment done honestly, what palliative care and hospice actually mean, and how to think about timing.",
     href: "#end-of-life",
     cta: "End-of-life care",
   },
@@ -82,7 +82,7 @@ const screeningPanel = [
   {
     title: "Complete blood count",
     detail:
-      "Red cells, white cells, and platelets. Anemia is common in advanced kidney disease and is one of the findings that changes how a senior patient feels day to day.",
+      "Red cells, white cells, and platelets. AAHA puts a comprehensive CBC in the senior minimum database alongside the chemistry panel and urinalysis, because changes here can be the first sign of disease that has not yet produced a symptom you would notice at home.",
   },
   {
     title: "Chemistry panel, every 6 to 12 months",
@@ -150,7 +150,7 @@ const chronicConditions = [
     icon: Droplets,
     title: "Chronic kidney disease",
     notice:
-      "Drinking and urinating more, drinking from the tap or the toilet when they never used to, weight loss, a dull coat, reduced appetite, occasional vomiting. In Colorado's dry air, the extra water loss costs a compromised kidney more than it would at sea level.",
+      "Drinking and urinating more, drinking from the tap or the toilet when they never used to, weight loss, a dull coat, reduced appetite, occasional vomiting. Colorado's dry air increases the water a pet loses just by breathing, which is worth accounting for in a cat already struggling to conserve it — multiple water stations, wet food, and a fountain are sensible here.",
     work:
       "CKD is staged 1 through 4 using the IRIS system, from fasting creatinine and/or SDMA measured on at least two occasions in a hydrated, stable patient — not from one blood draw on a dehydrated pet. In cats, Stage 1 is creatinine under 1.6 mg/dL, Stage 2 is 1.6 to 2.8, Stage 3 is 2.9 to 5.0, and Stage 4 is above 5.0; the canine thresholds start slightly lower. Each stage is then sub-staged twice more, by urine protein:creatinine ratio and by blood pressure, because proteinuria and hypertension change the plan. SDMA matters because it rises earlier than creatinine and is less affected by lost muscle mass, which is the exact trap in a thin old cat whose creatinine looks reassuring. In one study, 80.9% of cats aged 15 to 20 had kidney disease — and the great majority of affected cats were Stage 1 or 2. Most of what screening finds is early, which is the whole argument for screening.",
   },
@@ -160,7 +160,7 @@ const chronicConditions = [
     notice:
       "Drinking more, urinating more, eating more, and losing weight anyway. Owners often describe a pet that seems ravenous and is still getting thinner.",
     work:
-      "Diagnosis, a treatment plan, and — for cats — a diet strategy: high protein, above 45% of dry matter, and low carbohydrate, under 15%, fed in small frequent meals to blunt the post-meal glucose spike. Continuous glucose monitoring sensors can track a diabetic pet for up to 14 days, which tells us far more than a single stressful in-hospital glucose curve. The thing to know before you need it: diabetic ketoacidosis is a life-threatening emergency. A diabetic pet that is vomiting, refusing food, weak, or has sweet-smelling breath needs an emergency hospital immediately, including on a Saturday.",
+      "Diagnosis, a treatment plan, and — for cats — a diet strategy: high protein, above 45% of dry matter, and low carbohydrate, under 15%, fed in small frequent meals to blunt the post-meal glucose spike. Continuous glucose monitoring sensors can track a diabetic pet for up to 14 days, which shows far more than a single stressful in-hospital glucose curve. Ask us whether that is the right approach for your pet. The thing to know before you need it: diabetic ketoacidosis is a life-threatening emergency. A diabetic pet that is vomiting, refusing food, weak, or has sweet-smelling breath needs an emergency hospital immediately, including on a Saturday.",
   },
   {
     icon: Cat,
@@ -182,7 +182,7 @@ const chronicConditions = [
     icon: Sparkles,
     title: "Dental disease",
     notice:
-      "Bad breath that everyone in the house has normalized. Chewing on one side, dropping food, pawing at the face, more drooling, or simply hiding more — cats in particular conceal oral pain extremely well.",
+      "Bad breath that everyone in the house has normalized. Chewing on one side, dropping food, pawing at the face, more drooling, or simply hiding more — cats in particular conceal oral pain well.",
     work:
       "By age three most dogs and cats already have periodontal disease, with reported prevalence in dogs over three of 80 to 89%. Seniors carry a specific risk worth naming: tiny and small senior dogs can have significant periodontal bone loss and a higher incidence of pathologic jaw fracture, which is why full-mouth dental radiographs are not optional — they show the extent of bone loss and confirm which extractions are appropriate. Anesthesia is required to do any of this properly, and there is no legitimate anesthesia-free alternative. Our standard dental is $999; extractions and oral surgery are separate and quoted before we do them.",
   },
@@ -192,7 +192,7 @@ const chronicConditions = [
     notice:
       "A new cough, tiring sooner on the same walk, or a resting breathing rate that has crept upward. In cats, heart disease is frequently silent until the day it is not.",
     work:
-      "Canine mitral valve disease is staged A through D by ACVIM consensus, and the distinction that changes treatment is B1 versus B2: a murmur with normal-sized heart chambers, versus a murmur with left atrial and ventricular enlargement. Stage B1 dogs get no cardiac medication. Stage B2 dogs get pimobendan, which in the EPIC study delayed the onset of congestive heart failure by a median of about 15 months. Telling B1 from B2 requires echocardiography, or at minimum radiographs — and echocardiography is a referral service, not something we perform in-house. The most useful monitoring you can do at home costs nothing: count your pet's breaths for 30 seconds while they sleep and double it. Dogs and cats generally sleep at 15 to 30 breaths per minute, and a sleeping rate consistently above about 30 is abnormal and can mean fluid accumulating in the lungs.",
+      "Canine mitral valve disease is staged A through D by ACVIM consensus, and the distinction that changes treatment is B1 versus B2: a murmur with normal-sized heart chambers, versus a murmur with left atrial and ventricular enlargement. Stage B1 dogs get no cardiac medication. Stage B2 dogs get pimobendan, which in the EPIC study delayed the onset of congestive heart failure by a median of about 15 months. Telling B1 from B2 requires echocardiography, or at minimum radiographs — and echocardiography is a referral service, not something we perform in-house. One of the most useful things you can monitor at home costs nothing: count your pet's breaths for 30 seconds while they sleep and double it. Dogs and cats generally sleep at 15 to 30 breaths per minute, and a sleeping rate consistently above about 30 is abnormal and can mean fluid accumulating in the lungs.",
   },
 ];
 
@@ -515,7 +515,7 @@ export default function LifetimeCareContent() {
             <div className="flex items-center gap-3 mb-4">
               <Bone className="w-7 h-7 text-primary" aria-hidden="true" />
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                Arthritis Is the Most Under-Diagnosed Pain in Senior Medicine
+                Arthritis Is Routinely Missed in Senior Pets
               </h2>
             </div>
             <p className="text-lg text-muted-foreground mb-4">
@@ -527,8 +527,9 @@ export default function LifetimeCareContent() {
               In cats it is worse. More than 60% of cats have osteoarthritis in at least one joint, and cats almost never
               limp. Feline arthritis is usually bilateral, so both sides hurt equally and there is nothing to favor, and
               cats rarely have the crepitus in affected joints that gives dogs away on a physical exam. In one radiographic
-              study of 101 cats, owners had recognized lameness in two of them, and no obvious pain was detected on
-              palpation in any cat with limb arthritis. The cat is not fine. The cat is quiet.
+              study, owners had recognized lameness in only two cats, and no obvious pain was detected on palpation in any
+              cat with limb arthritis. A separate retrospective radiographic study found degenerative joint disease in the
+              limbs of 74% of 101 cats screened. The cat is not fine. The cat is quiet.
             </p>
           </motion.div>
 
@@ -740,7 +741,15 @@ export default function LifetimeCareContent() {
             One caution that applies across all six: senior presentations overlap heavily. Increased drinking may be kidney
             disease, diabetes, or thyroid disease. Night pacing may be arthritis, dementia, or high blood pressure. Nothing
             on this page diagnoses your pet, and it is not meant to &mdash; it is meant to get the right things onto the
-            table at the exam. For the dental side of senior care, see our{" "}
+            table at the exam. Where anxiety is a genuine part of what you are seeing, our{" "}
+            <Link href="/services/behavioral-management" className="text-primary hover:underline font-medium">
+              behavioral management page
+            </Link>{" "}
+            covers how we assess it; a lifelong itch that has followed a dog into old age is covered on our{" "}
+            <Link href="/services/allergy-testing-treatment" className="text-primary hover:underline font-medium">
+              allergy testing and treatment page
+            </Link>
+            . For the dental side of senior care, see our{" "}
             <Link href="/services/dental" className="text-primary hover:underline font-medium">
               dental page
             </Link>
@@ -879,10 +888,10 @@ export default function LifetimeCareContent() {
             </p>
             <p className="text-lg text-muted-foreground mb-4">
               What decides risk is not the birthday. It is organ function, cardiac and pulmonary reserve, concurrent
-              disease, and the plan. For a senior patient that means pre-anesthetic bloodwork, an ASA physical status
-              classification, NT-proBNP strongly considered before an anesthetic event, tailored induction with lower drug
-              doses, preoxygenation where there is cardiac or pulmonary disease, active warming, carefully padded
-              positioning, minimized anesthesia time, and longer recovery monitoring.
+              disease, and the plan. For a senior patient that means pre-anesthetic bloodwork, NT-proBNP strongly
+              considered before an anesthetic event, tailored induction, preoxygenation where there is cardiac or pulmonary
+              disease, active warming, carefully padded positioning, minimized anesthesia time, and longer recovery
+              monitoring.
             </p>
             <p className="text-lg text-muted-foreground mb-4">
               The sentence we hear most often is &quot;she&apos;s too old for a dental.&quot; Sometimes the honest answer
@@ -922,17 +931,25 @@ export default function LifetimeCareContent() {
               End-of-life care
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Palliative Care, Hospice, and How to Think About Timing
+              Comfort Care, Hospice, and How to Think About Timing
             </h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Palliative care is not the last chapter. AAHA is explicit that it should be offered as soon as there is a
-              chronic, progressive, or terminal diagnosis, and that the first palliative appointment should happen early in
-              the course of the disease. Starting it is not giving up. It is the opposite: it is deciding, while you still
-              have room to decide, what a good remaining life looks like and how to protect it.
+              Two words get used at families at the worst possible moment, usually without anyone stopping to define them.
+              Palliative care is not the last chapter. AAHA describes it as care that belongs on the table as soon as there
+              is a chronic, progressive, or terminal diagnosis, and says the first conversation about it should happen
+              early in the course of the disease. Raising it is not giving up. It is the opposite: it is deciding, while
+              you still have room to decide, what a good remaining life looks like and how to protect it.
+            </p>
+            <p className="text-lg text-muted-foreground mb-4">
+              Hospice is the end stage of palliative care &mdash; the additional support a later-stage terminal patient
+              needs, through to either humane euthanasia or a palliated natural death. Those are the definitions, and they
+              are worth knowing before anyone uses the words at you.
             </p>
             <p className="text-lg text-muted-foreground">
-              Hospice is the end stage of palliative care &mdash; the additional support a later-stage terminal patient
-              needs, through to either humane euthanasia or a palliated natural death.
+              What that means here, plainly: inside our hours we manage symptoms and pain, adjust medication, and keep
+              having the conversation as things change. We are not a hospice service and we do not visit homes. Where a
+              family wants dedicated hospice support or care at home, that is a hospice or mobile end-of-life provider, and
+              we will say so rather than stretch what we are.
             </p>
           </motion.div>
 
@@ -1035,15 +1052,15 @@ export default function LifetimeCareContent() {
             <p className="text-lg text-muted-foreground mb-4">
               Slowly. We start with your understanding of what has happened and what your pet is currently taking. Then a
               full physical exam with a pain assessment. Then the diagnosis, the prognosis, and realistic outcomes. Then
-              your goals &mdash; yours, not ours. Only then the options: continued treatment, palliative care, hospice, or
-              humane euthanasia.
+              your goals &mdash; yours, not ours. Only then the options: continued treatment, symptom and pain management
+              with us, referral to a hospice or mobile end-of-life provider, or humane euthanasia.
             </p>
             <p className="text-lg text-muted-foreground mb-4">
               We will ask about things that are not strictly medical, because they decide the outcome anyway: what you are
               afraid of, what you believe, whether you are physically able to lift and carry and medicate a large dog three
               times a day, and what this costs in money, time, and energy. If you are overwhelmed, we stop and schedule
               another time. We do not make this decision for you, and we will not pretend a number on a scale made it for
-              you either. Tell us when you book that this is what the visit is about, so we can give it the time it needs.
+              you either. Tell us when you book that this is what the visit is about.
             </p>
             <p className="text-lg text-muted-foreground">
               We will also talk through the plan for the death itself in advance if you want to, including where it
@@ -1073,9 +1090,9 @@ export default function LifetimeCareContent() {
               then.
             </p>
             <p className="text-lg text-muted-foreground">
-              Second: ask us about aftercare before you need it. Cremation options, what comes back to you, what it costs,
-              and who provides it locally. It is a five-minute conversation in daylight and a terrible one to have in a
-              parking lot.
+              Second: ask us about aftercare before you need it &mdash; we will walk you through the cremation options
+              available locally and what comes back to you. It is a five-minute conversation in daylight and a terrible one
+              to have in a parking lot.
             </p>
           </motion.div>
         </div>
@@ -1117,7 +1134,7 @@ export default function LifetimeCareContent() {
             ))}
           </ul>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -1177,7 +1194,47 @@ export default function LifetimeCareContent() {
                 </div>
               </div>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-background rounded-2xl p-8 border border-red-500/20 shadow-lg"
+            >
+              <h3 className="text-2xl font-bold text-foreground mb-4">North Springs VRC</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-red-500" aria-hidden="true" />
+                  <a href="tel:719-920-4430" className="text-primary hover:underline">
+                    (719) 920-4430
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-red-500 mt-1" aria-hidden="true" />
+                  <div className="text-muted-foreground">
+                    10520 White Diamond Pt
+                    <br />
+                    Colorado Springs, CO 80908
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 text-red-500" aria-hidden="true" />
+                  <span className="text-muted-foreground">Open 24/7, walk-ins welcome</span>
+                </div>
+              </div>
+            </motion.div>
           </div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-muted-foreground mt-6 text-center"
+          >
+            After midnight, Animal ER Care and North Springs VRC are the doors that are open.
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -1242,9 +1299,8 @@ export default function LifetimeCareContent() {
             <h2 className="text-3xl font-bold text-foreground mb-4">Book a Senior Visit</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Call us at (719) 204-3647, Monday through Friday, 8 a.m. to 5 p.m. Tell us it is a senior visit when you
-              book, so we can allow the time it needs. If you are somewhere harder than that &mdash; a diagnosis you are
-              still absorbing, or a decision you are dreading &mdash; say that on the phone. We would rather know before
-              you walk in.
+              book. If you are somewhere harder than that &mdash; a diagnosis you are still absorbing, or a decision you
+              are dreading &mdash; say that on the phone. We would rather know before you walk in.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">

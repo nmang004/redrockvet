@@ -40,7 +40,7 @@ const requestSteps = [
 
 const questionsToAsk = [
   "Who owns this practice? Is it independently owned, or part of a larger group?",
-  "Who makes the medical decisions here — the veterinarian in the room, or a protocol set somewhere else?",
+  "Who makes the medical decisions here, and who signs off on a treatment plan?",
   "Will the same veterinarian see my pet every visit, or whoever is on the schedule that day?",
   "What is your exam fee, and do I get a written estimate before anything is done?",
   "What are your hours, and what exactly happens if my pet gets sick outside them?",
@@ -58,18 +58,18 @@ const ownershipChecks = [
 ];
 
 const costDrivers = [
-  "Almost nobody has pet insurance covering the whole bill, so families pay the full cost of care at the counter — the same care in human medicine is billed to an insurer before you ever see a number.",
+  "Most families here pay out of pocket at the counter, so they see the full cost of care — the same care in human medicine is billed to an insurer before you ever see a number.",
   "A real veterinary hospital is a hospital: anesthesia machines, multiparameter monitors, digital radiography, dental radiography, ultrasound, an in-house laboratory, surgical instrumentation and sterilization, and controlled-drug handling and logging.",
   "The people cost the most, and should. Credentialed veterinary technicians are the reason anesthesia is safe and catheters go in cleanly on the first try.",
-  "Drug and supply costs have risen sharply, and veterinary practices buy at a fraction of the volume a human hospital system does.",
-  "Veterinary school debt is high relative to veterinary salaries, which shapes what a practice has to pay to keep good doctors.",
+  "Veterinary practices buy drugs and supplies at a fraction of the volume a human hospital system does, so we do not get the same unit pricing on them.",
+  "Veterinary school debt shapes what a practice has to pay to hire and keep good doctors.",
 ];
 
 const joinSteps = [
   "Call (719) 204-3647, or text (719) 355-8343. You can also email Reception@RedRockVet.com if you would rather not talk to anyone yet. All three reach the same front desk.",
   "Tell us your name, your pet's name and species, and the name of your previous practice. That is genuinely all we need to start.",
-  "We request the records. You do not have to have the awkward conversation with your old clinic unless you want to. We will ask for the full chart, not the summary.",
-  "A doctor reads the file before your appointment. That is the point of the whole exercise — you should not have to re-tell your pet's medical history from memory in an exam room.",
+  "Ask us and we can request the records for you, so you do not have to have the awkward conversation with your old clinic unless you want to. We ask for the full chart, not the summary.",
+  "When the records arrive ahead of your visit, the doctor reads them before you come in, so you are not re-telling your pet's medical history from memory in an exam room.",
   "You come in Monday through Friday, between 8 a.m. and 5 p.m. A standard exam is $79. If your pet is sick and it cannot wait, ask for a same-day urgent slot at $109.",
 ];
 
@@ -156,10 +156,10 @@ export default function SwitchingContent() {
 
             <p className="text-lg text-muted-foreground mb-4">
               I am Dr. Robbie Unsell. I own Red Rock Veterinary Health, and I am going to start with the thing that
-              actually keeps people stuck, because it is not paperwork. It is guilt. The most-read page on the internet
-              about changing veterinarians is a Reddit thread asking about &ldquo;etiquette&rdquo; &mdash; people
-              worrying they will be judged, or that they owe their old clinic something. So let me say it as plainly as
-              I can from the other side of the counter.
+              actually keeps people stuck, because it is not paperwork. It is guilt. Search for how to change
+              veterinarians and one of the first things you hit is a Reddit thread about &ldquo;etiquette&rdquo;
+              &mdash; people worrying they will be judged, or that they owe their old clinic something. So let me say
+              it as plainly as I can from the other side of the counter.
             </p>
 
             <p className="text-lg text-muted-foreground mb-4">
@@ -210,7 +210,7 @@ export default function SwitchingContent() {
               Ask for the Chart, Not the Summary
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              The single most common failure in a vet switch is a records request that produces one page of vaccination
+              The most common failure in a vet switch is a records request that produces one page of vaccination
               dates. That is not your pet&apos;s medical history. Ask for these things by name:
             </p>
           </motion.div>
@@ -243,10 +243,10 @@ export default function SwitchingContent() {
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
               This is where a lot of websites overstate things, so here is the careful version. In most states, the
-              physical or electronic chart is the property of the practice that created it, and the client is entitled
-              to a <span className="font-semibold text-foreground">copy</span> of their pet&apos;s medical history
-              rather than to the original file. That distinction sounds like hair-splitting until someone tells you no,
-              and then it matters.
+              physical or electronic chart is the property of the practice that created it, and clients are
+              customarily given a <span className="font-semibold text-foreground">copy</span> of the pet&apos;s medical
+              history rather than the original file. That distinction sounds like hair-splitting until someone tells
+              you no, and then it matters.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
               I am not going to quote you a Colorado statute I have not personally verified. If you want the
@@ -258,7 +258,7 @@ export default function SwitchingContent() {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               And if you do get stuck, tell us. A request that comes from one veterinary practice to another tends to
-              move faster than one that comes from a client, and we are happy to make it.
+              move faster than one that comes from a client, and we can make that request from our side.
             </p>
           </motion.div>
         </div>
@@ -348,9 +348,9 @@ export default function SwitchingContent() {
             viewport={{ once: true }}
             className="text-muted-foreground mt-8 text-center max-w-3xl mx-auto"
           >
-            Question ten is the one people forget, and it is the most revealing. A practice that can tell you exactly
-            how fast it would release your records if you left is a practice that is not holding you hostage. Ask us
-            that one. The answer is: same week, and we will send the whole chart.
+            Question ten is the one people forget, and it is revealing. A practice that is straightforward about how it
+            releases your records if you leave is a practice that is not holding you hostage. Ask us that one. We send
+            the complete chart, not a summary.
           </motion.p>
         </div>
       </section>
@@ -374,18 +374,17 @@ export default function SwitchingContent() {
             <p className="text-lg text-muted-foreground mb-4">
               A large share of American veterinary hospitals now belong to consolidated groups. The biggest names are
               easy to verify: Mars Veterinary Health owns both VCA and Banfield Pet Hospital. Thrive Pet Healthcare is
-              another national group. Petco operates Vetco vaccination and Vetco Total Care clinics inside its stores,
-              including several here in Colorado Springs. In our market, VCA and Banfield each run a Colorado Springs
-              location.
+              another national group. Petco operates Vetco clinics inside its stores. Several of these brands operate
+              here.
             </p>
 
             <p className="text-lg text-muted-foreground mb-4">
               Now the part where a lot of independent practices get carried away, and I am not going to. Corporate
-              ownership is a fact about a business. It is not a verdict on the medicine. There are excellent
-              veterinarians and outstanding technicians working inside every one of those groups, some of them friends
-              of mine, and a corporate hospital with a great medical director can deliver better care than a
-              badly-run independent one. I have no interest in telling you otherwise, and I am not going to make claims
-              about anyone else&apos;s prices or quality. Judge a practice on the practice.
+              ownership is a fact about a business. It is not a verdict on the medicine. There are veterinarians and
+              technicians I respect working inside every one of those groups, some of them friends of mine, and a
+              corporate hospital with a strong medical director can deliver better care than a badly-run independent
+              one. I have no interest in telling you otherwise, and I am not going to make claims about anyone
+              else&apos;s prices or quality. Judge a practice on the practice.
             </p>
 
             <p className="text-lg text-muted-foreground mb-8">
@@ -430,24 +429,22 @@ export default function SwitchingContent() {
                   <span>
                     <span className="font-semibold text-foreground">Medical decisions are made in the exam room.</span>{" "}
                     The doctor seeing your pet &mdash; me, Dr. Dan Muelhaupt, or Dr. Jaime Clevenger &mdash; decides
-                    what your pet needs. There is no protocol handed down from somewhere else that the doctor has to
-                    work around.
+                    what your pet needs.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <span>
                     <span className="font-semibold text-foreground">We set our own schedule.</span> Appointment lengths,
-                    how much time a Fear Free visit gets, how many same-day urgent slots we hold back each morning
-                    &mdash; those are decided in this building, by the people who have to live with them.
+                    how much time a Fear Free visit gets, how many same-day urgent slots we hold &mdash; those are
+                    decided in this building, by the people who have to live with them.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <span>
                     <span className="font-semibold text-foreground">The person responsible has a name and a face.</span>{" "}
-                    If something goes wrong, you are not escalating to a corporate phone tree. You are talking to the
-                    owner, and the owner is a veterinarian.
+                    If something goes wrong, you are talking to the owner, and the owner is a veterinarian.
                   </span>
                 </li>
               </ul>
@@ -471,7 +468,7 @@ export default function SwitchingContent() {
             </div>
 
             <p className="text-lg text-muted-foreground mb-4">
-              This is the most-asked question in this entire subject, and most veterinary websites answer it
+              This is the question people ask most often here, and most veterinary websites answer it
               defensively. I would rather just answer it.
             </p>
 
@@ -514,15 +511,15 @@ export default function SwitchingContent() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <div className="bg-background rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-primary mb-1">$79</p>
-                  <p className="text-sm text-muted-foreground">Standard exam</p>
+                  <p className="text-sm text-muted-foreground">Standard exam, starting</p>
                 </div>
                 <div className="bg-background rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-primary mb-1">$109</p>
-                  <p className="text-sm text-muted-foreground">Same-day urgent exam</p>
+                  <p className="text-sm text-muted-foreground">Same-day urgent exam, starting</p>
                 </div>
                 <div className="bg-background rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-primary mb-1">$999</p>
-                  <p className="text-sm text-muted-foreground">Standard dental procedure</p>
+                  <p className="text-sm text-muted-foreground">Standard dental, starting</p>
                 </div>
               </div>
 
@@ -559,8 +556,8 @@ export default function SwitchingContent() {
               Before You Switch: When We Are the Wrong Choice
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              You should know this before you move your pet&apos;s care, not after. It is the single most important
-              thing on this page.
+              You should know this before you move your pet&apos;s care, not after. It is the most important thing on
+              this page.
             </p>
           </motion.div>
 
@@ -586,11 +583,11 @@ export default function SwitchingContent() {
               If your household needs weekend access to your primary veterinarian, or if your pet has a condition where
               you expect to need overnight monitoring, we are honestly not the right practice for you and I would
               rather you know that now than find out on a Saturday. If that trade is workable, what you get in exchange
-              is a small hospital where three doctors know your pet by name and hold back{" "}
+              is a small hospital where three doctors know your pet by name and hold space for{" "}
               <Link href="/services/urgent-emergency-care" className="text-primary hover:underline font-medium">
-                same-day urgent slots
+                same-day urgent appointments
               </Link>{" "}
-              every weekday morning.
+              Monday through Friday. Availability depends on scheduling and staffing that day, so call early.
             </p>
           </motion.div>
 
@@ -731,7 +728,7 @@ export default function SwitchingContent() {
 
             <p className="text-lg text-muted-foreground mb-4">
               Three veterinarians: me, Dr. Dan Muelhaupt, and Dr. Jaime Clevenger. One building at 3163 W. Colorado Ave,
-              in Old Colorado City. Our entire clinical team is{" "}
+              on the Westside. Our entire clinical team is{" "}
               <Link href="/services/fear-free" className="text-primary hover:underline font-medium">
                 Fear Free certified
               </Link>

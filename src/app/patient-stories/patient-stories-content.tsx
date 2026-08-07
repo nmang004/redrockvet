@@ -56,26 +56,26 @@ const stories: Story[] = [
       "Increased thirst, increased urination, a good appetite, and weight loss is the classic presentation of diabetes mellitus in a cat. It is also the presentation of several other things, which is the entire reason the visit exists.",
     ],
     hard: [
-      "Stress moves the number we most want to measure. A cat's blood glucose can rise from the fear of the visit alone, so one high reading on a frightened cat does not by itself separate a diabetic cat from a scared one — and it is a bad basis for choosing an insulin dose.",
+      "Stress moves the numbers we most want to measure. A single reading taken from a frightened cat in an exam room does not by itself separate a diabetic cat from a scared one — and it is a bad basis for choosing a dose.",
       "The problem repeats. Diabetes is not diagnosed once and filed. It is monitored for the rest of the cat's life, which means this same cat has to come back, and come back again, and be handled well every time.",
-      "The most common way feline diabetes management falls apart is not the medicine or the money. It is that the visits stop, because the visits became unbearable for the cat and unbearable to watch for the family.",
-      "A cat sitting in a lobby a few feet from a barking dog has already had her exam findings changed before anyone touches her.",
+      "A frequent way feline diabetes management falls apart, in our experience, is not the medicine or the money. It is that the visits stop, because the visits became unbearable for the cat and unbearable to watch for the family.",
+      "A cat who waits a few feet from a barking dog arrives at the exam table already worked up, and what we measure there reflects the wait as well as the cat.",
     ],
     did: [
       "Kept her on the cat side of the building. Red Rock has separate cat and dog waiting, exam, and treatment areas — we are the only hospital in Colorado Springs that separates them this way. She did not see, hear, or smell a dog.",
       "Planned the visit before the visit: carrier work at home, a quiet arrival, and, where a doctor judged it appropriate at an earlier appointment, a pre-visit anti-anxiety medication. Our whole clinical team is Fear Free certified, and this is the part of Fear Free that actually costs us time.",
       "Handled her for the exam she could tolerate, not the exam that is fastest. Towel work, the bottom half of her own carrier as the exam surface, minimal restraint, and a pause when her stress climbed rather than pushing through it.",
-      "Chose diagnostics that do not depend on one stressed moment: urinalysis, a full blood panel, and a fructosamine level, which reflects average blood glucose over the preceding weeks instead of the preceding ten minutes.",
+      "Chose diagnostics that do not depend on one stressed moment: urinalysis, a full blood panel, and laboratory work that covers a longer window than the last ten minutes, chosen with you at the visit.",
       "Looked for what travels with feline diabetes and changes the plan — urinary tract infection, kidney values, thyroid, and body condition — rather than treating a single number in isolation.",
       "Taught the home side properly: how to handle and give insulin, what low blood sugar looks like, what to do about it in the first minute, and exactly which signs mean stop calling and go to an emergency hospital.",
     ],
     changed: [
-      "Nothing here is a cure. Feline diabetes is managed, not fixed. Some cats go into remission and some do not, and we will not tell you in advance which one yours is.",
+      "Nothing here is a cure. Feline diabetes is managed, not fixed. Some cats respond better than others, and we will not tell you in advance which one yours is.",
       "What changed is that the rechecks kept happening. The cat came back because coming back was tolerable, so her glucose curve, her weight, and her kidney values were actually being watched over time instead of being guessed at from one bad afternoon a year ago. That is the whole mechanism. Continuity is not a feeling; it is a series of visits that did not get cancelled.",
     ],
     redFlag: {
       title: "When a diabetic cat is an emergency, not an appointment",
-      body: "A diabetic cat who stops eating, starts vomiting, becomes weak or lethargic, or has sweet or acetone-smelling breath may be in diabetic ketoacidosis. That needs immediate hospitalization and intravenous care. If it is after 5 p.m., a weekend, or a holiday, do not wait for us to open:",
+      body: "A diabetic cat who stops eating, starts vomiting, becomes weak or lethargic, or has sweet or acetone-smelling breath may be in diabetic ketoacidosis. That needs immediate hospitalization and intravenous care. That is care we cannot provide — we have no overnight staff and cannot keep a cat on intravenous fluids through the night. Do not wait for us to open and do not call us first. Go to a 24-hour emergency hospital now:",
     },
     links: [
       {
@@ -115,10 +115,10 @@ const stories: Story[] = [
       "Asked for video. AAHA specifically endorses owner video of a pet moving at home; it costs nothing and it shows a gait and a set of hesitations that a slick exam room floor will never reproduce.",
       "Ran an actual senior workup rather than a spot check: full physical with an orthopedic and pain assessment, complete blood count, chemistry including SDMA where available, urinalysis, thyroid testing, and blood pressure. Urine is not redundant with blood — urine concentrating ability can fall before creatinine moves.",
       "Staged rather than guessed. Kidney disease is staged on creatinine and SDMA measured on at least two occasions in a hydrated, stable patient, plus urine protein-to-creatinine ratio and blood pressure. One elevated value in a dehydrated dog is not a diagnosis.",
-      "Built the pain plan around everything else that was true about him, and revisited it at every recheck rather than writing it once. Where the newer monthly anti-nerve-growth-factor injection came up, we went through it honestly in both directions: it is FDA approved and often works well, and its US label carries a post-approval experience section listing serious adverse events. That is a conversation to have with your veterinarian about your own dog, not a decision to make from a web page.",
+      "Built the pain plan around everything else that was true about him, and revisited it at every recheck rather than writing it once. Where the newer monthly anti-nerve-growth-factor injection came up, we went through it honestly in both directions: it is FDA approved and often works well, and its US label carries a post-approval experience section, added February 2025, listing neurologic signs including ataxia and seizures, urinary incontinence, increased thirst and urination, and death including euthanasia; in March 2026 the EMA recommended adding very rare musculoskeletal adverse events to the European product information. That is a conversation to have with your veterinarian about your own dog, not a decision to make from a web page.",
       "Treated weight as medicine. Body condition is the highest-leverage, lowest-cost intervention available for a senior dog's mobility, and it is the one we can start the same day.",
       "Changed the house, not just the prescription: traction on hardwood floors, a ramp into the truck, moving his bed and his water off the stairs. Westside houses are old, and they have stairs and hard floors.",
-      "Addressed the mouth. A senior dog with chronic dental pain is very often the dog a family describes as slowing down. Age alone is not a reason to decline anesthesia; we run pre-anesthetic bloodwork, assign an ASA physical status, and tailor the protocol to the patient.",
+      "Addressed the mouth. A senior dog with chronic dental pain is very often the dog a family describes as slowing down. Age alone is not a reason to decline anesthesia; we run pre-anesthetic bloodwork and tailor the anesthetic protocol to the patient.",
     ],
     changed: [
       "Over the following years it was the same doctor, the same chart, and rechecks that built on each other instead of starting over. Arthritis and kidney disease are managed, not reversed, and we do not promise added years. What continuity buys is smaller adjustments made earlier, and a family who already knows what the plan is when something changes.",
@@ -194,11 +194,6 @@ const stories: Story[] = [
         label: "Same-day urgent care",
         href: "/services/urgent-emergency-care",
         note: "what we can and cannot handle during business hours",
-      },
-      {
-        label: "Flat-faced dogs breathing at Colorado altitude",
-        href: "/blog/brachycephalic-dogs-breathing-colorado-springs-altitude",
-        note: "the long version, written for owners of Frenchies, Pugs, Bulldogs, and Bostons",
       },
     ],
   },
@@ -673,7 +668,8 @@ export default function PatientStoriesContent() {
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               The next step is an exam, not a web page. Call us and describe what you are seeing. Our standard exam is
               $79 and our same-day urgent exam is $109; anything beyond the exam is discussed and priced with you before
-              we do it.
+              we do it. These are starting exam prices, subject to change, and they do not include diagnostics &mdash;
+              sedated airway assessment, a senior workup, or imaging are priced separately and discussed with you first.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">

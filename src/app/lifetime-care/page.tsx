@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Senior pet care in Colorado Springs: life-stage ranges, senior screening, arthritis, kidney disease, dementia, quality of life, and honest end-of-life guidance.",
   keywords:
-    "senior pet care Colorado Springs, senior dog vet Colorado Springs, senior cat care, when is a dog considered senior, senior dog bloodwork, dog dementia, kidney disease in cats, quality of life scale for dogs, pet hospice Colorado Springs",
+    "senior pet care Colorado Springs, senior dog vet Colorado Springs, senior cat care, when is a dog considered senior, senior dog bloodwork, dog dementia, kidney disease in cats, quality of life scale for dogs, what is pet hospice and palliative care",
 };
 
 export default function LifetimeCarePage() {
