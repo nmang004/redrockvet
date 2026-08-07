@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllStaffSlugs } from "@/data/staff";
+import { blogPosts } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://redrockvet.com";
@@ -161,5 +162,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...staffPages];
+  // Individual posts were missing from the sitemap entirely, which left the
+  // highest-traffic page on the site (the chocolate toxicity guide) and the
+  // whole emergency cluster undeclared. `lastModified` uses each post's own
+  // publish date so crawlers can tell fresh content from settled content.
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...staffPages, ...blogPages];
 }
