@@ -24,6 +24,622 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "dog-bitten-by-rattlesnake-colorado-springs",
+    title: "My Dog Was Bitten by a Rattlesnake on a Colorado Springs Trail: What to Do in the First 30 Minutes",
+    slug: "dog-bitten-by-rattlesnake-colorado-springs",
+    excerpt: "Dr. Robbie Unsell explains exactly what to do in the first 30 minutes after a rattlesnake bite on a Colorado Springs trail, and why Red Rock is not the right building for it.",
+    content: `[[QUICKTAKE]] Quick take
+- Drive to a 24-hour emergency hospital now: Animal ER Care, [(719) 260-7141](tel:719-260-7141), 5520 N. Nevada Ave, Ste 150, open 24/7.
+- Red Rock cannot treat this. Envenomation needs antivenom and at least 24 hours of monitoring. We close at 5 p.m.
+- Keep your dog still and carry it if you can. Movement moves venom.
+- No tourniquet, no ice, no cutting, no suction kit, no Benadryl, and do not go near the snake.
+- Go even if your dog looks fine, and even if it is vaccinated.
+
+I am Dr. Robbie Unsell, owner of Red Rock Veterinary Health at 3163 W. Colorado Ave. The uncomfortable part first: if a rattlesnake bit your dog, we are not the right building. Antivenom lives at 24-hour hospitals, and an envenomated dog needs monitoring through the night. We are a general practice, open Monday through Friday, 8 a.m. to 5 p.m. Sending you to Animal ER Care at [(719) 260-7141](tel:719-260-7141) is the correct medical decision, not us passing the buck.
+
+## What just happened to your dog
+
+The rattlesnake on the Colorado Springs Front Range is the prairie rattlesnake, Crotalus viridis. It is camouflaged and does not chase people, which is why dogs get bitten and their owners do not: you walk past the rock crevice, your dog puts its nose in it. Most bites land on the muzzle, face, or a front leg. The venom breaks down tissue locally and destroys the blood's ability to clot everywhere else. When venom is injected, expect discoloration within minutes and dark bloody fluid oozing from one puncture or several, rather than a neat pair. Their absence proves nothing.
+
+## Why a bite that looks like nothing still counts
+
+Estimates drawn from human pit viper data put roughly one in five bites as "dry," meaning little or no venom was injected. You cannot use that estimate. You cannot tell a dry bite from a serious envenomation at the trailhead, and the difference becomes obvious only after the best treatment window has closed. The Merck Veterinary Manual lists delay in presentation — waiting until problems develop — right alongside tourniquets and ice as a harmful response.
+
+A snake delivers roughly the same dose regardless of the dog's size, which is why the same bite puts a 9-pound terrier in far more danger than a 90-pound shepherd. Swelling of the muzzle or neck is its own emergency: a dog can take a survivable dose and still lose its airway.
+
+## The first 30 minutes, in order
+
+1. Get your dog away from the snake, and yourself too.
+2. Keep your dog still. Carry small and medium dogs; walk a large dog slowly to the car.
+3. Note the time of the bite. The hospital will ask for it first.
+4. Call ahead while someone else drives: rattlesnake bite, breed and weight, where the bite is, your ETA.
+5. Give nothing by mouth. No medication, no food, no home remedy.
+6. Drive, even if the swelling has not started and you are not sure it was a snake.
+
+[[SAFETY]] Any known or suspected rattlesnake bite goes straight to a 24-hour emergency hospital — Animal ER Care, [(719) 260-7141](tel:719-260-7141), 5520 N. Nevada Ave, Ste 150, open 24/7. Do not call Red Rock first and do not detour to us; we close at 5 p.m., we have no on-call line, and we cannot provide the antivenom and overnight monitoring this needs.
+
+### What not to do, because all of it makes things worse
+
+- **No tourniquet or tight wrap.** It concentrates tissue-destroying venom in one limb and can cost your dog the leg.
+- **No ice, cold packs, cooling sprays, or hot packs.** All are ineffective and potentially harmful.
+- **No cutting, no suction device, no snakebite kit.** Suction removes almost no venom while injuring tissue, and cutting adds an open wound to a dog that may not be able to clot.
+- **No Benadryl.** In a study of 272 envenomated dogs, there was no evidence that diphenhydramine, glucocorticoids, or preventive antibiotics reduced illness or death.
+- **No aspirin or leftover pain medication.** NSAIDs are contraindicated here.
+- **Do not kill, capture, or bring in the snake.** A severed head keeps a working bite reflex for an hour or more, and we already know what bit your dog.
+
+## Where to go tonight, and when we pick it up
+
+Antivenom is the only treatment that neutralizes venom, and it works best in the first six hours. If hours have already passed, go anyway — Merck notes dogs can still improve when antivenom is given 24 hours or more after the bite, so there is no hour at which it stops being worth the drive. Antivenom is generally stocked by 24-hour emergency and referral hospitals rather than by general practices like ours. We do not stock it. Call from the road and confirm the hospital has it tonight.
+
+- **Animal ER Care** — [(719) 260-7141](tel:719-260-7141) — 5520 N. Nevada Ave, Ste 150, open 24/7. For a suspected rattlesnake bite, this is your door at any hour.
+- **Uintah Pet Emergency** — [(719) 633-3214](tel:719-633-3214) — 1635 W. Uintah St, Ste E, open noon to midnight daily, not overnight. It is closer to the Westside trails, and for most emergencies that matters. For a rattlesnake bite it does not: an envenomated dog needs at least 24 hours of continuous monitoring, so a hospital that closes at midnight is the wrong destination. Drive past it to Animal ER Care.
+
+Call us at [(719) 204-3647](tel:719-204-3647) after the emergency hospital, never before it, and only during our open hours — Monday through Friday, 8 a.m. to 5 p.m. Once your dog is discharged, the handoff is ours during business hours: we request the ER's records, recheck the wound and the swelling, and repeat whatever bloodwork the discharge instructions call for. Our exam is $79, a same-day [urgent appointment](/services/urgent-emergency-care) is $109, and our guide to [follow-up care after an ER visit](/blog/after-er-visit-follow-up-care-colorado-springs) walks through the sequence.
+
+## The trails where this happens, minutes from our door
+
+Red Rock Canyon Open Space, Garden of the Gods, Ute Valley Park, and Section 16 with the Palmer-Red Rock Loop are all prairie rattlesnake habitat. Prairie rattlesnakes range up to 7,500 to 9,500 feet. Colorado Springs sits at roughly 6,035 feet, Red Rock Canyon near 6,200, Garden of the Gods 6,400, and Section 16 with the Palmer-Red Rock Loop from roughly 6,300 to 7,200. "We are too high up for rattlesnakes" is not true anywhere you would walk a dog from the Westside. They emerge from dens in late March or early April and start denning again in late September or early October, and neither edge is a hard line. Keep your dog leashed: bites happen when a dog ranges into brush nose-first.
+
+### The 5 p.m. problem
+
+Prairie rattlesnakes hunt in the late afternoon and evening, once the day has warmed them. That is when most of us walk our dogs. The hours these snakes hunt hardest are hours Red Rock is not open, and I would rather say so plainly than let you find out at 6:40 on a Tuesday.
+
+## The rattlesnake vaccine, answered straight
+
+Here is the part that usually gets left out. The rattlesnake vaccine is a toxoid licensed as an aid against the venom of Crotalus atrox, the western diamondback — a snake that does not live in Colorado. Our snake is Crotalus viridis. The manufacturer says the antibodies may also recognize proteins in other rattlesnake venoms; the 2022 AAHA Canine Vaccination Guidelines task force questioned that cross-protection claim.
+
+AAHA classifies the vaccine as noncore and states there are no published data documenting its efficacy in dogs. Two retrospective studies, one of 82 dogs with moderate-to-severe envenomation and one of 272 dogs, found no difference in illness or death between vaccinated and unvaccinated dogs. AAHA also notes reported adverse reactions, including anaphylaxis, in previously vaccinated dogs that were later bitten.
+
+That is not the same as saying the vaccine does not work. It is saying there is no published evidence that it does, in dogs, against our snake. Talk it through with your veterinarian. But the vaccine never changes the plan. A vaccinated dog that is bitten still goes to the 24-hour hospital immediately.
+
+## What treatment costs, and what the odds are
+
+At the hospital your dog gets IV fluids, opioid pain control rather than NSAIDs, bloodwork including clotting times, antivenom if warranted, and monitoring, because the effect on clotting is invisible from the outside. Merck advises a minimum of 24 hours, and swelling can keep progressing for days — one published case had edema still developing on day seven. You deserve a range, not a comforting number: antivenom is commonly quoted in veterinary emergency literature at roughly $600 to $1,000 or more per vial. Severity drives the count — one trial averaged about 1.25 vials per dog, a published severe case needed 20, and totals above $2,500 are frequently quoted. Those are reported ranges, not a Red Rock price, and cost varies by hospital and by how many vials your dog needs.
+
+In that 272-dog series, 264 dogs survived — 97.1% — with hypersensitivity reactions to antivenom in 0.7% of cases, none life-threatening. Dogs older than 10 years that arrived late were more likely to die. No veterinarian can guarantee an outcome for an individual dog, and delay is the one variable you control.
+
+[[KEYTAKEAWAY]] If a rattlesnake bit your dog, drive to Animal ER Care at [(719) 260-7141](tel:719-260-7141) right now — vaccinated or not, symptomatic or not, without stopping here first. Then call us at [(719) 204-3647](tel:719-204-3647) on our next open weekday, Monday through Friday between 8 a.m. and 5 p.m., and we will take the follow-up from there. If your dog is discharged on a weekend, Animal ER Care covers you until we open.`,
+    featuredImage: "/blogs/redrockvetinredrockcanyon.jpg",
+    imageAlt: "Red Rock Veterinary Health in Red Rock Canyon Open Space near Colorado Springs, backdropped by Pikes Peak",
+    author: "Dr. Robbie Unsell",
+    publishedAt: "2026-08-07",
+    readingTime: 10,
+    categories: ["Emergency Care", "Pet Safety"],
+    tags: ["rattlesnake bite dog", "dog bitten by rattlesnake Colorado Springs", "prairie rattlesnake Colorado Springs", "rattlesnake vaccine for dogs", "Red Rock Canyon Open Space dog safety", "dog trail safety Colorado Springs", "Section 16 trail Colorado Springs"],
+    seo: {
+      metaTitle: "Dog Bitten by a Rattlesnake in Colorado Springs | Red Rock",
+      metaDescription: "Dr. Robbie Unsell on what to do in the first 30 minutes after a rattlesnake bite on a Colorado Springs trail, and where to drive instead of Red Rock.",
+      focusKeywords: ["rattlesnake bite dog", "dog bitten by rattlesnake Colorado Springs", "can a dog survive a rattlesnake bite", "rattlesnake vaccine for dogs", "prairie rattlesnake Colorado Springs", "rattlesnake bite dog survival rate"],
+    },
+    faqs: [
+      {
+        question: "My dog was just bitten by a rattlesnake — what do I do right now?",
+        answer:
+          "Drive to a 24-hour emergency hospital immediately. In Colorado Springs that is Animal ER Care at (719) 260-7141, 5520 N. Nevada Ave, Ste 150, open 24/7. Keep your dog as still as possible and carry it to the car if you can lift it, because muscle activity moves venom faster. Do not apply a tourniquet or ice, do not cut or suction the wound, do not give Benadryl, and do not go near the snake.",
+      },
+      {
+        question: "Can a dog survive a rattlesnake bite without treatment?",
+        answer:
+          "No — a known or suspected rattlesnake bite needs a 24-hour emergency hospital immediately, even if your dog looks completely normal. Estimates drawn from human pit viper data put roughly one in five bites as dry, injecting little or no venom, but there is no way to tell which kind of bite your dog got without veterinary evaluation. The Merck Veterinary Manual specifically names delay in presentation as a harmful response, and antivenom works best in the first six hours. If hours have already passed, go anyway.",
+      },
+      {
+        question: "What is the survival rate for a dog bitten by a rattlesnake?",
+        answer:
+          "In a published series of 272 dogs treated for rattlesnake envenomation, 264 survived, or about 97.1 percent. Dogs older than 10 years who arrived late were more likely to die. Most dogs survive when they are treated quickly, but no veterinarian can guarantee an outcome for an individual dog, and delay is the factor owners actually control.",
+      },
+      {
+        question: "What does a rattlesnake bite look like on a dog?",
+        answer:
+          "Look for one or several puncture wounds, since a neat matching pair is the exception rather than the rule, with swelling and marked discoloration that can begin within minutes. Dark, bloody fluid often oozes from the punctures and does not clot. Most bites are on the muzzle, face, or a front leg, because dogs investigate nose-first. Fur hides all of it easily, and seeing none of it does not rule out a bite, so a sudden yelp on the trail is reason enough to drive.",
+      },
+      {
+        question: "Should I give my dog Benadryl for a snake bite?",
+        answer:
+          "No. Diphenhydramine does nothing to snake venom, and in a study of 272 envenomated dogs there was no evidence that diphenhydramine, glucocorticoids, or preventive antibiotics reduced illness or death. There is no effective home treatment for a rattlesnake bite, and stopping to try one costs the time antivenom needs. Do not give aspirin or any other NSAID either, because your dog may already be losing the ability to clot.",
+      },
+      {
+        question: "How much does antivenom for a dog cost?",
+        answer:
+          "Antivenom is commonly quoted in veterinary emergency literature at roughly $600 to $1,000 or more per vial, and the number of vials depends on how severe the envenomation is. One canine trial averaged about 1.25 vials per dog, while a published severe case required 20 vials over 17 hours. Total treatment is frequently quoted above $2,500, and it varies by hospital and by how many vials your dog needs. Those are reported ranges rather than a Red Rock price, so ask the emergency hospital for an estimate when you call from the road.",
+      },
+      {
+        question: "Does the rattlesnake vaccine actually work?",
+        answer:
+          "There is no published evidence that it does in dogs. The 2022 AAHA Canine Vaccination Guidelines classify it as noncore, state there are no published data documenting efficacy in dogs, and note reported adverse reactions including anaphylaxis in previously vaccinated dogs that were later bitten; two retrospective studies, one of 82 dogs and one of 272, found no difference in illness or death between vaccinated and unvaccinated dogs. It is also labeled for Crotalus atrox, the western diamondback, which does not live in Colorado, while our snake is the prairie rattlesnake, Crotalus viridis. Whether to give it is a conversation to have with your veterinarian, but a vaccinated dog that is bitten is still an emergency and still needs a 24-hour hospital immediately.",
+      },
+      {
+        question: "Are there rattlesnakes at Red Rock Canyon Open Space, Section 16, and Garden of the Gods?",
+        answer:
+          "Yes. All three are prairie rattlesnake habitat, along with Ute Valley Park and the Palmer-Red Rock Loop. Colorado Springs sits near 6,035 feet and prairie rattlesnakes range up to 7,500 to 9,500 feet, so no Westside trail is above their range. They emerge from dens in late March or early April and begin returning in late September or early October, and they hunt most actively in the late afternoon and evening.",
+      },
+    ],
+    faqJsonLd: `{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "My dog was just bitten by a rattlesnake — what do I do right now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Drive to a 24-hour emergency hospital immediately. In Colorado Springs that is Animal ER Care at (719) 260-7141, 5520 N. Nevada Ave, Ste 150, open 24/7. Keep the dog still and carry it to the car if possible, because muscle activity moves venom faster. No tourniquet, no ice, no cutting or suction, no Benadryl, and do not approach the snake."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a dog survive a rattlesnake bite without treatment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A known or suspected rattlesnake bite needs a 24-hour emergency hospital immediately, even if the dog looks completely normal. Estimates drawn from human pit viper data put roughly one in five bites as dry, injecting little or no venom, but there is no way to tell which kind of bite occurred without veterinary evaluation. The Merck Veterinary Manual specifically names delay in presentation as a harmful response; antivenom works best in the first six hours, and dogs can still improve when it is given later, so a delayed arrival is still worth the drive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the survival rate for a dog bitten by a rattlesnake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In a published series of 272 dogs treated for rattlesnake envenomation, 264 survived, about 97.1 percent. Dogs older than 10 years that presented late were more likely to die. Most dogs survive with prompt treatment, though no outcome can be guaranteed for an individual dog, and delay is the factor owners control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a rattlesnake bite look like on a dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One or several puncture wounds rather than a neat matching pair, with swelling and marked discoloration that can begin within minutes, and dark bloody fluid oozing from the punctures that does not clot. Most bites are on the muzzle, face, or a front leg because dogs investigate nose-first. Fur hides the wounds easily, and the absence of visible signs does not rule out a bite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I give my dog Benadryl for a snake bite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Diphenhydramine does nothing to snake venom, and a study of 272 envenomated dogs found no evidence that diphenhydramine, glucocorticoids, or preventive antibiotics reduced illness or death. There is no effective home treatment for a rattlesnake bite, and aspirin and other NSAIDs are contraindicated because the dog may already be unable to clot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does antivenom for a dog cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Antivenom is commonly quoted in veterinary emergency literature at roughly $600 to $1,000 or more per vial, and the number of vials depends on severity. One canine trial averaged about 1.25 vials per dog, while a published severe case required 20 vials over 17 hours. Totals above $2,500 are frequently quoted. These are reported ranges rather than a Red Rock price, and cost varies by hospital and by how many vials the dog needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the rattlesnake vaccine actually work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no published evidence of efficacy in dogs. The 2022 AAHA Canine Vaccination Guidelines classify it as noncore, state there are no published efficacy data in dogs, and note reported anaphylaxis in previously vaccinated dogs that were later bitten; two retrospective studies of 82 and 272 dogs found no difference in illness or death. The product is labeled for Crotalus atrox, the western diamondback, which does not live in Colorado. Whether to give it is a conversation to have with a veterinarian, but a vaccinated dog that is bitten still needs a 24-hour hospital immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there rattlesnakes at Red Rock Canyon Open Space, Section 16, and Garden of the Gods?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All three are prairie rattlesnake habitat, as are Ute Valley Park and the Palmer-Red Rock Loop. Colorado Springs sits near 6,035 feet and prairie rattlesnakes range up to 7,500 to 9,500 feet, so no Westside trail is above their range. Snakes emerge from dens in late March or early April, begin returning in late September or early October, and hunt most actively in late afternoon and evening."
+      }
+    }
+  ]
+}`,
+  },
+  {
+    id: "found-a-lump-on-my-dog-when-to-worry",
+    title: "I Found a Lump on My Dog: What to Do Next",
+    slug: "found-a-lump-on-my-dog-when-to-worry",
+    excerpt: "Dr. Dan Muelhaupt explains why no veterinarian can identify a lump by sight or feel, what to do tonight, and what a fine needle aspirate can and cannot tell you.",
+    content: `[[QUICKTAKE]] Quick take
+- No veterinarian can tell what a lump is by sight or feel. CSU's Flint Animal Cancer Center, Merck and MSPCA-Angell all say so.
+- Do not squeeze or massage it. Handling a mast cell tumor can make it swell and redden.
+- The only way to know is to sample it — a needle in the exam room, usually without sedation.
+- Collapse, pale gums, bleeding that will not stop, or a hot swelling in a feverish dog: go to a 24-hour emergency hospital now. We close at 5 p.m. with no on-call line.
+
+Your fingers found something on your dog's chest that was not there in the spring, and you want to know tonight whether it is cancer. I am Dr. Dan Muelhaupt at Red Rock Veterinary Health on West Colorado Avenue, and I cannot tell by looking.
+
+## No one can tell what a lump is by looking at it
+
+That includes me. CSU's Flint Animal Cancer Center states it flatly: mast cell tumors can look and feel like anything, so it is impossible to diagnose one without a microscope. Merck says clinical appearance alone cannot establish a diagnosis, and MSPCA-Angell agrees. A 2023 study found 12 to 20 percent of sampled masses were malignant: most lumps are not cancer, but nobody can tell which from the outside.
+
+## What to do in the first ten minutes
+
+1. Stop handling it. Look, do not press.
+2. Measure the widest point in millimeters and photograph it beside a quarter so the scale is fixed.
+3. Note the date, the location, soft or firm, and whether the skin is broken.
+4. Check the whole dog — 11 to 14 percent of dogs with a mast cell tumor have more than one.
+5. Write it down, then call [(719) 204-3647](tel:719-204-3647) or text [(719) 355-8343](tel:719-355-8343) when we open. We answer Monday to Friday, 8 a.m. to 5 p.m.; nobody is on either line overnight or on weekends. If this is an emergency below, drive instead of calling.
+
+Mast cell tumors are packed with unstable histamine granules, and the Veterinary Society of Surgical Oncology notes that handling may trigger degranulation — redness, swelling, rarely anaphylaxis. A lump that swells, reddens, then shrinks over a day or two is mast cell behavior, not resolution.
+
+## When to worry: the changes that matter
+
+- **Speed.** A mass that changes over weeks rather than years needs a needle now.
+- **A change in character.** Soft that turned firm, or loose that now feels anchored.
+- **Fixed to what is underneath.** Stuck to muscle or bone suggests invasion, but a sliding mass has not ruled itself out — early malignant tumors can palpate as discrete lumps.
+- **Broken skin.** Ulceration, bleeding, hair loss, or a dog that will not stop licking.
+- **Pain or heat.** Fever or lost appetite alongside a swelling runs on a shorter clock.
+
+The owner-facing threshold comes from Dr. Sue Ettinger, a board-certified veterinary oncologist: her See Something, Do Something campaign says a lump a centimeter across, or a month old, should be sampled — her campaign, not a specialty-college guideline. Waiting turns small operations into large ones.
+
+## When to call us, and when to drive past us
+
+[[SAFETY]] Go to a 24-hour emergency hospital now, not to us, if your dog collapses or has pale gums; if the face swells or breathing gets hard after a lump was handled; if a mass bleeds through five minutes of firm pressure; if a swelling turned hot, hard and larger over hours in a feverish dog; if a dog with a known or suspected mast cell tumor vomits blood or passes black tarry stool; if a dog will not bear weight on a leg with a firm swelling over the bone; if a neck mass causes noisy breathing or gagging; or if you suspect a rattlesnake bite anywhere — Red Rock Canyon, Garden of the Gods, Ute Valley Park, Austin Bluffs and your own yard all count. Do not ice it, cut it, or wait to see whether swelling worsens. Animal ER Care, 5520 N. Nevada Ave Ste 150, is open 24 hours: [(719) 260-7141](tel:719-260-7141). Uintah Pet Emergency, 1635 W. Uintah St Ste E, is open daily noon to midnight: [(719) 633-3214](tel:719-633-3214) — not 24 hours. Red Rock is Monday through Friday, 8 a.m. to 5 p.m., with no overnight staff and no on-call line.
+
+Most lumps are none of those things. A stable lump found on a Saturday can wait for Monday — measure it, photograph it, leave it alone. Our standard exam is $79, and a [same-day urgent appointment](/services/urgent-emergency-care), held Monday to Friday during business hours, is $109.
+
+## The lumps we find most often
+
+### The mast cell tumor, the great pretender
+
+Mast cell tumors are the most common malignant skin tumor in dogs, roughly one in six to one in five, and our common breeds top the risk table: odds ratios of 11.3 for Boxers, 6.1 for Staffordshire Bull Terriers, 4.2 for Labradors. They can look like an insect bite, a wart, a skin tag or a fatty tumor, and Merck describes them as soft to solid, so the squishy movable lump that feels like fat can be one. CSU says many patients can be cured of this disease, and that low and intermediate grade tumors are unlikely to spread, so surgery may be the only treatment required. Those are population statements, not a prediction about your dog.
+
+### The fatty tumor everyone assumes it is
+
+A UK primary-care study of 384,284 dogs found 1.9 percent were diagnosed with a lipoma in a year, median age 10 — highest in Weimaraners, Dobermans and German Pointers, Labradors behind them. So "my dog is an old Lab, it is probably fatty" is a reasonable prior and still not a diagnosis: fat on the slide does not separate a simple lipoma from an infiltrative lipoma or a liposarcoma.
+
+### Histiocytoma, the one that really does resolve
+
+In dogs under about three and a half, a raised, hairless, pink button of a lump on the head, ear or limb is often a histiocytoma, and most resolve on their own in two to three months. Leaving one alone is only safe after cytology confirms that is what it is.
+
+### Cysts, abscesses and Front Range foxtails
+
+Follicular cysts are benign, but a ruptured one causes pain, inflammation and infection — and you still need the needle to know that is what it is. An abscess is hot, painful, fast and often feverish, and needs drainage and debridement, not antibiotics alone. A firm lump or draining tract between the toes weeks after a trail can be a migrating foxtail awn, which has to come out. All three are told apart by the same aspirate.
+
+## What a fine needle aspirate can and cannot tell you
+
+A small needle pulls cells from the mass onto a slide, and a stain makes them readable. Most dogs handle it about as well as a vaccination — no incision, no stitches, usually no sedation. Some masses and some dogs do need sedation for a safe sample, and we tell you before we start, not after. And no, it does not make cancer spread; every major authority recommends aspirating before cutting.
+
+Cytology and the final biopsy agree about 89 to 91 percent of the time, and when cytology says a mass is a tumor it is right more than 98 percent of the time — close to definitive. A negative is far weaker: negative predictive value is only about 64 to 69 percent, so roughly one in three reassuring results does not fully exclude cancer. A clean aspirate lowers my concern; it does not end the conversation, and a mass that keeps growing gets re-sampled or removed anyway.
+
+About 18 percent of aspirates come back non-diagnostic — not enough cells to read. Firm, deep, fixed masses are the worst offenders, because those cells cling together instead of releasing into the needle; when one comes back unreadable the next step is a biopsy or a referral, not another aspirate. I also check the nearest lymph node and sample it if it feels enlarged, because that is where a mast cell tumor travels first.
+
+## What happens after the aspirate
+
+If it is benign and stable, we set a recheck date and a number to measure against, not an open-ended "keep an eye on it." If it needs to come out, cytology sets the plan but not the size of it. About 2 centimeters of normal-looking skin in every direction plus one layer of tissue beneath is the published standard for a small, low-grade mast cell tumor, and because cytology cannot give us the grade beforehand, the Veterinary Society of Surgical Oncology recommends 3 to 4 centimeters when the grade is unknown. These tumors extend microscopically into skin that feels normal, which is why the incision surprises people. Everything we remove goes to a pathologist for a diagnosis, a grade and a margin report.
+
+We do the exam, the aspirate and straightforward [mass removals](/services/surgery) here, and the slides go to a clinical pathologist. We have no CT scanner and we do not give chemotherapy or radiation therapy. Complex reconstructions and high-grade cases belong with a board-certified surgeon or oncologist; CSU's Flint Animal Cancer Center is two hours north in Fort Collins.
+
+[[KEYTAKEAWAY]] The lump on your dog does not have an answer you can see or feel. It has one on a glass slide, and getting it takes a needle and one appointment. Call us at [(719) 204-3647](tel:719-204-3647), Monday through Friday, 8 a.m. to 5 p.m.`,
+    featuredImage: "/blogs/drunsellperformingemergencysurgery.jpg",
+    imageAlt: "A veterinarian at Red Rock Veterinary Health performing surgery in the practice's surgical suite",
+    author: "Dr. Dan Muelhaupt",
+    publishedAt: "2026-08-07",
+    readingTime: 7,
+    categories: ["Cancer & Masses", "Pet Care Tips"],
+    tags: ["lump on my dog", "when to worry about a lump on my dog", "mast cell tumor in dogs", "cancerous lump on dog", "dog fatty tumor", "fine needle aspiration dog", "histiocytoma dog", "vet Colorado Springs"],
+    seo: {
+      metaTitle: "Lump on My Dog: When to Worry | Colorado Springs Vet",
+      metaDescription: "Dr. Dan Muelhaupt on why no vet can identify a lump by sight or feel, the changes that mean call now, and what a fine needle aspirate really tells you.",
+      focusKeywords: ["lump on my dog", "when to worry about a lump on my dog", "mast cell tumor in dogs", "cancerous lump on dog", "fine needle aspiration dog"],
+    },
+    faqs: [
+      {
+        question: "When should I worry about a lump on my dog?",
+        answer:
+          "Worry about change more than appearance. A mass that visibly grows over weeks rather than years, that turns from soft to firm, that becomes anchored to muscle or bone, that ulcerates or bleeds, or that shows up alongside fever, lethargy or lost appetite should be sampled promptly. Location matters too: masses on the face, a limb, a joint, an eyelid, the armpit or the groin have very little spare skin around them, so acting early keeps the surgery small. Call Red Rock at (719) 204-3647 Monday through Friday, 8 a.m. to 5 p.m., and we will find you the earliest appointment we have.",
+      },
+      {
+        question: "Can a vet tell if a lump on my dog is cancerous just by looking at it or feeling it?",
+        answer:
+          "No, and any veterinarian who says otherwise is guessing. Colorado State University's Flint Animal Cancer Center states that mast cell tumors can look and feel like anything, so it is impossible to diagnose one without looking at cells under a microscope. The Merck Veterinary Manual and MSPCA-Angell say the same thing independently. The only way to know is to sample the mass and read the cells.",
+      },
+      {
+        question: "Does a lump that moves under the skin mean it is benign?",
+        answer:
+          "No. Mobility is one input, not an all-clear. Merck notes that early malignant tumors can feel like discrete, encapsulated lumps, and the subcutaneous mast cell tumor is the one that most often masquerades as a soft, movable fatty tumor. A mass fixed to muscle or bone is more concerning, but a mass that slides freely has not ruled itself out.",
+      },
+      {
+        question: "What does a cancerous lump look like on a dog?",
+        answer:
+          "There is no reliable look. Mast cell tumors are called the great pretenders because they can resemble an insect bite, a wart, an allergic welt, a skin tag or a fatty tumor, and Merck describes them as anything from soft to solid on palpation. Ulceration, bleeding and hair loss over a mass are worrying signs, but plenty of malignant masses look completely unremarkable. Photographs on the internet cannot diagnose your dog.",
+      },
+      {
+        question: "Can a mast cell tumor be benign?",
+        answer:
+          "Mast cell tumors are classified as malignant, but their behavior varies enormously by grade. Low and intermediate grade tumors are unlikely to spread, and surgery is often the only treatment needed, while high-grade tumors behave far more aggressively. Grade cannot be determined from an aspirate. It is assigned by a pathologist after the mass is removed, which is why everything we take out is submitted for histopathology.",
+      },
+      {
+        question: "What is a fine needle aspiration for a dog, does it hurt, and what does it cost?",
+        answer:
+          "A fine needle aspirate uses a small needle on a syringe to draw cells out of the mass onto a glass slide. Most dogs tolerate it about as well as a vaccination, with no incision, no stitches and usually no sedation, though some masses and some dogs do need sedation for a safe sample and we tell you that before we start. Our standard exam is $79 and a same-day urgent exam is $109; we quote the aspirate and the cytology for you before we do anything, and the slides go to a clinical pathologist to be read. And no, putting a needle in a mass does not make cancer spread.",
+      },
+      {
+        question: "Do fatty tumors have to be removed?",
+        answer:
+          "Not always, but that decision comes after a sample, not instead of one. Even when cytology shows fat, it does not cleanly separate a simple lipoma from an infiltrative lipoma or a liposarcoma, so a confirmed, stable, slow-growing lipoma gets a recheck date and a recorded measurement rather than an open-ended wait-and-see. Removal makes sense when a mass interferes with movement, grows quickly, or changes character. There is no supplement, cream or home remedy that dissolves one.",
+      },
+      {
+        question: "I found a lump on my dog after hours or on a weekend. Can it wait until Monday?",
+        answer:
+          "Usually yes. A stable lump on a dog who feels well can wait for a Monday appointment; measure it, photograph it beside a quarter and leave it alone until then. Go now instead if your dog collapses, has pale gums, bleeds through five minutes of firm pressure, has a hot, hard, rapidly enlarging swelling with a fever, has facial swelling or breathing trouble after a lump was handled, or has a neck mass causing noisy breathing or gagging: Animal ER Care at 5520 N. Nevada Ave Ste 150 is open 24 hours at (719) 260-7141, and Uintah Pet Emergency at 1635 W. Uintah St Ste E, (719) 633-3214, is open daily noon to midnight and is not a 24-hour hospital. Red Rock is open Monday through Friday, 8 a.m. to 5 p.m. with no overnight staff and no on-call line, so call us at (719) 204-3647 when we open.",
+      },
+    ],
+    faqJsonLd: `{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When should I worry about a lump on my dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Change matters more than appearance. A mass that grows visibly over weeks rather than years, turns from soft to firm, becomes anchored to muscle or bone, ulcerates or bleeds, or appears alongside fever, lethargy or lost appetite should be sampled promptly. Masses on the face, limbs, joints, eyelids, armpits or groin have little spare skin around them, so acting early keeps the surgery small. Red Rock Veterinary Health can be reached at (719) 204-3647 Monday through Friday, 8 a.m. to 5 p.m."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a vet tell if a lump on my dog is cancerous just by looking at it or feeling it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Colorado State University's Flint Animal Cancer Center states that mast cell tumors can look and feel like anything, so diagnosis is impossible without examining cells under a microscope. The Merck Veterinary Manual and MSPCA-Angell agree independently. The only way to know is to sample the mass and read the cells."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a lump that moves under the skin mean it is benign?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Mobility is one input, not an all-clear. Merck notes that early malignant tumors can feel like discrete, encapsulated lumps, and subcutaneous mast cell tumors often masquerade as soft, movable fatty tumors. A fixed mass is more concerning, but a freely sliding mass has not ruled itself out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a cancerous lump look like on a dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no reliable look. Mast cell tumors are called the great pretenders because they can resemble an insect bite, a wart, an allergic welt, a skin tag or a fatty tumor, and Merck describes them as anything from soft to solid on palpation. Ulceration, bleeding and hair loss are worrying signs, but many malignant masses look unremarkable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a mast cell tumor be benign?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mast cell tumors are classified as malignant, but behavior varies enormously by grade. Low and intermediate grade tumors are unlikely to spread and surgery is often the only treatment needed, while high-grade tumors behave far more aggressively. Grade cannot be determined from an aspirate; a pathologist assigns it after the mass is removed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a fine needle aspiration for a dog, does it hurt, and what does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A fine needle aspirate uses a small needle on a syringe to draw cells from a mass onto a glass slide. Most dogs tolerate it about as well as a vaccination, with no incision, no stitches and usually no sedation, though some masses and some dogs do need sedation for a safe sample. At Red Rock Veterinary Health the standard exam is $79 and a same-day urgent exam is $109, and the aspirate and cytology are quoted before anything is done; slides go to a clinical pathologist to be read. Aspirating a mass does not make cancer spread."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do fatty tumors have to be removed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not always, but the decision comes after a sample rather than instead of one. Cytology showing fat does not cleanly separate a simple lipoma from an infiltrative lipoma or a liposarcoma, so a confirmed, stable lipoma gets a recheck date and a recorded measurement. Removal makes sense when a mass interferes with movement, grows quickly or changes character. No supplement or home remedy dissolves one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I found a lump on my dog after hours or on a weekend. Can it wait until Monday?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually yes. A stable lump on a dog who feels well can wait for a Monday appointment; measure it, photograph it beside a quarter and leave it alone. Collapse, pale gums, bleeding through five minutes of firm pressure, a hot, hard, rapidly enlarging swelling with fever, facial swelling or breathing trouble after a lump was handled, or a neck mass causing noisy breathing or gagging should go to Animal ER Care at 5520 N. Nevada Ave Ste 150, open 24 hours at (719) 260-7141; Uintah Pet Emergency at 1635 W. Uintah St Ste E, (719) 633-3214, is open daily noon to midnight and is not a 24-hour hospital. Red Rock Veterinary Health is open Monday through Friday, 8 a.m. to 5 p.m., with no overnight staff and no on-call line."
+      }
+    }
+  ]
+}`,
+  },
+  {
+    id: "flat-faced-dogs-breathing-colorado-springs-altitude",
+    title: "Flat-Faced Dogs at 6,035 Feet: Which Breathing Noises Mean the ER Tonight",
+    slug: "flat-faced-dogs-breathing-colorado-springs-altitude",
+    excerpt: "Dr. Jaime Clevenger on flat-faced dogs at 6,035 feet: which breathing noises mean a weekday appointment, which mean the ER tonight, and when to skip Red Rock entirely.",
+    content: `[[QUICKTAKE]] Quick take
+- Snoring, snorting, gagging, and stopping to rest on walks are clinical signs, not breed quirks.
+- Blue, gray, purple, or very pale gums, collapse, or breathing that will not settle with rest: 24-hour emergency hospital now.
+- At 6,035 feet the inspired oxygen pressure is 118 mmHg against 149 at sea level, about 21% lower. That removes reserve; it does not cause BOAS.
+- Heat and exertion are the biggest local trigger, ahead of altitude and ahead of the parked car, which is still never safe.
+- Reverse sneezing and airway distress are different events. The test is below.
+
+Families move here from sea level all year through Fort Carson, Peterson, and the Air Force Academy, many with a flat-faced dog that has never breathed air this thin. They ask one thing: is my dog's breathing normal?
+
+I am Dr. Jaime Clevenger, a veterinarian at Red Rock Veterinary Health on the Westside.
+
+## BOAS in plain English
+
+Brachycephalic — brak-ee-suh-FAL-ik — obstructive airway syndrome, or BOAS, is four problems stacked:
+
+- **Stenotic nares.** Narrow nostrils that collapse inward on inhalation. The only piece I can assess awake.
+- **An elongated soft palate.** It extends past the epiglottis and flutters in the airstream. Usually the snoring.
+- **A hypoplastic trachea.** A windpipe built too small; no surgery fixes it.
+- **Everted laryngeal saccules.** Tissue dragged into the airway by years of pulling against a blockage.
+
+The first three your dog was born with. Everted saccules are the one your dog earned: already Grade I laryngeal collapse, and it progresses. Waiting is not neutral.
+
+## The signs owners get told are "just the breed"
+
+UK research found 58% of owners of BOAS-affected dogs said their dog had no breathing problem. None of this is normal:
+
+- Snoring at rest, or audible from another room
+- Snorting or wet, gurgly breathing while awake
+- Gagging, retching, or bringing up undigested food
+- Stopping to rest on a walk, or falling behind
+- Sleeping propped upright to splint the airway open, or waking up gasping
+
+These dogs also get sleep fragmentation and gastrointestinal disease at high rates. A Frenchie that spits up regularly is showing an airway sign, not a food sensitivity, and regurgitation is the road to aspiration pneumonia. If it then coughs, runs a fever, goes off food, or turns lethargic, treat that as pneumonia — us if we are open, the ER if we are not.
+
+## Reverse sneezing: the noise owners mistake for an emergency
+
+Cornell's Riney Canine Health Center describes a reverse sneeze as an episode in which the dog stands with the neck extended, head tilted back and elbows out, pulling air inward in a rapid repeated series — the opposite of an ordinary sneeze. Episodes run seconds to minutes and usually stop on their own.
+
+### Reverse sneeze, or genuine airway distress?
+
+- **A reverse sneeze starts and stops; distress builds.** Reverse sneezing comes in bursts with normal breathing between; BOAS noise is on every breath in, a wet rattle or a high wheeze, and grows with excitement, heat, and effort.
+- **Posture does not separate them.** Both stand neck extended with elbows off the body. The difference is the dog thirty seconds later.
+- **Gum color settles it.** Blue, gray, purple, or very pale gums are never a reverse sneeze. That is cyanosis, an emergency now.
+
+If every line fits — short, self-limiting, normal dog afterward, pink gums — that one episode is not by itself an emergency. If any line does not fit, treat it as airway distress and drive to a 24-hour emergency hospital. I will not call it cute either way: "he just does that" is how a real airway problem goes unexamined for years.
+
+## Does 6,035 feet actually make it worse?
+
+No published veterinary study has looked at brachycephalic dogs at Colorado front-range altitude. Anyone quoting a percentage for how much worse your dog breathes here, or an elevation flat-faced dogs "should never go above," invented it. Here is the physics.
+
+Barometric pressure at 6,035 feet is about 608 mmHg against 760 at sea level. Air is 20.9% oxygen everywhere; what falls is the pressure pushing it into the lungs, about 118 mmHg against 149.
+
+For a healthy dog, that is close to a non-event: dogs of every skull shape live normal lives here. An obstructed airway starts lower, so another 30 mmHg off leaves less margin before excitement, heat, or a hill pushes it into distress. That is reserve, not severity. Altitude does not cause BOAS, and sea level will not fix it.
+
+## Heat, exertion, and the one Colorado detail in your favor
+
+Our low humidity genuinely helps: dogs shed heat by evaporating water off the upper airway, and evaporation works better in dry air. A Frenchie at 85°F here is under less strain than one in Houston.
+
+Our normal July daily maximum is about 86.5°F, and this past July averaged 89.8°F. Neither number sounds alarming, and that is the trap. UK primary-care research found 74.2% of heat-illness events with a known trigger were exertional and 5.2% vehicular, with brachycephalic dogs at roughly twice the odds of medium-muzzled dogs. The danger here is your Saturday morning hike, not just your parked car. Still never leave a flat-faced dog in a car, even briefly: vehicular cases were rarer in that data but killed a higher share of the dogs affected, and Bulldogs were the most over-represented.
+
+Walk at dawn, wet the dog down early, and use a harness: a collar compresses an already narrow airway every time your dog pulls. Weight is the other lever: in one 105-dog study, body condition score mattered more for body temperature than breed type.
+
+## What to do right now
+
+1. Look at the gums first. Blue, gray, purple, brick-red, or very pale means stop here and drive to a 24-hour emergency hospital now, without calling first.
+2. Pink gums do not mean the dog is fine; they mean you have a little time. Move the dog somewhere cool, dark, and quiet, stop all handling, and give it a few minutes of real rest. Noise that settles is different from noise that does not, and noise that does not settle is an emergency.
+
+[[SAFETY]] Go straight to a 24-hour emergency hospital, without calling us first, for blue, gray, purple, brick-red, or very pale gums; collapse after excitement, heat, or exercise; open-mouth breathing that will not settle after a few minutes of rest somewhere cool; or any open-mouth breathing in a cat, because cats do not pant normally and that is always an emergency. For a rectal temperature of 104°F or higher after heat or exertion — or, with no thermometer, distressed panting plus stumbling, disorientation, vomiting, or brick-red gums — treat it as heat stroke: pour cool or cold water over the dog, get air over the wet coat before you leave, then drive and call the ER on the way. Animal ER Care, 5520 N. Nevada Ave Ste 150, [(719) 260-7141](tel:719-260-7141), is open 24/7. Uintah Pet Emergency, 1635 W. Uintah St Ste E, [(719) 633-3214](tel:719-633-3214), is open daily noon to midnight, not overnight.
+
+Red Rock is open Monday through Friday, 8 a.m. to 5 p.m. No overnight staff, no on-call line, and we are not going to bury that. Call [(719) 204-3647](tel:719-204-3647) in business hours to have the noise assessed. Our [same-day urgent appointments](/services/urgent-emergency-care) are for the day something changed but the dog is stable and pink. After a night at the ER, we [take the handoff](/blog/after-er-visit-follow-up-care-colorado-springs).
+
+## What an airway assessment involves
+
+A conscious exam honestly gets one component: the nostrils. The palate, saccules, and larynx need sedation, because a thick tongue makes the larynx nearly impossible to see awake. Radiographs identify a hypoplastic trachea, and [we take those here](/services/radiography-ultrasound).
+
+We do not do BOAS corrective surgery. It needs 24 hours of in-hospital monitoring and emergency tracheostomy capability if the airway swells shut, and a practice that closes at 5 p.m. cannot provide that. We refer to a board-certified surgeon and handle recognition, the workup behind the referral, weight management, and follow-up. No one should promise a result: reported improvement ranges from 30% to 90%, a hypoplastic trachea cannot be corrected, and earlier surgery beats emergency surgery.
+
+## Anesthesia: why your bulldog gets a different plan
+
+In 223 brachycephalic dogs and 223 matched controls under routine anesthesia, postanesthetic complications ran 13.9% versus 3.6% — dentals and spays, not airway surgery. The dangerous window is recovery, not induction, and per the 2020 AAHA guidelines three minutes of pre-oxygenation buys nearly six minutes of adequate saturation.
+
+The standard of care is to keep a flat-faced dog intubated as long as it is safe and to recover it sternal with the head up, watched by a person, not only by a monitor. That is why the anesthetic day should start early: recovery needs the whole day, and we close at 5 p.m. We have no overnight staff, so a patient of ours that is not stable by then goes to a 24-hour hospital rather than home. There is no third option, and you should know that before you book a dental. Ask any clinic all three questions, including ours.
+
+[[KEYTAKEAWAY]] Noise is information, not personality. A flat-faced dog that snores, snorts, gags, or stops on walks belongs in an ordinary Tuesday appointment, not an 11 p.m. crisis. Call [(719) 204-3647](tel:719-204-3647), Monday through Friday, 8 a.m. to 5 p.m. If the gums are blue or the breathing will not settle, skip us and go to Animal ER Care at [(719) 260-7141](tel:719-260-7141).`,
+    featuredImage: "/blogs/expertcare.jpg",
+    imageAlt: "A veterinarian examining a flat-faced dog at Red Rock Veterinary Health in Colorado Springs",
+    author: "Dr. Jaime Clevenger",
+    publishedAt: "2026-08-07",
+    readingTime: 7,
+    categories: ["Pet Care Tips", "Emergency & Urgent Care", "Pet Safety"],
+    tags: ["french bulldog breathing problems", "reverse sneezing in dogs", "brachycephalic dogs", "BOAS in dogs", "flat faced dog breathing", "flat faced dog breathing hard", "pug breathing problems", "Colorado Springs veterinarian"],
+    seo: {
+      metaTitle: "Flat-Faced Dog Breathing at Altitude | Red Rock Vet",
+      metaDescription: "Dr. Jaime Clevenger on flat-faced dogs at 6,035 feet: which breathing noises mean a weekday appointment, which mean the ER tonight, and when to skip us.",
+      focusKeywords: ["french bulldog breathing problems", "reverse sneezing in dogs", "brachycephalic dogs Colorado Springs", "flat faced dog breathing altitude", "BOAS in dogs", "brachycephalic dog altitude Colorado Springs"],
+    },
+    faqs: [
+      {
+        question: "Is my French Bulldog's heavy breathing normal, or is this an emergency?",
+        answer:
+          "Heavy, noisy breathing is not normal for any dog, French Bulldogs included, but it is not automatically an emergency. Treat it as one if the gums are blue, gray, purple, or very pale, if your dog collapses, or if open-mouth breathing does not settle after a few minutes of rest somewhere cool and quiet — any of those means driving to a 24-hour emergency hospital now, without calling us first. If your dog is pink, alert, and settles with rest, call Red Rock at (719) 204-3647 during business hours and have the airway properly assessed. Our exam is $79, or $109 for a same-day urgent visit, and that covers the visit itself, not sedated airway evaluation, imaging, or surgery.",
+      },
+      {
+        question: "It is 9 p.m. and my bulldog cannot catch his breath. Where do I go?",
+        answer:
+          "Go to a 24-hour emergency hospital. Red Rock is open Monday through Friday, 8 a.m. to 5 p.m. only, with no overnight staff and no on-call line, so we cannot help you at 9 p.m. Animal ER Care at 5520 N. Nevada Ave, Suite 150, phone (719) 260-7141, is open 24/7. Uintah Pet Emergency at 1635 W. Uintah St, Suite E, phone (719) 633-3214, is open daily from noon to midnight but is not an overnight hospital.",
+      },
+      {
+        question: "Why is my dog reverse sneezing, and how do I know it is not something worse?",
+        answer:
+          "Cornell's Riney Canine Health Center describes a reverse sneeze as a short episode in which the dog stands with the neck extended, head tilted back, and elbows out, pulling air inward in a rapid repeated series, the opposite direction from an ordinary sneeze. Episodes run seconds to minutes and usually stop on their own. Genuine airway distress is different: it builds instead of stopping, and the noise is on every breath in rather than in bursts with normal breathing between. Posture does not reliably separate the two, so judge by whether it resolves and by gum color — blue, gray, purple, or very pale gums are never a reverse sneeze, and frequent or worsening episodes deserve an exam.",
+      },
+      {
+        question: "Does Colorado's altitude make my flat-faced dog's breathing worse?",
+        answer:
+          "There is no published veterinary study of brachycephalic dogs at Colorado front-range altitude, so anyone quoting a percentage for how much worse your dog breathes here, or an elevation limit, is guessing. The physics is certain: barometric pressure at 6,035 feet is about 608 mmHg versus 760 at sea level, so the inspired oxygen pressure is roughly 118 mmHg here against 149 at sea level. A dog whose airway is already obstructed starts from a lower baseline and has less reserve before heat, excitement, or a hill causes visible distress. Altitude does not cause the condition, and moving back to sea level will not fix it.",
+      },
+      {
+        question: "How hot is too hot to walk my French Bulldog in Colorado Springs?",
+        answer:
+          "There is no published temperature at which a flat-faced dog becomes unsafe, so use time of day and your dog's own response rather than a number. Our normal July daily maximum is about 86.5 degrees and this past July averaged 89.8, and UK primary-care research found that 74.2 percent of canine heat-related illness events with a known trigger were exertional rather than vehicular — though you should still never leave a flat-faced dog in a car, even briefly. Walk at dawn, keep summer routes flat and short, carry water, and wet your dog down before there is a problem. If breathing does not settle within a few minutes of rest in the shade, that is an emergency, not a next-day appointment, and most hot afternoons fall outside our Monday to Friday, 8 a.m. to 5 p.m. hours, so go to Animal ER Care at 5520 N. Nevada Ave, Suite 150, phone (719) 260-7141, open 24/7.",
+      },
+      {
+        question: "My Frenchie snores loudly. Is that cute, or is it a medical sign?",
+        answer:
+          "It is a medical sign. Snoring usually comes from an elongated soft palate fluttering in the airstream, one of the four components of brachycephalic obstructive airway syndrome. UK research found that 58 percent of owners whose dogs were affected reported their dog had no breathing problem at all, and snoring is the sign most often waved off as normal for the breed. Snoring at rest, or snoring you can hear from another room, is worth an appointment.",
+      },
+      {
+        question: "Does Red Rock do BOAS surgery, and what does it cost?",
+        answer:
+          "No. Airway surgery on a flat-faced dog requires at least 24 hours of in-hospital monitoring and the ability to place an emergency tracheostomy if the airway swells after the procedure, and a practice that closes at 5 p.m. cannot provide that. We refer to a board-certified surgeon and handle the recognition, the workup that leads to that referral, weight management, and follow-up care. We cannot quote a surgical price because we do not perform the procedure — ask the surgical hospital directly, and ask what their quote includes for the 24 hours of monitoring.",
+      },
+      {
+        question: "Is anesthesia riskier for my bulldog?",
+        answer:
+          "Yes. In a study of 223 brachycephalic dogs matched against 223 non-brachycephalic dogs undergoing routine anesthesia, postanesthetic complications occurred in 13.9 percent of the brachycephalic dogs versus 3.6 percent of the others, and those were ordinary procedures such as dentals and spays. The dangerous window is recovery rather than induction, so ask any clinic three things: whether pre-oxygenation is standard, whether a person rather than only a monitor watches the whole recovery, and what happens if the dog is not stable by closing time. At Red Rock we have no overnight staff, so a patient that is not stable by 5 p.m. goes to a 24-hour hospital rather than home.",
+      },
+    ],
+    faqJsonLd: `{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my French Bulldog's heavy breathing normal, or is this an emergency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heavy, noisy breathing is not normal for a French Bulldog, but it is not automatically an emergency. Blue, gray, purple, or very pale gums, collapse, or open-mouth breathing that will not settle after a few minutes of rest in a cool, quiet place means driving to a 24-hour emergency hospital immediately, without calling first. A dog that is pink, alert, and settles with rest should be assessed during business hours at Red Rock Veterinary Health, (719) 204-3647; the exam is $79, or $109 same-day urgent, and covers the visit only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "It is 9 p.m. and my bulldog cannot catch his breath. Where do I go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to a 24-hour emergency hospital. Red Rock Veterinary Health is open Monday through Friday, 8 a.m. to 5 p.m. only, with no overnight staff and no on-call line. Animal ER Care, 5520 N. Nevada Ave Suite 150, (719) 260-7141, is open 24/7. Uintah Pet Emergency, 1635 W. Uintah St Suite E, (719) 633-3214, is open daily noon to midnight and is not an overnight hospital."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my dog reverse sneezing, and how do I know it is not something worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cornell's Riney Canine Health Center describes a reverse sneeze as a short episode in which the dog stands with the neck extended, head tilted back and elbows out, pulling air inward in a rapid repeated series, the opposite direction from an ordinary sneeze; episodes run seconds to minutes and usually stop on their own. Genuine airway distress builds instead of stopping and is audible on every breath in rather than in bursts. Posture does not reliably separate the two, so judge by whether it resolves and by gum color: blue, gray, purple, or very pale gums are never a reverse sneeze, and frequent or worsening episodes warrant an exam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Colorado's altitude make my flat-faced dog's breathing worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No published veterinary study has measured brachycephalic dogs at Colorado front-range altitude, so any specific percentage or elevation limit is invented. The physics is established: barometric pressure at 6,035 feet is about 608 mmHg versus 760 at sea level, so inspired oxygen pressure is roughly 118 mmHg here against 149. A dog with an already obstructed airway therefore has less reserve. Altitude does not cause the condition, and moving to sea level does not resolve it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How hot is too hot to walk my French Bulldog in Colorado Springs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no published safe-temperature threshold for flat-faced dogs, so time of day and the dog's own response matter more than a number. The normal July daily maximum in Colorado Springs is about 86.5 degrees and this past July averaged 89.8, and UK primary-care research found 74.2 percent of canine heat-related illness events with a known trigger were exertional rather than vehicular — though a flat-faced dog should never be left in a car, even briefly. Walk at dawn, keep routes flat and short, and carry water. If breathing does not settle within a few minutes of shaded rest, that is an emergency: go to Animal ER Care, (719) 260-7141, open 24/7, not to a next-day appointment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My Frenchie snores loudly. Is that cute, or is it a medical sign?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a medical sign. Snoring usually comes from an elongated soft palate fluttering in the airstream, one of the four components of brachycephalic obstructive airway syndrome. UK research found 58 percent of owners of affected dogs reported no breathing problem at all. Snoring at rest, or snoring audible from another room, warrants a veterinary appointment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Red Rock do BOAS surgery, and what does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Red Rock Veterinary Health does not perform BOAS corrective surgery, because it requires at least 24 hours of in-hospital monitoring and emergency tracheostomy capability that a Monday-to-Friday practice cannot provide. Red Rock refers to a board-certified surgeon and handles recognition, the workup leading to that referral, weight management, and follow-up. Surgical pricing must come from the surgical hospital, and owners should ask what the quote includes for the 24 hours of monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is anesthesia riskier for my bulldog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In 223 brachycephalic dogs matched against 223 non-brachycephalic dogs undergoing routine anesthesia, postanesthetic complications occurred in 13.9 percent of brachycephalic dogs versus 3.6 percent of the others, for ordinary procedures such as dentals and spays. The dangerous window is recovery rather than induction, so owners should ask whether pre-oxygenation is standard, whether a person rather than only a monitor watches the entire recovery, and what happens if the dog is not stable by closing time. Red Rock has no overnight staff, so a patient not stable by 5 p.m. goes to a 24-hour hospital rather than home."
+      }
+    }
+  ]
+}`,
+  },
+  {
     id: "pet-emergency-after-hours-colorado-springs",
     title: "What to Do If Your Pet Has an Emergency After Our Hours: A Colorado Springs Guide",
     slug: "pet-emergency-after-hours-colorado-springs",

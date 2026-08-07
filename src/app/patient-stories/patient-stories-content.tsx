@@ -186,6 +186,11 @@ const stories: Story[] = [
     },
     links: [
       {
+        label: "Flat-faced dogs at 6,035 feet",
+        href: "/blog/flat-faced-dogs-breathing-colorado-springs-altitude",
+        note: "what breathing trouble looks like in these breeds, and why altitude narrows the margin",
+      },
+      {
         label: "Fear Free veterinary care",
         href: "/services/fear-free",
         note: "why low-stress handling is a safety measure for this patient",
