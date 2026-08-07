@@ -28,6 +28,7 @@ const services = [
   { name: "Cat Clinic", href: "/services/cat-clinic" },
   { name: "Chronic Disease", href: "/services/chronic-disease-management" },
   { name: "Diagnostic Imaging", href: "/services/radiography-ultrasound" },
+  { name: "Senior & Lifetime Care", href: "/lifetime-care" },
 ];
 
 // About navigation data
@@ -35,6 +36,8 @@ const aboutItems = [
   { name: "Our Practice", href: "/about" },
   { name: "Staff", href: "/staff" },
   { name: "Blog", href: "/blog" },
+  { name: "Patient Stories", href: "/patient-stories" },
+  { name: "Switching Vets", href: "/switching-vets-colorado-springs" },
 ];
 
 // Patient Portal navigation data
