@@ -173,7 +173,7 @@ const stories: Story[] = [
       "Examined his nostrils while he was awake and showed the family what stenotic nares look like on their own dog rather than on a diagram.",
       "Scored his body condition honestly. In a prospective comparison of brachycephalic and non-brachycephalic dogs, body condition was a greater determinant of body temperature than breed type was. Weight is the lever that is actually in reach; skull shape is not.",
       "Used Fear Free handling for a clinical reason rather than a comfortable one. Stress-panting makes an obstructed airway worse, so low-stress handling of this patient is a safety measure.",
-      "Said plainly what we do not do. A definitive answer about the soft palate and larynx needs sedation or anesthesia and imaging, and corrective airway surgery belongs at a surgical facility with overnight capability. Red Rock closes at 5 p.m. and has no overnight staff, so we do not perform brachycephalic airway surgery here. What we can do is assess, grade, manage, and refer honestly.",
+      "Laid out the surgical path honestly. A definitive answer about the soft palate and larynx needs sedation and imaging, not a conscious exam. Corrective airway surgery is performed here, and for these airways we recommend Dr. Jennifer Swiderski, the board-certified surgeon who operates on-site through our MOVES partnership, so the dog is not shipped across town to a building it has never seen. What nobody should promise is a result: reported improvement ranges widely, and a windpipe built too small cannot be corrected at all.",
       "Changed things that could change that week: a harness instead of a neck collar, walks moved to the cool ends of the day, a written heat plan for summer, and a weight target with a date attached to it.",
     ],
     changed: [
@@ -208,7 +208,7 @@ const commonThreads = [
   "In all three, the presenting problem was not the reason for the visit. It surfaced because somebody asked a specific question and had the time to hear the answer.",
   "In all three, fear changed the data. A frightened cat's glucose, an arthritic dog sliding on a hard floor, a panting bulldog in a loud room — stress does not just make a visit unpleasant, it alters the findings you then make decisions from.",
   "In all three, the useful unit of care is the relationship, not the appointment. Diabetes, arthritis, kidney disease, and airway disease are all monitored over years by someone who has the earlier numbers in front of them.",
-  "In all three, part of the job was saying what we do not do. Overnight intravenous care, airway surgery, and after-hours emergencies go somewhere else, and naming that clearly is what makes the rest of the advice trustworthy.",
+  "In all three, part of the job was naming the edges of what we do. Overnight intravenous care and after-hours emergencies go somewhere else, and saying so clearly is what makes the rest of the advice trustworthy.",
 ];
 
 const notOurJob = [

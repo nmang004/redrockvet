@@ -90,7 +90,9 @@ Here is the part that usually gets left out. The rattlesnake vaccine is a toxoid
 
 AAHA classifies the vaccine as noncore and states there are no published data documenting its efficacy in dogs. Two retrospective studies, one of 82 dogs with moderate-to-severe envenomation and one of 272 dogs, found no difference in illness or death between vaccinated and unvaccinated dogs. AAHA also notes reported adverse reactions, including anaphylaxis, in previously vaccinated dogs that were later bitten.
 
-That is not the same as saying the vaccine does not work. It is saying there is no published evidence that it does, in dogs, against our snake. Talk it through with your veterinarian. But the vaccine never changes the plan. A vaccinated dog that is bitten still goes to the 24-hour hospital immediately.
+That is not the same as saying the vaccine does not work. It is saying there is no published evidence that it does, in dogs, against our snake.
+
+We stock the vaccine and we will give it if you want it. Plenty of our clients hike the Westside every week and would rather do the one thing available to them, and that is a reasonable position to take with an honest read of the evidence in front of you. What we will not do is sell it to you as protection. Ask us and we will talk it through for your dog, your trails, and how often you are out there. But the vaccine never changes the plan. A vaccinated dog that is bitten still goes to the 24-hour hospital immediately.
 
 ## What treatment costs, and what the odds are
 
@@ -98,14 +100,24 @@ At the hospital your dog gets IV fluids, opioid pain control rather than NSAIDs,
 
 In that 272-dog series, 264 dogs survived — 97.1% — with hypersensitivity reactions to antivenom in 0.7% of cases, none life-threatening. Dogs older than 10 years that arrived late were more likely to die. No veterinarian can guarantee an outcome for an individual dog, and delay is the one variable you control.
 
-[[KEYTAKEAWAY]] If a rattlesnake bit your dog, drive to Animal ER Care at [(719) 260-7141](tel:719-260-7141) right now — vaccinated or not, symptomatic or not, without stopping here first. Then call us at [(719) 204-3647](tel:719-204-3647) on our next open weekday, Monday through Friday between 8 a.m. and 5 p.m., and we will take the follow-up from there. If your dog is discharged on a weekend, Animal ER Care covers you until we open.`,
-    featuredImage: "/blogs/redrockvetinredrockcanyon.jpg",
-    imageAlt: "Red Rock Veterinary Health in Red Rock Canyon Open Space near Colorado Springs, backdropped by Pikes Peak",
+## The other things these trails do to dogs
+
+Snakes get the attention. These are the ones we actually see most, and unlike envenomation, all three are firmly in what we can handle during business hours.
+
+**Foxtails and cheatgrass awns.** Late summer is their season, and they are built to travel in one direction only — into the dog. They lodge between toes, inside ears, up noses, and under eyelids, and they migrate. A sudden violent head shake, an ear the dog will not leave alone, relentless licking of one paw, or explosive sneezing that starts on a walk and does not stop is an awn until proven otherwise. Waiting does not help; an awn that has moved is a harder, more expensive problem than an awn that has not. We remove them here, sedated when we have to, and we would rather see the paw on a Tuesday than the abscess a week later.
+
+**Heat stroke.** Our sun is stronger at 6,035 feet than the temperature suggests, and dogs overheat on a 78-degree afternoon on exposed rock. Distressed panting plus stumbling, disorientation, vomiting, or brick-red gums is an emergency — cool the dog with water, get air moving over the wet coat, and drive to the ER. Do not wait for us.
+
+**Burned paw pads.** Red Rock Canyon and Garden of the Gods hold heat in the stone long after the air has cooled. Press the back of your hand to the rock for seven seconds; if you cannot hold it there, neither can your dog. Limping after a hot walk, or pads that look dark, peeled, or blistered, needs to be seen — burned pads get infected and they hurt for weeks.
+
+[[KEYTAKEAWAY]] If a rattlesnake bit your dog, drive to Animal ER Care at [(719) 260-7141](tel:719-260-7141) right now — vaccinated or not, symptomatic or not, without stopping here first. Then call us at [(719) 204-3647](tel:719-204-3647) on our next open weekday, Monday through Friday between 8 a.m. and 5 p.m., and we will take the follow-up from there. If your dog is discharged on a weekend, Animal ER Care covers you until we open. For foxtails, sore paws, or anything else the trail did that is not an emergency, that same number gets you a same-day urgent slot at $109.`,
+    featuredImage: "/blogs/dog-on-red-rock-trail.jpg",
+    imageAlt: "A dog sitting on the red rock formations of a Colorado Springs Westside trail, with Pikes Peak in the background",
     author: "Dr. Robbie Unsell",
     publishedAt: "2026-08-07",
     readingTime: 10,
     categories: ["Emergency Care", "Pet Safety"],
-    tags: ["rattlesnake bite dog", "dog bitten by rattlesnake Colorado Springs", "prairie rattlesnake Colorado Springs", "rattlesnake vaccine for dogs", "Red Rock Canyon Open Space dog safety", "dog trail safety Colorado Springs", "Section 16 trail Colorado Springs"],
+    tags: ["rattlesnake bite dog", "dog bitten by rattlesnake Colorado Springs", "prairie rattlesnake Colorado Springs", "rattlesnake vaccine for dogs", "Red Rock Canyon Open Space dog safety", "dog trail safety Colorado Springs", "Section 16 trail Colorado Springs", "foxtails in dogs", "grass awn removal Colorado Springs", "burned paw pads dog"],
     seo: {
       metaTitle: "Dog Bitten by a Rattlesnake in Colorado Springs | Red Rock",
       metaDescription: "Dr. Robbie Unsell on what to do in the first 30 minutes after a rattlesnake bite on a Colorado Springs trail, and where to drive instead of Red Rock.",
@@ -146,6 +158,11 @@ In that 272-dog series, 264 dogs survived — 97.1% — with hypersensitivity re
         question: "Does the rattlesnake vaccine actually work?",
         answer:
           "There is no published evidence that it does in dogs. The 2022 AAHA Canine Vaccination Guidelines classify it as noncore, state there are no published data documenting efficacy in dogs, and note reported adverse reactions including anaphylaxis in previously vaccinated dogs that were later bitten; two retrospective studies, one of 82 dogs and one of 272, found no difference in illness or death between vaccinated and unvaccinated dogs. It is also labeled for Crotalus atrox, the western diamondback, which does not live in Colorado, while our snake is the prairie rattlesnake, Crotalus viridis. Whether to give it is a conversation to have with your veterinarian, but a vaccinated dog that is bitten is still an emergency and still needs a 24-hour hospital immediately.",
+      },
+      {
+        question: "My dog keeps shaking his head and licking one paw after a hike. Could it be a foxtail?",
+        answer:
+          "Very possibly, and it is worth having looked at rather than waited out. Foxtails and cheatgrass awns are barbed so they only travel one direction, which is inward, and they lodge between toes, in ears, up noses, and under eyelids before migrating deeper. The signs are usually sudden and one-sided: violent head shaking, an ear the dog will not leave alone, relentless licking of a single paw, or sneezing that starts on a walk and does not stop. An awn that has migrated is a harder and more expensive problem than one that has not, so early is genuinely cheaper here. We remove them during business hours, sedated when the location requires it. Call (719) 204-3647 for a same-day urgent slot, which is $109.",
       },
       {
         question: "Are there rattlesnakes at Red Rock Canyon Open Space, Section 16, and Garden of the Gods?",
@@ -211,6 +228,14 @@ In that 272-dog series, 264 dogs survived — 97.1% — with hypersensitivity re
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "There is no published evidence of efficacy in dogs. The 2022 AAHA Canine Vaccination Guidelines classify it as noncore, state there are no published efficacy data in dogs, and note reported anaphylaxis in previously vaccinated dogs that were later bitten; two retrospective studies of 82 and 272 dogs found no difference in illness or death. The product is labeled for Crotalus atrox, the western diamondback, which does not live in Colorado. Whether to give it is a conversation to have with a veterinarian, but a vaccinated dog that is bitten still needs a 24-hour hospital immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My dog keeps shaking his head and licking one paw after a hike. Could it be a foxtail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very possibly. Foxtails and cheatgrass awns are barbed so they travel only inward, lodging between toes, in ears, up noses and under eyelids before migrating deeper. Signs are usually sudden and one-sided: violent head shaking, an ear the dog will not leave alone, relentless licking of a single paw, or sneezing that begins on a walk and does not stop. An awn that has migrated is a harder and more expensive problem than one that has not, so early evaluation costs less. Red Rock Veterinary Health removes foxtails and grass awns during business hours, using sedation when the location requires it. A same-day urgent appointment is $109."
       }
     },
     {
@@ -297,7 +322,7 @@ About 18 percent of aspirates come back non-diagnostic — not enough cells to r
 
 If it is benign and stable, we set a recheck date and a number to measure against, not an open-ended "keep an eye on it." If it needs to come out, cytology sets the plan but not the size of it. About 2 centimeters of normal-looking skin in every direction plus one layer of tissue beneath is the published standard for a small, low-grade mast cell tumor, and because cytology cannot give us the grade beforehand, the Veterinary Society of Surgical Oncology recommends 3 to 4 centimeters when the grade is unknown. These tumors extend microscopically into skin that feels normal, which is why the incision surprises people. Everything we remove goes to a pathologist for a diagnosis, a grade and a margin report.
 
-We do the exam, the aspirate and straightforward [mass removals](/services/surgery) here, and the slides go to a clinical pathologist. We have no CT scanner and we do not give chemotherapy or radiation therapy. Complex reconstructions and high-grade cases belong with a board-certified surgeon or oncologist; CSU's Flint Animal Cancer Center is two hours north in Fort Collins.
+We do the exam, the aspirate and [mass removals](/services/surgery) here. We read cytology in-house, which usually means an answer in five to fifteen minutes while you are still in the room; when a case warrants a clinical pathologist's read, that comes back in three to seven business days, and we tell you which route we are taking and why. In-house aspirate cytology is $99. For removals that need a specialist we strongly recommend Dr. Jennifer Swiderski, a board-certified surgeon who operates on-site through our MOVES partnership, so your dog stays in a building it knows; if she is not available, we refer to Mountain View Veterinary Surgery. We have no CT scanner and we do not give chemotherapy or radiation therapy — for those, CSU's Flint Animal Cancer Center is two hours north in Fort Collins.
 
 [[KEYTAKEAWAY]] The lump on your dog does not have an answer you can see or feel. It has one on a glass slide, and getting it takes a needle and one appointment. Call us at [(719) 204-3647](tel:719-204-3647), Monday through Friday, 8 a.m. to 5 p.m.`,
     featuredImage: "/blogs/drunsellperformingemergencysurgery.jpg",
@@ -341,7 +366,7 @@ We do the exam, the aspirate and straightforward [mass removals](/services/surge
       {
         question: "What is a fine needle aspiration for a dog, does it hurt, and what does it cost?",
         answer:
-          "A fine needle aspirate uses a small needle on a syringe to draw cells out of the mass onto a glass slide. Most dogs tolerate it about as well as a vaccination, with no incision, no stitches and usually no sedation, though some masses and some dogs do need sedation for a safe sample and we tell you that before we start. Our standard exam is $79 and a same-day urgent exam is $109; we quote the aspirate and the cytology for you before we do anything, and the slides go to a clinical pathologist to be read. And no, putting a needle in a mass does not make cancer spread.",
+          "A fine needle aspirate uses a small needle on a syringe to draw cells out of the mass onto a glass slide. Most dogs tolerate it about as well as a vaccination, with no incision, no stitches and usually no sedation, though some masses and some dogs do need sedation for a safe sample and we tell you that before we start. In-house aspirate cytology is $99, on top of the standard $79 exam or the $109 same-day urgent exam. We read most slides here, which means an answer in five to fifteen minutes while you are still in the room; when a case warrants a clinical pathologist, that takes three to seven business days. And no, putting a needle in a mass does not make cancer spread.",
       },
       {
         question: "Do fatty tumors have to be removed?",
@@ -403,7 +428,7 @@ We do the exam, the aspirate and straightforward [mass removals](/services/surge
       "name": "What is a fine needle aspiration for a dog, does it hurt, and what does it cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A fine needle aspirate uses a small needle on a syringe to draw cells from a mass onto a glass slide. Most dogs tolerate it about as well as a vaccination, with no incision, no stitches and usually no sedation, though some masses and some dogs do need sedation for a safe sample. At Red Rock Veterinary Health the standard exam is $79 and a same-day urgent exam is $109, and the aspirate and cytology are quoted before anything is done; slides go to a clinical pathologist to be read. Aspirating a mass does not make cancer spread."
+        "text": "A fine needle aspirate uses a small needle on a syringe to draw cells from a mass onto a glass slide. Most dogs tolerate it about as well as a vaccination, with no incision, no stitches and usually no sedation, though some masses and some dogs do need sedation for a safe sample. At Red Rock Veterinary Health in-house aspirate cytology is $99, in addition to the standard $79 exam or the $109 same-day urgent exam. Most slides are read in-house, giving an answer in five to fifteen minutes during the appointment; when a case warrants a clinical pathologist, results take three to seven business days. Aspirating a mass does not make cancer spread."
       }
     },
     {
@@ -505,7 +530,7 @@ Red Rock is open Monday through Friday, 8 a.m. to 5 p.m. No overnight staff, no 
 
 A conscious exam honestly gets one component: the nostrils. The palate, saccules, and larynx need sedation, because a thick tongue makes the larynx nearly impossible to see awake. Radiographs identify a hypoplastic trachea, and [we take those here](/services/radiography-ultrasound).
 
-We do not do BOAS corrective surgery. It needs 24 hours of in-hospital monitoring and emergency tracheostomy capability if the airway swells shut, and a practice that closes at 5 p.m. cannot provide that. We refer to a board-certified surgeon and handle recognition, the workup behind the referral, weight management, and follow-up. No one should promise a result: reported improvement ranges from 30% to 90%, a hypoplastic trachea cannot be corrected, and earlier surgery beats emergency surgery.
+We do perform BOAS corrective surgery here. For these airways we strongly recommend Dr. Jennifer Swiderski, a board-certified surgeon (Diplomate, ACVS) who operates on-site through our partnership with MOVES, so your dog has the procedure in a building it already knows rather than being sent across town. Dr. Muelhaupt performs these surgeries as well. If neither is the right fit for your dog, we refer to Mountain View Veterinary Surgery. No one should promise a result: reported improvement ranges from 30% to 90%, a hypoplastic trachea cannot be corrected, and earlier surgery beats emergency surgery. One limit we will state plainly — we have no overnight staff, so a patient who is not stable by 5 p.m. is transferred to a 24-hour hospital rather than sent home, and that plan is made before surgery, not after.
 
 ## Anesthesia: why your bulldog gets a different plan
 
@@ -514,8 +539,8 @@ In 223 brachycephalic dogs and 223 matched controls under routine anesthesia, po
 The standard of care is to keep a flat-faced dog intubated as long as it is safe and to recover it sternal with the head up, watched by a person, not only by a monitor. That is why the anesthetic day should start early: recovery needs the whole day, and we close at 5 p.m. We have no overnight staff, so a patient of ours that is not stable by then goes to a 24-hour hospital rather than home. There is no third option, and you should know that before you book a dental. Ask any clinic all three questions, including ours.
 
 [[KEYTAKEAWAY]] Noise is information, not personality. A flat-faced dog that snores, snorts, gags, or stops on walks belongs in an ordinary Tuesday appointment, not an 11 p.m. crisis. Call [(719) 204-3647](tel:719-204-3647), Monday through Friday, 8 a.m. to 5 p.m. If the gums are blue or the breathing will not settle, skip us and go to Animal ER Care at [(719) 260-7141](tel:719-260-7141).`,
-    featuredImage: "/blogs/expertcare.jpg",
-    imageAlt: "A veterinarian examining a flat-faced dog at Red Rock Veterinary Health in Colorado Springs",
+    featuredImage: "/blogs/bulldog-puppy-lick-mat.jpg",
+    imageAlt: "An English bulldog puppy taking peanut butter from a spoon during a low-stress exam at Red Rock Veterinary Health",
     author: "Dr. Jaime Clevenger",
     publishedAt: "2026-08-07",
     readingTime: 7,
@@ -560,7 +585,7 @@ The standard of care is to keep a flat-faced dog intubated as long as it is safe
       {
         question: "Does Red Rock do BOAS surgery, and what does it cost?",
         answer:
-          "No. Airway surgery on a flat-faced dog requires at least 24 hours of in-hospital monitoring and the ability to place an emergency tracheostomy if the airway swells after the procedure, and a practice that closes at 5 p.m. cannot provide that. We refer to a board-certified surgeon and handle the recognition, the workup that leads to that referral, weight management, and follow-up care. We cannot quote a surgical price because we do not perform the procedure — ask the surgical hospital directly, and ask what their quote includes for the 24 hours of monitoring.",
+          "Yes. We strongly recommend Dr. Jennifer Swiderski, a board-certified surgeon (Diplomate, American College of Veterinary Surgeons) who operates on-site here through our partnership with MOVES, so your dog stays in a familiar building instead of being referred across town. Dr. Muelhaupt also performs these procedures. If neither is the right fit, we refer to Mountain View Veterinary Surgery. Cost depends on which components need correcting and is quoted after the sedated airway assessment rather than over the phone, because the plan for a stenotic nares correction and the plan for nares plus soft palate are different operations. We have no overnight staff, so if your dog is not stable by 5 p.m. the plan is a transfer to a 24-hour hospital, and we arrange that before surgery rather than after.",
       },
       {
         question: "Is anesthesia riskier for my bulldog?",
@@ -625,7 +650,7 @@ The standard of care is to keep a flat-faced dog intubated as long as it is safe
       "name": "Does Red Rock do BOAS surgery, and what does it cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Red Rock Veterinary Health does not perform BOAS corrective surgery, because it requires at least 24 hours of in-hospital monitoring and emergency tracheostomy capability that a Monday-to-Friday practice cannot provide. Red Rock refers to a board-certified surgeon and handles recognition, the workup leading to that referral, weight management, and follow-up. Surgical pricing must come from the surgical hospital, and owners should ask what the quote includes for the 24 hours of monitoring."
+        "text": "Yes. Red Rock Veterinary Health performs BOAS corrective surgery on-site. The practice strongly recommends Dr. Jennifer Swiderski, a board-certified surgeon and Diplomate of the American College of Veterinary Surgeons who operates at Red Rock through its partnership with MOVES, so the dog stays in a familiar building rather than being referred elsewhere. Dr. Dan Muelhaupt also performs these procedures. If neither is the right fit, Red Rock refers to Mountain View Veterinary Surgery. Cost is quoted after the sedated airway assessment rather than over the phone, because correcting stenotic nares alone and correcting nares plus an elongated soft palate are different operations. Red Rock has no overnight staff, so a patient who is not stable by 5 p.m. is transferred to a 24-hour hospital, and that plan is arranged before surgery."
       }
     },
     {

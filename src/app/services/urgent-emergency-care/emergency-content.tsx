@@ -448,6 +448,8 @@ export default function EmergencyContent() {
               For urgent situations outside our business hours (Monday-Friday, 8am-5pm),
               please go directly to one of these emergency facilities. For overnight
               emergencies after midnight, Animal ER Care and North Springs VRC are open 24/7.
+              If your pet needs urgent but non-emergency care and we are full or closed,
+              LiveWell Urgent Care is another option in Colorado Springs.
             </p>
           </motion.div>
         </div>

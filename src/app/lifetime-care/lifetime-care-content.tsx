@@ -24,6 +24,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { lifetimeCareFaqs } from "./faq";
 
 const doorways = [
@@ -82,32 +83,37 @@ const screeningPanel = [
   {
     title: "Complete blood count",
     detail:
-      "Red cells, white cells, and platelets. AAHA puts a comprehensive CBC in the senior minimum database alongside the chemistry panel and urinalysis, because changes here can be the first sign of disease that has not yet produced a symptom you would notice at home.",
+      "Red cells, white cells, and platelets. Changes here are often the first sign of disease that has not yet produced anything you would notice at home.",
   },
   {
-    title: "Chemistry panel, every 6 to 12 months",
+    title: "Biochemistry panel",
     detail:
-      "Total protein, albumin, ALT, glucose, BUN, creatinine, sodium, potassium, calcium, and SDMA where available.",
+      "Organ function and metabolic status — protein, liver enzymes, glucose, kidney values, and electrolytes — read against your pet's own previous results rather than against a population average.",
   },
   {
-    title: "Urinalysis — not optional, not redundant",
+    title: "Urinalysis with urine protein:creatinine",
     detail:
-      "Urine specific gravity can show the kidneys losing concentrating ability before creatinine moves, and protein in urine flags damage a chemistry panel alone misses. That is the honest answer to 'why do you need a urine sample too?'",
+      "Not optional and not redundant with the bloodwork. Urine specific gravity can show the kidneys losing concentrating ability before creatinine moves, and protein in the urine flags damage a chemistry panel alone misses. That is the honest answer to 'why do you need a urine sample too?'",
   },
   {
-    title: "Thyroid (T4)",
+    title: "Thyroid (T4 and free T4)",
     detail:
-      "Recommended annually in dogs. Strongly recommended annually in cats, where hyperthyroidism is the most common hormonal disease of old age.",
+      "Especially important in cats, where hyperthyroidism is the most common hormonal disease of old age and is frequently mistaken for a cat who is simply getting old.",
   },
   {
-    title: "Blood pressure",
+    title: "Pro-BNP — cats",
     detail:
-      "Recommended annually in dogs. Strongly recommended annually in cats, and every 6 to 12 months in healthy geriatric cats. Untreated hypertension takes eyesight.",
+      "A cardiac marker that can flag heart disease in a cat with no murmur and no symptoms. Feline heart disease is often silent until it is a crisis, which is exactly why it is on the standing panel rather than added later.",
   },
   {
-    title: "Added when findings call for it",
+    title: "Infectious disease screening",
     detail:
-      "Urine protein:creatinine ratio if protein shows up. NT-proBNP annually, and strongly considered before any anesthetic event. ECG annually in breeds at high cardiac risk such as Boxers and Dobermans. Fecal testing one to four times a year in dogs and one to two in cats, annual heartworm testing in dogs, and retroviral testing in cats based on individual risk.",
+      "Heartworm and tick-borne disease testing in dogs; FeLV, FIV, and heartworm in cats. Fecal screening for both.",
+  },
+  {
+    title: "Added when the picture calls for it",
+    detail:
+      "Pancreatic lipase where signs or bloodwork point that way. Blood pressure, which matters most in cats — untreated hypertension takes eyesight. NT-proBNP is strongly considered before any anesthetic event, and an ECG annually in breeds at high cardiac risk such as Boxers and Dobermans.",
   },
 ];
 
@@ -426,9 +432,10 @@ export default function LifetimeCareContent() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Twice a Year, Not Once</h2>
             <p className="text-lg text-muted-foreground mb-4">
-              AAHA recommends senior dogs be examined at least twice a year, with the full lab panel every 6 to 12 months.
-              The reasoning is simple and worth stating honestly: a year is a large fraction of what a senior pet has left,
-              and a chronic disease can appear and advance completely within a single annual interval.
+              AAHA recommends senior pets be examined at least twice a year. We go a step further and run the full senior
+              panel every 6 months, at the shorter end of the recommended range. The reasoning is simple and worth stating
+              honestly: a year is a large fraction of what a senior pet has left, and a chronic disease can appear and
+              advance completely within a single annual interval.
             </p>
             <p className="text-lg text-muted-foreground">
               We want to be precise about what that claim is and is not. It is sound clinical reasoning endorsed by AAHA.
@@ -666,6 +673,13 @@ export default function LifetimeCareContent() {
               So we will not tell you Librela is dangerous, and we will not tell you it is risk-free. We will tell you what
               is known, ask about your dog specifically, and decide with you.
             </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              We carry both Librela and Solensia and give them here. For many arthritic seniors they are the single
+              biggest quality-of-life change available, and for a cat who cannot be reliably pilled they can be the
+              difference between treated and untreated pain. They are also not the whole plan. Weight, surfaces, activity
+              structure, and the rest of the multimodal approach do at least as much work, and we would rather build all
+              of it than hand you one injection and call it managed.
+            </p>
             <div className="p-6 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg">
               <p className="text-sm font-bold uppercase tracking-wide text-amber-700 mb-2">Two firm rules</p>
               <p className="text-amber-900 leading-relaxed">
@@ -853,6 +867,21 @@ export default function LifetimeCareContent() {
               your pet&apos;s stress rises during a procedure, we stop and try a different approach rather than push
               through it.
             </p>
+            <figure className="my-8">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+                <Image
+                  src="/blogs/fear-free-floor-exam.jpg"
+                  alt="A Red Rock veterinarian crouched on a padded mat listening to a senior golden retriever's chest while the dog licks peanut butter from a mat"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-sm italic text-muted-foreground">
+                A cardiac exam on the floor, on a padded mat, with a lick mat doing the restraining. The dog is not being
+                held still &mdash; it is choosing to stand still, which is why the heart rate we hear is the real one.
+              </figcaption>
+            </figure>
             <p className="text-lg text-muted-foreground">
               The building does some of the work. Cats and dogs have fully separate waiting, exam, and treatment areas
               &mdash; we are the only hospital in Colorado Springs that separates all three &mdash; and you can wait in
@@ -947,9 +976,11 @@ export default function LifetimeCareContent() {
             </p>
             <p className="text-lg text-muted-foreground">
               What that means here, plainly: inside our hours we manage symptoms and pain, adjust medication, and keep
-              having the conversation as things change. We are not a hospice service and we do not visit homes. Where a
-              family wants dedicated hospice support or care at home, that is a hospice or mobile end-of-life provider, and
-              we will say so rather than stretch what we are.
+              having the conversation as things change. For our established clients we do offer in-home euthanasia,
+              subject to availability &mdash; it depends on the day and on who is in the building, so it is something to
+              ask about early rather than to assume on the afternoon you need it. We are not a full hospice service. Where
+              a family wants ongoing hospice support at home, that is a dedicated hospice or mobile end-of-life provider,
+              and we will say so rather than stretch what we are.
             </p>
           </motion.div>
 
