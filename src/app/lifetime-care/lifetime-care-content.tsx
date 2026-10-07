@@ -198,7 +198,7 @@ const chronicConditions = [
     notice:
       "A new cough, tiring sooner on the same walk, or a resting breathing rate that has crept upward. In cats, heart disease is frequently silent until the day it is not.",
     work:
-      "Canine mitral valve disease is staged A through D by ACVIM consensus, and the distinction that changes treatment is B1 versus B2: a murmur with normal-sized heart chambers, versus a murmur with left atrial and ventricular enlargement. Stage B1 dogs get no cardiac medication. Stage B2 dogs get pimobendan, which in the EPIC study delayed the onset of congestive heart failure by a median of about 15 months. Telling B1 from B2 requires echocardiography, or at minimum radiographs — and echocardiography is a referral service, not something we perform in-house. One of the most useful things you can monitor at home costs nothing: count your pet's breaths for 30 seconds while they sleep and double it. Dogs and cats generally sleep at 15 to 30 breaths per minute, and a sleeping rate consistently above about 30 is abnormal and can mean fluid accumulating in the lungs.",
+      "Canine mitral valve disease is staged A through D by ACVIM consensus, and the distinction that changes treatment is B1 versus B2: a murmur with normal-sized heart chambers, versus a murmur with left atrial and ventricular enlargement. Stage B1 dogs get no cardiac medication. Stage B2 dogs get pimobendan, which in the EPIC study delayed the onset of congestive heart failure by a median of about 15 months. Telling B1 from B2 requires echocardiography, or at minimum radiographs. One of the most useful things you can monitor at home costs nothing: count your pet's breaths for 30 seconds while they sleep and double it. Dogs and cats generally sleep at 15 to 30 breaths per minute, and a sleeping rate consistently above about 30 is abnormal and can mean fluid accumulating in the lungs.",
   },
 ];
 
@@ -816,9 +816,8 @@ export default function LifetimeCareContent() {
               <li className="flex items-start gap-3 bg-background p-5 rounded-lg">
                 <Stethoscope className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-muted-foreground leading-relaxed">
-                  We do not have board-certified internal medicine, cardiology, oncology, or neurology in-house, and we do
-                  not perform echocardiography, CT, MRI, or radioiodine therapy here. We refer, and we send records ahead
-                  so the specialist is not starting from zero.
+                  We do not perform CT, MRI, or radioiodine therapy here. When your pet needs them, we refer, and we send
+                  records ahead so the specialist is not starting from zero.
                 </span>
               </li>
               <li className="flex items-start gap-3 bg-background p-5 rounded-lg">
