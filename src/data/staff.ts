@@ -168,27 +168,6 @@ export const staffMembers: StaffMember[] = [
     certifications: ["fearfree"]
   },
   {
-    id: "courtney-slice",
-    name: "Courtney Slice",
-    title: "Registered Veterinary Technician",
-    credentials: "RVT FFCP-VT, B.A., A.A.S.",
-    pronouns: "",
-    image: "/staff/courtney.jpeg",
-    imageAlt: "Courtney Slice, Registered Veterinary Technician",
-    slug: "courtney-slice",
-    bio: "Courtney Slice is a dedicated Registered Veterinary Technician who brings enthusiasm, skill, and compassionate care to every patient interaction. With a Bachelor's in Business Administration and an Associate of Applied Science in Veterinary Technology, Courtney provides comprehensive support in all aspects of animal care.",
-    education: "Bachelor's in Business Administration, Associate of Applied Science in Veterinary Technology",
-    specialties: [
-      "Fear Free Care",
-      "Feline Medicine",
-      "Companion Animal Dentistry",
-      "Patient Care",
-      "Client Education"
-    ],
-    personalInterests: "Outside of work, Courtney is an avid animal lover who enjoys hiking with her dogs and volunteering at local animal shelters. Her commitment to animal welfare and genuine care for pets and their families makes her a valued team member.",
-    certifications: ["fvma", "catfriendly", "fearfree"]
-  },
-  {
     id: "liz-fisher",
     name: "Liz Fisher",
     title: "Registered Veterinary Technician & Behavioral Trainer",
@@ -218,18 +197,6 @@ export const staffMembers: StaffMember[] = [
     image: "/staff/emma-osborne.webp",
     imageAlt: "Emma Osborne, Registered Veterinary Technician at Red Rock Veterinary Health",
     slug: "emma-osborne",
-    bio: "",
-    specialties: []
-  },
-  {
-    id: "michael-hronsky",
-    name: "Michael Hronsky",
-    title: "Veterinary Technician",
-    credentials: "",
-    pronouns: "He/Him",
-    image: "/staff/michael-hronsky.webp",
-    imageAlt: "Michael Hronsky, Veterinary Technician at Red Rock Veterinary Health",
-    slug: "michael-hronsky",
     bio: "",
     specialties: []
   },

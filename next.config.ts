@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Both www and apex were serving 200 with no redirect, so the site was
+      // crawlable on two hosts while every canonical tag, the sitemap, and
+      // metadataBase all declare the apex. This 301 makes the apex definitive.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.redrockvet.com' }],
+        destination: 'https://redrockvet.com/:path*',
+        permanent: true,
+      },
       {
         source: '/urgent-emergency-care',
         destination: '/services/urgent-emergency-care',
